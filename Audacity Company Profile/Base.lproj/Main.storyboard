@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Vt-Zl-Tzk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -16,11 +17,476 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9a-eZ-d8Z">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL9-qw-fQu">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="102-IP-imX">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="TU4-fo-XaR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L9a-eZ-d8Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="PEi-rP-Lf5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L9a-eZ-d8Z" secondAttribute="trailing" constant="-20" id="RKy-Iy-HR8"/>
+                            <constraint firstItem="L9a-eZ-d8Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="q03-xM-j8m"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="YQe-uW-Mck">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz7-dG-KCY">
+                            <rect key="frame" x="10" y="36" width="31" height="32"/>
+                            <state key="normal" image="ic_navigation.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-Rb-XyY">
+                            <rect key="frame" x="57" y="34" width="310" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
             </objects>
+            <point key="canvasLocation" x="565" y="475"/>
+        </scene>
+        <!--Over View Controller-->
+        <scene sceneID="aOU-It-yoF">
+            <objects>
+                <viewController id="9Vt-Zl-Tzk" customClass="OverViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sYe-k3-IHM"/>
+                        <viewControllerLayoutGuide type="bottom" id="gav-8Y-rC7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u9a-0U-1ot">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSF-uZ-wrh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBX-iJ-R3O">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akZ-bs-dXL">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="sjg-pR-Vvf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cSF-uZ-wrh" firstAttribute="top" secondItem="u9a-0U-1ot" secondAttribute="top" id="SSg-Hm-s2O"/>
+                            <constraint firstItem="cSF-uZ-wrh" firstAttribute="leading" secondItem="u9a-0U-1ot" secondAttribute="leading" id="pLB-4I-3af"/>
+                            <constraint firstAttribute="trailing" secondItem="cSF-uZ-wrh" secondAttribute="trailing" id="zLd-Nu-wcQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYr-1u-Pa0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1188"/>
+        </scene>
+        <!--Portfolio View Controller-->
+        <scene sceneID="Ieu-od-b0T">
+            <objects>
+                <viewController id="wEY-6C-4Ut" customClass="PortfolioViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cxT-eN-Oqf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oba-ut-VOJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m0x-2d-KrF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGY-po-gTa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-Z7-h8p">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Portfolio Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxA-hS-EqE">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="iww-MQ-hGP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pGY-po-gTa" secondAttribute="trailing" id="Kvj-rg-F2e"/>
+                            <constraint firstItem="pGY-po-gTa" firstAttribute="leading" secondItem="m0x-2d-KrF" secondAttribute="leading" id="cYa-rC-YCd"/>
+                            <constraint firstItem="pGY-po-gTa" firstAttribute="top" secondItem="m0x-2d-KrF" secondAttribute="top" id="zLq-WH-EmW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4g-Pg-zwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1897"/>
+        </scene>
+        <!--Team View Controller-->
+        <scene sceneID="BG6-hF-A75">
+            <objects>
+                <viewController id="WoD-Fm-Cx4" customClass="TeamViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0uO-K9-Kj4"/>
+                        <viewControllerLayoutGuide type="bottom" id="h2U-To-mLB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fsR-wQ-E1d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onP-4a-MO6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-BH-7Ib">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team View Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpM-0z-ZtO">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="uTh-hL-fAt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="onP-4a-MO6" firstAttribute="leading" secondItem="fsR-wQ-E1d" secondAttribute="leading" id="7bE-y0-IlV"/>
+                            <constraint firstAttribute="trailing" secondItem="onP-4a-MO6" secondAttribute="trailing" id="adi-Tv-1z1"/>
+                            <constraint firstItem="onP-4a-MO6" firstAttribute="top" secondItem="fsR-wQ-E1d" secondAttribute="top" id="fhA-sa-i64"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="clk-Q9-LXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="2563"/>
+        </scene>
+        <!--Client View Controller-->
+        <scene sceneID="03H-8D-Xec">
+            <objects>
+                <viewController id="sMj-MK-OZg" customClass="ClientViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sNU-A6-tZE"/>
+                        <viewControllerLayoutGuide type="bottom" id="HEX-yc-2RI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uvi-cP-uHI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-u3-WwG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kag-Il-9qP">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Client View Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqU-hi-kwO">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="vNa-QD-5Tn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c2d-u3-WwG" firstAttribute="top" secondItem="uvi-cP-uHI" secondAttribute="top" id="Doy-ja-6W1"/>
+                            <constraint firstItem="c2d-u3-WwG" firstAttribute="leading" secondItem="uvi-cP-uHI" secondAttribute="leading" id="SKO-bR-bgF"/>
+                            <constraint firstAttribute="trailing" secondItem="c2d-u3-WwG" secondAttribute="trailing" id="giu-rm-oTa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYE-dh-F3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="3235"/>
+        </scene>
+        <!--Testimonial View Controller-->
+        <scene sceneID="2dr-Pm-eqP">
+            <objects>
+                <viewController id="omy-j7-KRB" customClass="TestimonialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CtR-JS-01E"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z9J-Lk-eeD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GJw-tN-3PN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-DI-j1K">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycj-TL-MRM">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Testimonial Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpe-mI-TFE">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Row-n5-wge"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sws-DI-j1K" secondAttribute="trailing" id="16p-bf-dQ2"/>
+                            <constraint firstItem="Sws-DI-j1K" firstAttribute="leading" secondItem="GJw-tN-3PN" secondAttribute="leading" id="dEq-Pa-FoC"/>
+                            <constraint firstItem="Sws-DI-j1K" firstAttribute="top" secondItem="GJw-tN-3PN" secondAttribute="top" id="m6q-8J-vmd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2N-Uf-zxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="3939"/>
+        </scene>
+        <!--Methodology View Controller-->
+        <scene sceneID="EG3-4z-Kfr">
+            <objects>
+                <viewController id="npH-fj-sYt" customClass="MethodologyViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N9M-p0-C15"/>
+                        <viewControllerLayoutGuide type="bottom" id="oyS-w6-V5t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="88M-q2-qKG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Pa-Fa-bTL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="193-v5-FFG">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Methodology " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTu-2Z-uIS">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="cOv-i9-1V3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Pa-Fa-bTL" secondAttribute="trailing" id="2ee-IU-g4v"/>
+                            <constraint firstItem="7Pa-Fa-bTL" firstAttribute="leading" secondItem="88M-q2-qKG" secondAttribute="leading" id="jZx-BC-OS8"/>
+                            <constraint firstItem="7Pa-Fa-bTL" firstAttribute="top" secondItem="88M-q2-qKG" secondAttribute="top" id="paQ-9y-PbF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHp-if-v2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="4622"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="HRh-GQ-2vp">
+            <objects>
+                <viewController id="IAZ-Rq-DZ9" customClass="SocialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Z0-aM-oiW"/>
+                        <viewControllerLayoutGuide type="bottom" id="13E-MI-2Uk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vua-y7-YTt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfu-u4-520">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u41-3C-nBD">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Social" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-jz-qMy">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="7bT-yn-wJQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pfu-u4-520" secondAttribute="trailing" id="LXn-na-i8H"/>
+                            <constraint firstItem="Pfu-u4-520" firstAttribute="top" secondItem="vua-y7-YTt" secondAttribute="top" id="TQw-by-9VX"/>
+                            <constraint firstItem="Pfu-u4-520" firstAttribute="leading" secondItem="vua-y7-YTt" secondAttribute="leading" id="fqV-Tp-R5o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFT-Ml-5TQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="5286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L0p-B9-ayF">
+            <objects>
+                <viewController id="ikp-dy-KQS" customClass="FAQViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P1u-zr-tio"/>
+                        <viewControllerLayoutGuide type="bottom" id="XJN-13-TR9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QpQ-d5-wyi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUN-CK-anp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOq-ED-SeE">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMx-r7-1Nf">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="UDB-gp-pqC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CUN-CK-anp" secondAttribute="trailing" id="HzT-bz-Lkh"/>
+                            <constraint firstItem="CUN-CK-anp" firstAttribute="leading" secondItem="QpQ-d5-wyi" secondAttribute="leading" id="K32-l0-by2"/>
+                            <constraint firstItem="CUN-CK-anp" firstAttribute="top" secondItem="QpQ-d5-wyi" secondAttribute="top" id="QoT-cK-aM1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjX-MY-pea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="5971"/>
+        </scene>
+        <!--Showcase View Controller-->
+        <scene sceneID="7Y6-Sb-dqI">
+            <objects>
+                <viewController id="jNC-d4-iZE" customClass="ShowcaseViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xtd-3l-94e"/>
+                        <viewControllerLayoutGuide type="bottom" id="WLk-0q-q0q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KvZ-7a-yE0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iH2-C9-lzL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qI-mT-l4R">
+                                        <rect key="frame" x="10" y="36" width="31" height="32"/>
+                                        <state key="normal" image="ic_navigation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Showcase" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGC-VW-7H5">
+                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="2Ne-UF-I7D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iH2-C9-lzL" firstAttribute="leading" secondItem="KvZ-7a-yE0" secondAttribute="leading" id="3FB-fE-31K"/>
+                            <constraint firstAttribute="trailing" secondItem="iH2-C9-lzL" secondAttribute="trailing" id="4o2-7t-DRv"/>
+                            <constraint firstItem="iH2-C9-lzL" firstAttribute="top" secondItem="KvZ-7a-yE0" secondAttribute="top" id="UdG-ec-ZyS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Av0-0m-qye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="475"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_navigation.png" width="48" height="48"/>
+    </resources>
 </document>
