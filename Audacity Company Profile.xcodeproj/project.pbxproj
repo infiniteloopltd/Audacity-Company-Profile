@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C44CF99E1C4CCEAC00413EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99D1C4CCEAC00413EF1 /* AppDelegate.swift */; };
-		C44CF9A01C4CCEAC00413EF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99F1C4CCEAC00413EF1 /* ViewController.swift */; };
+		C44CF9A01C4CCEAC00413EF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99F1C4CCEAC00413EF1 /* HomeViewController.swift */; };
 		C44CF9A31C4CCEAC00413EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9A11C4CCEAC00413EF1 /* Main.storyboard */; };
 		C44CF9A51C4CCEAC00413EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9A41C4CCEAC00413EF1 /* Assets.xcassets */; };
 		C44CF9A81C4CCEAC00413EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9A61C4CCEAC00413EF1 /* LaunchScreen.storyboard */; };
@@ -98,12 +98,23 @@
 		C44CFA5C1C4CD18800413EF1 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA591C4CD18800413EF1 /* TagButton.swift */; };
 		C44CFA5D1C4CD18800413EF1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA5A1C4CD18800413EF1 /* CardView.swift */; };
 		C44CFA5E1C4CD18800413EF1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA5B1C4CD18800413EF1 /* GradientView.swift */; };
+		C44CFA601C4CDE8600413EF1 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA5F1C4CDE8600413EF1 /* DrawerViewController.swift */; };
+		C44CFA621C4CDEFA00413EF1 /* ShowcaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA611C4CDEFA00413EF1 /* ShowcaseViewController.swift */; };
+		C44CFA641C4CDF1400413EF1 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA631C4CDF1400413EF1 /* SocialViewController.swift */; };
+		C44CFA661C4CDF2400413EF1 /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA651C4CDF2400413EF1 /* OverViewController.swift */; };
+		C44CFA681C4CDF3900413EF1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA671C4CDF3900413EF1 /* MapViewController.swift */; };
+		C44CFA6A1C4CDF8B00413EF1 /* MethodologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA691C4CDF8B00413EF1 /* MethodologyViewController.swift */; };
+		C44CFA6C1C4CDF9D00413EF1 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA6B1C4CDF9D00413EF1 /* TeamViewController.swift */; };
+		C44CFA6E1C4CDFB100413EF1 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA6D1C4CDFB100413EF1 /* TestimonialViewController.swift */; };
+		C44CFA701C4CDFD100413EF1 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */; };
+		C44CFA721C4CDFDE00413EF1 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */; };
+		C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C44CF99A1C4CCEAC00413EF1 /* Audacity Company Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audacity Company Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44CF99D1C4CCEAC00413EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C44CF99F1C4CCEAC00413EF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C44CF99F1C4CCEAC00413EF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C44CF9A21C4CCEAC00413EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C44CF9A41C4CCEAC00413EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44CF9A71C4CCEAC00413EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -194,6 +205,17 @@
 		C44CFA591C4CD18800413EF1 /* TagButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		C44CFA5A1C4CD18800413EF1 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C44CFA5B1C4CD18800413EF1 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C44CFA5F1C4CDE8600413EF1 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		C44CFA611C4CDEFA00413EF1 /* ShowcaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowcaseViewController.swift; sourceTree = "<group>"; };
+		C44CFA631C4CDF1400413EF1 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		C44CFA651C4CDF2400413EF1 /* OverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
+		C44CFA671C4CDF3900413EF1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C44CFA691C4CDF8B00413EF1 /* MethodologyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodologyViewController.swift; sourceTree = "<group>"; };
+		C44CFA6B1C4CDF9D00413EF1 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		C44CFA6D1C4CDFB100413EF1 /* TestimonialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
+		C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +264,18 @@
 		C44CF9AF1C4CCEC000413EF1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C44CF99F1C4CCEAC00413EF1 /* ViewController.swift */,
+				C44CF99F1C4CCEAC00413EF1 /* HomeViewController.swift */,
+				C44CFA5F1C4CDE8600413EF1 /* DrawerViewController.swift */,
+				C44CFA611C4CDEFA00413EF1 /* ShowcaseViewController.swift */,
+				C44CFA631C4CDF1400413EF1 /* SocialViewController.swift */,
+				C44CFA651C4CDF2400413EF1 /* OverViewController.swift */,
+				C44CFA671C4CDF3900413EF1 /* MapViewController.swift */,
+				C44CFA691C4CDF8B00413EF1 /* MethodologyViewController.swift */,
+				C44CFA6B1C4CDF9D00413EF1 /* TeamViewController.swift */,
+				C44CFA6D1C4CDFB100413EF1 /* TestimonialViewController.swift */,
+				C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */,
+				C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */,
+				C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -508,11 +541,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44CFA661C4CDF2400413EF1 /* OverViewController.swift in Sources */,
+				C44CFA6C1C4CDF9D00413EF1 /* TeamViewController.swift in Sources */,
 				C44CFA5C1C4CD18800413EF1 /* TagButton.swift in Sources */,
-				C44CF9A01C4CCEAC00413EF1 /* ViewController.swift in Sources */,
+				C44CF9A01C4CCEAC00413EF1 /* HomeViewController.swift in Sources */,
+				C44CFA681C4CDF3900413EF1 /* MapViewController.swift in Sources */,
+				C44CFA701C4CDFD100413EF1 /* PortfolioViewController.swift in Sources */,
 				C44CFA5E1C4CD18800413EF1 /* GradientView.swift in Sources */,
+				C44CFA621C4CDEFA00413EF1 /* ShowcaseViewController.swift in Sources */,
+				C44CFA721C4CDFDE00413EF1 /* ClientViewController.swift in Sources */,
+				C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */,
 				C44CFA5D1C4CD18800413EF1 /* CardView.swift in Sources */,
 				C44CF99E1C4CCEAC00413EF1 /* AppDelegate.swift in Sources */,
+				C44CFA6A1C4CDF8B00413EF1 /* MethodologyViewController.swift in Sources */,
+				C44CFA601C4CDE8600413EF1 /* DrawerViewController.swift in Sources */,
+				C44CFA641C4CDF1400413EF1 /* SocialViewController.swift in Sources */,
+				C44CFA6E1C4CDFB100413EF1 /* TestimonialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
