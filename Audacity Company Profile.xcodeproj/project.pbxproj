@@ -54,14 +54,46 @@
 		C44CF99C1C4CCEAC00413EF1 /* Audacity Company Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C44CF9B21C4CCEE400413EF1 /* CustomComponent */,
+				C44CF9B11C4CCED700413EF1 /* CustomTableCell */,
+				C44CF9B01C4CCECC00413EF1 /* images */,
+				C44CF9AF1C4CCEC000413EF1 /* ViewController */,
 				C44CF99D1C4CCEAC00413EF1 /* AppDelegate.swift */,
-				C44CF99F1C4CCEAC00413EF1 /* ViewController.swift */,
 				C44CF9A11C4CCEAC00413EF1 /* Main.storyboard */,
 				C44CF9A41C4CCEAC00413EF1 /* Assets.xcassets */,
 				C44CF9A61C4CCEAC00413EF1 /* LaunchScreen.storyboard */,
 				C44CF9A91C4CCEAC00413EF1 /* Info.plist */,
 			);
 			path = "Audacity Company Profile";
+			sourceTree = "<group>";
+		};
+		C44CF9AF1C4CCEC000413EF1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C44CF99F1C4CCEAC00413EF1 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C44CF9B01C4CCECC00413EF1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		C44CF9B11C4CCED700413EF1 /* CustomTableCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomTableCell;
+			sourceTree = "<group>";
+		};
+		C44CF9B21C4CCEE400413EF1 /* CustomComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.audacity.Audacity-Company-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -262,6 +295,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.audacity.Audacity-Company-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
