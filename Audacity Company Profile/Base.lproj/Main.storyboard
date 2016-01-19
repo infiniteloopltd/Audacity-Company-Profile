@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Vt-Zl-Tzk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e7C-6M-BVG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,7 +9,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -74,7 +74,7 @@
         <!--Over View Controller-->
         <scene sceneID="aOU-It-yoF">
             <objects>
-                <viewController id="9Vt-Zl-Tzk" customClass="OverViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverViewController" id="9Vt-Zl-Tzk" customClass="OverViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sYe-k3-IHM"/>
                         <viewControllerLayoutGuide type="bottom" id="gav-8Y-rC7"/>
@@ -120,7 +120,7 @@
         <!--Portfolio View Controller-->
         <scene sceneID="Ieu-od-b0T">
             <objects>
-                <viewController id="wEY-6C-4Ut" customClass="PortfolioViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PortfolioViewController" id="wEY-6C-4Ut" customClass="PortfolioViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cxT-eN-Oqf"/>
                         <viewControllerLayoutGuide type="bottom" id="Oba-ut-VOJ"/>
@@ -166,7 +166,7 @@
         <!--Team View Controller-->
         <scene sceneID="BG6-hF-A75">
             <objects>
-                <viewController id="WoD-Fm-Cx4" customClass="TeamViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeamViewController" id="WoD-Fm-Cx4" customClass="TeamViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0uO-K9-Kj4"/>
                         <viewControllerLayoutGuide type="bottom" id="h2U-To-mLB"/>
@@ -212,7 +212,7 @@
         <!--Client View Controller-->
         <scene sceneID="03H-8D-Xec">
             <objects>
-                <viewController id="sMj-MK-OZg" customClass="ClientViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClientViewController" id="sMj-MK-OZg" customClass="ClientViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sNU-A6-tZE"/>
                         <viewControllerLayoutGuide type="bottom" id="HEX-yc-2RI"/>
@@ -258,7 +258,7 @@
         <!--Testimonial View Controller-->
         <scene sceneID="2dr-Pm-eqP">
             <objects>
-                <viewController id="omy-j7-KRB" customClass="TestimonialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestimonialViewController" id="omy-j7-KRB" customClass="TestimonialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CtR-JS-01E"/>
                         <viewControllerLayoutGuide type="bottom" id="Z9J-Lk-eeD"/>
@@ -304,7 +304,7 @@
         <!--Methodology View Controller-->
         <scene sceneID="EG3-4z-Kfr">
             <objects>
-                <viewController id="npH-fj-sYt" customClass="MethodologyViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MethodologyViewController" id="npH-fj-sYt" customClass="MethodologyViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N9M-p0-C15"/>
                         <viewControllerLayoutGuide type="bottom" id="oyS-w6-V5t"/>
@@ -350,7 +350,7 @@
         <!--Social View Controller-->
         <scene sceneID="HRh-GQ-2vp">
             <objects>
-                <viewController id="IAZ-Rq-DZ9" customClass="SocialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SocialViewController" id="IAZ-Rq-DZ9" customClass="SocialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Z0-aM-oiW"/>
                         <viewControllerLayoutGuide type="bottom" id="13E-MI-2Uk"/>
@@ -396,7 +396,7 @@
         <!--View Controller-->
         <scene sceneID="L0p-B9-ayF">
             <objects>
-                <viewController id="ikp-dy-KQS" customClass="FAQViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FAQViewController" id="ikp-dy-KQS" customClass="FAQViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P1u-zr-tio"/>
                         <viewControllerLayoutGuide type="bottom" id="XJN-13-TR9"/>
@@ -442,7 +442,7 @@
         <!--Showcase View Controller-->
         <scene sceneID="7Y6-Sb-dqI">
             <objects>
-                <viewController id="jNC-d4-iZE" customClass="ShowcaseViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowcaseViewController" id="jNC-d4-iZE" customClass="ShowcaseViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xtd-3l-94e"/>
                         <viewControllerLayoutGuide type="bottom" id="WLk-0q-q0q"/>
@@ -485,8 +485,167 @@
             </objects>
             <point key="canvasLocation" x="1236" y="475"/>
         </scene>
+        <!--Drawer View Controller-->
+        <scene sceneID="ebj-SK-jFy">
+            <objects>
+                <viewController storyboardIdentifier="DrawerViewController" id="e7C-6M-BVG" customClass="DrawerViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LN2-cN-nK5"/>
+                        <viewControllerLayoutGuide type="bottom" id="RiA-h0-h32"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HmM-IA-OVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-z1-30f">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="kPG-2w-dYF"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16470588235294117" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="200" id="fv7-Mk-HSj" customClass="DrawerHeaderCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="280" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fv7-Mk-HSj" id="CEl-Ld-PW3">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_nav_header.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dfS-Uu-12M">
+                                                    <rect key="frame" x="0.0" y="-8" width="280" height="200"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-Ft-wlF">
+                                                    <rect key="frame" x="69" y="50" width="142" height="83"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" rowHeight="50" id="21x-tv-gxs" customClass="DrawerCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="228" width="280" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="21x-tv-gxs" id="Auf-lS-gn1">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SxQ-gd-rEP">
+                                                    <rect key="frame" x="30" y="9" width="30" height="30"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjo-xB-VmR">
+                                                    <rect key="frame" x="82" y="0.0" width="190" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.64313725489999995" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemImageView" destination="SxQ-gd-rEP" id="Pd0-fU-iaV"/>
+                                            <outlet property="itemLabel" destination="Yjo-xB-VmR" id="7PD-Qo-z0P"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FooterCell" rowHeight="180" id="dVT-YT-sag" customClass="DrawerFooterCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="278" width="280" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dVT-YT-sag" id="FLL-kd-OqZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGo-TT-zeH">
+                                                    <rect key="frame" x="2" y="0.0" width="280" height="2"/>
+                                                    <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Fj-3b-UkO">
+                                                    <rect key="frame" x="0.0" y="90" width="280" height="2"/>
+                                                    <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-d2-SET">
+                                                    <rect key="frame" x="93" y="2" width="2" height="88"/>
+                                                    <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGA-EO-IsV">
+                                                    <rect key="frame" x="186" y="2" width="2" height="88"/>
+                                                    <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29s-Gr-tXi">
+                                                    <rect key="frame" x="93" y="4" width="93" height="88"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                                    <state key="normal" image="ic_nav_mail.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="mailBtnAction:" destination="e7C-6M-BVG" eventType="touchUpInside" id="MWp-P1-Lmv"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4M-rs-Lsz">
+                                                    <rect key="frame" x="187" y="3" width="93" height="88"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                                    <state key="normal" image="ic_nav_web.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="webBtnAction:" destination="e7C-6M-BVG" eventType="touchUpInside" id="2IV-r2-7bB"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0G-LH-eZD">
+                                                    <rect key="frame" x="63" y="118" width="152" height="38"/>
+                                                    <color key="backgroundColor" red="0.074509803920000006" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Get Started">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="19"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="getStartedAction:" destination="e7C-6M-BVG" eventType="touchUpInside" id="yF3-OR-W7K"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gE7-Gc-yIO">
+                                                    <rect key="frame" x="0.0" y="2" width="93" height="88"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                                    <state key="normal" image="ic_nav_call.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="callBtnAction:" destination="e7C-6M-BVG" eventType="touchUpInside" id="HuV-El-nQl"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="e7C-6M-BVG" id="PAJ-Si-MY0"/>
+                                    <outlet property="delegate" destination="e7C-6M-BVG" id="0rt-hf-ciy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Hv-z1-30f" firstAttribute="leading" secondItem="HmM-IA-OVJ" secondAttribute="leadingMargin" constant="-20" id="Qim-HG-FFi"/>
+                            <constraint firstItem="2Hv-z1-30f" firstAttribute="top" secondItem="HmM-IA-OVJ" secondAttribute="topMargin" id="lNJ-b7-q2B"/>
+                            <constraint firstItem="RiA-h0-h32" firstAttribute="top" secondItem="2Hv-z1-30f" secondAttribute="bottom" id="qBX-DS-vTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="2Hv-z1-30f" id="aLB-0r-1Hb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mw0-Lr-SBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1245" y="1188"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="app_inside_logo.png" width="865" height="490"/>
+        <image name="ic_nav_call.png" width="48" height="48"/>
+        <image name="ic_nav_mail.png" width="48" height="48"/>
+        <image name="ic_nav_web.png" width="48" height="48"/>
         <image name="ic_navigation.png" width="48" height="48"/>
+        <image name="img_nav_header.jpg" width="400" height="226"/>
     </resources>
 </document>

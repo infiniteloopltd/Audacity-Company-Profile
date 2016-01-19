@@ -109,6 +109,21 @@
 		C44CFA701C4CDFD100413EF1 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */; };
 		C44CFA721C4CDFDE00413EF1 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */; };
 		C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */; };
+		C4F7E87C1C4DEE6500CA82CB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */; };
+		C4F7E87D1C4DEE6500CA82CB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8741C4DEE6500CA82CB /* MMDrawerController.m */; };
+		C4F7E87E1C4DEE6500CA82CB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8771C4DEE6500CA82CB /* MMDrawerVisualState.m */; };
+		C4F7E87F1C4DEE6500CA82CB /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8791C4DEE6500CA82CB /* UIViewController+MMDrawerController.m */; };
+		C4F7E8811C4DF1EB00CA82CB /* DrawerHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8801C4DF1EB00CA82CB /* DrawerHeaderCell.swift */; };
+		C4F7E8831C4DF1F000CA82CB /* DrawerFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8821C4DF1F000CA82CB /* DrawerFooterCell.swift */; };
+		C4F7E8851C4DF1FE00CA82CB /* DrawerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8841C4DF1FE00CA82CB /* DrawerCell.swift */; };
+		C4F7E8871C4DF21000CA82CB /* OverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8861C4DF21000CA82CB /* OverviewCell.swift */; };
+		C4F7E8891C4DF24200CA82CB /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8881C4DF24200CA82CB /* FilterCell.swift */; };
+		C4F7E88B1C4DF25700CA82CB /* MethodologyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E88A1C4DF25700CA82CB /* MethodologyCell.swift */; };
+		C4F7E88D1C4DF26300CA82CB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E88C1C4DF26300CA82CB /* CollectionViewCell.swift */; };
+		C4F7E88F1C4DF27700CA82CB /* TestimonialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E88E1C4DF27700CA82CB /* TestimonialCell.swift */; };
+		C4F7E8911C4DF28600CA82CB /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8901C4DF28600CA82CB /* PortfolioCell.swift */; };
+		C4F7E8931C4DF29900CA82CB /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8921C4DF29900CA82CB /* ClientCell.swift */; };
+		C4F7E8951C4DF2A900CA82CB /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +231,29 @@
 		C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		C4F7E8701C4DEE6500CA82CB /* Audacity Company Profile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audacity Company Profile-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4F7E8711C4DEE6500CA82CB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		C4F7E8731C4DEE6500CA82CB /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		C4F7E8741C4DEE6500CA82CB /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		C4F7E8751C4DEE6500CA82CB /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		C4F7E8761C4DEE6500CA82CB /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		C4F7E8771C4DEE6500CA82CB /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		C4F7E8781C4DEE6500CA82CB /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		C4F7E8791C4DEE6500CA82CB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		C4F7E87A1C4DEE6500CA82CB /* MyNavigationDrawer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyNavigationDrawer-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4F7E87B1C4DEE6500CA82CB /* CompanyProfileNavigationDrawer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompanyProfileNavigationDrawer-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4F7E8801C4DF1EB00CA82CB /* DrawerHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerHeaderCell.swift; sourceTree = "<group>"; };
+		C4F7E8821C4DF1F000CA82CB /* DrawerFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerFooterCell.swift; sourceTree = "<group>"; };
+		C4F7E8841C4DF1FE00CA82CB /* DrawerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerCell.swift; sourceTree = "<group>"; };
+		C4F7E8861C4DF21000CA82CB /* OverviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewCell.swift; sourceTree = "<group>"; };
+		C4F7E8881C4DF24200CA82CB /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		C4F7E88A1C4DF25700CA82CB /* MethodologyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodologyCell.swift; sourceTree = "<group>"; };
+		C4F7E88C1C4DF26300CA82CB /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		C4F7E88E1C4DF27700CA82CB /* TestimonialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestimonialCell.swift; sourceTree = "<group>"; };
+		C4F7E8901C4DF28600CA82CB /* PortfolioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
+		C4F7E8921C4DF29900CA82CB /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
+		C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +286,7 @@
 		C44CF99C1C4CCEAC00413EF1 /* Audacity Company Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C4F7E86F1C4DEE4200CA82CB /* MySideMenu */,
 				C44CF9B21C4CCEE400413EF1 /* CustomComponent */,
 				C44CF9B11C4CCED700413EF1 /* CustomTableCell */,
 				C44CF9B01C4CCECC00413EF1 /* images */,
@@ -373,6 +412,17 @@
 		C44CF9B11C4CCED700413EF1 /* CustomTableCell */ = {
 			isa = PBXGroup;
 			children = (
+				C4F7E8841C4DF1FE00CA82CB /* DrawerCell.swift */,
+				C4F7E8881C4DF24200CA82CB /* FilterCell.swift */,
+				C4F7E88A1C4DF25700CA82CB /* MethodologyCell.swift */,
+				C4F7E88E1C4DF27700CA82CB /* TestimonialCell.swift */,
+				C4F7E8921C4DF29900CA82CB /* ClientCell.swift */,
+				C4F7E8861C4DF21000CA82CB /* OverviewCell.swift */,
+				C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */,
+				C4F7E8901C4DF28600CA82CB /* PortfolioCell.swift */,
+				C4F7E88C1C4DF26300CA82CB /* CollectionViewCell.swift */,
+				C4F7E8821C4DF1F000CA82CB /* DrawerFooterCell.swift */,
+				C4F7E8801C4DF1EB00CA82CB /* DrawerHeaderCell.swift */,
 			);
 			name = CustomTableCell;
 			sourceTree = "<group>";
@@ -385,6 +435,25 @@
 				C44CFA5B1C4CD18800413EF1 /* GradientView.swift */,
 			);
 			name = CustomComponent;
+			sourceTree = "<group>";
+		};
+		C4F7E86F1C4DEE4200CA82CB /* MySideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C4F7E8711C4DEE6500CA82CB /* MMDrawerBarButtonItem.h */,
+				C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */,
+				C4F7E8731C4DEE6500CA82CB /* MMDrawerController.h */,
+				C4F7E8741C4DEE6500CA82CB /* MMDrawerController.m */,
+				C4F7E8751C4DEE6500CA82CB /* MMDrawerController+Subclass.h */,
+				C4F7E8761C4DEE6500CA82CB /* MMDrawerVisualState.h */,
+				C4F7E8771C4DEE6500CA82CB /* MMDrawerVisualState.m */,
+				C4F7E8781C4DEE6500CA82CB /* UIViewController+MMDrawerController.h */,
+				C4F7E8791C4DEE6500CA82CB /* UIViewController+MMDrawerController.m */,
+				C4F7E87A1C4DEE6500CA82CB /* MyNavigationDrawer-Bridging-Header.h */,
+				C4F7E87B1C4DEE6500CA82CB /* CompanyProfileNavigationDrawer-Bridging-Header.h */,
+				C4F7E8701C4DEE6500CA82CB /* Audacity Company Profile-Bridging-Header.h */,
+			);
+			name = MySideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,21 +611,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44CFA661C4CDF2400413EF1 /* OverViewController.swift in Sources */,
+				C4F7E88B1C4DF25700CA82CB /* MethodologyCell.swift in Sources */,
+				C4F7E8831C4DF1F000CA82CB /* DrawerFooterCell.swift in Sources */,
 				C44CFA6C1C4CDF9D00413EF1 /* TeamViewController.swift in Sources */,
 				C44CFA5C1C4CD18800413EF1 /* TagButton.swift in Sources */,
+				C4F7E88D1C4DF26300CA82CB /* CollectionViewCell.swift in Sources */,
+				C4F7E8911C4DF28600CA82CB /* PortfolioCell.swift in Sources */,
+				C4F7E87F1C4DEE6500CA82CB /* UIViewController+MMDrawerController.m in Sources */,
 				C44CF9A01C4CCEAC00413EF1 /* HomeViewController.swift in Sources */,
 				C44CFA681C4CDF3900413EF1 /* MapViewController.swift in Sources */,
 				C44CFA701C4CDFD100413EF1 /* PortfolioViewController.swift in Sources */,
 				C44CFA5E1C4CD18800413EF1 /* GradientView.swift in Sources */,
 				C44CFA621C4CDEFA00413EF1 /* ShowcaseViewController.swift in Sources */,
+				C4F7E8811C4DF1EB00CA82CB /* DrawerHeaderCell.swift in Sources */,
+				C4F7E8851C4DF1FE00CA82CB /* DrawerCell.swift in Sources */,
+				C4F7E8871C4DF21000CA82CB /* OverviewCell.swift in Sources */,
+				C4F7E87C1C4DEE6500CA82CB /* MMDrawerBarButtonItem.m in Sources */,
 				C44CFA721C4CDFDE00413EF1 /* ClientViewController.swift in Sources */,
 				C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */,
 				C44CFA5D1C4CD18800413EF1 /* CardView.swift in Sources */,
+				C4F7E8951C4DF2A900CA82CB /* FAQCell.swift in Sources */,
 				C44CF99E1C4CCEAC00413EF1 /* AppDelegate.swift in Sources */,
+				C4F7E8891C4DF24200CA82CB /* FilterCell.swift in Sources */,
+				C4F7E88F1C4DF27700CA82CB /* TestimonialCell.swift in Sources */,
 				C44CFA6A1C4CDF8B00413EF1 /* MethodologyViewController.swift in Sources */,
 				C44CFA601C4CDE8600413EF1 /* DrawerViewController.swift in Sources */,
 				C44CFA641C4CDF1400413EF1 /* SocialViewController.swift in Sources */,
+				C4F7E87E1C4DEE6500CA82CB /* MMDrawerVisualState.m in Sources */,
+				C4F7E87D1C4DEE6500CA82CB /* MMDrawerController.m in Sources */,
 				C44CFA6E1C4CDFB100413EF1 /* TestimonialViewController.swift in Sources */,
+				C4F7E8931C4DF29900CA82CB /* ClientCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,10 +751,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Audacity Company Profile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.audacity.Audacity-Company-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Audacity Company Profile/Audacity Company Profile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -679,10 +766,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Audacity Company Profile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.audacity.Audacity-Company-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Audacity Company Profile/Audacity Company Profile-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -706,6 +795,7 @@
 				C44CF9AE1C4CCEAC00413EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
