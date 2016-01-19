@@ -176,6 +176,177 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         let url = NSURL(string: "http://www.audacityit.com")!
         UIApplication.sharedApplication().openURL(url)
     }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        selectedItem = indexPath.row
+        
+        if(indexPath.row != 0) {
+            let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+            //selectedCell.contentView.backgroundColor = UIColor.blackColor()
+            //selectedCell.backgroundColor = UIColor.blackColor()
+            selectedCell.contentView.backgroundColor = UIColor.blackColor()
+            selectedCell.backgroundColor = UIColor.blackColor()
+        }
+        
+        
+        
+        
+        switch(indexPath.row)
+        {
+            
+            /* case 0:
+            
+            var centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            
+            var centerNavController = UINavigationController(rootViewController: centerViewController)
+            
+            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = centerNavController
+            //   appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+            
+            break;
+            */
+            
+        case 1:  // Home
+            
+            let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
+            
+            let navController = UINavigationController(rootViewController: viewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = navController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            break;
+            
+        case 2:  // OverView
+            
+            let overviewController = self.storyboard?.instantiateViewControllerWithIdentifier("OverViewController") as! OverViewController
+            
+            let overNavController = UINavigationController(rootViewController: overviewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = overNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            break;
+            
+            
+        case 3:   // Portfolio
+            let portfolioViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PortfolioViewController") as! PortfolioViewController
+            
+            let portfolioNavController = UINavigationController(rootViewController: portfolioViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = portfolioNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            
+            break;
+            
+        case 4:  // Team
+            
+            
+            let teamViewController = self.storyboard?.instantiateViewControllerWithIdentifier("TeamViewController") as! TeamViewController
+            
+            let teamNavController = UINavigationController(rootViewController: teamViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = teamNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            break;
+            
+            
+        case 5:  // Clients
+            
+            let clientViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ClientViewController") as! ClientViewController
+            
+            let clientNavController = UINavigationController(rootViewController: clientViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = clientNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            break;
+            
+        case 6:  // Testimonial
+            
+            let testimonialViewController = self.storyboard?.instantiateViewControllerWithIdentifier("TestimonialViewController") as! TestimonialViewController
+            
+            let testimonialNavController = UINavigationController(rootViewController: testimonialViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = testimonialNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            
+            
+            break;
+            
+        case 7:  // Methodology
+            let methodologyViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MethodologyViewController") as! MethodologyViewController
+            
+            let methodologyNavController = UINavigationController(rootViewController: methodologyViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = methodologyNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            break
+            
+        case 8:  // Social
+            let socialViewController = self.storyboard?.instantiateViewControllerWithIdentifier("SocialViewController") as! SocialViewController
+            
+            let socialNavController = UINavigationController(rootViewController: socialViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = socialNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            break
+            
+        case 9:  // FAQ
+            
+            let faqViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FAQViewController") as! FAQViewController
+            
+            let faqlNavController = UINavigationController(rootViewController: faqViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = faqlNavController
+            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            
+            break
+            
+        case 10: // Rate This app
+            let url = NSURL(string: "http://www.audacityit.com")!
+            UIApplication.sharedApplication().openURL(url)
+            
+            break
+        default:
+            
+            print("");
+            
+        }
+        
+        
+        
+    }
+    
+    
+  
         
 
 }
