@@ -886,15 +886,180 @@ TIN : 442670895657</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="7bT-yn-wJQ"/>
+                                    <constraint firstAttribute="height" constant="84" id="USP-4y-PBk"/>
                                 </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_social_chat.png" translatesAutoresizingMaskIntoConstraints="NO" id="HOa-L4-3AS">
+                                <rect key="frame" x="260" y="144" width="79" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="LgZ-bW-Mh5"/>
+                                    <constraint firstAttribute="width" constant="79" id="uV7-Wq-tpd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with us !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-hD-ZvM">
+                                <rect key="frame" x="211" y="221" width="178" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3YW-o2-hx0"/>
+                                    <constraint firstAttribute="width" constant="178" id="B2M-EG-OH0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yU-Pf-4ZZ">
+                                <rect key="frame" x="166" y="274" width="267" height="52"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_fb.png" translatesAutoresizingMaskIntoConstraints="NO" id="x4x-z9-33P">
+                                        <rect key="frame" x="29" y="15" width="24" height="22"/>
+                                    </imageView>
+                                    <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbc-oi-P6a">
+                                        <rect key="frame" x="74" y="10" width="1" height="31"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-cW-L2c">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookBtn:" destination="IAZ-Rq-DZ9" eventType="touchUpInside" id="Gvy-0Q-rGJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705882" green="0.27058823529999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="4Ez-mX-crM"/>
+                                    <constraint firstAttribute="width" constant="267" id="uaA-0U-1r7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzF-hI-iDl">
+                                <rect key="frame" x="166" y="334" width="267" height="52"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_linked_in.png" translatesAutoresizingMaskIntoConstraints="NO" id="bvf-Eh-6aU">
+                                        <rect key="frame" x="29" y="15" width="24" height="22"/>
+                                    </imageView>
+                                    <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Tz-ns-cqd">
+                                        <rect key="frame" x="74" y="10" width="1" height="31"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-b3-YLy">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Linked In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="linkedInBtn:" destination="IAZ-Rq-DZ9" eventType="touchUpInside" id="ohx-ph-61u"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.40000000000000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="719-vG-mzz"/>
+                                    <constraint firstAttribute="height" constant="52" id="tYL-35-MRF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqn-ko-nYE">
+                                <rect key="frame" x="166" y="394" width="267" height="52"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="r2A-zA-eMv">
+                                        <rect key="frame" x="29" y="15" width="24" height="22"/>
+                                    </imageView>
+                                    <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HK-qr-pKC">
+                                        <rect key="frame" x="74" y="10" width="1" height="31"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of2-ed-G0h">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Twitter">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="twitterBtn:" destination="IAZ-Rq-DZ9" eventType="touchUpInside" id="jC9-B0-luM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705882" green="0.27058823529999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="8A2-xF-lZR"/>
+                                    <constraint firstAttribute="height" constant="52" id="xo3-CV-e5x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsO-FA-nbl">
+                                <rect key="frame" x="166" y="454" width="267" height="52"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_youtube.png" translatesAutoresizingMaskIntoConstraints="NO" id="iMA-Ng-SxC">
+                                        <rect key="frame" x="29" y="15" width="24" height="22"/>
+                                    </imageView>
+                                    <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACF-s0-L9H">
+                                        <rect key="frame" x="74" y="10" width="1" height="31"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyO-Qx-A4I">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Youtube">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="youtubeBtn:" destination="IAZ-Rq-DZ9" eventType="touchUpInside" id="jd8-8B-g9q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.070588235289999995" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="Mm6-FS-sMw"/>
+                                    <constraint firstAttribute="height" constant="52" id="f7d-nt-XUQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Pfu-u4-520" secondAttribute="trailing" id="LXn-na-i8H"/>
-                            <constraint firstItem="Pfu-u4-520" firstAttribute="top" secondItem="vua-y7-YTt" secondAttribute="top" id="TQw-by-9VX"/>
-                            <constraint firstItem="Pfu-u4-520" firstAttribute="leading" secondItem="vua-y7-YTt" secondAttribute="leading" id="fqV-Tp-R5o"/>
+                            <constraint firstItem="Pfu-u4-520" firstAttribute="top" secondItem="vua-y7-YTt" secondAttribute="topMargin" id="0fS-yA-Vol"/>
+                            <constraint firstItem="JzF-hI-iDl" firstAttribute="top" secondItem="3yU-Pf-4ZZ" secondAttribute="bottom" constant="8" id="2Xz-uV-ebi"/>
+                            <constraint firstItem="Pfu-u4-520" firstAttribute="leading" secondItem="vua-y7-YTt" secondAttribute="leadingMargin" constant="-20" id="DcV-sy-hid"/>
+                            <constraint firstItem="3yU-Pf-4ZZ" firstAttribute="top" secondItem="bhV-hD-ZvM" secondAttribute="bottom" constant="32" id="HtM-EO-5jO"/>
+                            <constraint firstItem="3yU-Pf-4ZZ" firstAttribute="centerY" secondItem="vua-y7-YTt" secondAttribute="centerY" id="S7p-Gr-QwX"/>
+                            <constraint firstItem="JzF-hI-iDl" firstAttribute="centerX" secondItem="vua-y7-YTt" secondAttribute="centerX" id="UKZ-zb-vL9"/>
+                            <constraint firstItem="XsO-FA-nbl" firstAttribute="centerX" secondItem="vua-y7-YTt" secondAttribute="centerX" id="ct1-kN-e5N"/>
+                            <constraint firstItem="Qqn-ko-nYE" firstAttribute="centerX" secondItem="vua-y7-YTt" secondAttribute="centerX" id="gPi-Hj-tLk"/>
+                            <constraint firstItem="HOa-L4-3AS" firstAttribute="centerX" secondItem="vua-y7-YTt" secondAttribute="centerX" id="jKs-gM-fBG"/>
+                            <constraint firstItem="bhV-hD-ZvM" firstAttribute="top" secondItem="HOa-L4-3AS" secondAttribute="bottom" constant="4" id="jhO-8x-JON"/>
+                            <constraint firstItem="bhV-hD-ZvM" firstAttribute="centerX" secondItem="vua-y7-YTt" secondAttribute="centerX" id="l8Z-xW-lbv"/>
+                            <constraint firstItem="XsO-FA-nbl" firstAttribute="top" secondItem="Qqn-ko-nYE" secondAttribute="bottom" constant="8" id="lha-TU-xnH"/>
+                            <constraint firstItem="Qqn-ko-nYE" firstAttribute="top" secondItem="JzF-hI-iDl" secondAttribute="bottom" constant="8" id="oxy-Ua-Iqp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pfu-u4-520" secondAttribute="trailing" constant="-20" id="pUn-0R-zbn"/>
+                            <constraint firstItem="3yU-Pf-4ZZ" firstAttribute="centerX" secondItem="vua-y7-YTt" secondAttribute="centerX" id="v5O-W8-nm7"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1258,6 +1423,11 @@ TIN : 442670895657</string>
         <image name="ic_navigation.png" width="48" height="48"/>
         <image name="ic_overview_company.png" width="200" height="200"/>
         <image name="ic_overview_infrastructure.png" width="48" height="48"/>
+        <image name="ic_social_chat.png" width="108" height="108"/>
+        <image name="ic_social_fb.png" width="52" height="52"/>
+        <image name="ic_social_linked_in.png" width="52" height="52"/>
+        <image name="ic_social_twitter.png" width="52" height="52"/>
+        <image name="ic_social_youtube.png" width="52" height="52"/>
         <image name="img_client_7.png" width="94" height="94"/>
         <image name="img_home_2.jpg" width="640" height="1138"/>
         <image name="img_nav_header.jpg" width="400" height="226"/>
