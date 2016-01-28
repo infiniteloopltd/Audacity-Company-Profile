@@ -541,13 +541,13 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="0.0" y="22" width="600" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Ao-3J-bW3" id="MEL-tL-Pxy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="142.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-x8-fzJ" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="6" width="574" height="130"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-1f-9UY">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-1f-9UY">
                                                             <rect key="frame" x="8" y="8" width="558" height="70"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_client_7.png" translatesAutoresizingMaskIntoConstraints="NO" id="8pO-fF-IYy">
@@ -586,7 +586,7 @@ TIN : 442670895657</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BANGLADESH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmk-wC-xYP">
-                                                                    <rect key="frame" x="460" y="36" width="90" height="21"/>
+                                                                    <rect key="frame" x="469" y="36" width="82" height="21"/>
                                                                     <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="DRf-6b-dTZ"/>
@@ -604,26 +604,27 @@ TIN : 442670895657</string>
                                                                 <constraint firstItem="bf2-bn-Pba" firstAttribute="top" secondItem="4AS-1f-9UY" secondAttribute="top" constant="19" id="Fgh-N1-K8G"/>
                                                                 <constraint firstItem="bf2-bn-Pba" firstAttribute="leading" secondItem="8pO-fF-IYy" secondAttribute="trailing" constant="8" id="LGx-MI-Hpt"/>
                                                                 <constraint firstItem="Usq-cE-VNA" firstAttribute="top" secondItem="4AS-1f-9UY" secondAttribute="top" constant="10" id="Lcg-RG-n8N"/>
-                                                                <constraint firstItem="tmk-wC-xYP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4AS-1f-9UY" secondAttribute="leading" constant="460" id="W2s-Yt-xYO"/>
+                                                                <constraint firstItem="tmk-wC-xYP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4AS-1f-9UY" secondAttribute="leading" constant="460" id="W2s-Yt-xYO"/>
                                                                 <constraint firstItem="8pO-fF-IYy" firstAttribute="leading" secondItem="4AS-1f-9UY" secondAttribute="leading" constant="6" id="ZbD-kq-apB"/>
                                                                 <constraint firstItem="OGG-Nk-hel" firstAttribute="leading" secondItem="8pO-fF-IYy" secondAttribute="trailing" constant="8" id="a99-R5-xGF"/>
                                                                 <constraint firstAttribute="trailing" secondItem="tmk-wC-xYP" secondAttribute="trailing" constant="8" id="hHf-ba-JV9"/>
+                                                                <constraint firstAttribute="height" constant="70" id="hJu-Zn-6C1"/>
                                                                 <constraint firstItem="tmk-wC-xYP" firstAttribute="top" secondItem="Usq-cE-VNA" secondAttribute="bottom" constant="11" id="kc5-fc-eXI"/>
                                                                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="bf2-bn-Pba" secondAttribute="trailing" constant="326" id="tBB-6M-MMQ"/>
                                                                 <constraint firstItem="8pO-fF-IYy" firstAttribute="top" secondItem="4AS-1f-9UY" secondAttribute="top" constant="5" id="zB2-Zz-XaU"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1YJ-KO-fek">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YJ-KO-fek">
                                                             <rect key="frame" x="8" y="79" width="558" height="46"/>
                                                             <subviews>
-                                                                <view alpha="0.5" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-jn-t5j">
+                                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-jn-t5j">
                                                                     <rect key="frame" x="4" y="0.0" width="546" height="1"/>
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="1" id="xcs-Zs-7Ad"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-NO-1JR" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-NO-1JR" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                                     <rect key="frame" x="8" y="9" width="70" height="26"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="YcN-63-Jqj"/>
@@ -637,7 +638,7 @@ TIN : 442670895657</string>
                                                                         <action selector="firstCategoryAction:" destination="4Ao-3J-bW3" eventType="touchUpInside" id="YlB-Z8-gzI"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ra-A9c" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ra-A9c" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                                     <rect key="frame" x="85" y="9" width="70" height="26"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="WEP-SY-gHD"/>
@@ -651,7 +652,7 @@ TIN : 442670895657</string>
                                                                         <action selector="secondCategoryAction:" destination="4Ao-3J-bW3" eventType="touchUpInside" id="Fv0-02-mJ6"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-EN-aul" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-EN-aul" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                                     <rect key="frame" x="165" y="9" width="70" height="26"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="26" id="Jpg-xN-hHQ"/>
@@ -665,7 +666,7 @@ TIN : 442670895657</string>
                                                                         <action selector="thirdCategoryAction:" destination="4Ao-3J-bW3" eventType="touchUpInside" id="B4U-yL-sue"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-k8-jCS" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-k8-jCS" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                                     <rect key="frame" x="254" y="9" width="70" height="26"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="gB9-EQ-zf9"/>
@@ -682,6 +683,7 @@ TIN : 442670895657</string>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="ggE-NO-1JR" secondAttribute="bottom" constant="11" id="F0u-bs-Lu5"/>
                                                                 <constraint firstItem="hht-ra-A9c" firstAttribute="top" secondItem="ACL-jn-t5j" secondAttribute="bottom" constant="8" id="H2S-ad-wNx"/>
                                                                 <constraint firstItem="ACL-jn-t5j" firstAttribute="leading" secondItem="1YJ-KO-fek" secondAttribute="leading" constant="4" id="L2e-5K-CZP"/>
                                                                 <constraint firstItem="ggE-NO-1JR" firstAttribute="leading" secondItem="1YJ-KO-fek" secondAttribute="leading" constant="8" id="RQO-To-zX1"/>
@@ -696,7 +698,7 @@ TIN : 442670895657</string>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="0.98431372549999996" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="1YJ-KO-fek" firstAttribute="leading" secondItem="RVE-x8-fzJ" secondAttribute="leading" constant="8" id="0aC-Ud-YZm"/>
                                                         <constraint firstItem="1YJ-KO-fek" firstAttribute="top" secondItem="4AS-1f-9UY" secondAttribute="bottom" constant="1" id="O9w-Fc-3uA"/>
@@ -707,6 +709,12 @@ TIN : 442670895657</string>
                                                         <constraint firstAttribute="trailing" secondItem="1YJ-KO-fek" secondAttribute="trailing" constant="8" id="hK9-VF-mI4"/>
                                                         <constraint firstItem="4AS-1f-9UY" firstAttribute="top" secondItem="RVE-x8-fzJ" secondAttribute="top" constant="8" id="tnW-hh-G1A"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="O9w-Fc-3uA"/>
+                                                            <exclude reference="eN1-D0-pup"/>
+                                                        </mask>
+                                                    </variation>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
