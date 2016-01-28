@@ -51,14 +51,14 @@ class ClientItemCell: UITableViewCell {
     
     
     
-    @IBOutlet var firstCategory: MyCustomButton!
+    @IBOutlet var firstCategory: MyCustomButton2!
     
-    @IBOutlet var secondCategory: MyCustomButton!
+    @IBOutlet var secondCategory: MyCustomButton2!
     
-    @IBOutlet var thirdCategory: MyCustomButton!
+    @IBOutlet var thirdCategory: MyCustomButton2!
     
     
-    @IBOutlet var fourthCategory: MyCustomButton!
+    @IBOutlet var fourthCategory: MyCustomButton2!
     
     @IBOutlet var arrowImageView: UIButton!
     
