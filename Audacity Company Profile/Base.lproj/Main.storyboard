@@ -353,7 +353,7 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pGY-po-gTa" secondAttribute="trailing" id="Kvj-rg-F2e"/>
                             <constraint firstItem="pGY-po-gTa" firstAttribute="leading" secondItem="m0x-2d-KrF" secondAttribute="leading" id="cYa-rC-YCd"/>
@@ -398,18 +398,107 @@ TIN : 442670895657</string>
                                     <constraint firstAttribute="height" constant="84" id="uTh-hL-fAt"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DsA-Ts-33A">
+                                <rect key="frame" x="0.0" y="84" width="600" height="516"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W3E-kb-OAg">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewItemCell" id="KLR-xZ-J9N" customClass="CollectionViewItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="35" width="110" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-CC-Vbg">
+                                                    <rect key="frame" x="26" y="9" width="49" height="47"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faisal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5J-it-lkQ">
+                                                    <rect key="frame" x="10" y="59" width="82" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXd-Vb-QYn">
+                                                    <rect key="frame" x="8" y="79" width="94" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="110" height="110"/>
+                                        <connections>
+                                            <outlet property="itemDetail" destination="KXd-Vb-QYn" id="awc-hF-n0o"/>
+                                            <outlet property="itemImage" destination="Haa-CC-Vbg" id="gs4-NV-Ag7"/>
+                                            <outlet property="itemName" destination="H5J-it-lkQ" id="rOF-Mx-PM7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewItemCelliPad" id="nSX-rc-Ryy" customClass="CollectionViewItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-Sl-Cey">
+                                                    <rect key="frame" x="41" y="8" width="99" height="101"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faisal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asS-aJ-XlF">
+                                                    <rect key="frame" x="8" y="117" width="164" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-xT-1xO">
+                                                    <rect key="frame" x="8" y="144" width="164" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="180" height="180"/>
+                                        <connections>
+                                            <outlet property="itemDetail" destination="E2d-xT-1xO" id="fXP-lF-WXi"/>
+                                            <outlet property="itemImage" destination="ojX-Sl-Cey" id="GPN-Za-HXP"/>
+                                            <outlet property="itemName" destination="asS-aJ-XlF" id="NSb-v2-fNT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="WoD-Fm-Cx4" id="fhc-WR-zHv"/>
+                                    <outlet property="delegate" destination="WoD-Fm-Cx4" id="w5v-VU-iq7"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="onP-4a-MO6" firstAttribute="leading" secondItem="fsR-wQ-E1d" secondAttribute="leading" id="7bE-y0-IlV"/>
+                            <constraint firstItem="h2U-To-mLB" firstAttribute="top" secondItem="DsA-Ts-33A" secondAttribute="bottom" id="Bx6-6Q-dVO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DsA-Ts-33A" secondAttribute="trailing" constant="-20" id="D4u-KN-6Kd"/>
+                            <constraint firstItem="DsA-Ts-33A" firstAttribute="leading" secondItem="fsR-wQ-E1d" secondAttribute="leadingMargin" constant="-20" id="HLG-JT-ADV"/>
                             <constraint firstAttribute="trailing" secondItem="onP-4a-MO6" secondAttribute="trailing" id="adi-Tv-1z1"/>
                             <constraint firstItem="onP-4a-MO6" firstAttribute="top" secondItem="fsR-wQ-E1d" secondAttribute="top" id="fhA-sa-i64"/>
+                            <constraint firstItem="DsA-Ts-33A" firstAttribute="top" secondItem="onP-4a-MO6" secondAttribute="bottom" id="lwD-Cv-r3H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="DsA-Ts-33A" id="eXq-to-4we"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clk-Q9-LXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="2563"/>
+            <point key="canvasLocation" x="573" y="2563"/>
         </scene>
         <!--Client View Controller-->
         <scene sceneID="03H-8D-Xec">
@@ -454,7 +543,7 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="0.0" y="22" width="600" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Ao-3J-bW3" id="MEL-tL-Pxy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="142.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-x8-fzJ" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
@@ -717,7 +806,7 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Sws-DI-j1K" secondAttribute="trailing" id="16p-bf-dQ2"/>
                             <constraint firstItem="Sws-DI-j1K" firstAttribute="leading" secondItem="GJw-tN-3PN" secondAttribute="leading" id="dEq-Pa-FoC"/>
@@ -763,7 +852,7 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7Pa-Fa-bTL" secondAttribute="trailing" id="2ee-IU-g4v"/>
                             <constraint firstItem="7Pa-Fa-bTL" firstAttribute="leading" secondItem="88M-q2-qKG" secondAttribute="leading" id="jZx-BC-OS8"/>
@@ -809,7 +898,7 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Pfu-u4-520" secondAttribute="trailing" id="LXn-na-i8H"/>
                             <constraint firstItem="Pfu-u4-520" firstAttribute="top" secondItem="vua-y7-YTt" secondAttribute="top" id="TQw-by-9VX"/>
@@ -855,7 +944,7 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="CUN-CK-anp" secondAttribute="trailing" id="HzT-bz-Lkh"/>
                             <constraint firstItem="CUN-CK-anp" firstAttribute="leading" secondItem="QpQ-d5-wyi" secondAttribute="leading" id="K32-l0-by2"/>
@@ -1163,13 +1252,14 @@ TIN : 442670895657</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiS-dv-4AE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592" y="-3"/>
+            <point key="canvasLocation" x="1547" y="-214"/>
         </scene>
     </scenes>
     <resources>
         <image name="app_inside_logo.png" width="865" height="490"/>
         <image name="fab_map.png" width="128" height="128"/>
         <image name="ic_client_extend_arrow.png" width="32" height="32"/>
+        <image name="ic_member_faisal.png" width="210" height="210"/>
         <image name="ic_nav_call.png" width="48" height="48"/>
         <image name="ic_nav_mail.png" width="48" height="48"/>
         <image name="ic_nav_web.png" width="48" height="48"/>
