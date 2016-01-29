@@ -200,7 +200,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="0zx-2P-qhY" firstAttribute="top" secondItem="HzW-jR-dgk" secondAttribute="top" constant="45" id="29V-Qb-BBF"/>
                                     <constraint firstAttribute="bottom" secondItem="XX6-Tu-aQP" secondAttribute="bottom" id="BMU-DJ-tp7"/>
@@ -237,6 +237,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5A-qr-EaG" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="-8" width="600" height="98"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Ue-5aS">
                                                     <rect key="frame" x="8" y="9" width="20" height="20"/>
                                                 </imageView>
@@ -256,6 +260,13 @@ TIN : 442670895657</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="f5A-qr-EaG" secondAttribute="bottom" constant="-8" id="ICT-lC-NSs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="f5A-qr-EaG" secondAttribute="trailing" constant="-8" id="J4s-Zw-iGq"/>
+                                                <constraint firstItem="f5A-qr-EaG" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="-8" id="TBr-uD-irJ"/>
+                                                <constraint firstItem="f5A-qr-EaG" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="-16" id="dSK-9Y-x82"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="itemDetail" destination="njg-eR-Pt2" id="wdO-gf-ygy"/>
@@ -278,6 +289,9 @@ TIN : 442670895657</string>
                                 <state key="normal" image="fab_map.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mapFabBtn:" destination="9Vt-Zl-Tzk" eventType="touchUpInside" id="5Uh-LN-1mf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -312,6 +326,7 @@ TIN : 442670895657</string>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Qpe-NM-CJ7">
                     <connections>
                         <action selector="handlePan:" destination="9Vt-Zl-Tzk" id="cJh-YT-dz1"/>
+                        <outlet property="delegate" destination="9Vt-Zl-Tzk" id="ikK-3w-qMH"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
@@ -413,6 +428,10 @@ TIN : 442670895657</string>
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tib-yy-94c" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-CC-Vbg">
                                                     <rect key="frame" x="26" y="9" width="49" height="47"/>
                                                 </imageView>
@@ -446,6 +465,10 @@ TIN : 442670895657</string>
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-bl-Q4R" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-Sl-Cey">
                                                     <rect key="frame" x="41" y="8" width="99" height="101"/>
                                                 </imageView>
@@ -597,6 +620,9 @@ TIN : 442670895657</string>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                            </accessibility>
                                                             <constraints>
                                                                 <constraint firstItem="OGG-Nk-hel" firstAttribute="top" secondItem="bf2-bn-Pba" secondAttribute="bottom" id="08l-z2-Xz6"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Usq-cE-VNA" secondAttribute="trailing" constant="8" id="BAA-2J-3fP"/>
@@ -813,7 +839,7 @@ TIN : 442670895657</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-JL-wD6" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="6" width="574" height="130"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-Jd-Dfu">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-Jd-Dfu" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="558" height="70"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-fG-SUM">
@@ -852,7 +878,7 @@ TIN : 442670895657</string>
                                                                 <constraint firstAttribute="trailing" secondItem="Nxl-eA-6Ug" secondAttribute="trailing" constant="8" id="sba-Ps-zUG"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1W-Mm-KmH">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1W-Mm-KmH" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="86" width="558" height="39"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLK-n0-FXi">
@@ -1032,7 +1058,7 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-cW-L2c">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-cW-L2c" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Facebook">
@@ -1066,7 +1092,7 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-b3-YLy">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-b3-YLy" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Linked In">
@@ -1100,7 +1126,7 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of2-ed-G0h">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of2-ed-G0h" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Twitter">
@@ -1134,7 +1160,7 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyO-Qx-A4I">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyO-Qx-A4I" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Youtube">
@@ -1232,7 +1258,7 @@ TIN : 442670895657</string>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="6" width="574" height="110"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-e8-SwA">
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-e8-SwA" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="558" height="46"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's Audacity IT Solutions Ltd?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjY-Pt-JlE">
@@ -1262,7 +1288,7 @@ TIN : 442670895657</string>
                                                                 <constraint firstItem="TjY-Pt-JlE" firstAttribute="top" secondItem="oIE-e8-SwA" secondAttribute="top" constant="15" id="tzu-6i-yMW"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo9-2o-Iww">
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo9-2o-Iww" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="62" width="558" height="39"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufa-Wm-LRl">
@@ -1495,6 +1521,10 @@ TIN : 442670895657</string>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-Ft-wlF">
                                                     <rect key="frame" x="69" y="50" width="142" height="83"/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogD-xt-50c" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="192"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1564,7 +1594,7 @@ TIN : 442670895657</string>
                                                         <action selector="webBtnAction:" destination="e7C-6M-BVG" eventType="touchUpInside" id="2IV-r2-7bB"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0G-LH-eZD">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0G-LH-eZD" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                     <rect key="frame" x="63" y="118" width="152" height="38"/>
                                                     <color key="backgroundColor" red="0.074509803920000006" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Get Started">

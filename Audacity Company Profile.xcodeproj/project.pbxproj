@@ -124,6 +124,8 @@
 		C4F7E8911C4DF28600CA82CB /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8901C4DF28600CA82CB /* PortfolioCell.swift */; };
 		C4F7E8931C4DF29900CA82CB /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8921C4DF29900CA82CB /* ClientCell.swift */; };
 		C4F7E8951C4DF2A900CA82CB /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */; };
+		C4FB5C671C5B708F00D823E2 /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FB5C661C5B708F00D823E2 /* RippleEffect.swift */; };
+		C4FB5C691C5B733700D823E2 /* RippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FB5C681C5B733700D823E2 /* RippleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -254,6 +256,8 @@
 		C4F7E8901C4DF28600CA82CB /* PortfolioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
 		C4F7E8921C4DF29900CA82CB /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
+		C4FB5C661C5B708F00D823E2 /* RippleEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
+		C4FB5C681C5B733700D823E2 /* RippleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +437,8 @@
 				C44CFA591C4CD18800413EF1 /* TagButton.swift */,
 				C44CFA5A1C4CD18800413EF1 /* CardView.swift */,
 				C44CFA5B1C4CD18800413EF1 /* GradientView.swift */,
+				C4FB5C661C5B708F00D823E2 /* RippleEffect.swift */,
+				C4FB5C681C5B733700D823E2 /* RippleView.swift */,
 			);
 			name = CustomComponent;
 			sourceTree = "<group>";
@@ -616,6 +622,8 @@
 				C44CFA6C1C4CDF9D00413EF1 /* TeamViewController.swift in Sources */,
 				C44CFA5C1C4CD18800413EF1 /* TagButton.swift in Sources */,
 				C4F7E88D1C4DF26300CA82CB /* CollectionViewCell.swift in Sources */,
+				C4FB5C691C5B733700D823E2 /* RippleView.swift in Sources */,
+				C4FB5C671C5B708F00D823E2 /* RippleEffect.swift in Sources */,
 				C4F7E8911C4DF28600CA82CB /* PortfolioCell.swift in Sources */,
 				C4F7E87F1C4DEE6500CA82CB /* UIViewController+MMDrawerController.m in Sources */,
 				C44CF9A01C4CCEAC00413EF1 /* HomeViewController.swift in Sources */,

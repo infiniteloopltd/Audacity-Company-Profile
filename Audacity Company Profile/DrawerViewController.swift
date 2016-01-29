@@ -95,11 +95,14 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        if(selectedItem != 0 ) {
+        if(selectedItem == 0 || selectedItem == drawerItem.count+1) {
+            
+            return
+        }
+      
             let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
             cellToDeSelect.contentView.backgroundColor = uicolorFromHex(0x21252A)
-        }
+        
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -180,15 +183,19 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        
+        if(indexPath.row == 0 || indexPath.row == drawerItem.count+1) {
+            
+            return
+        }
+        
         selectedItem = indexPath.row
         
-        if(indexPath.row != 0) {
+      
             let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-            //selectedCell.contentView.backgroundColor = UIColor.blackColor()
-            //selectedCell.backgroundColor = UIColor.blackColor()
             selectedCell.contentView.backgroundColor = UIColor.blackColor()
             selectedCell.backgroundColor = UIColor.blackColor()
-        }
+        
         
         
         
@@ -196,19 +203,7 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         switch(indexPath.row)
         {
             
-            /* case 0:
             
-            var centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-            
-            var centerNavController = UINavigationController(rootViewController: centerViewController)
-            
-            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
-            appDelegate.centerContainer!.centerViewController = centerNavController
-            //   appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-            
-            break;
-            */
             
         case 1:  // Home
             

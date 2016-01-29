@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OverViewController: UIViewController , UITableViewDelegate {
+class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecognizerDelegate{
 
     @IBOutlet var tableView: UITableView!
     
@@ -22,6 +22,12 @@ class OverViewController: UIViewController , UITableViewDelegate {
     var scrollToTop : Bool = false;
     var needScroll : Bool = true
     var tableOrginalHeight : CGFloat = 0.0
+    
+    
+    var tableViewOriginY: CGFloat!
+    var parallaxHeaderHeight: CGFloat!
+    
+    var totalScreenHeight : CGFloat!
     
     
     @IBOutlet var companyIcon: UIImageView!
@@ -55,6 +61,10 @@ class OverViewController: UIViewController , UITableViewDelegate {
     var itemTitle = ["BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION","BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION"]
     
     
+    @IBAction func mapFabBtn(sender: AnyObject) {
+        
+               
+    }
     
     
     /*  var cellContent = ["BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657"]
@@ -79,9 +89,14 @@ class OverViewController: UIViewController , UITableViewDelegate {
         companyName.alpha = 1.0
         companyMoto.alpha = 1.0
         
-        tableOrginalHeight = tableView.frame.size.height
+       
+       // headerView.frame.size.height = 508
         
-        // println("table orginal height \(tableOrginalHeight)")
+
+        
+        //print("TotalScreen height =\(totalScreenHeight)  from system=\(sizeRect.size.height) table orginal height=\(tableOrginalHeight)")
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -202,19 +217,8 @@ class OverViewController: UIViewController , UITableViewDelegate {
     
     
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
-        /* let translation = recognizer.translationInView(self.view)
-        if let view = recognizer.view {
-        view.center = CGPoint(x:view.center.x + translation.x,
-        y:view.center.y + translation.y)
-        }
-        recognizer.setTranslation(CGPointZero, inView: self.view)
-        */
         
-        
-        
-        
-        // println("tableViewHeight = \(tableView.frame.size.height)  tableViewContentSize= \(tableView.contentSize.height)  scrollstats=\(tableView.scrollEnabled)  needScroll =\(needScroll)")
-        
+       
         if recognizer.state == UIGestureRecognizerState.Ended {
             stopFlag = !stopFlag
             previousTranslation = 0
@@ -243,15 +247,10 @@ class OverViewController: UIViewController , UITableViewDelegate {
             
             
             
-            //println("origin = \(headerView.frame.origin.y)")
             if(scrollFire) {
                 if(scrollDirection) {
-                    let con =  Float(counterDown)
-                    var con2 = CGFloat(con)
                     
-                    
-                    //  headerView.center = CGPoint(x:headerView.center.x ,y:headerView.center.y + con2)
-                    var translate : CGFloat = 0
+                    //  Going down
                     
                     if(headerView.frame.origin.y < 0) {
                         
@@ -267,13 +266,12 @@ class OverViewController: UIViewController , UITableViewDelegate {
                         if ( distance > 0) {
                             distance = 0
                         }
-                        //println("distance = \(distance)")
                         headerView.frame.origin.y =   distance
                         parallaxImageView.frame.origin.y = -distance
                     }
                     
                     
-                    if(tableView.frame.origin.y<308) {
+                    if(tableView.frame.origin.y < tableViewOriginY ) {
                         var distance = previousTranslation - translation.y
                         
                         if( distance < 0 ) {
@@ -300,8 +298,8 @@ class OverViewController: UIViewController , UITableViewDelegate {
                         //distance = distance + 5
                         distance = tableView.frame.origin.y + distance
                         tableView.scrollEnabled = false
-                        if(distance > 308) {
-                            distance = 308
+                        if(distance > tableViewOriginY) {
+                            distance = tableViewOriginY
                             //tableView.scrollEnabled = true
                             needScroll = false
                         } else {
@@ -315,10 +313,10 @@ class OverViewController: UIViewController , UITableViewDelegate {
                         
                         tableView.frame.origin.y =   distance
                         
-                        var alphaRange = distance - 78
+                        var alphaRange = distance - parallaxHeaderHeight
                         
                         
-                        alphaRange =  ( alphaRange / 230 )
+                        alphaRange =  ( alphaRange / (tableViewOriginY - parallaxHeaderHeight) )
                         
                         hiddenContainer.alpha = 1 - alphaRange
                         companyIcon.alpha = alphaRange
@@ -333,10 +331,13 @@ class OverViewController: UIViewController , UITableViewDelegate {
                     
                     
                 } else {
-                    let con =  Float(counter)
-                    var con2 = CGFloat(con)
+                    // Going Up
+                    
+                   // let con =  Float(counter)
+                    //var con2 = CGFloat(con)
                     //headerView.center = CGPoint(x:headerView.center.x ,y:headerView.center.y + con2)
-                    if(headerView.frame.origin.y > -230) {
+                    let reverseScrollHeight: CGFloat = -(tableViewOriginY - parallaxHeaderHeight)
+                    if(headerView.frame.origin.y > reverseScrollHeight) {
                         
                         var distance = previousTranslation - translation.y
                         if( distance < 0 ) {
@@ -345,8 +346,8 @@ class OverViewController: UIViewController , UITableViewDelegate {
                         
                         distance = headerView.frame.origin.y - distance
                         
-                        if (distance < -230) {
-                            distance = -230
+                        if (distance < reverseScrollHeight) {
+                            distance = reverseScrollHeight
                         }
                         
                         
@@ -357,21 +358,21 @@ class OverViewController: UIViewController , UITableViewDelegate {
                         
                     }
                     
-                    if(tableView.frame.origin.y > 78) {
+                    if(tableView.frame.origin.y > parallaxHeaderHeight) {
                         
                         var distance = previousTranslation - translation.y
                         if( distance < 0 ) {
                             distance = distance * (-1)
                         }
                         
-                        // distance = distance + 5
-                        
                         
                         if( tableView.frame.size.height < tableView.contentSize.height) {
                             var tableHeight = tableView.frame.size.height + distance
                             
+                           
                             if(tableHeight > tableView.contentSize.height) {
                                 tableHeight = tableView.contentSize.height
+                             
                             }
                             
                             tableView.frame.size.height = tableHeight
@@ -382,10 +383,10 @@ class OverViewController: UIViewController , UITableViewDelegate {
                         
                         distance = tableView.frame.origin.y - distance
                         
-                        //tableView.scrollEnabled = false
+                
                         tableView.scrollEnabled = false
-                        if(distance < 78) {
-                            distance = 78
+                        if(distance < parallaxHeaderHeight) {
+                            distance = parallaxHeaderHeight
                             
                             if(needScroll) {
                                 tableView.scrollEnabled = true
@@ -396,11 +397,11 @@ class OverViewController: UIViewController , UITableViewDelegate {
                             
                         }
                         
-                        var alphaRange = 308 - distance
+                        var alphaRange = tableViewOriginY - distance
                         
                         
                         
-                        alphaRange = alphaRange / 230
+                        alphaRange = alphaRange / (tableViewOriginY - parallaxHeaderHeight)
                         hiddenContainer.alpha =  alphaRange
                         companyIcon.alpha = (1 - alphaRange)
                         companyName.alpha = (1 - alphaRange)
@@ -408,7 +409,6 @@ class OverViewController: UIViewController , UITableViewDelegate {
                         
                         tableView.frame.origin.y =  distance
                         
-                        //  println("table origin = \(tableView.frame.origin.y) tableheight=\(tableView.frame.size.height)")
                         
                     } else {
                         //  println("Now in top")
@@ -454,15 +454,38 @@ class OverViewController: UIViewController , UITableViewDelegate {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        
+
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
     
+    override func viewDidLayoutSubviews() {
+       // print("TotalScreen height =\(totalScreenHeight)  table orginal height=\(tableView.frame.size.height)")
+        tableOrginalHeight = tableView.frame.size.height
+    
+       
+        tableViewOriginY = tableView.frame.origin.y
+        parallaxHeaderHeight =  78
+        
+        //totalScreenHeight = headerView.frame.size.height + tableOrginalHeight
+        
+        /*var differ = tableOrginalHeight - headerView.frame.size.height
+        differ = differ / 2
+        print("Previous header size = \(headerView.frame.size.height) table size =\(tableOrginalHeight)")
+        headerView.frame.size.height = headerView.frame.size.height + differ
+        
+        tableView.frame.size.height = tableView.frame.size.height - differ
+        tableView.frame.origin.y = tableView.frame.origin.y + differ
+        print("After header size = \(headerView.frame.size.height) table size =\(tableView.frame.size.height)")
+        */
+       // headerView.frame = CGRectMake(0 , 0, self.headerView.frame.width, self.headerView.frame.height + differ)
+        
+    }
     
     func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
-        print("Rocognized");
         
         if( gestureRecognizer .isKindOfClass(UIPanGestureRecognizer)) {
             let uiPangesture : UIPanGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
