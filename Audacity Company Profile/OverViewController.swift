@@ -462,7 +462,7 @@ class OverViewController: UIViewController , UITableViewDelegate {
     
     
     func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
-        
+        print("Rocognized");
         
         if( gestureRecognizer .isKindOfClass(UIPanGestureRecognizer)) {
             let uiPangesture : UIPanGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
