@@ -104,6 +104,7 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
         
         //print("TotalScreen height =\(totalScreenHeight)  from system=\(sizeRect.size.height) table orginal height=\(tableOrginalHeight)")
          appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
         
     }
     

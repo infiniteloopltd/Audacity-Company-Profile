@@ -28,6 +28,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
     
     var fabButtonHide: Bool = false;
     var fabScale:CGFloat = 1;
+     var screenWidth:CGFloat!
     
     @IBOutlet var getStartedPage: UIView!
     @IBAction func filterFabAction(sender: AnyObject) {
@@ -93,7 +94,10 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
         
         getStartedPage.hidden = true;
          appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-    }
+        let sizeRect:CGRect = UIScreen.mainScreen().applicationFrame
+         screenWidth    = sizeRect.size.width
+        UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
+            }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -127,18 +131,18 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        
+        let  cell: PortfolioItemCell
         if tableView == self.tableView  {
             
-            let  cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)  as! PortfolioItemCell
+            if(screenWidth > 700) {
+              cell = tableView.dequeueReusableCellWithIdentifier("CellIPad", forIndexPath: indexPath)  as! PortfolioItemCell
+            } else {
+               cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)  as! PortfolioItemCell  
+            }
             
             
             
-            // cell.label.text = cellContent[indexPath.row]
-            // cell.label.attributedText = attributedString
-            // cell.itemName.text = cellContent[indexPath.row]
-            //  cell.itemImage.setImage(UIImage(named: cellImage[indexPath.row]), forState: UIControlState.Normal)
-            //cell.label.hidden = true
+           
             
             cell.itemImage.image = UIImage(named: portfolioImage[indexPath.row])
             cell.itemName.text = portfolioName[indexPath.row]
@@ -168,9 +172,14 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
             cell2.itemImage.setImage(UIImage(named: cellImage[indexPath.row]), forState: UIControlState.Normal)
             //cell.label.hidden = true
             //cell2.backgroundColor = uicolorFromHex(0x21252A)
+           
+            
             let backgroundView = UIView()
-           backgroundView.backgroundColor = UIColor.clearColor()
+            backgroundView.backgroundColor = UIColor.clearColor()
             cell2.selectedBackgroundView = backgroundView
+
+            
+            
             return cell2
             
             
@@ -280,7 +289,13 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
         if tableView == self.tableView {
+            
+            if(screenWidth > 700) {
+                return 350
+            } else {
+            
             return 214
+            }
         } else {
             return 50
         }
@@ -387,7 +402,9 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
             tableViewFilter.scrollEnabled = false
         }
         
-        tableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
+        //tableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
+        
+       
         
     }
     
@@ -396,6 +413,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
         UIView.animateWithDuration(0.50, animations: {
             cell.layer.transform = CATransform3DMakeScale(1,1,1)
         })
+        tableViewFilter.backgroundColor = UIColor.clearColor()
         
         
     }

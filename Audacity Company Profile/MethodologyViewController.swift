@@ -96,6 +96,7 @@ class MethodologyViewController: UIViewController , UITableViewDelegate , UIGest
         
        
         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
     }
     
     override func didReceiveMemoryWarning() {

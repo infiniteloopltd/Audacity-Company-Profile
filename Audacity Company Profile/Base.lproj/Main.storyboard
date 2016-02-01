@@ -187,7 +187,7 @@
                                             <constraint firstItem="gl6-YO-4Ue" firstAttribute="top" secondItem="XX6-Tu-aQP" secondAttribute="top" constant="12" id="PTl-V0-wZ6"/>
                                             <constraint firstItem="Bta-YX-rSc" firstAttribute="top" secondItem="OAd-MT-Tax" secondAttribute="bottom" constant="5" id="etr-A1-7b1"/>
                                             <constraint firstItem="bIK-ZM-uSv" firstAttribute="leading" secondItem="XX6-Tu-aQP" secondAttribute="leading" id="gZt-pK-OOa"/>
-                                            <constraint firstItem="Bta-YX-rSc" firstAttribute="centerX" secondItem="XX6-Tu-aQP" secondAttribute="centerX" id="jKZ-Vl-0SI"/>
+                                            <constraint firstItem="Bta-YX-rSc" firstAttribute="centerX" secondItem="XX6-Tu-aQP" secondAttribute="centerX" constant="-1" id="jKZ-Vl-0SI"/>
                                             <constraint firstAttribute="trailing" secondItem="fjZ-3c-weQ" secondAttribute="trailing" constant="21" id="nfd-a9-kTR"/>
                                             <constraint firstAttribute="bottom" secondItem="bIK-ZM-uSv" secondAttribute="bottom" id="o0e-bO-dcw"/>
                                             <constraint firstItem="fjZ-3c-weQ" firstAttribute="top" secondItem="gl6-YO-4Ue" secondAttribute="bottom" constant="5" id="pbM-a4-azZ"/>
@@ -231,7 +231,7 @@
                                     <action selector="drawerToggleAction:" destination="9Vt-Zl-Tzk" eventType="touchUpInside" id="rWp-Yr-u49"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zPr-5G-cTS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zPr-5G-cTS">
                                 <rect key="frame" x="0.0" y="314" width="600" height="286"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.9835175746" blue="0.1610116727" alpha="1" colorSpace="calibratedRGB"/>
@@ -287,14 +287,22 @@ TIN : 442670895657</string>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-Mi-BJN">
-                                <rect key="frame" x="528" y="527" width="52" height="53"/>
+                                <rect key="frame" x="528" y="527" width="52" height="52"/>
+                                <color key="backgroundColor" red="0.0" green="0.68627450980392157" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="52" id="UVE-L9-Jdd"/>
-                                    <constraint firstAttribute="height" constant="53" id="ku5-01-GUH"/>
+                                    <constraint firstAttribute="height" constant="52" id="ku5-01-GUH"/>
                                 </constraints>
-                                <state key="normal" image="fab_map.png">
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="map.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="mapFabBtn:" destination="9Vt-Zl-Tzk" eventType="touchUpInside" id="5Uh-LN-1mf"/>
                                     <segue destination="y0i-9N-xTg" kind="show" id="D1M-fZ-Sd0"/>
@@ -307,7 +315,7 @@ TIN : 442670895657</string>
                             <constraint firstItem="zPr-5G-cTS" firstAttribute="leading" secondItem="u9a-0U-1ot" secondAttribute="leadingMargin" constant="-20" id="3Yz-Vv-jzd"/>
                             <constraint firstItem="Zkg-Mi-BJN" firstAttribute="trailing" secondItem="u9a-0U-1ot" secondAttribute="trailingMargin" id="4C0-WQ-TJP"/>
                             <constraint firstItem="HzW-jR-dgk" firstAttribute="top" secondItem="u9a-0U-1ot" secondAttribute="topMargin" id="6NG-ez-42g"/>
-                            <constraint firstItem="gav-8Y-rC7" firstAttribute="top" secondItem="Zkg-Mi-BJN" secondAttribute="bottom" constant="20" id="7df-ec-v9r"/>
+                            <constraint firstItem="gav-8Y-rC7" firstAttribute="top" secondItem="Zkg-Mi-BJN" secondAttribute="bottom" constant="21" id="7df-ec-v9r"/>
                             <constraint firstItem="zPr-5G-cTS" firstAttribute="top" secondItem="HzW-jR-dgk" secondAttribute="bottom" constant="8" id="8IO-cb-W0G"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HzW-jR-dgk" secondAttribute="trailing" constant="-20" id="aQa-hM-QSz"/>
                             <constraint firstItem="HzW-jR-dgk" firstAttribute="leading" secondItem="u9a-0U-1ot" secondAttribute="leadingMargin" constant="-20" id="l7O-dg-7UT"/>
@@ -348,7 +356,7 @@ TIN : 442670895657</string>
                         <viewControllerLayoutGuide type="bottom" id="Oba-ut-VOJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="m0x-2d-KrF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGY-po-gTa">
@@ -375,8 +383,8 @@ TIN : 442670895657</string>
                                     <constraint firstAttribute="height" constant="84" id="iww-MQ-hGP"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="214" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4MQ-MK-gEN">
-                                <rect key="frame" x="0.0" y="85" width="600" height="515"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="231" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4MQ-MK-gEN">
+                                <rect key="frame" x="0.0" y="85" width="600" height="615"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -457,6 +465,82 @@ TIN : 442670895657</string>
                                             <outlet property="itemType" destination="zeD-ck-dKQ" id="UEL-Ug-QDf"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIPad" rowHeight="350" id="6r2-iL-gh9" customClass="PortfolioItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="236" width="600" height="350"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6r2-iL-gh9" id="HmY-r8-R46">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzp-DS-k6n" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="13" y="6" width="574" height="336"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_portfolio_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fsa-iV-Vcn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="574" height="280"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="280" id="frk-X7-GfC"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amar Phonebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0o-TE-cbp">
+                                                            <rect key="frame" x="8" y="288" width="520" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="4cI-L1-FFm"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android, iOS, UI/UX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-rG-UIr">
+                                                            <rect key="frame" x="8" y="307" width="520" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="N6j-7d-FyK"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-Tt-4kq">
+                                                            <rect key="frame" x="536" y="288" width="30" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="32" id="c00-pI-RYc"/>
+                                                                <constraint firstAttribute="width" constant="30" id="gHE-dQ-GHO"/>
+                                                            </constraints>
+                                                            <state key="normal" image="ic_heart_outline_grey.png">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Gjt-rG-UIr" firstAttribute="top" secondItem="fsa-iV-Vcn" secondAttribute="bottom" constant="27" id="DFg-Lt-UXN"/>
+                                                        <constraint firstItem="gr1-Tt-4kq" firstAttribute="top" secondItem="fsa-iV-Vcn" secondAttribute="bottom" constant="8" id="Eah-Gs-deN"/>
+                                                        <constraint firstAttribute="height" constant="336" id="IJy-qF-NUn"/>
+                                                        <constraint firstItem="Gjt-rG-UIr" firstAttribute="leading" secondItem="nzp-DS-k6n" secondAttribute="leading" constant="8" id="Ig4-sp-jUQ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gr1-Tt-4kq" secondAttribute="trailing" constant="8" id="MQE-Ga-FUu"/>
+                                                        <constraint firstItem="gr1-Tt-4kq" firstAttribute="leading" secondItem="Gjt-rG-UIr" secondAttribute="trailing" constant="8" id="QF8-7H-8V2"/>
+                                                        <constraint firstItem="L0o-TE-cbp" firstAttribute="top" secondItem="fsa-iV-Vcn" secondAttribute="bottom" constant="8" id="QOb-4D-gjn"/>
+                                                        <constraint firstItem="gr1-Tt-4kq" firstAttribute="leading" secondItem="L0o-TE-cbp" secondAttribute="trailing" constant="8" id="XGT-Nc-RQz"/>
+                                                        <constraint firstItem="fsa-iV-Vcn" firstAttribute="leading" secondItem="nzp-DS-k6n" secondAttribute="leading" id="dX4-QZ-jyF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fsa-iV-Vcn" secondAttribute="trailing" id="f24-lP-MWr"/>
+                                                        <constraint firstItem="fsa-iV-Vcn" firstAttribute="top" secondItem="nzp-DS-k6n" secondAttribute="top" id="hba-lC-cKx"/>
+                                                        <constraint firstItem="L0o-TE-cbp" firstAttribute="leading" secondItem="nzp-DS-k6n" secondAttribute="leading" constant="8" id="rJC-7m-5rc"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nzp-DS-k6n" firstAttribute="leading" secondItem="HmY-r8-R46" secondAttribute="leadingMargin" constant="5" id="6oi-7I-QPE"/>
+                                                <constraint firstItem="nzp-DS-k6n" firstAttribute="top" secondItem="HmY-r8-R46" secondAttribute="topMargin" constant="-2" id="BXc-cK-g20"/>
+                                                <constraint firstItem="nzp-DS-k6n" firstAttribute="trailing" secondItem="HmY-r8-R46" secondAttribute="trailingMargin" constant="-5" id="l7l-pa-cys"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="itemImage" destination="fsa-iV-Vcn" id="J0H-zw-og6"/>
+                                            <outlet property="itemLike" destination="gr1-Tt-4kq" id="VzG-bo-WEY"/>
+                                            <outlet property="itemName" destination="L0o-TE-cbp" id="Dem-6g-duv"/>
+                                            <outlet property="itemType" destination="Gjt-rG-UIr" id="cLt-kF-Sd0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="wEY-6C-4Ut" id="o1V-fB-FAQ"/>
@@ -464,10 +548,10 @@ TIN : 442670895657</string>
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOl-dX-3qL">
-                                <rect key="frame" x="0.0" y="85" width="600" height="515"/>
+                                <rect key="frame" x="0.0" y="85" width="600" height="615"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can start work with us by click here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-nK-t4Z">
-                                        <rect key="frame" x="8" y="205" width="584" height="21"/>
+                                        <rect key="frame" x="8" y="255" width="584" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="7Uu-Ep-SxB"/>
                                         </constraints>
@@ -476,7 +560,7 @@ TIN : 442670895657</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXG-s4-NGX">
-                                        <rect key="frame" x="8" y="176" width="584" height="21"/>
+                                        <rect key="frame" x="8" y="226" width="584" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="gLe-E4-pVY"/>
                                         </constraints>
@@ -485,7 +569,7 @@ TIN : 442670895657</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVR-6v-6GU">
-                                        <rect key="frame" x="232" y="237" width="136" height="41"/>
+                                        <rect key="frame" x="232" y="287" width="136" height="41"/>
                                         <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="1xe-UG-SpZ"/>
@@ -514,11 +598,11 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6Z-Ww-OQg">
-                                <rect key="frame" x="0.0" y="85" width="600" height="515"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="85" width="600" height="615"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzl-Ha-yhQ">
-                                <rect key="frame" x="542" y="540" width="50" height="50"/>
+                                <rect key="frame" x="542" y="640" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2nk-cF-H3b"/>
@@ -539,13 +623,16 @@ TIN : 442670895657</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-tg-cW6">
-                                <rect key="frame" x="20" y="90" width="572" height="432"/>
+                                <rect key="frame" x="20" y="90" width="572" height="532"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="50" id="sFU-S0-5l0" customClass="FilterItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="572" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sFU-S0-5l0" id="kbg-f2-EzY">
+                                        <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sFU-S0-5l0" id="kbg-f2-EzY">
                                             <rect key="frame" x="0.0" y="0.0" width="572" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -553,8 +640,8 @@ TIN : 442670895657</string>
                                                     <rect key="frame" x="529" y="5" width="40" height="40"/>
                                                     <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="Dhd-CT-lhP"/>
-                                                        <constraint firstAttribute="width" constant="40" id="QtI-1q-VBV"/>
+                                                        <constraint firstAttribute="height" constant="40" id="VCl-dK-93U"/>
+                                                        <constraint firstAttribute="width" constant="40" id="t1O-3J-rXm"/>
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                                     <state key="normal" image="ic_fab_all.png">
@@ -571,7 +658,7 @@ TIN : 442670895657</string>
                                                     <rect key="frame" x="8" y="19" width="498" height="21"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="V4A-SN-D3V"/>
+                                                        <constraint firstAttribute="height" constant="21" id="0Ql-tG-AgH"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -579,15 +666,17 @@ TIN : 442670895657</string>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="MSQ-iO-kvS" firstAttribute="top" secondItem="kbg-f2-EzY" secondAttribute="topMargin" constant="11" id="8FK-VC-14X"/>
-                                                <constraint firstItem="eeh-ob-3uK" firstAttribute="leading" secondItem="MSQ-iO-kvS" secondAttribute="trailing" constant="23" id="9HJ-sI-ucV"/>
-                                                <constraint firstItem="MSQ-iO-kvS" firstAttribute="leading" secondItem="kbg-f2-EzY" secondAttribute="leadingMargin" id="FrE-wF-V4S"/>
-                                                <constraint firstItem="eeh-ob-3uK" firstAttribute="top" secondItem="kbg-f2-EzY" secondAttribute="topMargin" constant="-3" id="biF-gX-n6l"/>
-                                                <constraint firstItem="eeh-ob-3uK" firstAttribute="trailing" secondItem="kbg-f2-EzY" secondAttribute="trailingMargin" constant="5" id="gs2-Ph-D79"/>
+                                                <constraint firstItem="eeh-ob-3uK" firstAttribute="top" secondItem="kbg-f2-EzY" secondAttribute="topMargin" constant="-3" id="AO1-0Q-CAd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eeh-ob-3uK" secondAttribute="trailing" constant="-5" id="Gcp-tV-C0Z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MSQ-iO-kvS" secondAttribute="bottom" constant="2" id="Gpg-sR-M5k"/>
+                                                <constraint firstItem="MSQ-iO-kvS" firstAttribute="leading" secondItem="kbg-f2-EzY" secondAttribute="leadingMargin" id="VEj-hQ-ANm"/>
+                                                <constraint firstItem="eeh-ob-3uK" firstAttribute="leading" secondItem="MSQ-iO-kvS" secondAttribute="trailing" constant="23" id="VV1-wy-3bO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="itemImage" destination="eeh-ob-3uK" id="2MB-O2-l1k"/>
                                             <outlet property="itemName" destination="MSQ-iO-kvS" id="6ic-U4-GGH"/>
@@ -625,6 +714,8 @@ TIN : 442670895657</string>
                             <constraint firstItem="pGY-po-gTa" firstAttribute="top" secondItem="m0x-2d-KrF" secondAttribute="top" id="zLq-WH-EmW"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="700"/>
                     <connections>
                         <outlet property="blackSheet" destination="R6Z-Ww-OQg" id="5Zd-6I-WW6"/>
                         <outlet property="fabBtn" destination="Yzl-Ha-yhQ" id="bpv-17-cAA"/>
@@ -822,6 +913,7 @@ TIN : 442670895657</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kpR-X9-2PZ">
                                 <rect key="frame" x="0.0" y="83" width="600" height="517"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -1008,6 +1100,7 @@ TIN : 442670895657</string>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="RVE-x8-fzJ" firstAttribute="top" secondItem="MEL-tL-Pxy" secondAttribute="topMargin" constant="-2" id="8Jy-I2-ScI"/>
                                                 <constraint firstItem="RVE-x8-fzJ" firstAttribute="leading" secondItem="MEL-tL-Pxy" secondAttribute="leadingMargin" constant="5" id="F7w-2e-r9a"/>
@@ -1016,6 +1109,7 @@ TIN : 442670895657</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="arrowImageView" destination="Usq-cE-VNA" id="ffP-TE-vs3"/>
                                             <outlet property="clientCountry" destination="tmk-wC-xYP" id="CXg-RV-kXY"/>
@@ -1096,6 +1190,7 @@ TIN : 442670895657</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="143" id="um7-07-5qI" customClass="TestimonialCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="143"/>
@@ -1178,6 +1273,7 @@ TIN : 442670895657</string>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="XHa-JL-wD6" firstAttribute="trailing" secondItem="gU5-HM-KAz" secondAttribute="trailingMargin" constant="-5" id="62w-OF-gye"/>
                                                 <constraint firstItem="XHa-JL-wD6" firstAttribute="leading" secondItem="gU5-HM-KAz" secondAttribute="leadingMargin" constant="5" id="J4K-kw-VaK"/>
@@ -1186,6 +1282,7 @@ TIN : 442670895657</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="clientImage" destination="pHH-fG-SUM" id="w47-hh-FrB"/>
                                             <outlet property="clientName" destination="Fst-7J-599" id="vgR-WP-ow9"/>
@@ -1308,7 +1405,7 @@ TIN : 442670895657</string>
                                             <action selector="navigationDrawerIconAction:" destination="npH-fj-sYt" eventType="touchUpInside" id="fL6-EQ-NjK"/>
                                         </connections>
                                     </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h46-8p-Ym2">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h46-8p-Ym2">
                                         <rect key="frame" x="0.0" y="308" width="600" height="294"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="sectionIndexBackgroundColor" red="1" green="0.9835175746" blue="0.1610116727" alpha="1" colorSpace="calibratedRGB"/>
@@ -2099,7 +2196,8 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THf-vp-k5V">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <state key="normal" image="back_icon.png">
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" image="back_btn.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -2145,8 +2243,7 @@ TIN : 442670895657</string>
     </scenes>
     <resources>
         <image name="app_inside_logo.png" width="865" height="490"/>
-        <image name="back_icon.png" width="420" height="420"/>
-        <image name="fab_map.png" width="128" height="128"/>
+        <image name="back_btn.png" width="48" height="48"/>
         <image name="ic_client_extend_arrow.png" width="32" height="32"/>
         <image name="ic_fab_all.png" width="48" height="48"/>
         <image name="ic_fab_filter.png" width="48" height="48"/>
@@ -2169,5 +2266,6 @@ TIN : 442670895657</string>
         <image name="img_nav_header.jpg" width="400" height="226"/>
         <image name="img_overview_parallax.jpg" width="1080" height="1118"/>
         <image name="img_portfolio_1.jpg" width="655" height="327"/>
+        <image name="map.png" width="48" height="48"/>
     </resources>
 </document>

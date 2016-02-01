@@ -109,6 +109,8 @@
 		C44CFA701C4CDFD100413EF1 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */; };
 		C44CFA721C4CDFDE00413EF1 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */; };
 		C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */; };
+		C4EB6AF51C5F844800747B7F /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF31C5F844800747B7F /* back_btn.png */; };
+		C4EB6AF61C5F844800747B7F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF41C5F844800747B7F /* map.png */; };
 		C4F7E87C1C4DEE6500CA82CB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */; };
 		C4F7E87D1C4DEE6500CA82CB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8741C4DEE6500CA82CB /* MMDrawerController.m */; };
 		C4F7E87E1C4DEE6500CA82CB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8771C4DEE6500CA82CB /* MMDrawerVisualState.m */; };
@@ -233,6 +235,8 @@
 		C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		C4EB6AF31C5F844800747B7F /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
+		C4EB6AF41C5F844800747B7F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		C4F7E8701C4DEE6500CA82CB /* Audacity Company Profile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audacity Company Profile-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4F7E8711C4DEE6500CA82CB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
@@ -354,6 +358,8 @@
 				C44CF9CC1C4CD16800413EF1 /* img_client_7.png */,
 				C44CF9CD1C4CD16800413EF1 /* img_portfolio_1.jpg */,
 				C44CF9CE1C4CD16800413EF1 /* img_portfolio_2.jpg */,
+				C4EB6AF31C5F844800747B7F /* back_btn.png */,
+				C4EB6AF41C5F844800747B7F /* map.png */,
 				C44CF9CF1C4CD16800413EF1 /* ic_heart_outline_grey.png */,
 				C44CF9D01C4CD16800413EF1 /* ic_heart_outline_white.png */,
 				C44CF9D11C4CD16800413EF1 /* ic_heart_red.png */,
@@ -536,6 +542,7 @@
 				C44CFA3A1C4CD16800413EF1 /* ic_member_siddiq.png in Resources */,
 				C44CFA201C4CD16800413EF1 /* img_portfolio_1.jpg in Resources */,
 				C44CFA291C4CD16800413EF1 /* img_portfolio_6.jpg in Resources */,
+				C4EB6AF61C5F844800747B7F /* map.png in Resources */,
 				C44CF9A81C4CCEAC00413EF1 /* LaunchScreen.storyboard in Resources */,
 				C44CFA1A1C4CD16800413EF1 /* img_client_2.jpg in Resources */,
 				C44CF9A51C4CCEAC00413EF1 /* Assets.xcassets in Resources */,
@@ -548,6 +555,7 @@
 				C44CFA171C4CD16800413EF1 /* ic_fab_ui_ux.png in Resources */,
 				C44CFA181C4CD16800413EF1 /* ic_fab_wearable.png in Resources */,
 				C44CFA311C4CD16800413EF1 /* ic_methodology_3.png in Resources */,
+				C4EB6AF51C5F844800747B7F /* back_btn.png in Resources */,
 				C44CFA1C1C4CD16800413EF1 /* img_client_4.jpg in Resources */,
 				C44CFA511C4CD16800413EF1 /* ic_nav_overview.png in Resources */,
 				C44CFA0D1C4CD16800413EF1 /* ic_client_extend_arrow.png in Resources */,

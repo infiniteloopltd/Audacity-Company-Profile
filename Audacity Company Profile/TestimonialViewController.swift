@@ -44,6 +44,7 @@ class TestimonialViewController: UIViewController , UITableViewDelegate {
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
          appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
     }
     
     override func didReceiveMemoryWarning() {

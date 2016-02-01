@@ -62,6 +62,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         // ClientViewController.observerStatus = true;
          appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
         
     }
     
