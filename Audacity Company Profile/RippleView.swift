@@ -20,13 +20,13 @@ class RippleView: UIView {
     
     
     
-    @IBInspectable public var ripplePercent: Float = 0.8 {
+    @IBInspectable  var ripplePercent: Float = 0.8 {
         didSet {
             setupRippleView()
         }
     }
     
-    @IBInspectable public var rippleColor: UIColor = UIColor(white: 0.95, alpha: 1) {
+    @IBInspectable  var rippleColor: UIColor = UIColor(white: 0.95, alpha: 1) {
         didSet {
             rippleView.backgroundColor = uicolorFromHex(0xdddddd,alpha: 0.5)
             
@@ -36,23 +36,23 @@ class RippleView: UIView {
     
     
     
-    @IBInspectable public var rippleBackgroundColor: UIColor = UIColor(white: 0.95, alpha: 1) {
+    @IBInspectable  var rippleBackgroundColor: UIColor = UIColor(white: 0.95, alpha: 1) {
         didSet {
             rippleBackgroundView.backgroundColor = rippleBackgroundColor
         }
     }
     
-    @IBInspectable public var buttonCornerRadius: Float = 0 {
+    @IBInspectable  var buttonCornerRadius: Float = 0 {
         didSet{
             layer.cornerRadius = CGFloat(buttonCornerRadius)
         }
     }
     
-    @IBInspectable public var rippleOverBounds: Bool = false
-    @IBInspectable public var shadowRippleRadius: Float = 1
-    @IBInspectable public var shadowRippleEnable: Bool = true
-    @IBInspectable public var trackTouchLocation: Bool = false
-    @IBInspectable public var touchUpAnimationTime: Double = 0.6
+    @IBInspectable  var rippleOverBounds: Bool = false
+    @IBInspectable  var shadowRippleRadius: Float = 1
+    @IBInspectable  var shadowRippleEnable: Bool = true
+    @IBInspectable  var trackTouchLocation: Bool = false
+    @IBInspectable  var touchUpAnimationTime: Double = 0.6
     
     let rippleView = UIView()
     let rippleBackgroundView = UIView()
@@ -78,12 +78,12 @@ class RippleView: UIView {
         self.init(frame: CGRect.zero)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required  init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
     
-    public override init(frame: CGRect) {
+     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
@@ -214,7 +214,7 @@ class RippleView: UIView {
             }, completion: nil)
     }
     
-    override public func layoutSubviews() {
+    override  func layoutSubviews() {
         super.layoutSubviews()
         
         setupRippleView()

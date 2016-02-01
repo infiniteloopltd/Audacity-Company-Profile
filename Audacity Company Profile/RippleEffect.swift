@@ -10,35 +10,35 @@ import UIKit
 
 class RippleEffect: UIButton {
     
-    @IBInspectable public var ripplePercent: Float = 0.8 {
+    @IBInspectable  var ripplePercent: Float = 0.8 {
         didSet {
             setupRippleView()
         }
     }
     
-    @IBInspectable public var rippleColor: UIColor = UIColor(white: 0.9, alpha: 1) {
+    @IBInspectable  var rippleColor: UIColor = UIColor(white: 0.9, alpha: 1) {
         didSet {
             rippleView.backgroundColor = rippleColor
         }
     }
     
-    @IBInspectable public var rippleBackgroundColor: UIColor = UIColor(white: 0.95, alpha: 1) {
+    @IBInspectable  var rippleBackgroundColor: UIColor = UIColor(white: 0.95, alpha: 1) {
         didSet {
             rippleBackgroundView.backgroundColor = rippleBackgroundColor
         }
     }
     
-    @IBInspectable public var buttonCornerRadius: Float = 0 {
+    @IBInspectable  var buttonCornerRadius: Float = 0 {
         didSet{
             layer.cornerRadius = CGFloat(buttonCornerRadius)
         }
     }
     
-    @IBInspectable public var rippleOverBounds: Bool = false
-    @IBInspectable public var shadowRippleRadius: Float = 1
-    @IBInspectable public var shadowRippleEnable: Bool = true
-    @IBInspectable public var trackTouchLocation: Bool = false
-    @IBInspectable public var touchUpAnimationTime: Double = 0.6
+    @IBInspectable  var rippleOverBounds: Bool = false
+    @IBInspectable  var shadowRippleRadius: Float = 1
+    @IBInspectable  var shadowRippleEnable: Bool = true
+    @IBInspectable  var trackTouchLocation: Bool = false
+    @IBInspectable  var touchUpAnimationTime: Double = 0.6
     
     let rippleView = UIView()
     let rippleBackgroundView = UIView()
@@ -64,12 +64,12 @@ class RippleEffect: UIButton {
         self.init(frame: CGRect.zero)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required  init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
     
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
@@ -99,7 +99,7 @@ class RippleEffect: UIButton {
         rippleView.layer.cornerRadius = corner
     }
     
-    override public func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
+    override  func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
         if trackTouchLocation {
             touchCenterLocation = touch.locationInView(self)
         } else {
@@ -139,12 +139,12 @@ class RippleEffect: UIButton {
         return super.beginTrackingWithTouch(touch, withEvent: event)
     }
     
-    override public func cancelTrackingWithEvent(event: UIEvent?) {
+    override  func cancelTrackingWithEvent(event: UIEvent?) {
         super.cancelTrackingWithEvent(event)
         animateToNormal()
     }
     
-    override public func endTrackingWithTouch(touch: UITouch?, withEvent event: UIEvent?) {
+    override  func endTrackingWithTouch(touch: UITouch?, withEvent event: UIEvent?) {
         super.endTrackingWithTouch(touch, withEvent: event)
         
         animateToNormal()
@@ -181,7 +181,7 @@ class RippleEffect: UIButton {
             }, completion: nil)
     }
     
-    override public func layoutSubviews() {
+    override  func layoutSubviews() {
         super.layoutSubviews()
         
         setupRippleView()

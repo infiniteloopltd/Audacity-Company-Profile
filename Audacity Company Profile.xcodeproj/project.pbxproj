@@ -111,6 +111,16 @@
 		C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */; };
 		C4EB6AF51C5F844800747B7F /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF31C5F844800747B7F /* back_btn.png */; };
 		C4EB6AF61C5F844800747B7F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF41C5F844800747B7F /* map.png */; };
+		C4EB6B011C5F889A00747B7F /* client in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF81C5F889A00747B7F /* client */; };
+		C4EB6B021C5F889A00747B7F /* faq in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF91C5F889A00747B7F /* faq */; };
+		C4EB6B031C5F889A00747B7F /* filter in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFA1C5F889A00747B7F /* filter */; };
+		C4EB6B041C5F889A00747B7F /* home in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFB1C5F889A00747B7F /* home */; };
+		C4EB6B051C5F889A00747B7F /* methodology in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFC1C5F889A00747B7F /* methodology */; };
+		C4EB6B061C5F889A00747B7F /* overview in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFD1C5F889A00747B7F /* overview */; };
+		C4EB6B071C5F889A00747B7F /* portfolio in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFE1C5F889A00747B7F /* portfolio */; };
+		C4EB6B081C5F889A00747B7F /* team in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFF1C5F889A00747B7F /* team */; };
+		C4EB6B091C5F889A00747B7F /* testimonial in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6B001C5F889A00747B7F /* testimonial */; };
+		C4EB6B0B1C5F897100747B7F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6B0A1C5F897100747B7F /* icon.png */; };
 		C4F7E87C1C4DEE6500CA82CB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */; };
 		C4F7E87D1C4DEE6500CA82CB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8741C4DEE6500CA82CB /* MMDrawerController.m */; };
 		C4F7E87E1C4DEE6500CA82CB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8771C4DEE6500CA82CB /* MMDrawerVisualState.m */; };
@@ -237,6 +247,16 @@
 		C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C4EB6AF31C5F844800747B7F /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
 		C4EB6AF41C5F844800747B7F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		C4EB6AF81C5F889A00747B7F /* client */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client; sourceTree = "<group>"; };
+		C4EB6AF91C5F889A00747B7F /* faq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = faq; sourceTree = "<group>"; };
+		C4EB6AFA1C5F889A00747B7F /* filter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = filter; sourceTree = "<group>"; };
+		C4EB6AFB1C5F889A00747B7F /* home */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = home; sourceTree = "<group>"; };
+		C4EB6AFC1C5F889A00747B7F /* methodology */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = methodology; sourceTree = "<group>"; };
+		C4EB6AFD1C5F889A00747B7F /* overview */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overview; sourceTree = "<group>"; };
+		C4EB6AFE1C5F889A00747B7F /* portfolio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = portfolio; sourceTree = "<group>"; };
+		C4EB6AFF1C5F889A00747B7F /* team */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = team; sourceTree = "<group>"; };
+		C4EB6B001C5F889A00747B7F /* testimonial */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testimonial; sourceTree = "<group>"; };
+		C4EB6B0A1C5F897100747B7F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C4F7E8701C4DEE6500CA82CB /* Audacity Company Profile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audacity Company Profile-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4F7E8711C4DEE6500CA82CB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
@@ -294,6 +314,7 @@
 		C44CF99C1C4CCEAC00413EF1 /* Audacity Company Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C4EB6AF71C5F886800747B7F /* JsonData */,
 				C4F7E86F1C4DEE4200CA82CB /* MySideMenu */,
 				C44CF9B21C4CCEE400413EF1 /* CustomComponent */,
 				C44CF9B11C4CCED700413EF1 /* CustomTableCell */,
@@ -333,6 +354,7 @@
 				C44CF9B31C4CD16800413EF1 /* img_home_1.jpg */,
 				C44CF9B41C4CD16800413EF1 /* img_home_2.jpg */,
 				C44CF9B51C4CD16800413EF1 /* back_icon.png */,
+				C4EB6B0A1C5F897100747B7F /* icon.png */,
 				C44CF9B61C4CD16800413EF1 /* ic_social_fb.png */,
 				C44CF9B71C4CD16800413EF1 /* ic_overview_infrastructure.png */,
 				C44CF9B81C4CD16800413EF1 /* ic_overview_location.png */,
@@ -449,6 +471,22 @@
 			name = CustomComponent;
 			sourceTree = "<group>";
 		};
+		C4EB6AF71C5F886800747B7F /* JsonData */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB6AF81C5F889A00747B7F /* client */,
+				C4EB6AF91C5F889A00747B7F /* faq */,
+				C4EB6AFA1C5F889A00747B7F /* filter */,
+				C4EB6AFB1C5F889A00747B7F /* home */,
+				C4EB6AFC1C5F889A00747B7F /* methodology */,
+				C4EB6AFD1C5F889A00747B7F /* overview */,
+				C4EB6AFE1C5F889A00747B7F /* portfolio */,
+				C4EB6AFF1C5F889A00747B7F /* team */,
+				C4EB6B001C5F889A00747B7F /* testimonial */,
+			);
+			name = JsonData;
+			sourceTree = "<group>";
+		};
 		C4F7E86F1C4DEE4200CA82CB /* MySideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +591,7 @@
 				C44CFA3C1C4CD16800413EF1 /* ic_member_suraiya.png in Resources */,
 				C44CFA371C4CD16800413EF1 /* ic_member_rifat.png in Resources */,
 				C44CFA171C4CD16800413EF1 /* ic_fab_ui_ux.png in Resources */,
+				C4EB6B081C5F889A00747B7F /* team in Resources */,
 				C44CFA181C4CD16800413EF1 /* ic_fab_wearable.png in Resources */,
 				C44CFA311C4CD16800413EF1 /* ic_methodology_3.png in Resources */,
 				C4EB6AF51C5F844800747B7F /* back_btn.png in Resources */,
@@ -568,14 +607,18 @@
 				C44CFA3B1C4CD16800413EF1 /* ic_member_sumon.png in Resources */,
 				C44CFA461C4CD16800413EF1 /* ic_social_youtube.png in Resources */,
 				C44CFA3F1C4CD16800413EF1 /* ic_member_tushar.png in Resources */,
+				C4EB6B051C5F889A00747B7F /* methodology in Resources */,
 				C44CFA301C4CD16800413EF1 /* ic_testimonial_quote_start.png in Resources */,
 				C44CFA481C4CD16800413EF1 /* img_home_3.jpg in Resources */,
 				C44CFA541C4CD16800413EF1 /* ic_nav_team.png in Resources */,
 				C44CFA431C4CD16800413EF1 /* img_overview_parallax.jpg in Resources */,
 				C44CFA211C4CD16800413EF1 /* img_portfolio_2.jpg in Resources */,
 				C44CFA401C4CD16800413EF1 /* ic_overview_skill.png in Resources */,
+				C4EB6B0B1C5F897100747B7F /* icon.png in Resources */,
 				C44CFA161C4CD16800413EF1 /* ic_fab_star.png in Resources */,
 				C44CFA551C4CD16800413EF1 /* ic_nav_testimonial.png in Resources */,
+				C4EB6B091C5F889A00747B7F /* testimonial in Resources */,
+				C4EB6B071C5F889A00747B7F /* portfolio in Resources */,
 				C44CFA3E1C4CD16800413EF1 /* ic_member_tuhin.png in Resources */,
 				C44CFA0A1C4CD16800413EF1 /* ic_overview_infrastructure.png in Resources */,
 				C44CFA2C1C4CD16800413EF1 /* img_portfolio_9.jpg in Resources */,
@@ -587,9 +630,12 @@
 				C44CF9A31C4CCEAC00413EF1 /* Main.storyboard in Resources */,
 				C44CFA2E1C4CD16800413EF1 /* ic_methodology_2.png in Resources */,
 				C44CFA2D1C4CD16800413EF1 /* ic_testimonial_web.png in Resources */,
+				C4EB6B041C5F889A00747B7F /* home in Resources */,
 				C44CFA501C4CD16800413EF1 /* ic_nav_methodology.png in Resources */,
+				C4EB6B011C5F889A00747B7F /* client in Resources */,
 				C44CFA0E1C4CD16800413EF1 /* ic_methodology_1.png in Resources */,
 				C44CFA331C4CD16800413EF1 /* ic_methodology_5.png in Resources */,
+				C4EB6B031C5F889A00747B7F /* filter in Resources */,
 				C44CFA1F1C4CD16800413EF1 /* img_client_7.png in Resources */,
 				C44CFA2A1C4CD16800413EF1 /* img_portfolio_7.jpg in Resources */,
 				C44CFA231C4CD16800413EF1 /* ic_heart_outline_white.png in Resources */,
@@ -605,7 +651,9 @@
 				C44CFA4C1C4CD16800413EF1 /* ic_nav_call.png in Resources */,
 				C44CFA071C4CD16800413EF1 /* img_home_2.jpg in Resources */,
 				C44CFA411C4CD16800413EF1 /* ic_social_linked_in.png in Resources */,
+				C4EB6B061C5F889A00747B7F /* overview in Resources */,
 				C44CFA451C4CD16800413EF1 /* ic_overview_company.png in Resources */,
+				C4EB6B021C5F889A00747B7F /* faq in Resources */,
 				C44CFA081C4CD16800413EF1 /* back_icon.png in Resources */,
 				C44CFA1B1C4CD16800413EF1 /* img_client_3.jpg in Resources */,
 				C44CFA531C4CD16800413EF1 /* ic_nav_social.png in Resources */,
