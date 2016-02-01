@@ -40,6 +40,14 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
     @IBOutlet var navigationDrawerIcon: UIButton!
     
     
+     var appDelegate:AppDelegate!
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
+    
+    
     @IBAction func navigationDrawerIconAction(sender: AnyObject) {
         
         let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -95,7 +103,7 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
 
         
         //print("TotalScreen height =\(totalScreenHeight)  from system=\(sizeRect.size.height) table orginal height=\(tableOrginalHeight)")
-        
+         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
     }
     

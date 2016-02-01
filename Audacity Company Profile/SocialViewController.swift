@@ -9,6 +9,14 @@
 import UIKit
 
 class SocialViewController: UIViewController {
+    
+    var appDelegate:AppDelegate!
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
+    
 
     @IBAction func facebookBtn(sender: AnyObject) {
         
@@ -40,6 +48,7 @@ class SocialViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
     override func didReceiveMemoryWarning() {

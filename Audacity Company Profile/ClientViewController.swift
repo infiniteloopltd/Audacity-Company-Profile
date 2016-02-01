@@ -42,6 +42,13 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     // class var observerStatus: Bool = false
     
     static var observerStatus:Bool = false;
+    var appDelegate:AppDelegate!
+    
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
     
     
     override func viewDidLoad() {
@@ -54,6 +61,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         // ClientViewController.observerStatus = true;
+         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
     }
     

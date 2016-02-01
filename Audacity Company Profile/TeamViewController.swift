@@ -23,7 +23,12 @@ class TeamViewController: UIViewController , UICollectionViewDataSource, UIColle
     var itemTitle = ["Faisal","Suraiya","Siddiq","Tushar","Tuhin","Tinu","Sourav","Sumon","Shaun","Mamun","Rifat"]
     var itemDetail = ["Founder & CTO","Founder & COO","Founder & CEO","Android Engineer","UI/UX Engineer","QA Engineer","Android Engineer","Web Designer","UI/UX Consultant","Web Engineer","Office Admin"]
     
-    
+    var appDelegate:AppDelegate!
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,6 +38,7 @@ class TeamViewController: UIViewController , UICollectionViewDataSource, UIColle
         
         let sizeRect:CGRect = UIScreen.mainScreen().applicationFrame
          screenWidth    = sizeRect.size.width
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         //print("screenWidth = \(screenWidth)")
        

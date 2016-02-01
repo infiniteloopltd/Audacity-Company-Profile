@@ -45,6 +45,14 @@ class FAQViewController: UIViewController , UITableViewDelegate {
         
     ]
     
+    var appDelegate:AppDelegate!
+    
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,7 +65,7 @@ class FAQViewController: UIViewController , UITableViewDelegate {
         self.tableView.backgroundColor = uicolorFromHex(0xDBE0E7)
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
     override func didReceiveMemoryWarning() {

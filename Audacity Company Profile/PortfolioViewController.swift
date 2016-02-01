@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import MessageUI
 
-class PortfolioViewController: UIViewController //,  UITableViewDelegate
+class PortfolioViewController: UIViewController , MFMailComposeViewControllerDelegate //,  UITableViewDelegate
 {
+    
+    var lastContentOffset : CGFloat = 0
     
     
     @IBOutlet var tableView: UITableView!
@@ -21,15 +24,38 @@ class PortfolioViewController: UIViewController //,  UITableViewDelegate
     var height : CGFloat = 0
     var isFabShow: Bool = true;
     
+    var count : Int = 0
+    
+    var fabButtonHide: Bool = false;
+    var fabScale:CGFloat = 1;
     
     @IBOutlet var getStartedPage: UIView!
     @IBAction func filterFabAction(sender: AnyObject) {
         showHideFilter()
     }
     @IBAction func getStartedAction(sender: AnyObject) {
+        
+        let picker = MFMailComposeViewController()
+        picker.mailComposeDelegate = self
+        //picker.setSubject(subjectField.text)
+        //picker.setMessageBody(emailBodyField.text, isHTML: true)
+        picker.setToRecipients(["founders@audacityit.com"])
+        
+        
+        presentViewController(picker, animated: true, completion: nil)
+        
+        
     }
     
     @IBOutlet var fabBtn: UIButton!
+    
+    
+    var appDelegate:AppDelegate!
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
     
     var cellContentOrginal = ["All","Wearable","UI/UX","Web","iOS","Android","Product"]
     var cellImageOrginal = ["ic_fab_all.png","ic_fab_wearable.png","ic_fab_ui_ux.png","ic_fab_web.png",
@@ -66,7 +92,7 @@ class PortfolioViewController: UIViewController //,  UITableViewDelegate
         self.tableView.addGestureRecognizer(longPressRecognizer)
         
         getStartedPage.hidden = true;
-        
+         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
     override func didReceiveMemoryWarning() {
@@ -156,7 +182,9 @@ class PortfolioViewController: UIViewController //,  UITableViewDelegate
         
     }
     
-    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     
@@ -356,16 +384,20 @@ class PortfolioViewController: UIViewController //,  UITableViewDelegate
             let contentInset = filterTableHeight - filterContentHeight
             
             tableViewFilter.contentInset = UIEdgeInsets(top: contentInset, left: 0, bottom: 0, right: 0)
+            tableViewFilter.scrollEnabled = false
         }
         
+        tableView.contentInset = UIEdgeInsets(top: 2.5, left: 0, bottom: 2.5, right: 0)
         
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
-        UIView.animateWithDuration(0.25, animations: {
+        UIView.animateWithDuration(0.50, animations: {
             cell.layer.transform = CATransform3DMakeScale(1,1,1)
         })
+        
+        
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -376,6 +408,18 @@ class PortfolioViewController: UIViewController //,  UITableViewDelegate
         }
         
         */
+        if(tableView.contentSize.height < tableView.frame.height) {
+            return
+        }
+        
+        
+        print("tableviewheight= \(tableView.frame.height) tableview contentsize=\(tableView.contentSize.height)")
+        
+        if(tableView.contentSize.height < tableView.frame.height) {
+            return
+        }
+        
+        
         
         // var height:CGFloat = scrollView.frame.size.height;
         let height:CGFloat = self.tableView.frame.size.height;
@@ -420,6 +464,71 @@ class PortfolioViewController: UIViewController //,  UITableViewDelegate
         }
         
     }
+    
+    /*func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        
+        
+        
+        if (lastContentOffset > scrollView.contentOffset.y) {
+            // move up
+            //print("Moving Up")
+            if ( scrollView.contentOffset.y > 0 && fabScale < 1.0 ) {
+                self.fabBtn.layer.transform = CATransform3DMakeScale(1,1,1)
+                let scaleRatio : CGFloat = (scrollView.contentOffset.y % 100) / 100
+                print(scaleRatio)
+                
+                
+                
+                 fabScale = scaleRatio
+                if(scaleRatio >= 0.99)
+                {
+                    fabButtonHide = false;
+                }
+                self.fabBtn.layer.transform = CATransform3DMakeScale(scaleRatio, scaleRatio, 1)
+               
+                
+            }
+            
+            
+            
+        }
+        else if (lastContentOffset < scrollView.contentOffset.y) {
+        // move down
+           // print("Moving down \(fabButtonHide)")
+            if ( scrollView.contentOffset.y > 0 && fabScale > 0.0 ) {
+                self.fabBtn.layer.transform = CATransform3DMakeScale(1,1,1)
+                let scaleRatio : CGFloat = (scrollView.contentOffset.y % 100) / 100
+                print(scaleRatio)
+                let hideRatio = 1 - scaleRatio
+               
+                fabScale = hideRatio
+                if(hideRatio <= 0.01 ) {
+                    
+                    fabButtonHide = true;
+                }
+                
+                
+                self.fabBtn.layer.transform = CATransform3DMakeScale(hideRatio, hideRatio, 1)
+                
+                
+            }
+        }
+    
+    
+    // update the new position acquired
+    lastContentOffset = scrollView.contentOffset.y
+        
+       
+        
+        
+        
+      
+        
+    }
+    
+    */
+    
     func uicolorFromHex(rgbValue:UInt32)->UIColor{
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0

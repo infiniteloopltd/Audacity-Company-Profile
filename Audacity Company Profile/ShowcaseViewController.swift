@@ -65,7 +65,7 @@ class ShowcaseViewController: UIViewController {
             
             self.presentViewController(alertController, animated: true, completion: nil)*/
             
-           // print("firstbtn clicked if")
+            print("firstbtn clicked if")
             
             let url = NSURL(string: "https://google.com")!
             UIApplication.sharedApplication().openURL(url)
@@ -86,8 +86,10 @@ class ShowcaseViewController: UIViewController {
             
             self.presentViewController(alertController, animated: true, completion: nil)
             */
+             print("secondbtn clicked if")
             let url = NSURL(string: "https://google.com")!
             UIApplication.sharedApplication().openURL(url)
+            
             
         }
         

@@ -28,6 +28,11 @@ class HomeViewController: UIViewController , UIPageViewControllerDataSource{
     
     @IBOutlet var actionBar: UIView!
     
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -23,6 +23,13 @@ class TestimonialViewController: UIViewController , UITableViewDelegate {
     
     var clientUrl = ["http://www.lockdealsapp.com","http://animehodai.my.softbank.jp/"]
     
+    var appDelegate:AppDelegate!
+    
+    @IBAction func drawerToggleAction(sender: AnyObject) {
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +43,7 @@ class TestimonialViewController: UIViewController , UITableViewDelegate {
         self.tableView.backgroundColor = uicolorFromHex(0xDBE0E7)
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        
+         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
     override func didReceiveMemoryWarning() {
