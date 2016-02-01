@@ -303,7 +303,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
     
     func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
         
-        if longPressGestureRecognizer.state == UIGestureRecognizerState.Began {
+        /*if longPressGestureRecognizer.state == UIGestureRecognizerState.Began {
             
             
             
@@ -314,7 +314,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
                 liked[indexPath.row] = true
                 self.tableView.reloadData()
             }
-        }
+        }*/
         
     }
     
@@ -387,7 +387,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
             tableViewFilter.scrollEnabled = false
         }
         
-        tableView.contentInset = UIEdgeInsets(top: 2.5, left: 0, bottom: 2.5, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
         
     }
     
@@ -400,7 +400,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
         
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    /*func scrollViewDidScroll(scrollView: UIScrollView) {
         
         /*println("contentOffsetY = \(self.tableView.contentOffset.y ) and contentSizeHeight=\(self.tableView.contentSize.height)")
         if( self.tableView.contentOffset.y == (self.tableView.contentSize.height - 214) ) {
@@ -463,7 +463,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
             
         }
         
-    }
+    }*/
     
     /*func scrollViewDidScroll(scrollView: UIScrollView) {
         
