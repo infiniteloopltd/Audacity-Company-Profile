@@ -70,7 +70,7 @@ class HomeViewController: UIViewController , UIPageViewControllerDataSource{
         pageViewController!.view.frame.origin.y = pageViewController!.view.frame.origin.y + actionBar.frame.size.height
         
          self.view.addSubview(pageViewController!.view)
-        container.hidden = true;
+        //container.hidden = true;
         pageViewController!.didMoveToParentViewController(self)
     }
     
