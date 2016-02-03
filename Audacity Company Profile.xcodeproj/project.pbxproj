@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F389C5F7563D3DCC803CB74 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9EC7DE6F3AA38CF489A066 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C44CF99E1C4CCEAC00413EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99D1C4CCEAC00413EF1 /* AppDelegate.swift */; };
 		C44CF9A01C4CCEAC00413EF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99F1C4CCEAC00413EF1 /* HomeViewController.swift */; };
 		C44CF9A31C4CCEAC00413EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9A11C4CCEAC00413EF1 /* Main.storyboard */; };
@@ -111,16 +112,17 @@
 		C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */; };
 		C4EB6AF51C5F844800747B7F /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF31C5F844800747B7F /* back_btn.png */; };
 		C4EB6AF61C5F844800747B7F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF41C5F844800747B7F /* map.png */; };
-		C4EB6B011C5F889A00747B7F /* client in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF81C5F889A00747B7F /* client */; };
-		C4EB6B021C5F889A00747B7F /* faq in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF91C5F889A00747B7F /* faq */; };
-		C4EB6B031C5F889A00747B7F /* filter in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFA1C5F889A00747B7F /* filter */; };
-		C4EB6B041C5F889A00747B7F /* home in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFB1C5F889A00747B7F /* home */; };
-		C4EB6B051C5F889A00747B7F /* methodology in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFC1C5F889A00747B7F /* methodology */; };
-		C4EB6B061C5F889A00747B7F /* overview in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFD1C5F889A00747B7F /* overview */; };
-		C4EB6B071C5F889A00747B7F /* portfolio in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFE1C5F889A00747B7F /* portfolio */; };
-		C4EB6B081C5F889A00747B7F /* team in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFF1C5F889A00747B7F /* team */; };
-		C4EB6B091C5F889A00747B7F /* testimonial in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6B001C5F889A00747B7F /* testimonial */; };
+		C4EB6B011C5F889A00747B7F /* client.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF81C5F889A00747B7F /* client.json */; };
+		C4EB6B021C5F889A00747B7F /* faq.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF91C5F889A00747B7F /* faq.json */; };
+		C4EB6B031C5F889A00747B7F /* filter.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFA1C5F889A00747B7F /* filter.json */; };
+		C4EB6B041C5F889A00747B7F /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFB1C5F889A00747B7F /* home.json */; };
+		C4EB6B051C5F889A00747B7F /* methodology.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFC1C5F889A00747B7F /* methodology.json */; };
+		C4EB6B061C5F889A00747B7F /* overview.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFD1C5F889A00747B7F /* overview.json */; };
+		C4EB6B071C5F889A00747B7F /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFE1C5F889A00747B7F /* portfolio.json */; };
+		C4EB6B081C5F889A00747B7F /* team.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AFF1C5F889A00747B7F /* team.json */; };
+		C4EB6B091C5F889A00747B7F /* testimonial.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6B001C5F889A00747B7F /* testimonial.json */; };
 		C4EB6B0B1C5F897100747B7F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6B0A1C5F897100747B7F /* icon.png */; };
+		C4EE6ECC1C62292E00B938BE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EE6ECB1C62292E00B938BE /* SwiftyJSON.framework */; };
 		C4F7E87C1C4DEE6500CA82CB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */; };
 		C4F7E87D1C4DEE6500CA82CB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8741C4DEE6500CA82CB /* MMDrawerController.m */; };
 		C4F7E87E1C4DEE6500CA82CB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8771C4DEE6500CA82CB /* MMDrawerVisualState.m */; };
@@ -141,6 +143,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D81588BF3D1BD7C99E84375 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AD4808741A75169D8E1BA6A1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C44CF99A1C4CCEAC00413EF1 /* Audacity Company Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audacity Company Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44CF99D1C4CCEAC00413EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44CF99F1C4CCEAC00413EF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -247,16 +251,17 @@
 		C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C4EB6AF31C5F844800747B7F /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
 		C4EB6AF41C5F844800747B7F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
-		C4EB6AF81C5F889A00747B7F /* client */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client; sourceTree = "<group>"; };
-		C4EB6AF91C5F889A00747B7F /* faq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = faq; sourceTree = "<group>"; };
-		C4EB6AFA1C5F889A00747B7F /* filter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = filter; sourceTree = "<group>"; };
-		C4EB6AFB1C5F889A00747B7F /* home */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = home; sourceTree = "<group>"; };
-		C4EB6AFC1C5F889A00747B7F /* methodology */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = methodology; sourceTree = "<group>"; };
-		C4EB6AFD1C5F889A00747B7F /* overview */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overview; sourceTree = "<group>"; };
-		C4EB6AFE1C5F889A00747B7F /* portfolio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = portfolio; sourceTree = "<group>"; };
-		C4EB6AFF1C5F889A00747B7F /* team */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = team; sourceTree = "<group>"; };
-		C4EB6B001C5F889A00747B7F /* testimonial */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testimonial; sourceTree = "<group>"; };
+		C4EB6AF81C5F889A00747B7F /* client.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = client.json; sourceTree = "<group>"; };
+		C4EB6AF91C5F889A00747B7F /* faq.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = faq.json; sourceTree = "<group>"; };
+		C4EB6AFA1C5F889A00747B7F /* filter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filter.json; sourceTree = "<group>"; };
+		C4EB6AFB1C5F889A00747B7F /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		C4EB6AFC1C5F889A00747B7F /* methodology.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = methodology.json; sourceTree = "<group>"; };
+		C4EB6AFD1C5F889A00747B7F /* overview.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = overview.json; sourceTree = "<group>"; };
+		C4EB6AFE1C5F889A00747B7F /* portfolio.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
+		C4EB6AFF1C5F889A00747B7F /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
+		C4EB6B001C5F889A00747B7F /* testimonial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testimonial.json; sourceTree = "<group>"; };
 		C4EB6B0A1C5F897100747B7F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C4EE6ECB1C62292E00B938BE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		C4F7E8701C4DEE6500CA82CB /* Audacity Company Profile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audacity Company Profile-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4F7E8711C4DEE6500CA82CB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
@@ -282,6 +287,7 @@
 		C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
 		C4FB5C661C5B708F00D823E2 /* RippleEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
 		C4FB5C681C5B733700D823E2 /* RippleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
+		DB9EC7DE6F3AA38CF489A066 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,17 +295,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EE6ECC1C62292E00B938BE /* SwiftyJSON.framework in Frameworks */,
+				2F389C5F7563D3DCC803CB74 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184D75C24FEB89618F226F50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD4808741A75169D8E1BA6A1 /* Pods.debug.xcconfig */,
+				2D81588BF3D1BD7C99E84375 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C44CF9911C4CCEAC00413EF1 = {
 			isa = PBXGroup;
 			children = (
 				C44CF99C1C4CCEAC00413EF1 /* Audacity Company Profile */,
 				C44CF99B1C4CCEAC00413EF1 /* Products */,
+				184D75C24FEB89618F226F50 /* Pods */,
+				FC32A0079CB615062BA694E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -474,15 +493,15 @@
 		C4EB6AF71C5F886800747B7F /* JsonData */ = {
 			isa = PBXGroup;
 			children = (
-				C4EB6AF81C5F889A00747B7F /* client */,
-				C4EB6AF91C5F889A00747B7F /* faq */,
-				C4EB6AFA1C5F889A00747B7F /* filter */,
-				C4EB6AFB1C5F889A00747B7F /* home */,
-				C4EB6AFC1C5F889A00747B7F /* methodology */,
-				C4EB6AFD1C5F889A00747B7F /* overview */,
-				C4EB6AFE1C5F889A00747B7F /* portfolio */,
-				C4EB6AFF1C5F889A00747B7F /* team */,
-				C4EB6B001C5F889A00747B7F /* testimonial */,
+				C4EB6AF81C5F889A00747B7F /* client.json */,
+				C4EB6AFB1C5F889A00747B7F /* home.json */,
+				C4EB6AF91C5F889A00747B7F /* faq.json */,
+				C4EB6AFA1C5F889A00747B7F /* filter.json */,
+				C4EB6AFC1C5F889A00747B7F /* methodology.json */,
+				C4EB6AFD1C5F889A00747B7F /* overview.json */,
+				C4EB6AFE1C5F889A00747B7F /* portfolio.json */,
+				C4EB6AFF1C5F889A00747B7F /* team.json */,
+				C4EB6B001C5F889A00747B7F /* testimonial.json */,
 			);
 			name = JsonData;
 			sourceTree = "<group>";
@@ -506,6 +525,15 @@
 			name = MySideMenu;
 			sourceTree = "<group>";
 		};
+		FC32A0079CB615062BA694E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE6ECB1C62292E00B938BE /* SwiftyJSON.framework */,
+				DB9EC7DE6F3AA38CF489A066 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -513,9 +541,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C44CF9AC1C4CCEAC00413EF1 /* Build configuration list for PBXNativeTarget "Audacity Company Profile" */;
 			buildPhases = (
+				DEC019533B461E4387918495 /* Check Pods Manifest.lock */,
 				C44CF9961C4CCEAC00413EF1 /* Sources */,
 				C44CF9971C4CCEAC00413EF1 /* Frameworks */,
 				C44CF9981C4CCEAC00413EF1 /* Resources */,
+				77CB455127DAA3CA35B1263E /* Embed Pods Frameworks */,
+				84D03E2B1ED0FD6AADB9C581 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -591,7 +622,7 @@
 				C44CFA3C1C4CD16800413EF1 /* ic_member_suraiya.png in Resources */,
 				C44CFA371C4CD16800413EF1 /* ic_member_rifat.png in Resources */,
 				C44CFA171C4CD16800413EF1 /* ic_fab_ui_ux.png in Resources */,
-				C4EB6B081C5F889A00747B7F /* team in Resources */,
+				C4EB6B081C5F889A00747B7F /* team.json in Resources */,
 				C44CFA181C4CD16800413EF1 /* ic_fab_wearable.png in Resources */,
 				C44CFA311C4CD16800413EF1 /* ic_methodology_3.png in Resources */,
 				C4EB6AF51C5F844800747B7F /* back_btn.png in Resources */,
@@ -607,7 +638,7 @@
 				C44CFA3B1C4CD16800413EF1 /* ic_member_sumon.png in Resources */,
 				C44CFA461C4CD16800413EF1 /* ic_social_youtube.png in Resources */,
 				C44CFA3F1C4CD16800413EF1 /* ic_member_tushar.png in Resources */,
-				C4EB6B051C5F889A00747B7F /* methodology in Resources */,
+				C4EB6B051C5F889A00747B7F /* methodology.json in Resources */,
 				C44CFA301C4CD16800413EF1 /* ic_testimonial_quote_start.png in Resources */,
 				C44CFA481C4CD16800413EF1 /* img_home_3.jpg in Resources */,
 				C44CFA541C4CD16800413EF1 /* ic_nav_team.png in Resources */,
@@ -617,8 +648,8 @@
 				C4EB6B0B1C5F897100747B7F /* icon.png in Resources */,
 				C44CFA161C4CD16800413EF1 /* ic_fab_star.png in Resources */,
 				C44CFA551C4CD16800413EF1 /* ic_nav_testimonial.png in Resources */,
-				C4EB6B091C5F889A00747B7F /* testimonial in Resources */,
-				C4EB6B071C5F889A00747B7F /* portfolio in Resources */,
+				C4EB6B091C5F889A00747B7F /* testimonial.json in Resources */,
+				C4EB6B071C5F889A00747B7F /* portfolio.json in Resources */,
 				C44CFA3E1C4CD16800413EF1 /* ic_member_tuhin.png in Resources */,
 				C44CFA0A1C4CD16800413EF1 /* ic_overview_infrastructure.png in Resources */,
 				C44CFA2C1C4CD16800413EF1 /* img_portfolio_9.jpg in Resources */,
@@ -630,12 +661,12 @@
 				C44CF9A31C4CCEAC00413EF1 /* Main.storyboard in Resources */,
 				C44CFA2E1C4CD16800413EF1 /* ic_methodology_2.png in Resources */,
 				C44CFA2D1C4CD16800413EF1 /* ic_testimonial_web.png in Resources */,
-				C4EB6B041C5F889A00747B7F /* home in Resources */,
+				C4EB6B041C5F889A00747B7F /* home.json in Resources */,
 				C44CFA501C4CD16800413EF1 /* ic_nav_methodology.png in Resources */,
-				C4EB6B011C5F889A00747B7F /* client in Resources */,
+				C4EB6B011C5F889A00747B7F /* client.json in Resources */,
 				C44CFA0E1C4CD16800413EF1 /* ic_methodology_1.png in Resources */,
 				C44CFA331C4CD16800413EF1 /* ic_methodology_5.png in Resources */,
-				C4EB6B031C5F889A00747B7F /* filter in Resources */,
+				C4EB6B031C5F889A00747B7F /* filter.json in Resources */,
 				C44CFA1F1C4CD16800413EF1 /* img_client_7.png in Resources */,
 				C44CFA2A1C4CD16800413EF1 /* img_portfolio_7.jpg in Resources */,
 				C44CFA231C4CD16800413EF1 /* ic_heart_outline_white.png in Resources */,
@@ -651,9 +682,9 @@
 				C44CFA4C1C4CD16800413EF1 /* ic_nav_call.png in Resources */,
 				C44CFA071C4CD16800413EF1 /* img_home_2.jpg in Resources */,
 				C44CFA411C4CD16800413EF1 /* ic_social_linked_in.png in Resources */,
-				C4EB6B061C5F889A00747B7F /* overview in Resources */,
+				C4EB6B061C5F889A00747B7F /* overview.json in Resources */,
 				C44CFA451C4CD16800413EF1 /* ic_overview_company.png in Resources */,
-				C4EB6B021C5F889A00747B7F /* faq in Resources */,
+				C4EB6B021C5F889A00747B7F /* faq.json in Resources */,
 				C44CFA081C4CD16800413EF1 /* back_icon.png in Resources */,
 				C44CFA1B1C4CD16800413EF1 /* img_client_3.jpg in Resources */,
 				C44CFA531C4CD16800413EF1 /* ic_nav_social.png in Resources */,
@@ -666,6 +697,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77CB455127DAA3CA35B1263E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84D03E2B1ED0FD6AADB9C581 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC019533B461E4387918495 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C44CF9961C4CCEAC00413EF1 /* Sources */ = {
@@ -813,9 +892,14 @@
 		};
 		C44CF9AD1C4CCEAC00413EF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD4808741A75169D8E1BA6A1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Audacity Company Profile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -829,9 +913,14 @@
 		};
 		C44CF9AE1C4CCEAC00413EF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D81588BF3D1BD7C99E84375 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Audacity Company Profile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

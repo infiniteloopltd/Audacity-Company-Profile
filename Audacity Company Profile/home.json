@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Amar Phonebook",
-      "image": "img_home_1",
+      "image": "img_home_1.jpg",
       "project_info": [
         {
           "platform": "Android",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Colours FM",
-      "image": "img_home_2",
+      "image": "img_home_2.jpg",
       "project_info": [
         {
           "platform": "Android",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Monasa Learning Centre",
-      "image": "img_home_3",
+      "image": "img_home_3.jpg",
       "project_info": [
         {
           "platform": "Website",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Lock Deal",
-      "image": "img_home_4",
+      "image": "img_home_4.jpg",
       "project_info": [
         {
           "platform": "Website",
@@ -50,7 +50,7 @@
     },
     {
       "name": "How I Work",
-      "image": "img_home_5",
+      "image": "img_home_5.jpg",
       "project_info": [
         {
           "platform": "Website",
