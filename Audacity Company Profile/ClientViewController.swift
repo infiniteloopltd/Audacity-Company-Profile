@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ClientViewController: UIViewController , UITableViewDelegate {
     
@@ -15,7 +16,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     
     var clicked :Bool = false;
     
-    var clientProjectName = ["Monasa Learning Centre", "Amar Phonebook", "Colours FM", "U-NEXT", "Lock Deals"]
+    /*var clientProjectName = ["Monasa Learning Centre", "Amar Phonebook", "Colours FM", "U-NEXT", "Lock Deals"]
     
     var projectType = [["Website"],["Android","iOS"], ["Android"], ["Android", "iOS"], ["Website", "Android"]]
     
@@ -32,7 +33,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     
     
     var clientProjectImage = ["img_client_3.jpg", "img_client_4.jpg", "img_client_5.jpg", "img_client_6.jpg", "img_client_7.png"]
-    
+*/
     //var clientPosition = ["CEO of Lock Deals","Manager at U-NEXT"]
     
     
@@ -40,6 +41,20 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     
     
     // class var observerStatus: Bool = false
+    
+    var clientProjectName = [String]()
+    var projectType = [[String]]()
+    var projectUrl = [[String]]()
+    var clientName = [String]()
+    var countryName = [String]()
+    var clientProjectImage = [String]()
+
+    
+    
+    
+    
+    
+    
     
     static var observerStatus:Bool = false;
     var appDelegate:AppDelegate!
@@ -53,7 +68,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadData()
         // Do any additional setup after loading the view.
         
         
@@ -96,7 +111,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        print(clientProjectName.count)
         return clientProjectName.count
     }
     
@@ -270,6 +285,51 @@ class ClientViewController: UIViewController , UITableViewDelegate {
         //  }
     }
     
+    func loadData() {
+        
+        
+        if let path = NSBundle.mainBundle().pathForResource("client", ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                let jsonObj = JSON(data: data)
+                if jsonObj != JSON.null {
+                    
+                    
+                    
+                    for(var i:Int = 0; i<jsonObj["clients"].count; i++) {
+                        
+                        clientProjectName.append(jsonObj["clients"][i]["client_name"].string!)
+                        clientName.append(jsonObj["clients"][i]["delegate_name"].string!)
+                        countryName.append(jsonObj["clients"][i]["country"].string!)
+                        clientProjectImage.append(jsonObj["clients"][i]["image"].string!)
+                        
+                
+                        var temp = [String]()
+                        var tempUrl = [String]()
+                        for( var j:Int = 0; j<jsonObj["clients"][i]["project_info"].count; j++) {
+                            temp.append(jsonObj["clients"][i]["project_info"][j]["platform"].string!)
+                            tempUrl.append(jsonObj["clients"][i]["project_info"][j]["url"].string!)
+                        }
+                        
+                        projectType.append(temp)
+                        projectUrl.append(tempUrl)
+                        
+                        
+                    }
+                    //print(clientProjectImage.description)
+                    
+                    
+                } else {
+                    print("could not get json from file, make sure that file contains valid json.")
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        
+    }
     
     
 }

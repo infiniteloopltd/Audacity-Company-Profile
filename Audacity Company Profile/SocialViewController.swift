@@ -11,6 +11,9 @@ import UIKit
 class SocialViewController: UIViewController {
     
     var appDelegate:AppDelegate!
+    
+    var socialLink = ["https://www.facebook.com","https://www.linkedin.com","https://www.twitter.com","https://www.youtube.com"]
+    
     @IBAction func drawerToggleAction(sender: AnyObject) {
         
         appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
@@ -20,7 +23,7 @@ class SocialViewController: UIViewController {
 
     @IBAction func facebookBtn(sender: AnyObject) {
         
-        let url = NSURL(string: "https://www.facebook.com")!
+        let url = NSURL(string: socialLink[0])!
         UIApplication.sharedApplication().openURL(url)
         
     }
@@ -28,19 +31,19 @@ class SocialViewController: UIViewController {
     
     @IBAction func linkedInBtn(sender: AnyObject) {
         
-        let url = NSURL(string: "https://www.linkedin.com")!
+        let url = NSURL(string: socialLink[1])!
         UIApplication.sharedApplication().openURL(url)
     }
     
     
     @IBAction func twitterBtn(sender: AnyObject) {
-        let url = NSURL(string: "https://www.twitter.com")!
+        let url = NSURL(string: socialLink[2])!
         UIApplication.sharedApplication().openURL(url)
     }
     
     
     @IBAction func youtubeBtn(sender: AnyObject) {
-        let url = NSURL(string: "https://www.youtube.com")!
+        let url = NSURL(string: socialLink[3])!
         UIApplication.sharedApplication().openURL(url)
     }
     

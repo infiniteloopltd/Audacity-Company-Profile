@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class TestimonialViewController: UIViewController , UITableViewDelegate {
     
     
     
     @IBOutlet var tableView: UITableView!
     
-    var cellContent = ["Audacity IT Solutions have a very “Can Do” attitude with a very professional and attention to detail quality in every bit of work they do. The quality of product they have provided for me is world class. Team was always available by phone call or skype to discuss anything I needed to and made every effort to attend to these issues as soon as they could.","Audacity IT Solutions Ltd, UNEXT offshore team is quickly adapting to Japanese work standards which is very hard to maintain even for experienced companies. They are now maintaining an app which has 400,000 paid users. I have very high hopes for the talented engineers in Audacity IT Solutions Ltd."]
+    /*var cellContent = ["Audacity IT Solutions have a very “Can Do” attitude with a very professional and attention to detail quality in every bit of work they do. The quality of product they have provided for me is world class. Team was always available by phone call or skype to discuss anything I needed to and made every effort to attend to these issues as soon as they could.","Audacity IT Solutions Ltd, UNEXT offshore team is quickly adapting to Japanese work standards which is very hard to maintain even for experienced companies. They are now maintaining an app which has 400,000 paid users. I have very high hopes for the talented engineers in Audacity IT Solutions Ltd."]
     
     var clientImage = ["img_client_1.jpg", "img_client_2.jpg"]
     
@@ -22,6 +22,13 @@ class TestimonialViewController: UIViewController , UITableViewDelegate {
     var clientName = ["Cody McDowell","Chinmoy Saha"]
     
     var clientUrl = ["http://www.lockdealsapp.com","http://animehodai.my.softbank.jp/"]
+    */
+    
+    var cellContent = [String]()
+    var clientImage = [String]()
+    var clientPosition = [String]()
+    var clientName = [String]()
+    var clientUrl = [String]()
     
     var appDelegate:AppDelegate!
     
@@ -33,7 +40,7 @@ class TestimonialViewController: UIViewController , UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadData()
         // Do any additional setup after loading the view.
         
         self.tableView.estimatedRowHeight = 10
@@ -273,6 +280,41 @@ class TestimonialViewController: UIViewController , UITableViewDelegate {
         image.drawInRect(CGRect(origin: origin, size: sizeChange))
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         return scaledImage
+    }
+    
+    func loadData() {
+        
+        
+        if let path = NSBundle.mainBundle().pathForResource("testimonial", ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                let jsonObj = JSON(data: data)
+                if jsonObj != JSON.null {
+                    
+                    
+                    
+                    for(var i:Int = 0; i<jsonObj["testimonials"].count; i++) {
+                        
+                        
+                        clientName.append(jsonObj["testimonials"][i]["delegate_name"].string!)
+                        clientImage.append(jsonObj["testimonials"][i]["delegate_image"].string!)
+                        clientPosition.append(jsonObj["testimonials"][i]["delegate_designation"].string!)
+                        clientUrl.append(jsonObj["testimonials"][i]["ref_url"].string!)
+                        cellContent.append(jsonObj["testimonials"][i]["comment"].string!)
+                    }
+                    
+                    
+                    
+                } else {
+                    print("could not get json from file, make sure that file contains valid json.")
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        
     }
     
 }

@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class FAQViewController: UIViewController , UITableViewDelegate {
     
     
     
     @IBOutlet var tableView: UITableView!
     
-    var cellContent = ["Audacity IT Solutions have a very “Can Do” attitude with a very professional and attention to detail quality in every bit of work they do. The quality of product they have provided for me is world class. Team was always available by phone call or skype to discuss anything I needed to and made every effort to attend to these issues as soon as they could.","Audacity IT Solutions Ltd, UNEXT offshore team is quickly adapting to Japanese work standards which is very hard to maintain even for experienced companies. They are now maintaining an app which has 400,000 paid users. I have very high hopes for the talented engineers in Audacity IT Solutions Ltd."]
+   /* var cellContent = ["Audacity IT Solutions have a very “Can Do” attitude with a very professional and attention to detail quality in every bit of work they do. The quality of product they have provided for me is world class. Team was always available by phone call or skype to discuss anything I needed to and made every effort to attend to these issues as soon as they could.","Audacity IT Solutions Ltd, UNEXT offshore team is quickly adapting to Japanese work standards which is very hard to maintain even for experienced companies. They are now maintaining an app which has 400,000 paid users. I have very high hopes for the talented engineers in Audacity IT Solutions Ltd."]
     
     //var clientImage = ["img_client_1.jpg", "img_client_2.jpg"]
     
@@ -43,7 +43,12 @@ class FAQViewController: UIViewController , UITableViewDelegate {
         "To keep your data and information highly confidential, we sign Non-Disclosure Agreements between the two parties i.e Company & Client, before you disclose any information to us. Data & information will be shared with our employees & contractors only, who are in-line with our legal framework and company policy.",
         "Mail us at founders@audacityit.com"
         
-    ]
+    ]*/
+    
+    //var cellContent = [String]()
+    var question = [String]()
+    var ans = [String]()
+    
     
     var appDelegate:AppDelegate!
     
@@ -55,7 +60,7 @@ class FAQViewController: UIViewController , UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadData()
         // Do any additional setup after loading the view.
         
         self.tableView.estimatedRowHeight = 10
@@ -221,6 +226,41 @@ class FAQViewController: UIViewController , UITableViewDelegate {
         return scaledImage
     }
     
+    
+    func loadData() {
+        
+        
+        if let path = NSBundle.mainBundle().pathForResource("faq", ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                let jsonObj = JSON(data: data)
+                if jsonObj != JSON.null {
+                    
+                    
+                    
+                    for(var i:Int = 0; i<jsonObj["faq"].count; i++) {
+                        
+                        //clientProjectImage.append(jsonObj["clients"][i]["client_name"].string!)
+                        //clientName.append(jsonObj["clients"][i]["delegate_name"].string!)
+                        question.append(jsonObj["faq"][i]["q"].string!)
+                        ans.append(jsonObj["faq"][i]["a"].string!)
+                        
+                    }
+                    
+                    
+                    
+                } else {
+                    print("could not get json from file, make sure that file contains valid json.")
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        
+    }
+
     
     
 }

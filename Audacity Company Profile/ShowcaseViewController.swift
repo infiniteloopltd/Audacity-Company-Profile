@@ -27,7 +27,7 @@ class ShowcaseViewController: UIViewController {
     
     
     var projectType: [String]! ;
-    
+    var projectUrl: [String]! ;
     var itemIndex: Int = 0 // ***
     // var imageName: String = ""  // ***
     
@@ -58,20 +58,10 @@ class ShowcaseViewController: UIViewController {
     @IBAction func firstCategoryAction(sender: AnyObject) {
         
         if( !firstCategory.hidden ) {
-            
-            /* let alertController = UIAlertController(title: "Audacity IT Solution", message:
-            "You will be redirect tomorrow", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)*/
-            
-            print("firstbtn clicked if")
-            
-            let url = NSURL(string: "https://google.com")!
+
+            let url = NSURL(string: projectUrl[0])!
             UIApplication.sharedApplication().openURL(url)
             
-        } else {
-            print("firstbtn clicked else")
         }
         
     }
@@ -80,16 +70,9 @@ class ShowcaseViewController: UIViewController {
     @IBAction func secondCategoryAction(sender: AnyObject) {
         
         if( !secondCategory.hidden ) {
-            /*  let alertController = UIAlertController(title: "Audacity IT Solution", message:
-            "You will be redirect tomorrow", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
             
-            self.presentViewController(alertController, animated: true, completion: nil)
-            */
-             print("secondbtn clicked if")
-            let url = NSURL(string: "https://google.com")!
+            let url = NSURL(string: projectUrl[1])!
             UIApplication.sharedApplication().openURL(url)
-            
             
         }
         
@@ -99,14 +82,8 @@ class ShowcaseViewController: UIViewController {
     @IBAction func thirdCategoryAction(sender: AnyObject) {
         
         if( !thirdCategory.hidden ) {
-            /*          let alertController = UIAlertController(title: "Audacity IT Solution", message:
-            "You will be redirect tomorrow", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
             
-            self.presentViewController(alertController, animated: true, completion: nil)
-            */
-            
-            let url = NSURL(string: "https://google.com")!
+            let url = NSURL(string: projectUrl[2])!
             UIApplication.sharedApplication().openURL(url)
             
         }
@@ -118,14 +95,8 @@ class ShowcaseViewController: UIViewController {
     @IBAction func fourthCategoryAction(sender: AnyObject) {
         
         if( !fourthCategory.hidden ) {
-            /*          let alertController = UIAlertController(title: "Audacity IT Solution", message:
-            "You will be redirect tomorrow", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
             
-            self.presentViewController(alertController, animated: true, completion: nil)
-            */
-            
-            let url = NSURL(string: "https://google.com")!
+            let url = NSURL(string: projectUrl[3])!
             UIApplication.sharedApplication().openURL(url)
             
         }
@@ -143,12 +114,7 @@ class ShowcaseViewController: UIViewController {
         secondCategory.hidden =  true
         thirdCategory.hidden = true
         fourthCategory.hidden = true
-        
         setButtonText();
-        
-        
-        
-        
         
     }
     

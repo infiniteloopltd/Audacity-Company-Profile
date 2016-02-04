@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecognizerDelegate{
 
     @IBOutlet var tableView: UITableView!
@@ -35,7 +35,13 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
     @IBOutlet var companyName: UILabel!
     
     
+    @IBOutlet weak var inQueueLebel: UILabel!
+    @IBOutlet weak var inQueueCounterLebel: UILabel!
+    @IBOutlet weak var developingLebel: UILabel!
+    @IBOutlet weak var developingCounterLebel: UILabel!
     @IBOutlet var companyMoto: UILabel!
+    @IBOutlet weak var completedCounterLebel: UILabel!
+    @IBOutlet weak var completedLebel: UILabel!
     
     @IBOutlet var navigationDrawerIcon: UIButton!
     
@@ -62,11 +68,26 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
     
     var stopFlag : Bool = false
     @IBOutlet var headerView: UIView!
-    var cellContent = ["BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657"]
+   /* var cellContent = ["BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657"]*/
+    //var itemImage = ["ic_overview_basic.png", "ic_overview_skill.png","ic_overview_infrastructure.png","ic_overview_location.png","ic_overview_basic.png", "ic_overview_skill.png","ic_overview_infrastructure.png","ic_overview_location.png"]
     
-    var itemImage = ["ic_overview_basic.png", "ic_overview_skill.png","ic_overview_infrastructure.png","ic_overview_location.png","ic_overview_basic.png", "ic_overview_skill.png","ic_overview_infrastructure.png","ic_overview_location.png"]
+    //var itemTitle = ["BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION","BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION"]
     
-    var itemTitle = ["BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION","BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION"]
+    
+    var itemTitle = [String]()
+    var itemImage = [String]()
+    var cellContent = [String]()
+    
+    var companyIconName: String!
+    var backgroundImage: String!
+    var compName: String!
+    var companyTag: String!
+    
+    var counterName = [String] ()
+    var counterNumber = [String]()
+    
+    
+    
     
     
     @IBAction func mapFabBtn(sender: AnyObject) {
@@ -85,6 +106,7 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        loadData()
         self.tableView.estimatedRowHeight = 10
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -519,5 +541,60 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
         }
         return false;
     }
+    
+    
+    func loadData() {
+        
+        
+        if let path = NSBundle.mainBundle().pathForResource("overview", ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                let jsonObj = JSON(data: data)
+                if jsonObj != JSON.null {
+                    
+                    companyIcon.image = UIImage(named: jsonObj["overview"]["company_icon"].string!)
+                    parallaxImageView.image = UIImage(named:jsonObj["overview"]["background_image"].string!)
+                    companyName.text = jsonObj["overview"]["company_name"].string!
+                    companyMoto.text = jsonObj["overview"]["company_tag"].string!
+                  
+                    
+                    
+                    
+                    for ( var i:Int = 0; i<jsonObj["overview"]["counter_info"].count; i++ ) {
+                        
+                        counterName.append(jsonObj["overview"]["counter_info"][i]["text"].string!)
+                        counterNumber.append(jsonObj["overview"]["counter_info"][i]["number"].string!)
+                        
+                       
+                        
+                    }
+                    
+                    for(var i:Int = 0; i<jsonObj["overview"]["basic_info"].count; i++) {
+                        itemTitle.append(jsonObj["overview"]["basic_info"][i]["title"].string!)
+                        itemImage.append(jsonObj["overview"]["basic_info"][i]["image"].string!)
+                        cellContent.append(jsonObj["overview"]["basic_info"][i]["body"].string!)
+                    }
+                    
+                    completedLebel.text = counterName[0]
+                    developingLebel.text = counterName[1]
+                    inQueueLebel.text = counterName[2]
+                    
+                    completedCounterLebel.text = counterNumber[0]
+                    developingCounterLebel.text = counterNumber[1]
+                    inQueueCounterLebel.text = counterNumber[2]
+                    
+                } else {
+                    print("could not get json from file, make sure that file contains valid json.")
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        
+    }
+
+    
 
 }

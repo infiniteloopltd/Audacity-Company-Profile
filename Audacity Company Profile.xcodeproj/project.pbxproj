@@ -123,6 +123,7 @@
 		C4EB6B091C5F889A00747B7F /* testimonial.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6B001C5F889A00747B7F /* testimonial.json */; };
 		C4EB6B0B1C5F897100747B7F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6B0A1C5F897100747B7F /* icon.png */; };
 		C4EE6ECC1C62292E00B938BE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EE6ECB1C62292E00B938BE /* SwiftyJSON.framework */; };
+		C4F65D631C635905004FE8EB /* img_client_3_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F65D621C635905004FE8EB /* img_client_3_p.jpg */; };
 		C4F7E87C1C4DEE6500CA82CB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */; };
 		C4F7E87D1C4DEE6500CA82CB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8741C4DEE6500CA82CB /* MMDrawerController.m */; };
 		C4F7E87E1C4DEE6500CA82CB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8771C4DEE6500CA82CB /* MMDrawerVisualState.m */; };
@@ -262,6 +263,7 @@
 		C4EB6B001C5F889A00747B7F /* testimonial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testimonial.json; sourceTree = "<group>"; };
 		C4EB6B0A1C5F897100747B7F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C4EE6ECB1C62292E00B938BE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		C4F65D621C635905004FE8EB /* img_client_3_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_client_3_p.jpg; sourceTree = "<group>"; };
 		C4F7E8701C4DEE6500CA82CB /* Audacity Company Profile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audacity Company Profile-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4F7E8711C4DEE6500CA82CB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		C4F7E8721C4DEE6500CA82CB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 				C44CF9F71C4CD16800413EF1 /* ic_navigation.png */,
 				C44CF9F81C4CD16800413EF1 /* img_home_5.jpg */,
 				C44CF9F91C4CD16800413EF1 /* ic_nav_call.png */,
+				C4F65D621C635905004FE8EB /* img_client_3_p.jpg */,
 				C44CF9FA1C4CD16800413EF1 /* ic_nav_client.png */,
 				C44CF9FB1C4CD16800413EF1 /* ic_nav_faq.png */,
 				C44CF9FC1C4CD16800413EF1 /* ic_nav_mail.png */,
@@ -608,6 +611,7 @@
 				C44CFA4B1C4CD16800413EF1 /* img_home_5.jpg in Resources */,
 				C44CFA391C4CD16800413EF1 /* ic_member_shaun.png in Resources */,
 				C44CFA471C4CD16800413EF1 /* ic_overview_basic.png in Resources */,
+				C4F65D631C635905004FE8EB /* img_client_3_p.jpg in Resources */,
 				C44CFA3A1C4CD16800413EF1 /* ic_member_siddiq.png in Resources */,
 				C44CFA201C4CD16800413EF1 /* img_portfolio_1.jpg in Resources */,
 				C44CFA291C4CD16800413EF1 /* img_portfolio_6.jpg in Resources */,

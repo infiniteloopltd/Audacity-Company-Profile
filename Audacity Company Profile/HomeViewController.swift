@@ -11,17 +11,22 @@ import SwiftyJSON
 
 class HomeViewController: UIViewController , UIPageViewControllerDataSource{
 
-    private var contentImages = ["img_home_1.jpg",
+    /*private var contentImages = ["img_home_1.jpg",
         "img_home_2.jpg",
-        "img_home_3.jpg","img_home_4.jpg","img_home_5.jpg"]
+        "img_home_3.jpg","img_home_4.jpg","img_home_5.jpg"]*/
     /*private var contentImages:[String]!
     private var projectName : [String]!
     */
-    private var projectName = ["Amar Phonebook",
+   /* private var projectName = ["Amar Phonebook",
         "Colours FM",
-        "Monasa Learning Centre","Lock Deal","How I Work"]
+        "Monasa Learning Centre","Lock Deal","How I Work"]*/
     
-    private var projectType = [["Android","iOS"],["Android"],["Website"],["Website","Android"],["Website","Android","iOS"]]
+    //private var projectType = [["Android","iOS"],["Android"],["Website"],["Website","Android"],["Website","Android","iOS"]]
+    
+    private var projectName = [String]()
+    private var contentImages = [String]()
+    private var projectType = [[String]]()
+     private var projectUrl = [[String]]()
     
     var appDelegate:AppDelegate!
     
@@ -39,10 +44,11 @@ class HomeViewController: UIViewController , UIPageViewControllerDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        loadData()
         createPageViewController()
         setupPageControl()
         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        loadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -115,6 +121,7 @@ class HomeViewController: UIViewController , UIPageViewControllerDataSource{
             pageItemController.imageName = contentImages[itemIndex]
             pageItemController.nameOfProject = projectName[itemIndex]
             pageItemController.projectType = projectType[itemIndex]
+            pageItemController.projectUrl = projectUrl[itemIndex]
             //pageItemController.setButtonText()
             return pageItemController
         }
@@ -134,27 +141,26 @@ class HomeViewController: UIViewController , UIPageViewControllerDataSource{
     func loadData() {
        
         
-        /*if let path : String = NSBundle.mainBundle().pathForResource("client", ofType: "json") {
-            // file exists, read
-            print("File exist")
-        } else {
-            // file doesn't exist
-             print("File does not exist")
-        }*/
-        
         if let path = NSBundle.mainBundle().pathForResource("home", ofType: "json") {
             do {
                 let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
                 let jsonObj = JSON(data: data)
                 if jsonObj != JSON.null {
-                    print("jsonData:\(jsonObj["projects"][0]["name"])")
-                   // var projectName: [String]!
-                   // var contentImages: [String]!
-                   /* for ( var i:Int = 0; i<jsonObj["projects"].count; i++ ) {
-                        projectName[i] = jsonObj["projects"][i]["name"].string!
-                        contentImages[i] = jsonObj["projects"][i]["image"].string!
-                    }*/
-                    //print(projectName.description)
+                   
+                    for ( var i:Int = 0; i<jsonObj["projects"].count; i++ ) {
+                        projectName.append(jsonObj["projects"][i]["name"].string!)
+                        contentImages.append(jsonObj["projects"][i]["image"].string!)
+                        var temp = [String]()
+                        var tempUrl = [String]()
+                        for( var j:Int = 0; j<jsonObj["projects"][i]["project_info"].count; j++) {
+                            temp.append(jsonObj["projects"][i]["project_info"][j]["platform"].string!)
+                            tempUrl.append(jsonObj["projects"][i]["project_info"][j]["url"].string!)
+                        }
+                       
+                        projectType.append(temp)
+                        projectUrl.append(tempUrl)
+                        
+                    }
                     
                     
                 } else {

@@ -330,8 +330,14 @@ TIN : 442670895657</string>
                         <outlet property="companyIcon" destination="0zx-2P-qhY" id="nZv-OS-fR4"/>
                         <outlet property="companyMoto" destination="92u-1J-Ln4" id="RVi-h3-nIh"/>
                         <outlet property="companyName" destination="6gq-d7-pof" id="YnI-8N-Pr1"/>
+                        <outlet property="completedCounterLebel" destination="ZqU-d9-aJb" id="hCu-ec-cKc"/>
+                        <outlet property="completedLebel" destination="ZOK-kZ-ckf" id="dPX-ZG-q8k"/>
+                        <outlet property="developingCounterLebel" destination="OAd-MT-Tax" id="YSm-MY-WKP"/>
+                        <outlet property="developingLebel" destination="Bta-YX-rSc" id="QBN-nn-luP"/>
                         <outlet property="headerView" destination="HzW-jR-dgk" id="1kw-ON-YZu"/>
                         <outlet property="hiddenContainer" destination="bIK-ZM-uSv" id="vZH-Tj-0bP"/>
+                        <outlet property="inQueueCounterLebel" destination="gl6-YO-4Ue" id="vUH-BX-GGe"/>
+                        <outlet property="inQueueLebel" destination="fjZ-3c-weQ" id="VLO-RX-MK2"/>
                         <outlet property="navigationDrawerIcon" destination="6ES-Ms-lnR" id="CY2-AI-zBG"/>
                         <outlet property="parallaxImageView" destination="b9Z-1D-mxG" id="9CO-8S-DtO"/>
                         <outlet property="tableView" destination="zPr-5G-cTS" id="EEb-ih-LB5"/>
@@ -608,7 +614,7 @@ TIN : 442670895657</string>
                                     <constraint firstAttribute="height" constant="50" id="2nk-cF-H3b"/>
                                     <constraint firstAttribute="width" constant="50" id="c8f-Zv-ZR0"/>
                                 </constraints>
-                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
                                 <state key="normal" image="ic_fab_filter.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1353,12 +1359,12 @@ TIN : 442670895657</string>
                                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec8-Yf-Hv9">
                                                         <rect key="frame" x="0.0" y="0.0" width="597" height="67"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audacity IT Solutions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5k-F8-Bcx">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methodology" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5k-F8-Bcx">
                                                                 <rect key="frame" x="72" y="29" width="525" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="eTB-iy-oHg"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1429,8 +1435,8 @@ TIN : 442670895657</string>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="hyL-lk-VmZ"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2h-vx-gfb">
@@ -1438,7 +1444,7 @@ TIN : 442670895657</string>
                                                             <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1772,10 +1778,10 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="0.0" y="22" width="600" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="72B-on-18D" id="71u-Ed-9Kt">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="123.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="6" width="574" height="110"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-e8-SwA" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
@@ -1787,7 +1793,7 @@ TIN : 442670895657</string>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-2D-u4L">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-2D-u4L">
                                                                     <rect key="frame" x="532" y="8" width="18" height="18"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="18" id="JOI-xU-3zw"/>
@@ -1845,8 +1851,8 @@ TIN : 442670895657</string>
                                             <constraints>
                                                 <constraint firstItem="hMf-8B-vKt" firstAttribute="top" secondItem="71u-Ed-9Kt" secondAttribute="topMargin" constant="-2" id="7dL-Wz-XHl"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="hMf-8B-vKt" secondAttribute="bottom" constant="-1" id="BZU-WF-0Ob"/>
-                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="leading" secondItem="71u-Ed-9Kt" secondAttribute="leadingMargin" id="HzR-RX-cRg"/>
-                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="trailing" secondItem="71u-Ed-9Kt" secondAttribute="trailingMargin" id="KYn-SC-KPQ"/>
+                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="leading" secondItem="71u-Ed-9Kt" secondAttribute="leadingMargin" constant="5" id="HzR-RX-cRg"/>
+                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="trailing" secondItem="71u-Ed-9Kt" secondAttribute="trailingMargin" constant="-5" id="KYn-SC-KPQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2033,7 +2039,7 @@ TIN : 442670895657</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-z1-30f">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-z1-30f">
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

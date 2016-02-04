@@ -8,13 +8,15 @@
 
 import UIKit
 import MessageUI
+import SwiftyJSON
 
 class PortfolioViewController: UIViewController , MFMailComposeViewControllerDelegate //,  UITableViewDelegate
 {
     
     var lastContentOffset : CGFloat = 0
     
-    
+    var filterItemSelectedColor : UIColor!
+    var filterItemColor: UIColor!
     @IBOutlet var tableView: UITableView!
     
     @IBOutlet var tableViewFilter: UITableView!
@@ -58,7 +60,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
         
     }
     
-    var cellContentOrginal = ["All","Wearable","UI/UX","Web","iOS","Android","Product"]
+    /*var cellContentOrginal = ["All","Wearable","UI/UX","Web","iOS","Android","Product"]
     var cellImageOrginal = ["ic_fab_all.png","ic_fab_wearable.png","ic_fab_ui_ux.png","ic_fab_web.png",
         "ic_fab_ios.png","ic_fab_android","ic_fab_product.png"]
     
@@ -68,7 +70,6 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
     var portfolioNameOrginal = ["Amar Phonebook","Colours FM","Monasa Learning Centre","Lock Deal","How I Work","Finder","Company Profile" ,"U-NEXT", "Deshi Deal"   ]
     
     var portfolioTypeOrginal = ["Android, iOS, UI/UX","Android, UI/UX","Website, UI/UX","Website, Android, UI/UX","Product, Website, Android, iOS, UI/UX","Product, Android, UI/UX","Product, Website, Android, UI/UX","Android, iOS","Product, Android, UI/UX"]
-    var likedOrginal = [false, false, false, false, false, false, false,false, false ]
     
     
     var cellContent = ["All","Wearable","UI/UX","Web","iOS","Android","Product"]
@@ -81,13 +82,29 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
     var portfolioName = ["Amar Phonebook","Colours FM","Monasa Learning Centre","Lock Deal","How I Work","Finder","Company Profile" ,"U-NEXT", "Deshi Deal"   ]
     
     var portfolioType = ["Android, iOS, UI/UX","Android, UI/UX","Website, UI/UX","Website, Android, UI/UX","Product, Website, Android, iOS, UI/UX","Product, Android, UI/UX","Product, Website, Android, UI/UX","Android, iOS","Product, Android, UI/UX"]
+    */
     
-    var liked = [false, false, false, false, false, false, false,false, false ]
+    var cellContentOrginal = [String]()
+    var cellImageOrginal = [String]()
+    var portfolioImageOrginal = [String]()
+    var portfolioNameOrginal = [String]()
+    var portfolioTypeOrginal = [String]()
+    var cellContent = [String]()
+    var cellImage = [String]()
+    var portfolioImage = [String]()
+    var portfolioName = [String]()
+    var portfolioType = [String]()
+    
+    var filterIcon : String!
+    var menuColor : String!
+    var menuPressedColor : String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        loadData()
         
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: "longPress:")
         self.tableView.addGestureRecognizer(longPressRecognizer)
@@ -147,14 +164,16 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
             cell.itemImage.image = UIImage(named: portfolioImage[indexPath.row])
             cell.itemName.text = portfolioName[indexPath.row]
             cell.itemType.text = portfolioType[indexPath.row]
+             cell.itemImage.backgroundColor = filterItemColor
+            
             //  cell.urls = "ic_heart_red.png"
             
-            if(liked[indexPath.row]) {
+            /*if(liked[indexPath.row]) {
                 cell.itemLike.setImage(UIImage(named: "ic_heart_red.png"), forState: UIControlState.Normal)
             } else {
                 cell.itemLike.setImage(UIImage(named: "ic_heart_outline_grey.png"), forState: UIControlState.Normal)
                 
-            }
+            }*/
             return cell
         } else {
             
@@ -207,7 +226,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
         
         
        let cell = tableView.cellForRowAtIndexPath(indexPath) as! FilterItemCell
-        cell.itemImage.backgroundColor = uicolorFromHex(0x5e9c19)
+        cell.itemImage.backgroundColor = filterItemSelectedColor
         
         showHideFilter()
         
@@ -221,7 +240,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
             portfolioImage.removeAll(keepCapacity: true)
             portfolioName.removeAll(keepCapacity: true)
             portfolioType.removeAll(keepCapacity: true)
-            liked.removeAll(keepCapacity: true)
+            
             
             
             let count = portfolioImageOrginal.count
@@ -236,7 +255,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
                     portfolioName.append(portfolioNameOrginal[i])
                     portfolioImage.append(portfolioImageOrginal[i])
                     portfolioType.append(portfolioTypeOrginal[i])
-                    liked.append(likedOrginal[i])
+                    
                     
                     index++
                     
@@ -261,7 +280,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
             portfolioName = portfolioNameOrginal
             portfolioImage = portfolioImageOrginal
             portfolioType = portfolioTypeOrginal
-            liked = likedOrginal
+           
             getStartedPage.hidden = true
             self.tableView.hidden = false;
             self.tableView.reloadData()
@@ -555,4 +574,110 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
         return UIColor(red:red, green:green, blue:blue, alpha:1.0)
     }
     
+    
+    func loadData() {
+        
+        
+        if let path = NSBundle.mainBundle().pathForResource("portfolio", ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                let jsonObj = JSON(data: data)
+                if jsonObj != JSON.null {
+                    
+                    
+                    
+                    for(var i:Int = 0; i<jsonObj["projects"].count; i++) {
+                        
+                        portfolioNameOrginal.append(jsonObj["projects"][i]["name"].string!)
+                        portfolioImageOrginal.append(jsonObj["projects"][i]["image"].string!)
+                        var type: String = ""
+                        for(var j:Int = 0; j<jsonObj["projects"][i]["platforms"].count; j++) {
+                            //portfolioTypeOrginal.append(jsonObj["projects"][i]["platforms"][j].string!)
+                            type = "\(type)\(jsonObj["projects"][i]["platforms"][j].string!)"
+                            if(j != (jsonObj["projects"][i]["platforms"].count - 1)) {
+                                type = "\(type), "
+                            }
+                        }
+                        portfolioTypeOrginal.append(type)
+                       
+                    }
+                    
+                    portfolioImage = portfolioImageOrginal
+                    portfolioName = portfolioNameOrginal
+                    portfolioType = portfolioTypeOrginal
+                    
+                    
+                } else {
+                    print("could not get json from file, make sure that file contains valid json.")
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        
+        
+        if let path = NSBundle.mainBundle().pathForResource("filter", ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                let jsonObj = JSON(data: data)
+                if jsonObj != JSON.null {
+                    
+                    fabBtn.imageView?.image = UIImage(named: jsonObj["filter"]["filter_icon"].string!)
+                    filterItemColor = UIColor(hexString: jsonObj["filter"]["menu_color"].string!)
+                    fabBtn.imageView?.backgroundColor = filterItemColor
+                    filterItemSelectedColor = UIColor(hexString: jsonObj["filter"]["menu_pressed_color"].string!)
+                    cellContentOrginal.append("All")
+                    cellImageOrginal.append("ic_fab_all.png")
+
+                    for(var i:Int = 0; i<jsonObj["filter"]["options"].count; i++) {
+                        
+                        cellContentOrginal.append(jsonObj["filter"]["options"][i]["title"].string!)
+                        cellImageOrginal.append(jsonObj["filter"]["options"][i]["image"].string!)
+                         
+                    }
+                    
+                    cellContent = cellContentOrginal
+                    cellImage = cellImageOrginal
+                    
+                    
+                    
+                } else {
+                    print("could not get json from file, make sure that file contains valid json.")
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        
+        
+        
+        
+    }
+    
+    
+    
+}
+
+extension UIColor {
+    convenience init(hexString: String) {
+        let hex = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet)
+        var int = UInt32()
+        NSScanner(string: hex).scanHexInt(&int)
+        let a, r, g, b: UInt32
+        switch hex.characters.count {
+        case 3: // RGB (12-bit)
+            (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
+        case 6: // RGB (24-bit)
+            (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
+        case 8: // ARGB (32-bit)
+            (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
+        default:
+            (a, r, g, b) = (1, 1, 1, 0)
+        }
+        self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
+    }
 }
