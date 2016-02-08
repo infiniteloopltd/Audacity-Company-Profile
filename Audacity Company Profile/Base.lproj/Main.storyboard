@@ -231,7 +231,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ES-Ms-lnR">
-                                <rect key="frame" x="20" y="28" width="32" height="34"/>
+                                <rect key="frame" x="14" y="28" width="32" height="34"/>
                                 <state key="normal" image="ic_navigation.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -256,14 +256,14 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Ue-5aS">
-                                                    <rect key="frame" x="8" y="9" width="20" height="20"/>
+                                                    <rect key="frame" x="20" y="9" width="17" height="17"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="KSP-2K-DOc"/>
-                                                        <constraint firstAttribute="height" constant="20" id="ntu-c7-tWB"/>
+                                                        <constraint firstAttribute="width" constant="17" id="KSP-2K-DOc"/>
+                                                        <constraint firstAttribute="height" constant="17" id="ntu-c7-tWB"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-tB-NZx">
-                                                    <rect key="frame" x="41" y="8" width="551" height="21"/>
+                                                    <rect key="frame" x="50" y="8" width="542" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Bm9-iR-J1v"/>
                                                     </constraints>
@@ -272,7 +272,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-eR-Pt2">
-                                                    <rect key="frame" x="41" y="27" width="551" height="54"/>
+                                                    <rect key="frame" x="50" y="27" width="542" height="54"/>
                                                     <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
@@ -285,7 +285,7 @@ TIN : 442670895657</string>
                                             <constraints>
                                                 <constraint firstItem="vCi-tB-NZx" firstAttribute="trailing" secondItem="3bQ-sr-YoX" secondAttribute="trailingMargin" id="45S-Lh-aAH"/>
                                                 <constraint firstItem="njg-eR-Pt2" firstAttribute="trailing" secondItem="3bQ-sr-YoX" secondAttribute="trailingMargin" id="7tO-g9-uHH"/>
-                                                <constraint firstItem="njg-eR-Pt2" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="33" id="Fuj-x6-Dm6"/>
+                                                <constraint firstItem="njg-eR-Pt2" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="42" id="Fuj-x6-Dm6"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="f5A-qr-EaG" secondAttribute="bottom" constant="-8" id="ICT-lC-NSs"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="f5A-qr-EaG" secondAttribute="trailing" constant="-8" id="J4s-Zw-iGq"/>
                                                 <constraint firstItem="njg-eR-Pt2" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="19" id="OXI-nk-Pt5"/>
@@ -293,7 +293,7 @@ TIN : 442670895657</string>
                                                 <constraint firstItem="f5A-qr-EaG" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="-8" id="TBr-uD-irJ"/>
                                                 <constraint firstItem="vCi-tB-NZx" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" id="YZX-A8-UrM"/>
                                                 <constraint firstItem="f5A-qr-EaG" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="-16" id="dSK-9Y-x82"/>
-                                                <constraint firstItem="e63-Ue-5aS" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" id="jzU-mO-LTC"/>
+                                                <constraint firstItem="e63-Ue-5aS" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="12" id="jzU-mO-LTC"/>
                                                 <constraint firstItem="e63-Ue-5aS" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="1" id="p8M-lV-n1W"/>
                                                 <constraint firstItem="vCi-tB-NZx" firstAttribute="leading" secondItem="e63-Ue-5aS" secondAttribute="trailing" constant="13" id="tXU-U9-9pa"/>
                                             </constraints>
@@ -1426,7 +1426,7 @@ TIN : 442670895657</string>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k43-7q-5dl">
-                                        <rect key="frame" x="22" y="32" width="30" height="34"/>
+                                        <rect key="frame" x="14" y="28" width="32" height="34"/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1448,14 +1448,14 @@ TIN : 442670895657</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="ved-O5-WHP">
-                                                            <rect key="frame" x="8" y="9" width="20" height="20"/>
+                                                            <rect key="frame" x="20" y="9" width="17" height="17"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="20" id="3Vp-kS-W02"/>
-                                                                <constraint firstAttribute="height" constant="20" id="Bvy-tF-cpv"/>
+                                                                <constraint firstAttribute="width" constant="17" id="3Vp-kS-W02"/>
+                                                                <constraint firstAttribute="height" constant="17" id="Bvy-tF-cpv"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXK-LW-nhu">
-                                                            <rect key="frame" x="41" y="8" width="551" height="21"/>
+                                                            <rect key="frame" x="50" y="8" width="542" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="hyL-lk-VmZ"/>
                                                             </constraints>
@@ -1464,7 +1464,7 @@ TIN : 442670895657</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2h-vx-gfb">
-                                                            <rect key="frame" x="41" y="27" width="551" height="54"/>
+                                                            <rect key="frame" x="50" y="27" width="542" height="54"/>
                                                             <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
@@ -1475,11 +1475,11 @@ TIN : 442670895657</string>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="ved-O5-WHP" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" constant="1" id="8jQ-Nm-E3j"/>
-                                                        <constraint firstItem="ved-O5-WHP" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" id="9bk-w4-rC1"/>
+                                                        <constraint firstItem="ved-O5-WHP" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="12" id="9bk-w4-rC1"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="o2h-vx-gfb" secondAttribute="bottom" constant="1" id="N5q-At-QhE"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" id="Noa-4d-VIx"/>
                                                         <constraint firstItem="o2h-vx-gfb" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" constant="19" id="bGP-oj-pVV"/>
-                                                        <constraint firstItem="o2h-vx-gfb" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="33" id="fgf-QF-r1g"/>
+                                                        <constraint firstItem="o2h-vx-gfb" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="42" id="fgf-QF-r1g"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="trailing" secondItem="qCD-Qw-kOG" secondAttribute="trailingMargin" id="lBM-w1-Htr"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="leading" secondItem="ved-O5-WHP" secondAttribute="trailing" constant="13" id="maS-QW-wgS"/>
                                                         <constraint firstItem="o2h-vx-gfb" firstAttribute="trailing" secondItem="qCD-Qw-kOG" secondAttribute="trailingMargin" id="nWb-Bp-MWG"/>
