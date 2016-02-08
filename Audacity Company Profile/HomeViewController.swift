@@ -48,6 +48,11 @@ class HomeViewController: UIViewController , UIPageViewControllerDataSource{
         createPageViewController()
         setupPageControl()
         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        if(Reachability.isConnectedToNetwork()) {
+            print("Connected to internet")
+        } else {
+            print("Not Connected")
+        }
         
     }
 

@@ -110,6 +110,7 @@
 		C44CFA701C4CDFD100413EF1 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */; };
 		C44CFA721C4CDFDE00413EF1 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */; };
 		C44CFA741C4CDFEE00413EF1 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */; };
+		C4BC5A131C6853CE008A3C93 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC5A121C6853CE008A3C93 /* Reachability.swift */; };
 		C4EB6AF51C5F844800747B7F /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF31C5F844800747B7F /* back_btn.png */; };
 		C4EB6AF61C5F844800747B7F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF41C5F844800747B7F /* map.png */; };
 		C4EB6B011C5F889A00747B7F /* client.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EB6AF81C5F889A00747B7F /* client.json */; };
@@ -250,6 +251,7 @@
 		C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		C4BC5A121C6853CE008A3C93 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C4EB6AF31C5F844800747B7F /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
 		C4EB6AF41C5F844800747B7F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		C4EB6AF81C5F889A00747B7F /* client.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = client.json; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		C44CF99C1C4CCEAC00413EF1 /* Audacity Company Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C4BC5A111C6853A7008A3C93 /* Utility */,
 				C4EB6AF71C5F886800747B7F /* JsonData */,
 				C4F7E86F1C4DEE4200CA82CB /* MySideMenu */,
 				C44CF9B21C4CCEE400413EF1 /* CustomComponent */,
@@ -491,6 +494,14 @@
 				C4FB5C681C5B733700D823E2 /* RippleView.swift */,
 			);
 			name = CustomComponent;
+			sourceTree = "<group>";
+		};
+		C4BC5A111C6853A7008A3C93 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC5A121C6853CE008A3C93 /* Reachability.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		C4EB6AF71C5F886800747B7F /* JsonData */ = {
@@ -761,6 +772,7 @@
 				C44CFA6C1C4CDF9D00413EF1 /* TeamViewController.swift in Sources */,
 				C44CFA5C1C4CD18800413EF1 /* TagButton.swift in Sources */,
 				C4F7E88D1C4DF26300CA82CB /* CollectionViewCell.swift in Sources */,
+				C4BC5A131C6853CE008A3C93 /* Reachability.swift in Sources */,
 				C4FB5C691C5B733700D823E2 /* RippleView.swift in Sources */,
 				C4FB5C671C5B708F00D823E2 /* RippleEffect.swift in Sources */,
 				C4F7E8911C4DF28600CA82CB /* PortfolioCell.swift in Sources */,
