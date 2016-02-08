@@ -1370,13 +1370,13 @@ TIN : 442670895657</string>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGF-Ti-KZ4">
-                                                <rect key="frame" x="0.0" y="239" width="600" height="67"/>
+                                                <rect key="frame" x="0.0" y="222" width="600" height="84"/>
                                                 <subviews>
                                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec8-Yf-Hv9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="597" height="67"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="597" height="84"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methodology" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5k-F8-Bcx">
-                                                                <rect key="frame" x="72" y="29" width="525" height="21"/>
+                                                                <rect key="frame" x="72" y="46" width="525" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="eTB-iy-oHg"/>
                                                                 </constraints>
@@ -1396,7 +1396,7 @@ TIN : 442670895657</string>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="ec8-Yf-Hv9" firstAttribute="top" secondItem="GGF-Ti-KZ4" secondAttribute="top" id="30Q-11-LKA"/>
-                                                    <constraint firstAttribute="height" constant="67" id="Cwg-Gc-Blt"/>
+                                                    <constraint firstAttribute="height" constant="84" id="Cwg-Gc-Blt"/>
                                                     <constraint firstAttribute="bottom" secondItem="ec8-Yf-Hv9" secondAttribute="bottom" id="FgT-PG-zzy"/>
                                                     <constraint firstItem="ec8-Yf-Hv9" firstAttribute="leading" secondItem="GGF-Ti-KZ4" secondAttribute="leading" id="GG7-qN-c8F"/>
                                                     <constraint firstAttribute="trailing" secondItem="ec8-Yf-Hv9" secondAttribute="trailing" constant="3" id="fZm-u0-bh5"/>

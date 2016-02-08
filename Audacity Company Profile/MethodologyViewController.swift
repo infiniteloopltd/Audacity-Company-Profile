@@ -86,7 +86,7 @@ class MethodologyViewController: UIViewController , UITableViewDelegate , UIGest
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadData()
-        self.tableView.estimatedRowHeight = 10
+        self.tableView.estimatedRowHeight = 100
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
         self.tableView.reloadData()
