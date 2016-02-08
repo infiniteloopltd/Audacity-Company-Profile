@@ -192,14 +192,14 @@
                                             <constraint firstAttribute="height" constant="84" id="MfF-1Z-kGJ"/>
                                             <constraint firstItem="ZqU-d9-aJb" firstAttribute="leading" secondItem="XX6-Tu-aQP" secondAttribute="leading" constant="40" id="N6c-Qj-SaJ"/>
                                             <constraint firstAttribute="trailing" secondItem="bIK-ZM-uSv" secondAttribute="trailing" id="NpL-uX-e9K"/>
-                                            <constraint firstItem="gl6-YO-4Ue" firstAttribute="top" secondItem="XX6-Tu-aQP" secondAttribute="top" constant="17" id="PTl-V0-wZ6"/>
+                                            <constraint firstItem="gl6-YO-4Ue" firstAttribute="top" secondItem="XX6-Tu-aQP" secondAttribute="top" constant="12" id="PTl-V0-wZ6"/>
                                             <constraint firstItem="Bta-YX-rSc" firstAttribute="top" secondItem="OAd-MT-Tax" secondAttribute="bottom" constant="5" id="etr-A1-7b1"/>
                                             <constraint firstItem="bIK-ZM-uSv" firstAttribute="leading" secondItem="XX6-Tu-aQP" secondAttribute="leading" id="gZt-pK-OOa"/>
                                             <constraint firstItem="Bta-YX-rSc" firstAttribute="centerX" secondItem="XX6-Tu-aQP" secondAttribute="centerX" constant="-1" id="jKZ-Vl-0SI"/>
                                             <constraint firstAttribute="trailing" secondItem="fjZ-3c-weQ" secondAttribute="trailing" constant="21" id="nfd-a9-kTR"/>
                                             <constraint firstAttribute="bottom" secondItem="bIK-ZM-uSv" secondAttribute="bottom" id="o0e-bO-dcw"/>
                                             <constraint firstItem="fjZ-3c-weQ" firstAttribute="top" secondItem="gl6-YO-4Ue" secondAttribute="bottom" constant="5" id="pbM-a4-azZ"/>
-                                            <constraint firstItem="ZqU-d9-aJb" firstAttribute="top" secondItem="XX6-Tu-aQP" secondAttribute="top" constant="17" id="rGf-EL-fO6"/>
+                                            <constraint firstItem="ZqU-d9-aJb" firstAttribute="top" secondItem="XX6-Tu-aQP" secondAttribute="top" constant="12" id="rGf-EL-fO6"/>
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_company.png" translatesAutoresizingMaskIntoConstraints="NO" id="0zx-2P-qhY">

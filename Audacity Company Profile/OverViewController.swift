@@ -107,6 +107,7 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadData()
+       
         self.tableView.estimatedRowHeight = 10
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -495,9 +496,13 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
     
     override func viewDidLayoutSubviews() {
        // print("TotalScreen height =\(totalScreenHeight)  table orginal height=\(tableView.frame.size.height)")
+     
+        
         tableOrginalHeight = tableView.frame.size.height
     
        
+        
+        
         tableViewOriginY = tableView.frame.origin.y
         parallaxHeaderHeight =  78
         

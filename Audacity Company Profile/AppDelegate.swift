@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible()
         
         
-        //  NSThread.sleepForTimeInterval(3.0)
+        NSThread.sleepForTimeInterval(3.0)
         
         
         return true
