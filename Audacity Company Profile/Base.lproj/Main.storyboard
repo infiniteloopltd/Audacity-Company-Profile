@@ -247,17 +247,24 @@
                                                     <rect key="frame" x="0.0" y="-8" width="600" height="98"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Ue-5aS">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Ue-5aS">
                                                     <rect key="frame" x="8" y="9" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="KSP-2K-DOc"/>
+                                                        <constraint firstAttribute="height" constant="20" id="ntu-c7-tWB"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-tB-NZx">
-                                                    <rect key="frame" x="41" y="8" width="326" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-tB-NZx">
+                                                    <rect key="frame" x="41" y="8" width="551" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Bm9-iR-J1v"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-eR-Pt2">
-                                                    <rect key="frame" x="41" y="27" width="326" height="54"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-eR-Pt2">
+                                                    <rect key="frame" x="41" y="27" width="551" height="54"/>
                                                     <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
@@ -268,10 +275,19 @@ TIN : 442670895657</string>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstItem="vCi-tB-NZx" firstAttribute="trailing" secondItem="3bQ-sr-YoX" secondAttribute="trailingMargin" id="45S-Lh-aAH"/>
+                                                <constraint firstItem="njg-eR-Pt2" firstAttribute="trailing" secondItem="3bQ-sr-YoX" secondAttribute="trailingMargin" id="7tO-g9-uHH"/>
+                                                <constraint firstItem="njg-eR-Pt2" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="33" id="Fuj-x6-Dm6"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="f5A-qr-EaG" secondAttribute="bottom" constant="-8" id="ICT-lC-NSs"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="f5A-qr-EaG" secondAttribute="trailing" constant="-8" id="J4s-Zw-iGq"/>
+                                                <constraint firstItem="njg-eR-Pt2" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="19" id="OXI-nk-Pt5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="njg-eR-Pt2" secondAttribute="bottom" constant="1" id="RJt-LJ-Qc8"/>
                                                 <constraint firstItem="f5A-qr-EaG" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="-8" id="TBr-uD-irJ"/>
+                                                <constraint firstItem="vCi-tB-NZx" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" id="YZX-A8-UrM"/>
                                                 <constraint firstItem="f5A-qr-EaG" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="-16" id="dSK-9Y-x82"/>
+                                                <constraint firstItem="e63-Ue-5aS" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" id="jzU-mO-LTC"/>
+                                                <constraint firstItem="e63-Ue-5aS" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="1" id="p8M-lV-n1W"/>
+                                                <constraint firstItem="vCi-tB-NZx" firstAttribute="leading" secondItem="e63-Ue-5aS" secondAttribute="trailing" constant="13" id="tXU-U9-9pa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1778,7 +1794,7 @@ TIN : 442670895657</string>
                                         <rect key="frame" x="0.0" y="22" width="600" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="72B-on-18D" id="71u-Ed-9Kt">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="123.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">

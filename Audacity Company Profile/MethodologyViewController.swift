@@ -187,13 +187,13 @@ class MethodologyViewController: UIViewController , UITableViewDelegate , UIGest
     
     
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    /*func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
         //  var height:CGFloat = self.calculateHeightForString(cellContent[indexPath.row])
         
         //return ( height * 2) + 50
         return 100
-    }
+    }*/
     
     
     
