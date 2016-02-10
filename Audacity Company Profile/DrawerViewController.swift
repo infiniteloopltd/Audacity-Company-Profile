@@ -20,6 +20,17 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     
+    @IBAction func homeIconAction(sender: AnyObject) {
+        
+        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
+        
+        let navController = UINavigationController(rootViewController: viewController)
+        
+        let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        appDelegate.centerContainer!.centerViewController = navController
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
