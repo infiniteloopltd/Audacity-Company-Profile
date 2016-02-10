@@ -22,14 +22,30 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBAction func homeIconAction(sender: AnyObject) {
         
-        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
+        /*let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
         
         let navController = UINavigationController(rootViewController: viewController)
         
         let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         appDelegate.centerContainer!.centerViewController = navController
-        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)*/
+        
+        
+        let rowToDeSelect:NSIndexPath = NSIndexPath(forRow: selectedItem, inSection: 0);  //slecting 0th row with 0th section
+        self.tableView.selectRowAtIndexPath(rowToDeSelect, animated: true, scrollPosition: UITableViewScrollPosition.None);
+        self.tableView(self.tableView, didDeselectRowAtIndexPath:  rowToDeSelect);
+        
+        
+        
+        let rowToSelect:NSIndexPath = NSIndexPath(forRow: 1, inSection: 0);  //slecting 0th row with 0th section
+        self.tableView.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None);
+        self.tableView(self.tableView, didSelectRowAtIndexPath: rowToSelect);
+        
+        
+        
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

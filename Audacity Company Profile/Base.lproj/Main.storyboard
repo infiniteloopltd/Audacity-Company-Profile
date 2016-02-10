@@ -32,9 +32,9 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="102-IP-imX">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -114,19 +114,19 @@
                                         <animations/>
                                         <gestureRecognizers/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best mobile apps development company in Bangladesh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92u-1J-Ln4">
-                                        <rect key="frame" x="142" y="192" width="317" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best mobile apps development company in Bangladesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92u-1J-Ln4">
+                                        <rect key="frame" x="16" y="192" width="576" height="21"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="317" id="UQs-Kq-nJE"/>
+                                            <constraint firstAttribute="width" constant="576" id="UQs-Kq-nJE"/>
                                             <constraint firstAttribute="height" constant="21" id="faK-SF-cZ5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Audacity IT Solutions Ltd." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gq-d7-pof">
-                                        <rect key="frame" x="184" y="163" width="233" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Audacity IT Solutions Ltd." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gq-d7-pof">
+                                        <rect key="frame" x="16" y="163" width="576" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -239,13 +239,13 @@
                                     <constraint firstAttribute="bottom" secondItem="XX6-Tu-aQP" secondAttribute="bottom" id="BMU-DJ-tp7"/>
                                     <constraint firstItem="6gq-d7-pof" firstAttribute="top" secondItem="0zx-2P-qhY" secondAttribute="bottom" constant="18" id="Dda-FX-9Co"/>
                                     <constraint firstItem="0zx-2P-qhY" firstAttribute="centerX" secondItem="HzW-jR-dgk" secondAttribute="centerX" id="P2E-Ab-AhH"/>
-                                    <constraint firstItem="0zx-2P-qhY" firstAttribute="centerX" secondItem="92u-1J-Ln4" secondAttribute="centerX" id="Ws3-sV-56B"/>
+                                    <constraint firstItem="0zx-2P-qhY" firstAttribute="centerX" secondItem="92u-1J-Ln4" secondAttribute="centerX" constant="-4" id="Ws3-sV-56B"/>
                                     <constraint firstAttribute="bottom" secondItem="b9Z-1D-mxG" secondAttribute="bottom" id="YhN-iO-Cbz"/>
                                     <constraint firstAttribute="trailing" secondItem="XX6-Tu-aQP" secondAttribute="trailing" id="f9R-l5-Ak6"/>
                                     <constraint firstItem="b9Z-1D-mxG" firstAttribute="leading" secondItem="HzW-jR-dgk" secondAttribute="leading" id="lmH-o3-Bjo"/>
                                     <constraint firstItem="92u-1J-Ln4" firstAttribute="top" secondItem="6gq-d7-pof" secondAttribute="bottom" constant="8" symbolic="YES" id="oZg-lx-ib2"/>
                                     <constraint firstAttribute="height" constant="306" id="prL-PY-513"/>
-                                    <constraint firstItem="0zx-2P-qhY" firstAttribute="centerX" secondItem="6gq-d7-pof" secondAttribute="centerX" id="qkh-1H-KDg"/>
+                                    <constraint firstItem="0zx-2P-qhY" firstAttribute="centerX" secondItem="6gq-d7-pof" secondAttribute="centerX" constant="-4" id="qkh-1H-KDg"/>
                                     <constraint firstItem="b9Z-1D-mxG" firstAttribute="top" secondItem="HzW-jR-dgk" secondAttribute="top" id="uCa-sG-OQ0"/>
                                     <constraint firstAttribute="trailing" secondItem="b9Z-1D-mxG" secondAttribute="trailing" id="xSd-95-KSK"/>
                                     <constraint firstItem="XX6-Tu-aQP" firstAttribute="leading" secondItem="HzW-jR-dgk" secondAttribute="leading" id="xd0-Fz-Txz"/>
@@ -294,12 +294,12 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Bm9-iR-J1v"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-eR-Pt2">
-                                                    <rect key="frame" x="50" y="27" width="542" height="54"/>
+                                                    <rect key="frame" x="50" y="37" width="542" height="44"/>
                                                     <animations/>
                                                     <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
@@ -317,7 +317,7 @@ TIN : 442670895657</string>
                                                 <constraint firstItem="njg-eR-Pt2" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="42" id="Fuj-x6-Dm6"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="f5A-qr-EaG" secondAttribute="bottom" constant="-8" id="ICT-lC-NSs"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="f5A-qr-EaG" secondAttribute="trailing" constant="-8" id="J4s-Zw-iGq"/>
-                                                <constraint firstItem="njg-eR-Pt2" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="19" id="OXI-nk-Pt5"/>
+                                                <constraint firstItem="njg-eR-Pt2" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="29" id="OXI-nk-Pt5"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="njg-eR-Pt2" secondAttribute="bottom" constant="1" id="RJt-LJ-Qc8"/>
                                                 <constraint firstItem="f5A-qr-EaG" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="-8" id="TBr-uD-irJ"/>
                                                 <constraint firstItem="vCi-tB-NZx" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" id="YZX-A8-UrM"/>
@@ -435,9 +435,9 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Portfolio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxA-hS-EqE">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -478,8 +478,8 @@ TIN : 442670895657</string>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Bl2-1T-DQt"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android, iOS, UI/UX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeD-ck-dKQ">
@@ -489,7 +489,7 @@ TIN : 442670895657</string>
                                                                 <constraint firstAttribute="height" constant="21" id="J27-ge-Y5r"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIw-Dn-Q6d">
@@ -846,9 +846,9 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpM-0z-ZtO">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -883,18 +883,24 @@ TIN : 442670895657</string>
                                                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-CC-Vbg">
-                                                    <rect key="frame" x="26" y="9" width="49" height="47"/>
+                                                    <rect key="frame" x="26" y="8" width="58" height="58"/>
                                                     <animations/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="29"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faisal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5J-it-lkQ">
-                                                    <rect key="frame" x="10" y="59" width="82" height="23"/>
+                                                    <rect key="frame" x="8" y="64" width="94" height="23"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXd-Vb-QYn">
-                                                    <rect key="frame" x="8" y="79" width="94" height="21"/>
+                                                    <rect key="frame" x="8" y="84" width="94" height="18"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -926,8 +932,14 @@ TIN : 442670895657</string>
                                                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-Sl-Cey">
-                                                    <rect key="frame" x="41" y="8" width="99" height="101"/>
+                                                    <rect key="frame" x="41" y="8" width="100" height="100"/>
                                                     <animations/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faisal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asS-aJ-XlF">
                                                     <rect key="frame" x="8" y="117" width="164" height="23"/>
@@ -1009,9 +1021,9 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqU-hi-kwO">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1051,14 +1063,14 @@ TIN : 442670895657</string>
                                                                         <constraint firstAttribute="width" constant="60" id="kof-M7-ITI"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monasa Learning Centre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-bn-Pba">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Monasa Learning Centre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-bn-Pba">
                                                                     <rect key="frame" x="74" y="19" width="158" height="17"/>
                                                                     <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="VYp-tx-XxK"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usq-cE-VNA">
@@ -1078,7 +1090,7 @@ TIN : 442670895657</string>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="9w2-NV-mPA"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1304,9 +1316,9 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Testimonial " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpe-mI-TFE">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1343,10 +1355,10 @@ TIN : 442670895657</string>
                                                                     <animations/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cody McDowell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fst-7J-599">
-                                                                    <rect key="frame" x="74" y="15" width="212" height="21"/>
+                                                                    <rect key="frame" x="74" y="15" width="443" height="21"/>
                                                                     <animations/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-eA-6Ug">
@@ -1485,12 +1497,12 @@ TIN : 442670895657</string>
                                                 <gestureRecognizers/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wkQ-vV-BZK">
-                                                <rect key="frame" x="219" y="107" width="162" height="92"/>
+                                                <rect key="frame" x="150" y="61" width="300" height="183"/>
                                                 <animations/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="92" id="X8a-Gl-6fZ"/>
-                                                    <constraint firstAttribute="width" constant="162" id="YWO-gh-8uY"/>
+                                                    <constraint firstAttribute="height" constant="183" id="X8a-Gl-6fZ"/>
+                                                    <constraint firstAttribute="width" constant="300" id="YWO-gh-8uY"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGF-Ti-KZ4">
@@ -1505,7 +1517,7 @@ TIN : 442670895657</string>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="eTB-iy-oHg"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1588,7 +1600,7 @@ TIN : 442670895657</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2h-vx-gfb">
-                                                            <rect key="frame" x="50" y="27" width="542" height="54"/>
+                                                            <rect key="frame" x="50" y="37" width="542" height="44"/>
                                                             <animations/>
                                                             <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
@@ -1604,7 +1616,7 @@ TIN : 442670895657</string>
                                                         <constraint firstItem="ved-O5-WHP" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="12" id="9bk-w4-rC1"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="o2h-vx-gfb" secondAttribute="bottom" constant="1" id="N5q-At-QhE"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" id="Noa-4d-VIx"/>
-                                                        <constraint firstItem="o2h-vx-gfb" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" constant="19" id="bGP-oj-pVV"/>
+                                                        <constraint firstItem="o2h-vx-gfb" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" constant="29" id="bGP-oj-pVV"/>
                                                         <constraint firstItem="o2h-vx-gfb" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="42" id="fgf-QF-r1g"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="trailing" secondItem="qCD-Qw-kOG" secondAttribute="trailingMargin" id="lBM-w1-Htr"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="leading" secondItem="ved-O5-WHP" secondAttribute="trailing" constant="13" id="maS-QW-wgS"/>
@@ -1687,9 +1699,9 @@ TIN : 442670895657</string>
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Social" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-jz-qMy">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1933,9 +1945,9 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMx-r7-1Nf">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1973,7 +1985,7 @@ TIN : 442670895657</string>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-2D-u4L">
+                                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-2D-u4L">
                                                                     <rect key="frame" x="532" y="8" width="18" height="18"/>
                                                                     <animations/>
                                                                     <constraints>
@@ -1999,6 +2011,11 @@ TIN : 442670895657</string>
                                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo9-2o-Iww" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="62" width="558" height="39"/>
                                                             <subviews>
+                                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygC-KH-k32">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="3" height="39"/>
+                                                                    <animations/>
+                                                                    <color key="backgroundColor" red="0.058823529411764705" green="0.054901960784313725" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufa-Wm-LRl">
                                                                     <rect key="frame" x="8" y="8" width="304" height="15"/>
                                                                     <animations/>
@@ -2011,10 +2028,14 @@ TIN : 442670895657</string>
                                                             <color key="backgroundColor" red="0.94117647059999998" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstItem="Ufa-Wm-LRl" firstAttribute="top" secondItem="oo9-2o-Iww" secondAttribute="top" constant="8" id="6gW-hZ-qeu"/>
+                                                                <constraint firstItem="ygC-KH-k32" firstAttribute="leading" secondItem="oo9-2o-Iww" secondAttribute="leading" id="6jR-F7-dPe"/>
+                                                                <constraint firstItem="Ufa-Wm-LRl" firstAttribute="leading" secondItem="ygC-KH-k32" secondAttribute="trailing" constant="5" id="Akv-ED-zj2"/>
                                                                 <constraint firstItem="Ufa-Wm-LRl" firstAttribute="leading" secondItem="oo9-2o-Iww" secondAttribute="leading" constant="8" id="AvE-Py-4qo"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Ufa-Wm-LRl" secondAttribute="trailing" constant="15" id="FhW-1A-F8X"/>
-                                                                <constraint firstAttribute="bottom" secondItem="Ufa-Wm-LRl" secondAttribute="bottom" constant="16" id="LVn-V8-oXC"/>
-                                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ufa-Wm-LRl" secondAttribute="bottom" constant="16" id="yj1-Zh-KR5"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Ufa-Wm-LRl" secondAttribute="bottom" constant="8" id="LVn-V8-oXC"/>
+                                                                <constraint firstItem="ygC-KH-k32" firstAttribute="top" secondItem="oo9-2o-Iww" secondAttribute="top" id="cKm-ro-ZyA"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ygC-KH-k32" secondAttribute="bottom" id="jJ4-Df-6WN"/>
+                                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ufa-Wm-LRl" secondAttribute="bottom" constant="8" id="yj1-Zh-KR5"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
@@ -2168,7 +2189,7 @@ TIN : 442670895657</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Y08-lT-ocU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2433,9 +2454,9 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audacity IT Solutions LTD." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHO-4v-7Uf">
-                                        <rect key="frame" x="57" y="34" width="310" height="36"/>
+                                        <rect key="frame" x="57" y="34" width="535" height="36"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>

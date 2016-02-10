@@ -12,7 +12,7 @@ class SocialViewController: UIViewController {
     
     var appDelegate:AppDelegate!
     
-    var socialLink = ["https://www.facebook.com","https://www.linkedin.com","https://www.twitter.com","https://www.youtube.com"]
+    var socialLink = ["https://www.facebook.com/audacityit","https://www.linkedin.com/company/audacity-it-solution","https://twitter.com/audacity_it_ltd","https://www.youtube.com/channel/UC9-vBIn_JticiYOP70m-mdg"]
     
     @IBAction func drawerToggleAction(sender: AnyObject) {
         

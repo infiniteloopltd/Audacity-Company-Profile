@@ -26,7 +26,7 @@ class RippleView: UIView {
         }
     }
     
-    @IBInspectable  var rippleColor: UIColor = UIColor(white: 0.95, alpha: 1) {
+    @IBInspectable  var rippleColor: UIColor = UIColor(white: 0.9, alpha: 1) {
         didSet {
             rippleView.backgroundColor = uicolorFromHex(0xdddddd,alpha: 0.5)
             
@@ -38,7 +38,7 @@ class RippleView: UIView {
     
     @IBInspectable  var rippleBackgroundColor: UIColor = UIColor(white: 0.95, alpha: 1) {
         didSet {
-            rippleBackgroundView.backgroundColor = rippleBackgroundColor
+            rippleView.backgroundColor = uicolorFromHex(0xdddddd,alpha: 0.5)
         }
     }
     
@@ -111,8 +111,8 @@ class RippleView: UIView {
         
         let corner: CGFloat = size/2
         
-        //rippleView.backgroundColor = rippleColor
-        rippleView.backgroundColor = uicolorFromHex(0xdddddd,alpha:0.5)
+        rippleView.backgroundColor = rippleColor
+        //rippleView.backgroundColor = uicolorFromHex(0xdddddd,alpha:0.5)
         rippleView.frame = CGRectMake(x, y, size  , size )
         
         rippleView.layer.cornerRadius = corner
