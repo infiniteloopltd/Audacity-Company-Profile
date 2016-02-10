@@ -2280,11 +2280,11 @@ TIN : 442670895657</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SxQ-gd-rEP">
-                                                    <rect key="frame" x="30" y="9" width="30" height="30"/>
+                                                    <rect key="frame" x="30" y="11" width="25" height="25"/>
                                                     <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjo-xB-VmR">
-                                                    <rect key="frame" x="82" y="0.0" width="190" height="50"/>
+                                                    <rect key="frame" x="74" y="0.0" width="206" height="50"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.64313725489999995" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>

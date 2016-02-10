@@ -14,7 +14,7 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet var tableView: UITableView!
     var drawerItem:[String] = ["Home","Overview","Portfolio","Team","Clients","Testimonial","Methodology","Social","FAQ","Rate this App"];
-    var drawerItemImage:[String] = ["ic_nav_home.png","ic_nav_overview.png","ic_nav_portfolio.png","ic_nav_team.png","ic_nav_client.png","ic_nav_testimonial.png","ic_nav_methodology.png","ic_nav_social.png","ic_nav_faq.png","ic_nav_overview.png"];
+    var drawerItemImage:[String] = ["ic_nav_home.png","ic_nav_overview.png","ic_nav_portfolio.png","ic_nav_team.png","ic_nav_client.png","ic_nav_testimonial.png","ic_nav_methodology.png","ic_nav_social.png","ic_nav_faq.png","ic_fab_star.png"];
     var totalCount: Int = 0
     var selectedItem:Int = -1
     
@@ -172,7 +172,7 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         
         let picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
-        //picker.setSubject(subjectField.text)
+        picker.setSubject("Contact with Audacity IT Solutions via company profile app")
         //picker.setMessageBody(emailBodyField.text, isHTML: true)
         picker.setToRecipients(["founders@audacityit.com"])
         
@@ -186,7 +186,7 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         
         let picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
-        //picker.setSubject(subjectField.text)
+        picker.setSubject("Contact with Audacity IT Solutions via company profile app")
         //picker.setMessageBody(emailBodyField.text, isHTML: true)
         picker.setToRecipients(["founders@audacityit.com"])
         

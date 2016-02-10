@@ -40,7 +40,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
         
         let picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
-        //picker.setSubject(subjectField.text)
+        picker.setSubject("Contact with Audacity IT Solutions via company profile app")
         //picker.setMessageBody(emailBodyField.text, isHTML: true)
         picker.setToRecipients(["founders@audacityit.com"])
         
