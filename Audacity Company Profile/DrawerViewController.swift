@@ -114,6 +114,15 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
             let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
             cellToDeSelect.contentView.backgroundColor = uicolorFromHex(0x21252A)
         
+        
+        
+        let cell: DrawerCell = cellToDeSelect as! DrawerCell
+        
+        cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        cell.itemImageView.tintColor = uicolorFromHex(0x99A4B9)
+        cell.itemLabel.textColor = uicolorFromHex(0x99A4B9)
+        
+        
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -207,8 +216,11 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
             selectedCell.contentView.backgroundColor = UIColor.blackColor()
             selectedCell.backgroundColor = UIColor.blackColor()
         
+        let cell: DrawerCell = selectedCell as! DrawerCell
         
-        
+        cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        cell.itemImageView.tintColor = uicolorFromHex(0x0089e9)
+         cell.itemLabel.textColor = uicolorFromHex(0x0089e9)
         
         
         switch(indexPath.row)
