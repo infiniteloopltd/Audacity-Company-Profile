@@ -1972,8 +1972,8 @@ TIN : 442670895657</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
-                                                    <rect key="frame" x="13" y="6" width="574" height="110"/>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="13" y="3" width="574" height="118"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-e8-SwA" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="558" height="46"/>
@@ -1986,7 +1986,7 @@ TIN : 442670895657</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-2D-u4L">
-                                                                    <rect key="frame" x="532" y="8" width="18" height="18"/>
+                                                                    <rect key="frame" x="542" y="8" width="18" height="18"/>
                                                                     <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="18" id="JOI-xU-3zw"/>
@@ -2056,10 +2056,10 @@ TIN : 442670895657</string>
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="top" secondItem="71u-Ed-9Kt" secondAttribute="topMargin" constant="-2" id="7dL-Wz-XHl"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hMf-8B-vKt" secondAttribute="bottom" constant="-1" id="BZU-WF-0Ob"/>
-                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="leading" secondItem="71u-Ed-9Kt" secondAttribute="leadingMargin" constant="5" id="HzR-RX-cRg"/>
-                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="trailing" secondItem="71u-Ed-9Kt" secondAttribute="trailingMargin" constant="-5" id="KYn-SC-KPQ"/>
+                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="top" secondItem="71u-Ed-9Kt" secondAttribute="topMargin" constant="-5" id="7dL-Wz-XHl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hMf-8B-vKt" secondAttribute="bottom" constant="-6" id="BZU-WF-0Ob"/>
+                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="leading" secondItem="71u-Ed-9Kt" secondAttribute="leadingMargin" id="HzR-RX-cRg"/>
+                                                <constraint firstItem="hMf-8B-vKt" firstAttribute="trailing" secondItem="71u-Ed-9Kt" secondAttribute="trailingMargin" id="KYn-SC-KPQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
