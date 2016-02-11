@@ -882,7 +882,7 @@ TIN : 442670895657</string>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-CC-Vbg">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_rifat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-CC-Vbg">
                                                     <rect key="frame" x="26" y="8" width="58" height="58"/>
                                                     <animations/>
                                                     <userDefinedRuntimeAttributes>
@@ -931,7 +931,7 @@ TIN : 442670895657</string>
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-Sl-Cey">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_rifat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-Sl-Cey">
                                                     <rect key="frame" x="41" y="8" width="100" height="100"/>
                                                     <animations/>
                                                     <userDefinedRuntimeAttributes>
@@ -1350,7 +1350,7 @@ TIN : 442670895657</string>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-Jd-Dfu" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="14" width="568" height="70"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-fG-SUM">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_mamun.png" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-fG-SUM">
                                                                     <rect key="frame" x="6" y="5" width="60" height="60"/>
                                                                     <animations/>
                                                                 </imageView>
@@ -2500,7 +2500,8 @@ TIN : 442670895657</string>
         <image name="ic_fab_all.png" width="48" height="48"/>
         <image name="ic_fab_filter.png" width="48" height="48"/>
         <image name="ic_heart_outline_grey.png" width="72" height="72"/>
-        <image name="ic_member_faisal.png" width="210" height="210"/>
+        <image name="ic_member_mamun.png" width="210" height="210"/>
+        <image name="ic_member_rifat.jpg" width="265" height="265"/>
         <image name="ic_nav_call.png" width="48" height="48"/>
         <image name="ic_nav_mail.png" width="48" height="48"/>
         <image name="ic_nav_web.png" width="48" height="48"/>
