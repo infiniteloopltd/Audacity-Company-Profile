@@ -55,7 +55,9 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableView.backgroundColor = uicolorFromHex(0x21252A)
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        
+        let rowToSelect:NSIndexPath = NSIndexPath(forRow: 1, inSection: 0);  //slecting 0th row with 0th section
+        self.tableView.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None);
+        self.tableView(self.tableView, didSelectRowAtIndexPath: rowToSelect);
         
         
         //let rowToSelect:NSIndexPath = NSIndexPath(forRow: 1, inSection: 0);  //slecting 0th row with 0th section
