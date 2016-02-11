@@ -1509,7 +1509,7 @@ TIN : 442670895657</string>
                                                 <rect key="frame" x="0.0" y="222" width="600" height="84"/>
                                                 <subviews>
                                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec8-Yf-Hv9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="597" height="84"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methodology" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5k-F8-Bcx">
                                                                 <rect key="frame" x="72" y="46" width="525" height="21"/>
@@ -1526,7 +1526,7 @@ TIN : 442670895657</string>
                                                         <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="t5k-F8-Bcx" secondAttribute="bottom" constant="17" id="76N-Lx-V9o"/>
-                                                            <constraint firstAttribute="trailing" secondItem="t5k-F8-Bcx" secondAttribute="trailing" id="ArP-zV-69f"/>
+                                                            <constraint firstAttribute="trailing" secondItem="t5k-F8-Bcx" secondAttribute="trailing" constant="3" id="ArP-zV-69f"/>
                                                             <constraint firstItem="t5k-F8-Bcx" firstAttribute="leading" secondItem="ec8-Yf-Hv9" secondAttribute="leading" constant="72" id="HFH-Bm-g8W"/>
                                                         </constraints>
                                                     </view>
@@ -1538,7 +1538,7 @@ TIN : 442670895657</string>
                                                     <constraint firstAttribute="height" constant="84" id="Cwg-Gc-Blt"/>
                                                     <constraint firstAttribute="bottom" secondItem="ec8-Yf-Hv9" secondAttribute="bottom" id="FgT-PG-zzy"/>
                                                     <constraint firstItem="ec8-Yf-Hv9" firstAttribute="leading" secondItem="GGF-Ti-KZ4" secondAttribute="leading" id="GG7-qN-c8F"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ec8-Yf-Hv9" secondAttribute="trailing" constant="3" id="fZm-u0-bh5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ec8-Yf-Hv9" secondAttribute="trailing" id="fZm-u0-bh5"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
