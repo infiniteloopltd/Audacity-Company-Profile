@@ -3,57 +3,57 @@
     {
       "name": "Faisal",
       "designation": "Founder & CTO",
-      "image": "ic_member_faisal"
+      "image": "ic_member_faisal.jpg"
     },
     {
       "name": "Suraiya",
       "designation": "Founder & COO",
-      "image": "ic_member_suraiya"
+      "image": "ic_member_suraiya.jpg"
     },
     {
       "name": "Siddiq",
       "designation": "Founder & CEO",
-      "image": "ic_member_siddiq"
+      "image": "ic_member_siddiq.jpg"
     },
     {
       "name": "Tushar",
       "designation": "Android Engineer",
-      "image": "ic_member_tushar"
+      "image": "ic_member_tushar.jpg"
     },
     {
       "name": "Tuhin",
       "designation": "UI/UX Engineer",
-      "image": "ic_member_tuhin"
+      "image": "ic_member_tuhin.jpg"
     },
     {
       "name": "Tinu",
       "designation": "QA Engineer",
-      "image": "ic_member_tinu"
+      "image": "ic_member_tinu.jpg"
     },
     {
       "name": "Sourav",
       "designation": "Android Engineer",
-      "image": "ic_member_saurav"
+      "image": "ic_member_sourav.jpg"
     },
     {
       "name": "Sumon",
       "designation": "Web Designer",
-      "image": "ic_member_sumon"
+      "image": "ic_member_sumon.jpg"
     },
     {
       "name": "Shaun",
       "designation": "UI/UX Consultant",
-      "image": "ic_member_shaun"
+      "image": "ic_member_shaun.png"
     },
     {
       "name": "Mamun",
       "designation": "Web Engineer",
-      "image": "ic_member_mamun"
+      "image": "ic_member_mamun.png"
     },
     {
       "name": "Rifat",
       "designation": "Office Admin",
-      "image": "ic_member_rifat"
+      "image": "ic_member_rifat.jpg"
     }
   ]
 }

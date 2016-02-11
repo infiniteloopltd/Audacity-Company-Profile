@@ -509,7 +509,7 @@ class MethodologyViewController: UIViewController , UITableViewDelegate , UIGest
                 yDistance = yDistance * (-1)
             }
             
-            print("I am from if \(translation.x) translation y = \(translation.y)", terminator: "")
+            //print("I am from if \(translation.x) translation y = \(translation.y)", terminator: "")
             
             if ( xDistance > yDistance) {
                 return false

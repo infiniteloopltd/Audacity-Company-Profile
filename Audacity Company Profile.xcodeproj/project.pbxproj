@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2162B4B41C6C49DC0064C24F /* ic_member_faisal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B31C6C49DC0064C24F /* ic_member_faisal.jpg */; };
+		2162B4C01C6C534E0064C24F /* ic_member_faisal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B51C6C534E0064C24F /* ic_member_faisal.jpg */; };
+		2162B4C11C6C534E0064C24F /* ic_member_mamun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B61C6C534E0064C24F /* ic_member_mamun.png */; };
+		2162B4C21C6C534E0064C24F /* ic_member_rifat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B71C6C534E0064C24F /* ic_member_rifat.jpg */; };
+		2162B4C31C6C534E0064C24F /* ic_member_shaun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B81C6C534E0064C24F /* ic_member_shaun.png */; };
+		2162B4C41C6C534E0064C24F /* ic_member_siddiq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B91C6C534E0064C24F /* ic_member_siddiq.jpg */; };
+		2162B4C51C6C534E0064C24F /* ic_member_sourav.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BA1C6C534E0064C24F /* ic_member_sourav.jpg */; };
+		2162B4C61C6C534E0064C24F /* ic_member_sumon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BB1C6C534E0064C24F /* ic_member_sumon.jpg */; };
+		2162B4C71C6C534E0064C24F /* ic_member_suraiya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BC1C6C534E0064C24F /* ic_member_suraiya.jpg */; };
+		2162B4C81C6C534E0064C24F /* ic_member_tinu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BD1C6C534E0064C24F /* ic_member_tinu.jpg */; };
+		2162B4C91C6C534E0064C24F /* ic_member_tuhin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BE1C6C534E0064C24F /* ic_member_tuhin.jpg */; };
+		2162B4CA1C6C534E0064C24F /* ic_member_tushar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BF1C6C534E0064C24F /* ic_member_tushar.jpg */; };
 		2F389C5F7563D3DCC803CB74 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9EC7DE6F3AA38CF489A066 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C44CF99E1C4CCEAC00413EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99D1C4CCEAC00413EF1 /* AppDelegate.swift */; };
 		C44CF9A01C4CCEAC00413EF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99F1C4CCEAC00413EF1 /* HomeViewController.swift */; };
@@ -60,17 +72,6 @@
 		C44CFA321C4CD16800413EF1 /* ic_methodology_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9DF1C4CD16800413EF1 /* ic_methodology_4.png */; };
 		C44CFA331C4CD16800413EF1 /* ic_methodology_5.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E01C4CD16800413EF1 /* ic_methodology_5.png */; };
 		C44CFA341C4CD16800413EF1 /* ic_methodology_6.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E11C4CD16800413EF1 /* ic_methodology_6.png */; };
-		C44CFA351C4CD16800413EF1 /* ic_member_faisal.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E21C4CD16800413EF1 /* ic_member_faisal.png */; };
-		C44CFA361C4CD16800413EF1 /* ic_member_mamun.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E31C4CD16800413EF1 /* ic_member_mamun.png */; };
-		C44CFA371C4CD16800413EF1 /* ic_member_rifat.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E41C4CD16800413EF1 /* ic_member_rifat.png */; };
-		C44CFA381C4CD16800413EF1 /* ic_member_saurav.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E51C4CD16800413EF1 /* ic_member_saurav.png */; };
-		C44CFA391C4CD16800413EF1 /* ic_member_shaun.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E61C4CD16800413EF1 /* ic_member_shaun.png */; };
-		C44CFA3A1C4CD16800413EF1 /* ic_member_siddiq.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E71C4CD16800413EF1 /* ic_member_siddiq.png */; };
-		C44CFA3B1C4CD16800413EF1 /* ic_member_sumon.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E81C4CD16800413EF1 /* ic_member_sumon.png */; };
-		C44CFA3C1C4CD16800413EF1 /* ic_member_suraiya.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9E91C4CD16800413EF1 /* ic_member_suraiya.png */; };
-		C44CFA3D1C4CD16800413EF1 /* ic_member_tinu.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9EA1C4CD16800413EF1 /* ic_member_tinu.png */; };
-		C44CFA3E1C4CD16800413EF1 /* ic_member_tuhin.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9EB1C4CD16800413EF1 /* ic_member_tuhin.png */; };
-		C44CFA3F1C4CD16800413EF1 /* ic_member_tushar.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9EC1C4CD16800413EF1 /* ic_member_tushar.png */; };
 		C44CFA401C4CD16800413EF1 /* ic_overview_skill.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9ED1C4CD16800413EF1 /* ic_overview_skill.png */; };
 		C44CFA411C4CD16800413EF1 /* ic_social_linked_in.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9EE1C4CD16800413EF1 /* ic_social_linked_in.png */; };
 		C44CFA421C4CD16800413EF1 /* fab_map.png in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9EF1C4CD16800413EF1 /* fab_map.png */; };
@@ -145,6 +146,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2162B4B31C6C49DC0064C24F /* ic_member_faisal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_faisal.jpg; sourceTree = "<group>"; };
+		2162B4B51C6C534E0064C24F /* ic_member_faisal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_faisal.jpg; sourceTree = "<group>"; };
+		2162B4B61C6C534E0064C24F /* ic_member_mamun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_mamun.png; sourceTree = "<group>"; };
+		2162B4B71C6C534E0064C24F /* ic_member_rifat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_rifat.jpg; sourceTree = "<group>"; };
+		2162B4B81C6C534E0064C24F /* ic_member_shaun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_shaun.png; sourceTree = "<group>"; };
+		2162B4B91C6C534E0064C24F /* ic_member_siddiq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_siddiq.jpg; sourceTree = "<group>"; };
+		2162B4BA1C6C534E0064C24F /* ic_member_sourav.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_sourav.jpg; sourceTree = "<group>"; };
+		2162B4BB1C6C534E0064C24F /* ic_member_sumon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_sumon.jpg; sourceTree = "<group>"; };
+		2162B4BC1C6C534E0064C24F /* ic_member_suraiya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_suraiya.jpg; sourceTree = "<group>"; };
+		2162B4BD1C6C534E0064C24F /* ic_member_tinu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_tinu.jpg; sourceTree = "<group>"; };
+		2162B4BE1C6C534E0064C24F /* ic_member_tuhin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_tuhin.jpg; sourceTree = "<group>"; };
+		2162B4BF1C6C534E0064C24F /* ic_member_tushar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_tushar.jpg; sourceTree = "<group>"; };
 		2D81588BF3D1BD7C99E84375 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AD4808741A75169D8E1BA6A1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C44CF99A1C4CCEAC00413EF1 /* Audacity Company Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audacity Company Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,17 +214,6 @@
 		C44CF9DF1C4CD16800413EF1 /* ic_methodology_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_methodology_4.png; sourceTree = "<group>"; };
 		C44CF9E01C4CD16800413EF1 /* ic_methodology_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_methodology_5.png; sourceTree = "<group>"; };
 		C44CF9E11C4CD16800413EF1 /* ic_methodology_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_methodology_6.png; sourceTree = "<group>"; };
-		C44CF9E21C4CD16800413EF1 /* ic_member_faisal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_faisal.png; sourceTree = "<group>"; };
-		C44CF9E31C4CD16800413EF1 /* ic_member_mamun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_mamun.png; sourceTree = "<group>"; };
-		C44CF9E41C4CD16800413EF1 /* ic_member_rifat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_rifat.png; sourceTree = "<group>"; };
-		C44CF9E51C4CD16800413EF1 /* ic_member_saurav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_saurav.png; sourceTree = "<group>"; };
-		C44CF9E61C4CD16800413EF1 /* ic_member_shaun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_shaun.png; sourceTree = "<group>"; };
-		C44CF9E71C4CD16800413EF1 /* ic_member_siddiq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_siddiq.png; sourceTree = "<group>"; };
-		C44CF9E81C4CD16800413EF1 /* ic_member_sumon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_sumon.png; sourceTree = "<group>"; };
-		C44CF9E91C4CD16800413EF1 /* ic_member_suraiya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_suraiya.png; sourceTree = "<group>"; };
-		C44CF9EA1C4CD16800413EF1 /* ic_member_tinu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_tinu.png; sourceTree = "<group>"; };
-		C44CF9EB1C4CD16800413EF1 /* ic_member_tuhin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_tuhin.png; sourceTree = "<group>"; };
-		C44CF9EC1C4CD16800413EF1 /* ic_member_tushar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_tushar.png; sourceTree = "<group>"; };
 		C44CF9ED1C4CD16800413EF1 /* ic_overview_skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_overview_skill.png; sourceTree = "<group>"; };
 		C44CF9EE1C4CD16800413EF1 /* ic_social_linked_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_social_linked_in.png; sourceTree = "<group>"; };
 		C44CF9EF1C4CD16800413EF1 /* fab_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fab_map.png; sourceTree = "<group>"; };
@@ -381,6 +383,17 @@
 				C4EB6B0A1C5F897100747B7F /* icon.png */,
 				C44CF9B61C4CD16800413EF1 /* ic_social_fb.png */,
 				C44CF9B71C4CD16800413EF1 /* ic_overview_infrastructure.png */,
+				2162B4B51C6C534E0064C24F /* ic_member_faisal.jpg */,
+				2162B4B61C6C534E0064C24F /* ic_member_mamun.png */,
+				2162B4B71C6C534E0064C24F /* ic_member_rifat.jpg */,
+				2162B4B81C6C534E0064C24F /* ic_member_shaun.png */,
+				2162B4B91C6C534E0064C24F /* ic_member_siddiq.jpg */,
+				2162B4BA1C6C534E0064C24F /* ic_member_sourav.jpg */,
+				2162B4BB1C6C534E0064C24F /* ic_member_sumon.jpg */,
+				2162B4BC1C6C534E0064C24F /* ic_member_suraiya.jpg */,
+				2162B4BD1C6C534E0064C24F /* ic_member_tinu.jpg */,
+				2162B4BE1C6C534E0064C24F /* ic_member_tuhin.jpg */,
+				2162B4BF1C6C534E0064C24F /* ic_member_tushar.jpg */,
 				C44CF9B81C4CD16800413EF1 /* ic_overview_location.png */,
 				C44CF9B91C4CD16800413EF1 /* ic_social_chat.png */,
 				C44CF9BA1C4CD16800413EF1 /* ic_client_extend_arrow.png */,
@@ -417,6 +430,7 @@
 				C44CF9D71C4CD16800413EF1 /* img_portfolio_7.jpg */,
 				C44CF9D81C4CD16800413EF1 /* img_portfolio_8.jpg */,
 				C44CF9D91C4CD16800413EF1 /* img_portfolio_9.jpg */,
+				2162B4B31C6C49DC0064C24F /* ic_member_faisal.jpg */,
 				C44CF9DA1C4CD16800413EF1 /* ic_testimonial_web.png */,
 				C44CF9DB1C4CD16800413EF1 /* ic_methodology_2.png */,
 				C44CF9DC1C4CD16800413EF1 /* ic_testimonial_quote_end.png */,
@@ -425,17 +439,6 @@
 				C44CF9DF1C4CD16800413EF1 /* ic_methodology_4.png */,
 				C44CF9E01C4CD16800413EF1 /* ic_methodology_5.png */,
 				C44CF9E11C4CD16800413EF1 /* ic_methodology_6.png */,
-				C44CF9E21C4CD16800413EF1 /* ic_member_faisal.png */,
-				C44CF9E31C4CD16800413EF1 /* ic_member_mamun.png */,
-				C44CF9E41C4CD16800413EF1 /* ic_member_rifat.png */,
-				C44CF9E51C4CD16800413EF1 /* ic_member_saurav.png */,
-				C44CF9E61C4CD16800413EF1 /* ic_member_shaun.png */,
-				C44CF9E71C4CD16800413EF1 /* ic_member_siddiq.png */,
-				C44CF9E81C4CD16800413EF1 /* ic_member_sumon.png */,
-				C44CF9E91C4CD16800413EF1 /* ic_member_suraiya.png */,
-				C44CF9EA1C4CD16800413EF1 /* ic_member_tinu.png */,
-				C44CF9EB1C4CD16800413EF1 /* ic_member_tuhin.png */,
-				C44CF9EC1C4CD16800413EF1 /* ic_member_tushar.png */,
 				C44CF9ED1C4CD16800413EF1 /* ic_overview_skill.png */,
 				C44CF9EE1C4CD16800413EF1 /* ic_social_linked_in.png */,
 				C44CF9EF1C4CD16800413EF1 /* fab_map.png */,
@@ -611,19 +614,19 @@
 			files = (
 				C44CFA321C4CD16800413EF1 /* ic_methodology_4.png in Resources */,
 				C44CFA271C4CD16800413EF1 /* img_portfolio_4.jpg in Resources */,
+				2162B4C11C6C534E0064C24F /* ic_member_mamun.png in Resources */,
 				C44CFA561C4CD16800413EF1 /* ic_nav_web.png in Resources */,
-				C44CFA361C4CD16800413EF1 /* ic_member_mamun.png in Resources */,
 				C44CFA221C4CD16800413EF1 /* ic_heart_outline_grey.png in Resources */,
 				C44CFA521C4CD16800413EF1 /* ic_nav_portfolio.png in Resources */,
 				C44CFA491C4CD16800413EF1 /* img_home_4.jpg in Resources */,
+				2162B4C41C6C534E0064C24F /* ic_member_siddiq.jpg in Resources */,
 				C44CFA421C4CD16800413EF1 /* fab_map.png in Resources */,
 				C44CFA191C4CD16800413EF1 /* ic_fab_web.png in Resources */,
+				2162B4C71C6C534E0064C24F /* ic_member_suraiya.jpg in Resources */,
 				C44CFA091C4CD16800413EF1 /* ic_social_fb.png in Resources */,
 				C44CFA4B1C4CD16800413EF1 /* img_home_5.jpg in Resources */,
-				C44CFA391C4CD16800413EF1 /* ic_member_shaun.png in Resources */,
 				C44CFA471C4CD16800413EF1 /* ic_overview_basic.png in Resources */,
 				C4F65D631C635905004FE8EB /* img_client_3_p.jpg in Resources */,
-				C44CFA3A1C4CD16800413EF1 /* ic_member_siddiq.png in Resources */,
 				C44CFA201C4CD16800413EF1 /* img_portfolio_1.jpg in Resources */,
 				C44CFA291C4CD16800413EF1 /* img_portfolio_6.jpg in Resources */,
 				C4EB6AF61C5F844800747B7F /* map.png in Resources */,
@@ -634,8 +637,6 @@
 				C44CFA571C4CD16800413EF1 /* app_inside_logo.png in Resources */,
 				C44CFA0F1C4CD16800413EF1 /* img_client_1.jpg in Resources */,
 				C44CFA131C4CD16800413EF1 /* ic_fab_ios.png in Resources */,
-				C44CFA3C1C4CD16800413EF1 /* ic_member_suraiya.png in Resources */,
-				C44CFA371C4CD16800413EF1 /* ic_member_rifat.png in Resources */,
 				C44CFA171C4CD16800413EF1 /* ic_fab_ui_ux.png in Resources */,
 				C4EB6B081C5F889A00747B7F /* team.json in Resources */,
 				C44CFA181C4CD16800413EF1 /* ic_fab_wearable.png in Resources */,
@@ -644,28 +645,27 @@
 				C44CFA1C1C4CD16800413EF1 /* img_client_4.jpg in Resources */,
 				C44CFA511C4CD16800413EF1 /* ic_nav_overview.png in Resources */,
 				C44CFA0D1C4CD16800413EF1 /* ic_client_extend_arrow.png in Resources */,
-				C44CFA3D1C4CD16800413EF1 /* ic_member_tinu.png in Resources */,
 				C44CFA4E1C4CD16800413EF1 /* ic_nav_faq.png in Resources */,
-				C44CFA351C4CD16800413EF1 /* ic_member_faisal.png in Resources */,
-				C44CFA381C4CD16800413EF1 /* ic_member_saurav.png in Resources */,
 				C44CFA151C4CD16800413EF1 /* ic_fab_product.png in Resources */,
 				C44CFA251C4CD16800413EF1 /* ic_heart_small_blue.png in Resources */,
-				C44CFA3B1C4CD16800413EF1 /* ic_member_sumon.png in Resources */,
 				C44CFA461C4CD16800413EF1 /* ic_social_youtube.png in Resources */,
-				C44CFA3F1C4CD16800413EF1 /* ic_member_tushar.png in Resources */,
+				2162B4C31C6C534E0064C24F /* ic_member_shaun.png in Resources */,
 				C4EB6B051C5F889A00747B7F /* methodology.json in Resources */,
 				C44CFA301C4CD16800413EF1 /* ic_testimonial_quote_start.png in Resources */,
+				2162B4CA1C6C534E0064C24F /* ic_member_tushar.jpg in Resources */,
 				C44CFA481C4CD16800413EF1 /* img_home_3.jpg in Resources */,
 				C44CFA541C4CD16800413EF1 /* ic_nav_team.png in Resources */,
 				C44CFA431C4CD16800413EF1 /* img_overview_parallax.jpg in Resources */,
 				C44CFA211C4CD16800413EF1 /* img_portfolio_2.jpg in Resources */,
 				C44CFA401C4CD16800413EF1 /* ic_overview_skill.png in Resources */,
+				2162B4C51C6C534E0064C24F /* ic_member_sourav.jpg in Resources */,
 				C4EB6B0B1C5F897100747B7F /* icon.png in Resources */,
 				C44CFA161C4CD16800413EF1 /* ic_fab_star.png in Resources */,
 				C44CFA551C4CD16800413EF1 /* ic_nav_testimonial.png in Resources */,
 				C4EB6B091C5F889A00747B7F /* testimonial.json in Resources */,
 				C4EB6B071C5F889A00747B7F /* portfolio.json in Resources */,
-				C44CFA3E1C4CD16800413EF1 /* ic_member_tuhin.png in Resources */,
+				2162B4B41C6C49DC0064C24F /* ic_member_faisal.jpg in Resources */,
+				2162B4C01C6C534E0064C24F /* ic_member_faisal.jpg in Resources */,
 				C44CFA0A1C4CD16800413EF1 /* ic_overview_infrastructure.png in Resources */,
 				C44CFA2C1C4CD16800413EF1 /* img_portfolio_9.jpg in Resources */,
 				C44CFA0C1C4CD16800413EF1 /* ic_social_chat.png in Resources */,
@@ -675,6 +675,7 @@
 				C44CFA2B1C4CD16800413EF1 /* img_portfolio_8.jpg in Resources */,
 				C44CF9A31C4CCEAC00413EF1 /* Main.storyboard in Resources */,
 				C44CFA2E1C4CD16800413EF1 /* ic_methodology_2.png in Resources */,
+				2162B4C91C6C534E0064C24F /* ic_member_tuhin.jpg in Resources */,
 				C44CFA2D1C4CD16800413EF1 /* ic_testimonial_web.png in Resources */,
 				C4EB6B041C5F889A00747B7F /* home.json in Resources */,
 				C44CFA501C4CD16800413EF1 /* ic_nav_methodology.png in Resources */,
@@ -699,9 +700,12 @@
 				C44CFA411C4CD16800413EF1 /* ic_social_linked_in.png in Resources */,
 				C4EB6B061C5F889A00747B7F /* overview.json in Resources */,
 				C44CFA451C4CD16800413EF1 /* ic_overview_company.png in Resources */,
+				2162B4C21C6C534E0064C24F /* ic_member_rifat.jpg in Resources */,
+				2162B4C61C6C534E0064C24F /* ic_member_sumon.jpg in Resources */,
 				C4EB6B021C5F889A00747B7F /* faq.json in Resources */,
 				C44CFA081C4CD16800413EF1 /* back_icon.png in Resources */,
 				C44CFA1B1C4CD16800413EF1 /* img_client_3.jpg in Resources */,
+				2162B4C81C6C534E0064C24F /* ic_member_tinu.jpg in Resources */,
 				C44CFA531C4CD16800413EF1 /* ic_nav_social.png in Resources */,
 				C44CFA281C4CD16800413EF1 /* img_portfolio_5.jpg in Resources */,
 				C44CFA581C4CD16800413EF1 /* img_nav_header.jpg in Resources */,
