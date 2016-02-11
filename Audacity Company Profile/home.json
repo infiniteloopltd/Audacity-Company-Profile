@@ -1,19 +1,6 @@
 {
   "projects": [
-    {
-      "name": "Amar Phonebook",
-      "image": "img_home_1.jpg",
-      "project_info": [
-        {
-          "platform": "Android",
-          "url": "http://play.google.com/store/apps/details?id=com.audacityit.amarphonebook"
-        },
-        {
-          "platform": "iOS",
-          "url": "https://itunes.apple.com/us/app/amar-phonebook-bangladeshs/id1044979290?mt=8"
-        }
-      ]
-    },
+    
     {
       "name": "Colours FM",
       "image": "img_home_2.jpg",
@@ -65,6 +52,20 @@
           "url": "https://itunes.apple.com/us/app/how-i-work/id989635514?mt=8"
         }
       ]
-    }
+    },
+               {
+               "name": "Amar Phonebook",
+               "image": "img_home_1.jpg",
+               "project_info": [
+                                {
+                                "platform": "Android",
+                                "url": "http://play.google.com/store/apps/details?id=com.audacityit.amarphonebook"
+                                },
+                                {
+                                "platform": "iOS",
+                                "url": "https://itunes.apple.com/us/app/amar-phonebook-bangladeshs/id1044979290?mt=8"
+                                }
+                                ]
+               }
   ]
 }
