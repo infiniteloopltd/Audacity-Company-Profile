@@ -1431,8 +1431,8 @@ TIN : 442670895657</string>
                                             <constraints>
                                                 <constraint firstItem="XHa-JL-wD6" firstAttribute="trailing" secondItem="gU5-HM-KAz" secondAttribute="trailingMargin" constant="-5" id="62w-OF-gye"/>
                                                 <constraint firstItem="XHa-JL-wD6" firstAttribute="leading" secondItem="gU5-HM-KAz" secondAttribute="leadingMargin" constant="5" id="J4K-kw-VaK"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="XHa-JL-wD6" secondAttribute="bottom" constant="-1" id="OYE-Jl-F7b"/>
-                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="top" secondItem="gU5-HM-KAz" secondAttribute="topMargin" constant="-2" id="ltd-Hh-pR1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XHa-JL-wD6" secondAttribute="bottom" id="OYE-Jl-F7b"/>
+                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="top" secondItem="gU5-HM-KAz" secondAttribute="topMargin" id="ltd-Hh-pR1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -1723,11 +1723,11 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_social_chat.png" translatesAutoresizingMaskIntoConstraints="NO" id="HOa-L4-3AS">
-                                <rect key="frame" x="260" y="144" width="79" height="73"/>
+                                <rect key="frame" x="252" y="130" width="97" height="87"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="LgZ-bW-Mh5"/>
-                                    <constraint firstAttribute="width" constant="79" id="uV7-Wq-tpd"/>
+                                    <constraint firstAttribute="height" constant="87" id="LgZ-bW-Mh5"/>
+                                    <constraint firstAttribute="width" constant="97" id="uV7-Wq-tpd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with us !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-hD-ZvM">
@@ -1843,7 +1843,7 @@ TIN : 442670895657</string>
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.1764705882" green="0.27058823529999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="8A2-xF-lZR"/>
                                     <constraint firstAttribute="height" constant="52" id="xo3-CV-e5x"/>
