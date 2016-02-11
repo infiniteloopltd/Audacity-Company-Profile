@@ -462,18 +462,18 @@ TIN : 442670895657</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="214"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Att-ah-Y8E" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
-                                                    <rect key="frame" x="13" y="6" width="574" height="201"/>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Att-ah-Y8E" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="13" y="3" width="574" height="208"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_portfolio_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DDo-Ef-T82">
-                                                            <rect key="frame" x="0.0" y="0.0" width="574" height="152"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="584" height="152"/>
                                                             <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="152" id="YGa-F3-PyS"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amar Phonebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-bi-AER">
-                                                            <rect key="frame" x="8" y="159" width="520" height="21"/>
+                                                            <rect key="frame" x="8" y="159" width="530" height="21"/>
                                                             <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Bl2-1T-DQt"/>
@@ -483,7 +483,7 @@ TIN : 442670895657</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android, iOS, UI/UX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeD-ck-dKQ">
-                                                            <rect key="frame" x="8" y="176" width="520" height="21"/>
+                                                            <rect key="frame" x="8" y="176" width="530" height="21"/>
                                                             <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="J27-ge-Y5r"/>
@@ -493,7 +493,7 @@ TIN : 442670895657</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIw-Dn-Q6d">
-                                                            <rect key="frame" x="536" y="161" width="30" height="32"/>
+                                                            <rect key="frame" x="546" y="161" width="30" height="32"/>
                                                             <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="U1V-WH-Hfh"/>
@@ -511,7 +511,7 @@ TIN : 442670895657</string>
                                                         <constraint firstItem="hIw-Dn-Q6d" firstAttribute="top" secondItem="DDo-Ef-T82" secondAttribute="bottom" constant="9" id="DrG-3s-OfY"/>
                                                         <constraint firstAttribute="trailing" secondItem="DDo-Ef-T82" secondAttribute="trailing" id="EgA-2C-RfF"/>
                                                         <constraint firstItem="zeD-ck-dKQ" firstAttribute="top" secondItem="DDo-Ef-T82" secondAttribute="bottom" constant="24" id="H7n-Ua-PaQ"/>
-                                                        <constraint firstAttribute="height" constant="201" id="PNj-KD-Uyx"/>
+                                                        <constraint firstAttribute="height" constant="208" id="PNj-KD-Uyx"/>
                                                         <constraint firstItem="hIw-Dn-Q6d" firstAttribute="leading" secondItem="zeD-ck-dKQ" secondAttribute="trailing" constant="8" id="QT3-Pf-DQj"/>
                                                         <constraint firstItem="hIw-Dn-Q6d" firstAttribute="leading" secondItem="8cb-bi-AER" secondAttribute="trailing" constant="8" id="fnn-O4-OiX"/>
                                                         <constraint firstItem="8cb-bi-AER" firstAttribute="leading" secondItem="Att-ah-Y8E" secondAttribute="leading" constant="8" id="l7C-29-ZVb"/>
@@ -524,9 +524,9 @@ TIN : 442670895657</string>
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstItem="Att-ah-Y8E" firstAttribute="leading" secondItem="1Zo-0G-ZSu" secondAttribute="leadingMargin" constant="5" id="28r-A3-qwf"/>
-                                                <constraint firstItem="Att-ah-Y8E" firstAttribute="top" secondItem="1Zo-0G-ZSu" secondAttribute="topMargin" constant="-2" id="aUo-sC-kRN"/>
-                                                <constraint firstItem="Att-ah-Y8E" firstAttribute="trailing" secondItem="1Zo-0G-ZSu" secondAttribute="trailingMargin" constant="-5" id="bhD-jp-ZRX"/>
+                                                <constraint firstItem="Att-ah-Y8E" firstAttribute="leading" secondItem="1Zo-0G-ZSu" secondAttribute="leadingMargin" id="28r-A3-qwf"/>
+                                                <constraint firstItem="Att-ah-Y8E" firstAttribute="top" secondItem="1Zo-0G-ZSu" secondAttribute="topMargin" constant="-5" id="aUo-sC-kRN"/>
+                                                <constraint firstItem="Att-ah-Y8E" firstAttribute="trailing" secondItem="1Zo-0G-ZSu" secondAttribute="trailingMargin" id="bhD-jp-ZRX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
