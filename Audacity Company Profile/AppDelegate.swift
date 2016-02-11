@@ -41,7 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // centerContainer?.setMaximumLeftDrawerWidth(UIScreen.mainScreen().bounds.width, animated: true, completion: nil)
         
         centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView
-        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView
+        //centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningDrawerView
+        
+        centerContainer!.centerHiddenInteractionMode = MMDrawerOpenCenterInteractionMode.Full
         
         window!.rootViewController = centerContainer
         window!.makeKeyAndVisible()

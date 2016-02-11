@@ -294,8 +294,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Bm9-iR-J1v"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-eR-Pt2">
@@ -304,7 +304,7 @@
                                                     <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -488,7 +488,7 @@ TIN : 442670895657</string>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="J27-ge-Y5r"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1069,7 +1069,7 @@ TIN : 442670895657</string>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="VYp-tx-XxK"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1090,7 +1090,7 @@ TIN : 442670895657</string>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="9w2-NV-mPA"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1101,7 +1101,7 @@ TIN : 442670895657</string>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="DRf-6b-dTZ"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1120,10 +1120,10 @@ TIN : 442670895657</string>
                                                                 <constraint firstItem="Usq-cE-VNA" firstAttribute="top" secondItem="4AS-1f-9UY" secondAttribute="top" constant="10" id="Lcg-RG-n8N"/>
                                                                 <constraint firstItem="8pO-fF-IYy" firstAttribute="leading" secondItem="4AS-1f-9UY" secondAttribute="leading" constant="6" id="ZbD-kq-apB"/>
                                                                 <constraint firstItem="OGG-Nk-hel" firstAttribute="leading" secondItem="8pO-fF-IYy" secondAttribute="trailing" constant="8" id="a99-R5-xGF"/>
-                                                                <constraint firstAttribute="trailing" secondItem="tmk-wC-xYP" secondAttribute="trailing" constant="8" id="hHf-ba-JV9"/>
+                                                                <constraint firstAttribute="trailing" secondItem="tmk-wC-xYP" secondAttribute="trailing" constant="17" id="hHf-ba-JV9"/>
                                                                 <constraint firstAttribute="height" constant="70" id="hJu-Zn-6C1"/>
                                                                 <constraint firstItem="tmk-wC-xYP" firstAttribute="top" secondItem="Usq-cE-VNA" secondAttribute="bottom" constant="11" id="kc5-fc-eXI"/>
-                                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="bf2-bn-Pba" secondAttribute="trailing" constant="326" id="tBB-6M-MMQ"/>
+                                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="bf2-bn-Pba" secondAttribute="trailing" constant="336" id="tBB-6M-MMQ"/>
                                                                 <constraint firstItem="8pO-fF-IYy" firstAttribute="top" secondItem="4AS-1f-9UY" secondAttribute="top" constant="5" id="zB2-Zz-XaU"/>
                                                             </constraints>
                                                         </view>
@@ -1379,7 +1379,7 @@ TIN : 442670895657</string>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CEO of Lock Deals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWq-Uo-V0J">
                                                                     <rect key="frame" x="74" y="36" width="245" height="21"/>
                                                                     <animations/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1398,7 +1398,7 @@ TIN : 442670895657</string>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLK-n0-FXi">
                                                                     <rect key="frame" x="8" y="8" width="535" height="15"/>
                                                                     <animations/>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1596,7 +1596,7 @@ TIN : 442670895657</string>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="hyL-lk-VmZ"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1606,7 +1606,7 @@ TIN : 442670895657</string>
                                                             <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -2020,7 +2020,7 @@ TIN : 442670895657</string>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufa-Wm-LRl">
                                                                     <rect key="frame" x="8" y="8" width="304" height="15"/>
                                                                     <animations/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>

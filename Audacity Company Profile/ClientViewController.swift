@@ -111,7 +111,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(clientProjectName.count)
+       // print(clientProjectName.count)
         return clientProjectName.count
     }
     
@@ -137,8 +137,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
         cell.clientName.text = clientName[indexPath.row]
         cell.clientProjectName.text = clientProjectName[indexPath.row]
         cell.clientImage.image = UIImage(named: clientProjectImage[indexPath.row])
-        cell.clientCountry.text = countryName[indexPath.row]
-        
+        cell.clientCountry.text = countryName[indexPath.row].uppercaseString
         cell.projectTypeView.hidden = true
         
         cell.link = projectUrl[indexPath.row]
@@ -228,7 +227,14 @@ class ClientViewController: UIViewController , UITableViewDelegate {
             return ClientItemCell.defaultHeight
         }
         if indexPath == selectedIndexPath {
+            
+            
             return ClientItemCell.expandedHeight
+            
+            
+            
+            
+            
         } else {
             return ClientItemCell.defaultHeight
         }
@@ -260,6 +266,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
         if indexPaths.count > 0 {
             
             tableView.reloadRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
+           
         }
         
         
@@ -283,6 +290,8 @@ class ClientViewController: UIViewController , UITableViewDelegate {
         (cell as! ClientItemCell).ignoreFrameChanges()
         // ClientViewController.observerStatus = false
         //  }
+        
+        
     }
     
     func loadData() {

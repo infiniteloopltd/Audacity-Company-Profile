@@ -18,6 +18,7 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     var totalCount: Int = 0
     var selectedItem:Int = -1
     
+    var firstTimeOpen: Bool = true;
     
     
     @IBAction func homeIconAction(sender: AnyObject) {
@@ -56,7 +57,7 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         let rowToSelect:NSIndexPath = NSIndexPath(forRow: 1, inSection: 0);  //slecting 0th row with 0th section
-        self.tableView.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None);
+        self.tableView.selectRowAtIndexPath(rowToSelect, animated: false, scrollPosition: UITableViewScrollPosition.None);
         self.tableView(self.tableView, didSelectRowAtIndexPath: rowToSelect);
         
         
@@ -254,8 +255,14 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
             
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
+            if(!firstTimeOpen) {
+               
             appDelegate.centerContainer!.centerViewController = navController
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
+            } else {
+                 firstTimeOpen = false
+                appDelegate.centerContainer!.centerViewController = navController
+            }
             
             break;
             

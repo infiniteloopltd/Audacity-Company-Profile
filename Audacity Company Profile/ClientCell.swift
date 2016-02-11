@@ -31,9 +31,7 @@ class ClientItemCell: UITableViewCell {
     
     func checkHeight () {
         projectTypeView.hidden = ( frame.size.height < ClientItemCell.expandedHeight)
-        if(projectTypeView.hidden) {
-            self.arrowBtn.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2 * 2))
-        }
+        
         
         
     }
