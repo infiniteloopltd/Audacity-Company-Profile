@@ -1050,10 +1050,10 @@ TIN : 442670895657</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-x8-fzJ" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
-                                                    <rect key="frame" x="13" y="6" width="574" height="130"/>
+                                                    <rect key="frame" x="13" y="3" width="574" height="137"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-1f-9UY">
-                                                            <rect key="frame" x="8" y="8" width="558" height="70"/>
+                                                            <rect key="frame" x="8" y="8" width="568" height="70"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_client_7.png" translatesAutoresizingMaskIntoConstraints="NO" id="8pO-fF-IYy">
                                                                     <rect key="frame" x="6" y="5" width="60" height="60"/>
@@ -1074,7 +1074,7 @@ TIN : 442670895657</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usq-cE-VNA">
-                                                                    <rect key="frame" x="531" y="10" width="19" height="15"/>
+                                                                    <rect key="frame" x="541" y="10" width="19" height="15"/>
                                                                     <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="19" id="nCe-I0-3NU"/>
@@ -1085,7 +1085,7 @@ TIN : 442670895657</string>
                                                                     </state>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samad Miraly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGG-Nk-hel">
-                                                                    <rect key="frame" x="74" y="36" width="107" height="21"/>
+                                                                    <rect key="frame" x="74" y="36" width="117" height="21"/>
                                                                     <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="9w2-NV-mPA"/>
@@ -1131,7 +1131,7 @@ TIN : 442670895657</string>
                                                             <rect key="frame" x="8" y="79" width="558" height="46"/>
                                                             <subviews>
                                                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-jn-t5j">
-                                                                    <rect key="frame" x="4" y="0.0" width="546" height="1"/>
+                                                                    <rect key="frame" x="4" y="0.0" width="556" height="1"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
@@ -1241,10 +1241,10 @@ TIN : 442670895657</string>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="RVE-x8-fzJ" firstAttribute="top" secondItem="MEL-tL-Pxy" secondAttribute="topMargin" constant="-2" id="8Jy-I2-ScI"/>
-                                                <constraint firstItem="RVE-x8-fzJ" firstAttribute="leading" secondItem="MEL-tL-Pxy" secondAttribute="leadingMargin" constant="5" id="F7w-2e-r9a"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="RVE-x8-fzJ" secondAttribute="trailing" constant="5" id="pDJ-88-ECP"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="RVE-x8-fzJ" secondAttribute="bottom" constant="-1" id="zQR-5G-5aH"/>
+                                                <constraint firstItem="RVE-x8-fzJ" firstAttribute="top" secondItem="MEL-tL-Pxy" secondAttribute="topMargin" constant="-5" id="8Jy-I2-ScI"/>
+                                                <constraint firstItem="RVE-x8-fzJ" firstAttribute="leading" secondItem="MEL-tL-Pxy" secondAttribute="leadingMargin" id="F7w-2e-r9a"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="RVE-x8-fzJ" secondAttribute="trailing" id="pDJ-88-ECP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="RVE-x8-fzJ" secondAttribute="bottom" constant="-6" id="zQR-5G-5aH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -1344,11 +1344,11 @@ TIN : 442670895657</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-JL-wD6" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
-                                                    <rect key="frame" x="13" y="6" width="574" height="130"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-JL-wD6" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="3" width="584" height="137"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-Jd-Dfu" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
-                                                            <rect key="frame" x="8" y="8" width="558" height="70"/>
+                                                            <rect key="frame" x="8" y="14" width="568" height="70"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_faisal.png" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-fG-SUM">
                                                                     <rect key="frame" x="6" y="5" width="60" height="60"/>
@@ -1362,7 +1362,7 @@ TIN : 442670895657</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-eA-6Ug">
-                                                                    <rect key="frame" x="525" y="13" width="25" height="25"/>
+                                                                    <rect key="frame" x="535" y="13" width="25" height="25"/>
                                                                     <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="25" id="Rsc-nP-tfY"/>
@@ -1391,8 +1391,8 @@ TIN : 442670895657</string>
                                                                 <constraint firstAttribute="trailing" secondItem="Nxl-eA-6Ug" secondAttribute="trailing" constant="8" id="sba-Ps-zUG"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1W-Mm-KmH" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
-                                                            <rect key="frame" x="8" y="86" width="558" height="39"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1W-Mm-KmH" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="92" width="568" height="39"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLK-n0-FXi">
                                                                     <rect key="frame" x="8" y="8" width="535" height="15"/>
@@ -1416,9 +1416,9 @@ TIN : 442670895657</string>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="u1W-Mm-KmH" firstAttribute="top" secondItem="bt3-Jd-Dfu" secondAttribute="bottom" constant="8" id="Bm4-aI-E44"/>
-                                                        <constraint firstItem="bt3-Jd-Dfu" firstAttribute="top" secondItem="XHa-JL-wD6" secondAttribute="top" constant="8" id="Qh8-an-Vp8"/>
+                                                        <constraint firstItem="bt3-Jd-Dfu" firstAttribute="top" secondItem="XHa-JL-wD6" secondAttribute="top" constant="14" id="Qh8-an-Vp8"/>
                                                         <constraint firstAttribute="trailing" secondItem="u1W-Mm-KmH" secondAttribute="trailing" constant="8" id="RLe-IO-AS0"/>
-                                                        <constraint firstAttribute="bottom" secondItem="u1W-Mm-KmH" secondAttribute="bottom" constant="5" id="bWg-AD-lzx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="u1W-Mm-KmH" secondAttribute="bottom" constant="6" id="bWg-AD-lzx"/>
                                                         <constraint firstItem="u1W-Mm-KmH" firstAttribute="leading" secondItem="XHa-JL-wD6" secondAttribute="leading" constant="8" id="jqm-Nt-sYd"/>
                                                         <constraint firstAttribute="trailing" secondItem="bt3-Jd-Dfu" secondAttribute="trailing" constant="8" id="ooQ-Nh-2qJ"/>
                                                         <constraint firstItem="bt3-Jd-Dfu" firstAttribute="leading" secondItem="XHa-JL-wD6" secondAttribute="leading" constant="8" id="xO9-By-zv8"/>
@@ -1429,10 +1429,10 @@ TIN : 442670895657</string>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="trailing" secondItem="gU5-HM-KAz" secondAttribute="trailingMargin" constant="-5" id="62w-OF-gye"/>
-                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="leading" secondItem="gU5-HM-KAz" secondAttribute="leadingMargin" constant="5" id="J4K-kw-VaK"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="XHa-JL-wD6" secondAttribute="bottom" id="OYE-Jl-F7b"/>
-                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="top" secondItem="gU5-HM-KAz" secondAttribute="topMargin" id="ltd-Hh-pR1"/>
+                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="trailing" secondItem="gU5-HM-KAz" secondAttribute="trailingMargin" id="62w-OF-gye"/>
+                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="leading" secondItem="gU5-HM-KAz" secondAttribute="leadingMargin" id="J4K-kw-VaK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XHa-JL-wD6" secondAttribute="bottom" constant="-6" id="OYE-Jl-F7b"/>
+                                                <constraint firstItem="XHa-JL-wD6" firstAttribute="top" secondItem="gU5-HM-KAz" secondAttribute="topMargin" constant="-5" id="ltd-Hh-pR1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
