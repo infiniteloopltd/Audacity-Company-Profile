@@ -19,7 +19,7 @@
 		2162B4C81C6C534E0064C24F /* ic_member_tinu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BD1C6C534E0064C24F /* ic_member_tinu.jpg */; };
 		2162B4C91C6C534E0064C24F /* ic_member_tuhin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BE1C6C534E0064C24F /* ic_member_tuhin.jpg */; };
 		2162B4CA1C6C534E0064C24F /* ic_member_tushar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4BF1C6C534E0064C24F /* ic_member_tushar.jpg */; };
-		2F389C5F7563D3DCC803CB74 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9EC7DE6F3AA38CF489A066 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2F389C5F7563D3DCC803CB74 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9EC7DE6F3AA38CF489A066 /* Pods.framework */; };
 		C44CF99E1C4CCEAC00413EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99D1C4CCEAC00413EF1 /* AppDelegate.swift */; };
 		C44CF9A01C4CCEAC00413EF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CF99F1C4CCEAC00413EF1 /* HomeViewController.swift */; };
 		C44CF9A31C4CCEAC00413EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CF9A11C4CCEAC00413EF1 /* Main.storyboard */; };
@@ -143,6 +143,8 @@
 		C4F7E8951C4DF2A900CA82CB /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */; };
 		C4FB5C671C5B708F00D823E2 /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FB5C661C5B708F00D823E2 /* RippleEffect.swift */; };
 		C4FB5C691C5B733700D823E2 /* RippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FB5C681C5B733700D823E2 /* RippleView.swift */; };
+		D300F58C1C70706100494BF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D300F58B1C70706100494BF3 /* GoogleService-Info.plist */; };
+		D300F58E1C70721500494BF3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300F58D1C70721500494BF3 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -293,6 +295,8 @@
 		C4F7E8941C4DF2A900CA82CB /* FAQCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
 		C4FB5C661C5B708F00D823E2 /* RippleEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
 		C4FB5C681C5B733700D823E2 /* RippleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
+		D300F58B1C70706100494BF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D300F58D1C70721500494BF3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DB9EC7DE6F3AA38CF489A066 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -321,6 +325,7 @@
 		C44CF9911C4CCEAC00413EF1 = {
 			isa = PBXGroup;
 			children = (
+				D300F58B1C70706100494BF3 /* GoogleService-Info.plist */,
 				C44CF99C1C4CCEAC00413EF1 /* Audacity Company Profile */,
 				C44CF99B1C4CCEAC00413EF1 /* Products */,
 				184D75C24FEB89618F226F50 /* Pods */,
@@ -370,6 +375,7 @@
 				C44CFA6F1C4CDFD100413EF1 /* PortfolioViewController.swift */,
 				C44CFA711C4CDFDE00413EF1 /* ClientViewController.swift */,
 				C44CFA731C4CDFEE00413EF1 /* FAQViewController.swift */,
+				D300F58D1C70721500494BF3 /* BaseViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -692,6 +698,7 @@
 				C44CFA1D1C4CD16800413EF1 /* img_client_5.jpg in Resources */,
 				C44CFA141C4CD16800413EF1 /* ic_nav_home.png in Resources */,
 				C44CFA241C4CD16800413EF1 /* ic_heart_red.png in Resources */,
+				D300F58C1C70706100494BF3 /* GoogleService-Info.plist in Resources */,
 				C44CFA2F1C4CD16800413EF1 /* ic_testimonial_quote_end.png in Resources */,
 				C44CFA121C4CD16800413EF1 /* ic_fab_filter.png in Resources */,
 				C44CFA4A1C4CD16800413EF1 /* ic_navigation.png in Resources */,
@@ -775,6 +782,7 @@
 				C4F7E8831C4DF1F000CA82CB /* DrawerFooterCell.swift in Sources */,
 				C44CFA6C1C4CDF9D00413EF1 /* TeamViewController.swift in Sources */,
 				C44CFA5C1C4CD18800413EF1 /* TagButton.swift in Sources */,
+				D300F58E1C70721500494BF3 /* BaseViewController.swift in Sources */,
 				C4F7E88D1C4DF26300CA82CB /* CollectionViewCell.swift in Sources */,
 				C4BC5A131C6853CE008A3C93 /* Reachability.swift in Sources */,
 				C4FB5C691C5B733700D823E2 /* RippleView.swift in Sources */,
@@ -924,7 +932,7 @@
 				INFOPLIST_FILE = "Audacity Company Profile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.audacity.Audacity-Company-Profile";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.Audacity-Company-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Audacity Company Profile/Audacity Company Profile-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -946,7 +954,7 @@
 				INFOPLIST_FILE = "Audacity Company Profile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.audacity.Audacity-Company-Profile";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacityit.Audacity-Company-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Audacity Company Profile/Audacity Company Profile-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";

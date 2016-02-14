@@ -5,6 +5,7 @@ target 'Audacity Company Profile' do
 
 end
 pod "SwiftyJSON", ">= 2.2"
+pod 'Google/Analytics'
 
 link_with "Audacity Company Profile"
 

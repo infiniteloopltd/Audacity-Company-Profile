@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController ,  MKMapViewDelegate {
+class MapViewController: BaseViewController,  MKMapViewDelegate {
     
     
     @IBOutlet var map: MKMapView!
@@ -65,6 +65,7 @@ class MapViewController: UIViewController ,  MKMapViewDelegate {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "MapView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

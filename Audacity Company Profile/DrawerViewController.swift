@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class DrawerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
+class DrawerViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
 
     
     @IBOutlet var tableView: UITableView!
@@ -180,11 +180,8 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     @IBAction func callBtnAction(sender: AnyObject) {
-        // println("CallBtnPressed")
-        
         callNumber("+8801670923581")
-        // var url:NSURL? = NSURL(string: "tel://9809088798")
-        // UIApplication.sharedApplication().openURL(url!)
+        trackEvent(2, actionName: "Tapped on call button")
     }
     
     @IBAction func mailBtnAction(sender: AnyObject) {
@@ -195,9 +192,9 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         //picker.setMessageBody(emailBodyField.text, isHTML: true)
         picker.setToRecipients(["founders@audacityit.com"])
         
-        
         presentViewController(picker, animated: true, completion: nil)
         
+        trackEvent(2, actionName: "Tapped on mail button")
     }
     
     
@@ -209,14 +206,17 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         //picker.setMessageBody(emailBodyField.text, isHTML: true)
         picker.setToRecipients(["founders@audacityit.com"])
         
-        
         presentViewController(picker, animated: true, completion: nil)
+        
+        trackEvent(2, actionName: "Tapped on get started button")
     }
     
     
     @IBAction func webBtnAction(sender: AnyObject) {
         let url = NSURL(string: "http://www.audacityit.com")!
         UIApplication.sharedApplication().openURL(url)
+        
+        trackEvent(2, actionName: "Tapped on web button")
     }
     
     

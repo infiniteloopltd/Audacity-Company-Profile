@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyJSON
-class TeamViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class TeamViewController: BaseViewController , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -144,6 +144,7 @@ class TeamViewController: UIViewController , UICollectionViewDataSource, UIColle
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "TeamView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

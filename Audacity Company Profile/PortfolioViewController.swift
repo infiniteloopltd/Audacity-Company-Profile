@@ -10,7 +10,7 @@ import UIKit
 import MessageUI
 import SwiftyJSON
 
-class PortfolioViewController: UIViewController , MFMailComposeViewControllerDelegate //,  UITableViewDelegate
+class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDelegate //,  UITableViewDelegate
 {
     
     var lastContentOffset : CGFloat = 0
@@ -327,6 +327,7 @@ class PortfolioViewController: UIViewController , MFMailComposeViewControllerDel
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "PortfolioView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SocialViewController: UIViewController {
+class SocialViewController: BaseViewController {
     
     var appDelegate:AppDelegate!
     
@@ -63,6 +63,7 @@ class SocialViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "SocialView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

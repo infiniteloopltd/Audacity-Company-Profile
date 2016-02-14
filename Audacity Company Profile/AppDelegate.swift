@@ -50,8 +50,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible()
         
         
-        NSThread.sleepForTimeInterval(3.0)
+        //NSThread.sleepForTimeInterval(3.0)
         
+        //----------- Google Analytics integration ---------------------
+        // Configure tracker from GoogleService-Info.plist.
+        var configureError:NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        
+        // Optional: configure GAI options.
+        let gai = GAI.sharedInstance()
+        gai.trackUncaughtExceptions = true  // report uncaught exceptions
+        gai.logger.logLevel = GAILogLevel.Verbose  // remove before app release
+        //----------- End of Google Analytics integration --------------
         
         return true
     }

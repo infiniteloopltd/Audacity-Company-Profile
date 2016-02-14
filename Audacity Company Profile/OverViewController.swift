@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyJSON
-class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecognizerDelegate{
+class OverViewController: BaseViewController, UITableViewDelegate, UIGestureRecognizerDelegate {
 
     @IBOutlet var tableView: UITableView!
     
@@ -486,8 +486,7 @@ class OverViewController: UIViewController , UITableViewDelegate ,UIGestureRecog
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
-        
-
+        trackEvent(1, actionName: "OverView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

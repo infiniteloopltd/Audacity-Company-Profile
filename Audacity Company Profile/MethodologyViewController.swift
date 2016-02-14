@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class MethodologyViewController: UIViewController , UITableViewDelegate , UIGestureRecognizerDelegate{
+class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGestureRecognizerDelegate {
     
     @IBOutlet var tableView: UITableView!
     
@@ -455,6 +455,7 @@ class MethodologyViewController: UIViewController , UITableViewDelegate , UIGest
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "MethodologyView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

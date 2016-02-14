@@ -7,106 +7,157 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		139FE32CB9188BDA36DAE30E79B08FED /* Pods-Audacity Company Profile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E9C8BCBAB509E5F3136040D8F265CF /* Pods-Audacity Company Profile-dummy.m */; };
-		23F5940A08DB5F0B129F9DFF7CCC3452 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E62DA073C367ACFC8C77B0B6180FD1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E9D5EC29E1986C1870670064B333EDE /* Pods-Audacity Company Profile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 077B4E38C2B6E146D7C0B4CB3BAE8DC9 /* Pods-Audacity Company Profile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3769B9433B301E32A9DC200E73038AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
-		39A8A7DB3537BDC61EF618B1737C1EB5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F861572AEF58AF8E8738463397C601 /* SwiftyJSON.swift */; };
-		545ECAEFF7D2F21ED915F6E08FA3BE45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
-		6734F34542943C2A3E2DCFB2A9B003C2 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A9259DC8666FCAD674277EBB0E6EA3 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90EF20BB8DC0A183A97CEE5D4BE375EE /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D3575B7F9DE11C652ED4F55D4D976B /* SwiftyJSON-dummy.m */; };
-		9115A811C9182CA28ACAB493075151F8 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 260E16FB198EF1B285D727F1A882A598 /* Pods-dummy.m */; };
-		A432B24264A6469BBE36466ED191B2D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
+		44C4F64A26E04DB2A5E41745E111B2B4 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19A1582CC86E2C4E5BFCF48D3D8AD3 /* Pods-dummy.m */; };
+		58D67DC97D9F4E0F057A87223A15E8FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		6107D06450AF3415AF98EF303E06401D /* Pods-Audacity Company Profile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4C7A6E45A3C0F54E13FFB8CF9D3A7 /* Pods-Audacity Company Profile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		691886E3537DED119660000DC865BCC9 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C99F7DC6CE5C883A2A0682512AB2F98E /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E6EF63BBC0D0A7826FBF7E93A1FC60 /* Pods-Audacity Company Profile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC387CD2532DD14F17F47D0344A2D7A /* Pods-Audacity Company Profile-dummy.m */; };
+		832B19BD04D972B79C25420D469F68F7 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E872E48E04BF94FC3180BA0231C9FF /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE9A434FAFE8158B3A66D6FCB4F507ED /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B23CF24BC2FF8C854657757240A9BA1B /* SwiftyJSON-dummy.m */; };
+		D18A87B789253DF5E376C49857A964CA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E8C0282C8D53B2D902326E101CD217 /* SwiftyJSON.swift */; };
+		D663FA76F8E0A5225F25CC2471CA211D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		F7B9462ED43D98E27777C1C566CAEC0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8043A5EDB89EA04116CECA980EFBB9CB /* PBXContainerItemProxy */ = {
+		0618080295B1B855888D254C1A0E0154 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9A04D3C9B208813656510FDA8ADAE02;
+			remoteGlobalIDString = A2BFFC9999EB12DBCF06F86A19A1D5E4;
 			remoteInfo = SwiftyJSON;
 		};
-		D6B37D762D61B1F68591FA25F8FDD204 /* PBXContainerItemProxy */ = {
+		DED02675A046C8DF39C3792995788A89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9A04D3C9B208813656510FDA8ADAE02;
+			remoteGlobalIDString = A2BFFC9999EB12DBCF06F86A19A1D5E4;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		077B4E38C2B6E146D7C0B4CB3BAE8DC9 /* Pods-Audacity Company Profile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Audacity Company Profile-umbrella.h"; sourceTree = "<group>"; };
-		1097DBC01829AA03986DD1B2D2E44FD0 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		17E00C3783639AE0BF51040B5F3DCDDD /* Pods_Audacity_Company_Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audacity_Company_Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		013CAD8CCC58EADFA715F08A730AE3C7 /* Analytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Analytics.h; path = Headers/GGLAnalytics/Public/Analytics.h; sourceTree = "<group>"; };
+		0AF6CC45ED7B51C175F64AC9C64C572E /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Headers/Public/GAI.h; sourceTree = "<group>"; };
+		0BA9AABDDCE6F56736B8216F9EEA9203 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9F589BD0CC175C0783189E6C65054E /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = Headers/GGLCore/Public/GGLConfiguration.h; sourceTree = "<group>"; };
+		110A06CD8CF972256F52353E58E8D7AD /* CloudMessaging-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CloudMessaging-Module.h"; path = "Headers/ModuleHeaders/CloudMessaging-Module.h"; sourceTree = "<group>"; };
+		11B80E3EF06F8EBCE30C4EEFEA95BEBA /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Headers/Public/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
 		1939A23CF8DD997E5204F4A23C757050 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		1EC3D59DF2EB5D411177381B311AE522 /* SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		1B73EF10943A912FF4DD11782EF2D259 /* libProtocolBuffers.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libProtocolBuffers.a; path = Libraries/libProtocolBuffers.a; sourceTree = "<group>"; };
+		1C9A54779EF82F394F74C04F69AADF50 /* GGLContext+Analytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+Analytics.h"; path = "Headers/GGLAnalytics/Public/GGLContext+Analytics.h"; sourceTree = "<group>"; };
+		20FC9E194DFB781B6B57EC0D7FD91E8F /* libGTM_NSStringHTML.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSStringHTML.a; path = Libraries/libGTM_NSStringHTML.a; sourceTree = "<group>"; };
+		222089263D9F8D3CC86F985510581B11 /* Pods-Audacity Company Profile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audacity Company Profile.release.xcconfig"; sourceTree = "<group>"; };
+		22B2FA944D07F3213C10BC6DDEAEF88F /* libGTMSessionFetcher_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMSessionFetcher_core.a; path = Libraries/libGTMSessionFetcher_core.a; sourceTree = "<group>"; };
 		25FC19A38FD16913E9AA256583280984 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		260E16FB198EF1B285D727F1A882A598 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		26E3C32292A762BD370E95FCA35E3244 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E4A7C8A2B4729472A4559CC6644CC63 /* Pods-Audacity Company Profile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Audacity Company Profile.modulemap"; sourceTree = "<group>"; };
-		31F861572AEF58AF8E8738463397C601 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		2F60A92C6210C26D3F4E69F5030855BE /* libGTM_SystemVersion.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_SystemVersion.a; path = Libraries/libGTM_SystemVersion.a; sourceTree = "<group>"; };
 		3235CFAA5C16F48F239304C6D6A5F94A /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		3928CC7028EF6EF5808BEED4F0344157 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		324DEAD61C8C56DCD28D7CC5F164D98A /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Headers/Public/GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		332E39DC74FF1AB7E81AF71A3EE7ECFF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35835466F75DB1C75D2BF5FB21EE341C /* libGGLAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLAnalytics.a; path = Libraries/libGGLAnalytics.a; sourceTree = "<group>"; };
+		3C2AE18552ADBA7532CF9DC941B6F65F /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = Headers/GGLCore/Public/GGLErrorCode.h; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E9589104A882E36AF0D8C8D17954655 /* libGSDK_Overload.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGSDK_Overload.a; path = Libraries/libGSDK_Overload.a; sourceTree = "<group>"; };
 		4284D05AFE13DF2AF8B16483ED75CB02 /* Pods-Audacity Company Profile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Audacity Company Profile-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4398730B7A4E6A311BE2A105B3FB2A03 /* Pods-Audacity Company Profile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audacity Company Profile.release.xcconfig"; sourceTree = "<group>"; };
+		4384D73E965827F77DF1F7C4827B8281 /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Headers/Public/GAITracker.h; sourceTree = "<group>"; };
+		4537049049085512EF77119CC8648340 /* libGTM_iPhone.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_iPhone.a; path = Libraries/libGTM_iPhone.a; sourceTree = "<group>"; };
+		4DEAEA6A7F20B6375EC648281CAD5DFC /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Headers/Public/GAITrackedViewController.h; sourceTree = "<group>"; };
+		5237008005808B859A25584AAA3D67AC /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Headers/Public/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		53D9DCA02CDF034F508570F6C6058B56 /* libGTMStackTrace.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMStackTrace.a; path = Libraries/libGTMStackTrace.a; sourceTree = "<group>"; };
+		54E8C0282C8D53B2D902326E101CD217 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		55D4C7A6E45A3C0F54E13FFB8CF9D3A7 /* Pods-Audacity Company Profile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Audacity Company Profile-umbrella.h"; sourceTree = "<group>"; };
+		56D4C8A9B8CFD7978DFB19051C5F5310 /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
 		5B5AC39DF78E80473863F94060AEF449 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C3565AD90BD4333EF52FAD041283528 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		85E62DA073C367ACFC8C77B0B6180FD1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		8B30860EB20710F54858B7FD82A61762 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		96A9259DC8666FCAD674277EBB0E6EA3 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		5F5960C8F51D93E0630A50C44A35FD95 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Headers/Public/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		617BD98C7C1351CBAED64E36EF206129 /* libGTM_GTMURLBuilder.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_GTMURLBuilder.a; path = Libraries/libGTM_GTMURLBuilder.a; sourceTree = "<group>"; };
+		67B240997F1FC5939DCF931DAFD8EB4A /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = Headers/GGLCore/Public/GMRConfiguration.h; sourceTree = "<group>"; };
+		691433878E6D9048779C8E67CFDCAB80 /* libGTM_RoundedRectPath.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_RoundedRectPath.a; path = Libraries/libGTM_RoundedRectPath.a; sourceTree = "<group>"; };
+		752F45F98F826D2457358BAF0988488A /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
+		88096A632C8BAED8F2BC73D864B83CC4 /* libGTM_NSDictionary+URLArguments.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_NSDictionary+URLArguments.a"; path = "Libraries/libGTM_NSDictionary+URLArguments.a"; sourceTree = "<group>"; };
+		8B1E56D57F5EF3ECC6B73C0FA8685560 /* libGTM_NSScannerJSON.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSScannerJSON.a; path = Libraries/libGTM_NSScannerJSON.a; sourceTree = "<group>"; };
+		9096589A1950386330D276F90DDC3C9F /* libGTM_UIFont+LineHeight.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_UIFont+LineHeight.a"; path = "Libraries/libGTM_UIFont+LineHeight.a"; sourceTree = "<group>"; };
+		93D94FD4E83113E20BD62C344803F85A /* libGTM_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_core.a; path = Libraries/libGTM_core.a; sourceTree = "<group>"; };
 		9A50AC8A74B878797063159CB477C330 /* Pods-Audacity Company Profile-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Audacity Company Profile-resources.sh"; sourceTree = "<group>"; };
-		A0D3575B7F9DE11C652ED4F55D4D976B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		A8E9C8BCBAB509E5F3136040D8F265CF /* Pods-Audacity Company Profile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Audacity Company Profile-dummy.m"; sourceTree = "<group>"; };
+		9BBDF0B4BA96A67EF93F420A59B1BA19 /* libGTM_NSStringXML.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSStringXML.a; path = Libraries/libGTM_NSStringXML.a; sourceTree = "<group>"; };
+		A29560437C83FE9B454D728033E67010 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		A80B81A4A445C6D62B59EA55F6AAE6ED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		A9B67663BBADDCE142442ED4805A778E /* libGTM_Regex.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_Regex.a; path = Libraries/libGTM_Regex.a; sourceTree = "<group>"; };
+		A9E872E48E04BF94FC3180BA0231C9FF /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		ACA8680A7E89C4A2E6DC2D3C7A78EC07 /* Pods_Audacity_Company_Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audacity_Company_Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE970B1E6EC9BF28E9B5D7419AB6A10 /* Pods-Audacity Company Profile-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Audacity Company Profile-acknowledgements.plist"; sourceTree = "<group>"; };
-		B26FF3DE916F9AE131DA1247EB912331 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10209AB8941EBE53B101EEE6A5C461A /* libGTM_StringEncoding.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_StringEncoding.a; path = Libraries/libGTM_StringEncoding.a; sourceTree = "<group>"; };
+		B20B9597B191EE0F31C41434709219C1 /* libGTM_DebugUtils.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_DebugUtils.a; path = Libraries/libGTM_DebugUtils.a; sourceTree = "<group>"; };
+		B23CF24BC2FF8C854657757240A9BA1B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		B423908592BD5A1B87E5CCE1FD4C83F5 /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Headers/Public/GAIFields.h; sourceTree = "<group>"; };
+		B6849177CEAAD2F3BC9000FCF0E86370 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Headers/Public/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		BA19A1582CC86E2C4E5BFCF48D3D8AD3 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BAE1985AC3E1BF96DB98433EF7D56F95 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		C00A583D9EF4FB3E4B1DD2051558E9CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC8FFD576CDF8C51E115B525EE8675C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		C1C7EEAC0F57E92E60742710D781D2D3 /* libGTM_KVO.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_KVO.a; path = Libraries/libGTM_KVO.a; sourceTree = "<group>"; };
+		C2C055D03E1AB67D39A628BC36851E20 /* libGTMSessionFetcher_full.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMSessionFetcher_full.a; path = Libraries/libGTMSessionFetcher_full.a; sourceTree = "<group>"; };
 		C385E5DECDA058D9E63D217B7D3E391A /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		C48269FADE5EA3A85C4620E5AB3F9335 /* AdMob-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AdMob-Module.h"; path = "Headers/ModuleHeaders/AdMob-Module.h"; sourceTree = "<group>"; };
 		C6078EE850532E3EC719116CA1DD2092 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C99F7DC6CE5C883A2A0682512AB2F98E /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		D82FC6D51B4F3009A39F033B9CFC0D82 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		D958893424A971571CE7266B5D6A5C88 /* Pods-Audacity Company Profile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audacity Company Profile.debug.xcconfig"; sourceTree = "<group>"; };
+		DBC387CD2532DD14F17F47D0344A2D7A /* Pods-Audacity Company Profile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Audacity Company Profile-dummy.m"; sourceTree = "<group>"; };
+		DFFA13121621ECE0D6B3525B46EE5816 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		E1AD5F7DAAB1C9385738E051A71800D1 /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = Headers/GGLCore/Public/GGLContext.h; sourceTree = "<group>"; };
+		E328639F6BFF7A796BA30206E2CA1B0C /* libGTM_NSData+zlib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_NSData+zlib.a"; path = "Libraries/libGTM_NSData+zlib.a"; sourceTree = "<group>"; };
+		E4920627EB2DD632C16AA04BD3D50B2A /* libGTM_AddressBook.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_AddressBook.a; path = Libraries/libGTM_AddressBook.a; sourceTree = "<group>"; };
 		E9AFCF21DB2DAF364332D5ABE1507DEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB4CB50B42FA0112BD3CB968CB68AC93 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9413989D266E2D94D9DB9B8A7E8D38 /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
+		EF1D63F27A636A1A05A7D398833D0C9F /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Headers/Public/GAILogger.h; sourceTree = "<group>"; };
 		F016FA258BC9A216D10F557188ECF90A /* Pods-Audacity Company Profile-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Audacity Company Profile-frameworks.sh"; sourceTree = "<group>"; };
-		F2B2932C6DDFA89CBC968BB92EF4C1FA /* Pods-Audacity Company Profile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audacity Company Profile.debug.xcconfig"; sourceTree = "<group>"; };
+		F054A3A163CE356AC1797389D04A901F /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		FA186B61FA9AFB56D981A43C04CB4554 /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
+		FA2CA768DFD632360A26B3C5326D65A5 /* libGGLCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		FC354E310F21B7FF9670B247F5B4AA95 /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/GGLCore/Public/Core.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		749843799E65FEF178F8DFA6DD7A79C8 /* Frameworks */ = {
+		5C07BF63857AF434CC4D1987C7E0A35C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				545ECAEFF7D2F21ED915F6E08FA3BE45 /* Foundation.framework in Frameworks */,
+				F7B9462ED43D98E27777C1C566CAEC0A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF98BC8A5B005CBCFE36B64696DC8D76 /* Frameworks */ = {
+		6090E3347E6D6C93C95B28534DD784CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A432B24264A6469BBE36466ED191B2D6 /* Foundation.framework in Frameworks */,
+				D663FA76F8E0A5225F25CC2471CA211D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBEEDA6A29AD33FB9CFD183DA7A8F5B4 /* Frameworks */ = {
+		EE8BDF3F4F4FB025B6184D78EBD0236A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3769B9433B301E32A9DC200E73038AF3 /* Foundation.framework in Frameworks */,
+				58D67DC97D9F4E0F057A87223A15E8FB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13D55447F60F0FA2FB7003E7C838BCF3 /* SwiftyJSON */ = {
+		12E77A48BBDC2EEE28927564A3F75216 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				31F861572AEF58AF8E8738463397C601 /* SwiftyJSON.swift */,
-				37AE49AB82233A60E2B3139271A01FB1 /* Support Files */,
+				26E3C32292A762BD370E95FCA35E3244 /* Info.plist */,
+				A29560437C83FE9B454D728033E67010 /* SwiftyJSON.modulemap */,
+				BDC8FFD576CDF8C51E115B525EE8675C /* SwiftyJSON.xcconfig */,
+				B23CF24BC2FF8C854657757240A9BA1B /* SwiftyJSON-dummy.m */,
+				F054A3A163CE356AC1797389D04A901F /* SwiftyJSON-prefix.pch */,
+				C99F7DC6CE5C883A2A0682512AB2F98E /* SwiftyJSON-umbrella.h */,
 			);
-			path = SwiftyJSON;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		19738AD176AA927B1D5F132A429ECB70 /* Pods-Audacity Company Profile */ = {
@@ -116,38 +167,107 @@
 				2E4A7C8A2B4729472A4559CC6644CC63 /* Pods-Audacity Company Profile.modulemap */,
 				4284D05AFE13DF2AF8B16483ED75CB02 /* Pods-Audacity Company Profile-acknowledgements.markdown */,
 				ACE970B1E6EC9BF28E9B5D7419AB6A10 /* Pods-Audacity Company Profile-acknowledgements.plist */,
-				A8E9C8BCBAB509E5F3136040D8F265CF /* Pods-Audacity Company Profile-dummy.m */,
+				DBC387CD2532DD14F17F47D0344A2D7A /* Pods-Audacity Company Profile-dummy.m */,
 				F016FA258BC9A216D10F557188ECF90A /* Pods-Audacity Company Profile-frameworks.sh */,
 				9A50AC8A74B878797063159CB477C330 /* Pods-Audacity Company Profile-resources.sh */,
-				077B4E38C2B6E146D7C0B4CB3BAE8DC9 /* Pods-Audacity Company Profile-umbrella.h */,
-				F2B2932C6DDFA89CBC968BB92EF4C1FA /* Pods-Audacity Company Profile.debug.xcconfig */,
-				4398730B7A4E6A311BE2A105B3FB2A03 /* Pods-Audacity Company Profile.release.xcconfig */,
+				55D4C7A6E45A3C0F54E13FFB8CF9D3A7 /* Pods-Audacity Company Profile-umbrella.h */,
+				D958893424A971571CE7266B5D6A5C88 /* Pods-Audacity Company Profile.debug.xcconfig */,
+				222089263D9F8D3CC86F985510581B11 /* Pods-Audacity Company Profile.release.xcconfig */,
 			);
 			name = "Pods-Audacity Company Profile";
 			path = "Target Support Files/Pods-Audacity Company Profile";
 			sourceTree = "<group>";
 		};
-		37AE49AB82233A60E2B3139271A01FB1 /* Support Files */ = {
+		1C48CE331FBAE537E9AFB6D9B445AB81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C00A583D9EF4FB3E4B1DD2051558E9CF /* Info.plist */,
-				5C3565AD90BD4333EF52FAD041283528 /* SwiftyJSON.modulemap */,
-				1097DBC01829AA03986DD1B2D2E44FD0 /* SwiftyJSON.xcconfig */,
-				1EC3D59DF2EB5D411177381B311AE522 /* SwiftyJSON-Private.xcconfig */,
-				A0D3575B7F9DE11C652ED4F55D4D976B /* SwiftyJSON-dummy.m */,
-				BAE1985AC3E1BF96DB98433EF7D56F95 /* SwiftyJSON-prefix.pch */,
-				85E62DA073C367ACFC8C77B0B6180FD1 /* SwiftyJSON-umbrella.h */,
+				DFFA13121621ECE0D6B3525B46EE5816 /* libGoogleAnalytics.a */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+		225CFB935BF581601D944FAFEF6EB9D9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */,
+				C48269FADE5EA3A85C4620E5AB3F9335 /* AdMob-Module.h */,
+				56D4C8A9B8CFD7978DFB19051C5F5310 /* Analytics-Module.h */,
+				752F45F98F826D2457358BAF0988488A /* AppInvite-Module.h */,
+				110A06CD8CF972256F52353E58E8D7AD /* CloudMessaging-Module.h */,
+				FC354E310F21B7FF9670B247F5B4AA95 /* Core.h */,
+				FA186B61FA9AFB56D981A43C04CB4554 /* Core-Module.h */,
+				0F9F589BD0CC175C0783189E6C65054E /* GGLConfiguration.h */,
+				E1AD5F7DAAB1C9385738E051A71800D1 /* GGLContext.h */,
+				3C2AE18552ADBA7532CF9DC941B6F65F /* GGLErrorCode.h */,
+				67B240997F1FC5939DCF931DAFD8EB4A /* GMRConfiguration.h */,
+				EE9413989D266E2D94D9DB9B8A7E8D38 /* SignIn-Module.h */,
+				DE170A7D092F492A6EC0A387CB9A060D /* Frameworks */,
 			);
-			name = iOS;
+			name = Core;
+			sourceTree = "<group>";
+		};
+		282FF7E010532353BD673CDEC3EF572F /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9AF35DE626F7807701B8FD1EED2EFE60 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		284D5B466EA0AC617B9A77C7D2DA1DC3 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				DA51751A2C941CC49814FAD9EAA0EFA7 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		3A10908FCFA963BDCAC8AC5E8C41CAEA /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0A3AF69A112936ACFB02D3DA342C895 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		3B760153C54C11BFED3FA1FB97E49C3A /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				54E8C0282C8D53B2D902326E101CD217 /* SwiftyJSON.swift */,
+				12E77A48BBDC2EEE28927564A3F75216 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		575B398FDB634F9E2F421F87441AA641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BA9AABDDCE6F56736B8216F9EEA9203 /* Pods.framework */,
+				ACA8680A7E89C4A2E6DC2D3C7A78EC07 /* Pods_Audacity_Company_Profile.framework */,
+				332E39DC74FF1AB7E81AF71A3EE7ECFF /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A216B8FD0935A670480F9977BDCC4F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35835466F75DB1C75D2BF5FB21EE341C /* libGGLAnalytics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70B86166EC8E564E048BE805969F9FCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC432B00DFAC067501D22245AF5DCC97 /* Google */,
+				A4D6C6F0BD1BDDE4526711734637BC36 /* GoogleAnalytics */,
+				3A10908FCFA963BDCAC8AC5E8C41CAEA /* GoogleInterchangeUtilities */,
+				282FF7E010532353BD673CDEC3EF572F /* GoogleNetworkingUtilities */,
+				C8DF1348E26D20276631EA90AD1C253C /* GoogleSymbolUtilities */,
+				284D5B466EA0AC617B9A77C7D2DA1DC3 /* GoogleUtilities */,
+				3B760153C54C11BFED3FA1FB97E49C3A /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -155,8 +275,8 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				70B86166EC8E564E048BE805969F9FCC /* Pods */,
+				575B398FDB634F9E2F421F87441AA641 /* Products */,
 				851E840DE006DC4DFF84496B17E4E96E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -177,116 +297,190 @@
 				3235CFAA5C16F48F239304C6D6A5F94A /* Pods.modulemap */,
 				C6078EE850532E3EC719116CA1DD2092 /* Pods-acknowledgements.markdown */,
 				25FC19A38FD16913E9AA256583280984 /* Pods-acknowledgements.plist */,
-				260E16FB198EF1B285D727F1A882A598 /* Pods-dummy.m */,
+				BA19A1582CC86E2C4E5BFCF48D3D8AD3 /* Pods-dummy.m */,
 				1939A23CF8DD997E5204F4A23C757050 /* Pods-frameworks.sh */,
 				C385E5DECDA058D9E63D217B7D3E391A /* Pods-resources.sh */,
-				96A9259DC8666FCAD674277EBB0E6EA3 /* Pods-umbrella.h */,
-				3928CC7028EF6EF5808BEED4F0344157 /* Pods.debug.xcconfig */,
-				8B30860EB20710F54858B7FD82A61762 /* Pods.release.xcconfig */,
+				A9E872E48E04BF94FC3180BA0231C9FF /* Pods-umbrella.h */,
+				A80B81A4A445C6D62B59EA55F6AAE6ED /* Pods.debug.xcconfig */,
+				D82FC6D51B4F3009A39F033B9CFC0D82 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		9AF35DE626F7807701B8FD1EED2EFE60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+				22B2FA944D07F3213C10BC6DDEAEF88F /* libGTMSessionFetcher_core.a */,
+				C2C055D03E1AB67D39A628BC36851E20 /* libGTMSessionFetcher_full.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+		A40C61DE17C0619CABE048411A06629B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13D55447F60F0FA2FB7003E7C838BCF3 /* SwiftyJSON */,
+				3E9589104A882E36AF0D8C8D17954655 /* libGSDK_Overload.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		A4D6C6F0BD1BDDE4526711734637BC36 /* GoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				B26FF3DE916F9AE131DA1247EB912331 /* Pods.framework */,
-				17E00C3783639AE0BF51040B5F3DCDDD /* Pods_Audacity_Company_Profile.framework */,
-				EB4CB50B42FA0112BD3CB968CB68AC93 /* SwiftyJSON.framework */,
+				0AF6CC45ED7B51C175F64AC9C64C572E /* GAI.h */,
+				5237008005808B859A25584AAA3D67AC /* GAIDictionaryBuilder.h */,
+				B6849177CEAAD2F3BC9000FCF0E86370 /* GAIEcommerceFields.h */,
+				5F5960C8F51D93E0630A50C44A35FD95 /* GAIEcommerceProduct.h */,
+				11B80E3EF06F8EBCE30C4EEFEA95BEBA /* GAIEcommerceProductAction.h */,
+				324DEAD61C8C56DCD28D7CC5F164D98A /* GAIEcommercePromotion.h */,
+				B423908592BD5A1B87E5CCE1FD4C83F5 /* GAIFields.h */,
+				EF1D63F27A636A1A05A7D398833D0C9F /* GAILogger.h */,
+				4DEAEA6A7F20B6375EC648281CAD5DFC /* GAITrackedViewController.h */,
+				4384D73E965827F77DF1F7C4827B8281 /* GAITracker.h */,
+				1C48CE331FBAE537E9AFB6D9B445AB81 /* Frameworks */,
 			);
-			name = Products;
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C8DF1348E26D20276631EA90AD1C253C /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				A40C61DE17C0619CABE048411A06629B /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		D0A3AF69A112936ACFB02D3DA342C895 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B73EF10943A912FF4DD11782EF2D259 /* libProtocolBuffers.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9E1DAFFC2BA041691E4974B5F71F610 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				013CAD8CCC58EADFA715F08A730AE3C7 /* Analytics.h */,
+				1C9A54779EF82F394F74C04F69AADF50 /* GGLContext+Analytics.h */,
+				6A216B8FD0935A670480F9977BDCC4F1 /* Frameworks */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		DA51751A2C941CC49814FAD9EAA0EFA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4920627EB2DD632C16AA04BD3D50B2A /* libGTM_AddressBook.a */,
+				93D94FD4E83113E20BD62C344803F85A /* libGTM_core.a */,
+				B20B9597B191EE0F31C41434709219C1 /* libGTM_DebugUtils.a */,
+				617BD98C7C1351CBAED64E36EF206129 /* libGTM_GTMURLBuilder.a */,
+				4537049049085512EF77119CC8648340 /* libGTM_iPhone.a */,
+				C1C7EEAC0F57E92E60742710D781D2D3 /* libGTM_KVO.a */,
+				E328639F6BFF7A796BA30206E2CA1B0C /* libGTM_NSData+zlib.a */,
+				88096A632C8BAED8F2BC73D864B83CC4 /* libGTM_NSDictionary+URLArguments.a */,
+				8B1E56D57F5EF3ECC6B73C0FA8685560 /* libGTM_NSScannerJSON.a */,
+				20FC9E194DFB781B6B57EC0D7FD91E8F /* libGTM_NSStringHTML.a */,
+				9BBDF0B4BA96A67EF93F420A59B1BA19 /* libGTM_NSStringXML.a */,
+				A9B67663BBADDCE142442ED4805A778E /* libGTM_Regex.a */,
+				691433878E6D9048779C8E67CFDCAB80 /* libGTM_RoundedRectPath.a */,
+				B10209AB8941EBE53B101EEE6A5C461A /* libGTM_StringEncoding.a */,
+				2F60A92C6210C26D3F4E69F5030855BE /* libGTM_SystemVersion.a */,
+				9096589A1950386330D276F90DDC3C9F /* libGTM_UIFont+LineHeight.a */,
+				53D9DCA02CDF034F508570F6C6058B56 /* libGTMStackTrace.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC432B00DFAC067501D22245AF5DCC97 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				D9E1DAFFC2BA041691E4974B5F71F610 /* Analytics */,
+				225CFB935BF581601D944FAFEF6EB9D9 /* Core */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		DE170A7D092F492A6EC0A387CB9A060D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2CA768DFD632360A26B3C5326D65A5 /* libGGLCore.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5C1B89B5E0D86F549D7688F0DA62E22D /* Headers */ = {
+		12756229356CD32185A026D5EA6B4D84 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6734F34542943C2A3E2DCFB2A9B003C2 /* Pods-umbrella.h in Headers */,
+				6107D06450AF3415AF98EF303E06401D /* Pods-Audacity Company Profile-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE8F609FD9A244777DB6C3B5C55E822E /* Headers */ = {
+		6ABB360E8394F11C736FE13C2F536B02 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F5940A08DB5F0B129F9DFF7CCC3452 /* SwiftyJSON-umbrella.h in Headers */,
+				691886E3537DED119660000DC865BCC9 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C12C2660DCED99EB3D4E8F1DB5D2ACBF /* Headers */ = {
+		715876937915782C81EF25AA9F36FA29 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9D5EC29E1986C1870670064B333EDE /* Pods-Audacity Company Profile-umbrella.h in Headers */,
+				832B19BD04D972B79C25420D469F68F7 /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23D235710FDDECEE2E76709D44976B4C /* Pods-Audacity Company Profile */ = {
+		9BD196C3DED20BF11A665D7D92FCF62F /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E352A64706163C61E783BAE79F76AB45 /* Build configuration list for PBXNativeTarget "Pods-Audacity Company Profile" */;
+			buildConfigurationList = 17C9FB0AF1871D3CD0FC142E1B11F8A2 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				CDD3A396AC9175E4B801122C0048D77F /* Sources */,
-				BF98BC8A5B005CBCFE36B64696DC8D76 /* Frameworks */,
-				C12C2660DCED99EB3D4E8F1DB5D2ACBF /* Headers */,
+				A89D2DC68AA6BA0747B6BE468C884F81 /* Sources */,
+				EE8BDF3F4F4FB025B6184D78EBD0236A /* Frameworks */,
+				715876937915782C81EF25AA9F36FA29 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9A023E59DC7967DB4FABA5F85B03263C /* PBXTargetDependency */,
-			);
-			name = "Pods-Audacity Company Profile";
-			productName = "Pods-Audacity Company Profile";
-			productReference = 17E00C3783639AE0BF51040B5F3DCDDD /* Pods_Audacity_Company_Profile.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		47C038C5C760D96C7F0790B1AD01C216 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 26B11D9604124339845F4EADA72FDEF5 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				E60806DF5478D86515496EDF95E0A8E6 /* Sources */,
-				749843799E65FEF178F8DFA6DD7A79C8 /* Frameworks */,
-				5C1B89B5E0D86F549D7688F0DA62E22D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D12EE80A21B70A5A521C8CB6762B0E33 /* PBXTargetDependency */,
+				B7611EE004F3F6735B42A562A6ED4A44 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = B26FF3DE916F9AE131DA1247EB912331 /* Pods.framework */;
+			productReference = 0BA9AABDDCE6F56736B8216F9EEA9203 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */ = {
+		A2BFFC9999EB12DBCF06F86A19A1D5E4 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF45366202C75BFCB13738AB00EC1DF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 2875175DCCB624F6634D9D136CA3FD29 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				857F4306B6C6D8D06B3382A44BD3CD69 /* Sources */,
-				CBEEDA6A29AD33FB9CFD183DA7A8F5B4 /* Frameworks */,
-				BE8F609FD9A244777DB6C3B5C55E822E /* Headers */,
+				E4E2BA9FAE9985A76A2433B1DD1ED9FA /* Sources */,
+				5C07BF63857AF434CC4D1987C7E0A35C /* Frameworks */,
+				6ABB360E8394F11C736FE13C2F536B02 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -294,7 +488,25 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = EB4CB50B42FA0112BD3CB968CB68AC93 /* SwiftyJSON.framework */;
+			productReference = 332E39DC74FF1AB7E81AF71A3EE7ECFF /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B886E77FE2ECE14D4D69448F012CF81D /* Pods-Audacity Company Profile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9848824F1EA0647E20A0EEA6E390BB60 /* Build configuration list for PBXNativeTarget "Pods-Audacity Company Profile" */;
+			buildPhases = (
+				7D6564E0ED0DE621B0C9A60E0933B534 /* Sources */,
+				6090E3347E6D6C93C95B28534DD784CC /* Frameworks */,
+				12756229356CD32185A026D5EA6B4D84 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FCE42CE0B581761ECC2690FDC076C42 /* PBXTargetDependency */,
+			);
+			name = "Pods-Audacity Company Profile";
+			productName = "Pods-Audacity Company Profile";
+			productReference = ACA8680A7E89C4A2E6DC2D3C7A78EC07 /* Pods_Audacity_Company_Profile.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -314,64 +526,119 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = 575B398FDB634F9E2F421F87441AA641 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47C038C5C760D96C7F0790B1AD01C216 /* Pods */,
-				23D235710FDDECEE2E76709D44976B4C /* Pods-Audacity Company Profile */,
-				B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */,
+				9BD196C3DED20BF11A665D7D92FCF62F /* Pods */,
+				B886E77FE2ECE14D4D69448F012CF81D /* Pods-Audacity Company Profile */,
+				A2BFFC9999EB12DBCF06F86A19A1D5E4 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		857F4306B6C6D8D06B3382A44BD3CD69 /* Sources */ = {
+		7D6564E0ED0DE621B0C9A60E0933B534 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90EF20BB8DC0A183A97CEE5D4BE375EE /* SwiftyJSON-dummy.m in Sources */,
-				39A8A7DB3537BDC61EF618B1737C1EB5 /* SwiftyJSON.swift in Sources */,
+				77E6EF63BBC0D0A7826FBF7E93A1FC60 /* Pods-Audacity Company Profile-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDD3A396AC9175E4B801122C0048D77F /* Sources */ = {
+		A89D2DC68AA6BA0747B6BE468C884F81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139FE32CB9188BDA36DAE30E79B08FED /* Pods-Audacity Company Profile-dummy.m in Sources */,
+				44C4F64A26E04DB2A5E41745E111B2B4 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E60806DF5478D86515496EDF95E0A8E6 /* Sources */ = {
+		E4E2BA9FAE9985A76A2433B1DD1ED9FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9115A811C9182CA28ACAB493075151F8 /* Pods-dummy.m in Sources */,
+				CE9A434FAFE8158B3A66D6FCB4F507ED /* SwiftyJSON-dummy.m in Sources */,
+				D18A87B789253DF5E376C49857A964CA /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9A023E59DC7967DB4FABA5F85B03263C /* PBXTargetDependency */ = {
+		7FCE42CE0B581761ECC2690FDC076C42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */;
-			targetProxy = 8043A5EDB89EA04116CECA980EFBB9CB /* PBXContainerItemProxy */;
+			target = A2BFFC9999EB12DBCF06F86A19A1D5E4 /* SwiftyJSON */;
+			targetProxy = 0618080295B1B855888D254C1A0E0154 /* PBXContainerItemProxy */;
 		};
-		D12EE80A21B70A5A521C8CB6762B0E33 /* PBXTargetDependency */ = {
+		B7611EE004F3F6735B42A562A6ED4A44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */;
-			targetProxy = D6B37D762D61B1F68591FA25F8FDD204 /* PBXContainerItemProxy */;
+			target = A2BFFC9999EB12DBCF06F86A19A1D5E4 /* SwiftyJSON */;
+			targetProxy = DED02675A046C8DF39C3792995788A89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3238288E1617FB65B8A6AC3DF83356A9 /* Release */ = {
+		01748BB3BD7C62991419222BBAA484A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4398730B7A4E6A311BE2A105B3FB2A03 /* Pods-Audacity Company Profile.release.xcconfig */;
+			baseConfigurationReference = BDC8FFD576CDF8C51E115B525EE8675C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		15C8A0D341418D41F11E7191468B955A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC8FFD576CDF8C51E115B525EE8675C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		240F80A18BB27108D2C626859DC788D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D958893424A971571CE7266B5D6A5C88 /* Pods-Audacity Company Profile.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -384,23 +651,25 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Audacity Company Profile/Pods-Audacity Company Profile.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_Audacity_Company_Profile;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		485C36D2D536D066D7BC376435EA1A12 /* Release */ = {
+		419C9CCE084B0D52B5E9B6911DABD6E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B30860EB20710F54858B7FD82A61762 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 222089263D9F8D3CC86F985510581B11 /* Pods-Audacity Company Profile.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -409,16 +678,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Audacity Company Profile/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Audacity Company Profile/Pods-Audacity Company Profile.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = Pods_Audacity_Company_Profile;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,9 +731,9 @@
 			};
 			name = Release;
 		};
-		79174F7EA7D70E3DC6D1D6BC205C400C /* Debug */ = {
+		740C48F6225F3E109ED0F0538B4C1EE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3928CC7028EF6EF5808BEED4F0344157 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D82FC6D51B4F3009A39F033B9CFC0D82 /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -476,20 +746,20 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -530,9 +800,9 @@
 			};
 			name = Debug;
 		};
-		CE041D2C265BF795F6816E4751D7695F /* Debug */ = {
+		BE4B25300F8715115582AEA5E11C7761 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2B2932C6DDFA89CBC968BB92EF4C1FA /* Pods-Audacity Company Profile.debug.xcconfig */;
+			baseConfigurationReference = A80B81A4A445C6D62B59EA55F6AAE6ED /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -541,71 +811,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Audacity Company Profile/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Audacity Company Profile/Pods-Audacity Company Profile.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Audacity_Company_Profile;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EA8EFF65D6C9C40F763FA059EFE216B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EC3D59DF2EB5D411177381B311AE522 /* SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.3.2;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EC8D6AA458DEBB5322ACE173B707EAFF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EC3D59DF2EB5D411177381B311AE522 /* SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.3.2;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -618,11 +834,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26B11D9604124339845F4EADA72FDEF5 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		17C9FB0AF1871D3CD0FC142E1B11F8A2 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79174F7EA7D70E3DC6D1D6BC205C400C /* Debug */,
-				485C36D2D536D066D7BC376435EA1A12 /* Release */,
+				BE4B25300F8715115582AEA5E11C7761 /* Debug */,
+				740C48F6225F3E109ED0F0538B4C1EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2875175DCCB624F6634D9D136CA3FD29 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C8A0D341418D41F11E7191468B955A /* Debug */,
+				01748BB3BD7C62991419222BBAA484A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -636,20 +861,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AF45366202C75BFCB13738AB00EC1DF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		9848824F1EA0647E20A0EEA6E390BB60 /* Build configuration list for PBXNativeTarget "Pods-Audacity Company Profile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC8D6AA458DEBB5322ACE173B707EAFF /* Debug */,
-				EA8EFF65D6C9C40F763FA059EFE216B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E352A64706163C61E783BAE79F76AB45 /* Build configuration list for PBXNativeTarget "Pods-Audacity Company Profile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE041D2C265BF795F6816E4751D7695F /* Debug */,
-				3238288E1617FB65B8A6AC3DF83356A9 /* Release */,
+				240F80A18BB27108D2C626859DC788D8 /* Debug */,
+				419C9CCE084B0D52B5E9B6911DABD6E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

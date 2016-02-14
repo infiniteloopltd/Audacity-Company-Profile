@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class HomeViewController: UIViewController , UIPageViewControllerDataSource{
+class HomeViewController: BaseViewController , UIPageViewControllerDataSource{
 
     /*private var contentImages = ["img_home_1.jpg",
         "img_home_2.jpg",
@@ -137,6 +137,7 @@ class HomeViewController: UIViewController , UIPageViewControllerDataSource{
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "HomeView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

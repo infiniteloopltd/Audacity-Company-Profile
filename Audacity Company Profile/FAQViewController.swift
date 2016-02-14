@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyJSON
-class FAQViewController: UIViewController , UITableViewDelegate {
+class FAQViewController: BaseViewController, UITableViewDelegate {
     
     
     
@@ -200,6 +200,7 @@ class FAQViewController: UIViewController , UITableViewDelegate {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "FAQView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

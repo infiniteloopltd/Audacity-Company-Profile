@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class ClientViewController: UIViewController , UITableViewDelegate {
+class ClientViewController: BaseViewController, UITableViewDelegate {
     
     @IBOutlet var tableView: UITableView!
     var selectedIndexPath : NSIndexPath?
@@ -195,6 +195,7 @@ class ClientViewController: UIViewController , UITableViewDelegate {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewDidAppear(animated)
+        trackEvent(1, actionName: "ClientView Controller")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
