@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2162B4B41C6C49DC0064C24F /* ic_member_faisal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B31C6C49DC0064C24F /* ic_member_faisal.jpg */; };
-		2162B4C01C6C534E0064C24F /* ic_member_faisal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B51C6C534E0064C24F /* ic_member_faisal.jpg */; };
 		2162B4C11C6C534E0064C24F /* ic_member_mamun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B61C6C534E0064C24F /* ic_member_mamun.png */; };
 		2162B4C21C6C534E0064C24F /* ic_member_rifat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B71C6C534E0064C24F /* ic_member_rifat.jpg */; };
 		2162B4C31C6C534E0064C24F /* ic_member_shaun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B81C6C534E0064C24F /* ic_member_shaun.png */; };
@@ -587,7 +586,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Audacity IT Solutions";
 				TargetAttributes = {
 					C44CF9991C4CCEAC00413EF1 = {
@@ -671,7 +670,6 @@
 				C4EB6B091C5F889A00747B7F /* testimonial.json in Resources */,
 				C4EB6B071C5F889A00747B7F /* portfolio.json in Resources */,
 				2162B4B41C6C49DC0064C24F /* ic_member_faisal.jpg in Resources */,
-				2162B4C01C6C534E0064C24F /* ic_member_faisal.jpg in Resources */,
 				C44CFA0A1C4CD16800413EF1 /* ic_overview_infrastructure.png in Resources */,
 				C44CFA2C1C4CD16800413EF1 /* img_portfolio_9.jpg in Resources */,
 				C44CFA0C1C4CD16800413EF1 /* ic_social_chat.png in Resources */,

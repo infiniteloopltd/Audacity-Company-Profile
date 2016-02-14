@@ -94,12 +94,13 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
         
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = NSTextAlignment.Justified
-        
+        /*
         var attributedString = NSAttributedString(string: cellContent[indexPath.row],
             attributes: [
                 NSParagraphStyleAttributeName: paragraphStyle,
                 NSBaselineOffsetAttributeName: NSNumber(float: 0)
             ])
+        */
         
         
         // cell.label.text = cellContent[indexPath.row]
