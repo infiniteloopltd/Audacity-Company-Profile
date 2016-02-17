@@ -8,9 +8,11 @@
 
 import UIKit
 import SwiftyJSON
+import GoogleMobileAds
 
-class HomeViewController: BaseViewController , UIPageViewControllerDataSource{
+class HomeViewController: BaseViewController , UIPageViewControllerDataSource, GADBannerViewDelegate {
 
+    @IBOutlet weak var bannerView: GADBannerView!
     /*private var contentImages = ["img_home_1.jpg",
         "img_home_2.jpg",
         "img_home_3.jpg","img_home_4.jpg","img_home_5.jpg"]*/
@@ -26,7 +28,10 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource{
     private var projectName = [String]()
     private var contentImages = [String]()
     private var projectType = [[String]]()
-     private var projectUrl = [[String]]()
+    private var projectUrl = [[String]]()
+    
+    // Admob
+    private var addLoaded :Bool = false
     
     var appDelegate:AppDelegate!
     
@@ -48,6 +53,7 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource{
         createPageViewController()
         setupPageControl()
         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        loadBanner();
         if(Reachability.isConnectedToNetwork()) {
             print("Connected to internet")
         } else {
@@ -179,6 +185,33 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource{
             print("Invalid filename/path.")
         }
         
+    }
+
+    // Pragma: AdMob
+    func loadBanner() {
+        bannerView.delegate = self
+        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        
+        // bannerView = kGA
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        
+        let request = GADRequest()
+        request.testDevices = ["8160d8b3c0dad27b1416423124b882b6"]
+        bannerView.loadRequest(request)
+    }
+    
+    
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        if(!addLoaded) {
+            pageViewController!.view.frame.size.height = pageViewController!.view.frame.size.height - bannerView.frame.size.height
+            addLoaded = true
+        }
+        
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        print("Error \(error.description )")
     }
 
 }

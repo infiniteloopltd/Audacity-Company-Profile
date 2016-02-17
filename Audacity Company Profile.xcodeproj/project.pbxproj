@@ -296,6 +296,11 @@
 		C4FB5C681C5B733700D823E2 /* RippleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
 		D300F58B1C70706100494BF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D300F58D1C70721500494BF3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D32F0F911C74389E007CC4E9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D32F0F931C7438B0007CC4E9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D32F0F951C7438B9007CC4E9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D32F0F971C7438C4007CC4E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D32F0F991C7438CB007CC4E9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		DB9EC7DE6F3AA38CF489A066 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -550,6 +555,11 @@
 		FC32A0079CB615062BA694E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D32F0F991C7438CB007CC4E9 /* CoreMedia.framework */,
+				D32F0F971C7438C4007CC4E9 /* CoreGraphics.framework */,
+				D32F0F951C7438B9007CC4E9 /* AVFoundation.framework */,
+				D32F0F931C7438B0007CC4E9 /* AudioToolbox.framework */,
+				D32F0F911C74389E007CC4E9 /* AdSupport.framework */,
 				C4EE6ECB1C62292E00B938BE /* SwiftyJSON.framework */,
 				DB9EC7DE6F3AA38CF489A066 /* Pods.framework */,
 			);
