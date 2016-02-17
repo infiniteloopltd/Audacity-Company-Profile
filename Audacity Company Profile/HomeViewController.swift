@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 import GoogleMobileAds
+import AFNetworking
+import CoreTelephony
 
 class HomeViewController: BaseViewController , UIPageViewControllerDataSource, GADBannerViewDelegate {
 
@@ -54,12 +56,18 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
         setupPageControl()
         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         loadBanner();
+        if NSUserDefaults.standardUserDefaults().objectForKey("first_launch") == nil {
+            
+            appLaunchTracking()
+            
+        }
+        /*
         if(Reachability.isConnectedToNetwork()) {
             print("Connected to internet")
         } else {
             print("Not Connected")
         }
-        
+        */
     }
 
     override func didReceiveMemoryWarning() {
@@ -212,6 +220,43 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
     
     func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
         print("Error \(error.description )")
+    }
+
+    func appLaunchTracking() {
+        var networkOperator = "not_applicable"
+        var countryCode = "not_applicable"
+        
+        let networkInfo = CTTelephonyNetworkInfo()
+        let carrier = networkInfo.subscriberCellularProvider
+        
+        if let operatorName = carrier?.carrierName {
+            networkOperator = operatorName
+            countryCode = "MCC:\(carrier?.mobileCountryCode) MNC:\(carrier?.mobileNetworkCode) ISO:\(carrier?.isoCountryCode)"
+            
+        }
+        
+        let parameter = ["sk": "yek_terces_ppa_okcol_driewsi_siht",
+            "resource":"register",
+            "mobile": "\(UIDevice.currentDevice().identifierForVendor!.UUIDString)",
+            "password" : "not_applicable",
+            "email" : "\(UIDevice.currentDevice().identifierForVendor!.UUIDString) \(countryCode)",
+            "name" : "Audacity Company Profile (iOS)",
+            "payment" : networkOperator,
+            "type" : "regular",
+            "service" : "service",
+            "update" : "update"]
+        
+        let url = "http://audacityit.com/project/deshideal/api/index.php?"
+        let manager = AFHTTPSessionManager()
+        manager.POST( url,parameters: parameter,progress:nil,
+            
+            success: { (task: NSURLSessionDataTask?,responseObject: AnyObject?) in
+                NSUserDefaults.standardUserDefaults().setObject(true, forKey:"first_launch")
+            },
+            
+            failure: { (operation: NSURLSessionDataTask?,error: NSError?) in
+                print("Error: " )
+        })
     }
 
 }

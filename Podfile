@@ -7,6 +7,7 @@ end
 pod "SwiftyJSON", ">= 2.2"
 pod 'Google/Analytics'
 pod 'Google-Mobile-Ads-SDK', '~> 7.0'
+pod 'AFNetworking', '~>3.0'
 
 link_with "Audacity Company Profile"
 
