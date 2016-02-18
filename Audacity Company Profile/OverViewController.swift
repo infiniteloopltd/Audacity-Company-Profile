@@ -68,12 +68,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     
     var stopFlag : Bool = false
     @IBOutlet var headerView: UIView!
-   /* var cellContent = ["BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657"]*/
-    //var itemImage = ["ic_overview_basic.png", "ic_overview_skill.png","ic_overview_infrastructure.png","ic_overview_location.png","ic_overview_basic.png", "ic_overview_skill.png","ic_overview_infrastructure.png","ic_overview_location.png"]
-    
-    //var itemTitle = ["BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION","BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION"]
-    
-    
     var itemTitle = [String]()
     var itemImage = [String]()
     var cellContent = [String]()
@@ -95,14 +89,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                
     }
     
-    
-    /*  var cellContent = ["BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657", "BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657","BASIS Membership ID : G682 \nTrade License No: 02048475 \nTIN : 442670895657"]
-    
-    var itemImage = ["ic_overview_basic.png", "ic_overview_skill.png","ic_overview_infrastructure.png","ic_overview_location.png"]
-    
-    var itemTitle = ["BASIC INFO","SKILL","INFRASTRUCTURE","LOCATION"]
-    */
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -114,19 +100,10 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
         self.tableView.reloadData()
         
         self.tableView.scrollEnabled = false
-        
-        //hiddenContainer.alpha = 1.0
         companyIcon.alpha = 1.0
         companyName.alpha = 1.0
         companyMoto.alpha = 1.0
-        
-       
-       // headerView.frame.size.height = 508
-        
-
-        
-        //print("TotalScreen height =\(totalScreenHeight)  from system=\(sizeRect.size.height) table orginal height=\(tableOrginalHeight)")
-         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
         
     }
@@ -163,22 +140,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
         cell.itemDetail.text = cellContent[indexPath.row]
         cell.itemIcon.image = UIImage(named: itemImage[indexPath.row])
         
-        
-        
-        /*  var paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = NSTextAlignment.Justified
-        
-        var attributedString = NSAttributedString(string: cellContent[indexPath.row],
-        attributes: [
-        NSParagraphStyleAttributeName: paragraphStyle,
-        NSBaselineOffsetAttributeName: NSNumber(float: 0)
-        ])
-        
-        
-        // cell.label.text = cellContent[indexPath.row]
-        cell.label.attributedText = attributedString
-        //cell.label.hidden = true
-        */
         return cell
     }
     
@@ -190,53 +151,7 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
         self.tableView.reloadData()
     }
     
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        
-        // var height:CGFloat = self.calculateHeightForString(cellContent[indexPath.row])
-        // showLine(height)
-        
-        /* var selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! CustomCellTableViewCell
-        //selectedCell.cont
-        
-        currentSelection = indexPath.row
-        if( selectedCell.container.hidden) {
-        selectedCell.container.hidden = false
-        } else {
-        selectedCell.container.hidden = true
-        }
-        tableView.beginUpdates()
-        
-        
-        tableView.endUpdates()*/
-        
-    }
-    
-    
-    
-    /*func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        
-        //  var height:CGFloat = self.calculateHeightForString(cellContent[indexPath.row])
-        
-        //return ( height * 2) + 50
-        return 100
-    }*/
-    
-    
-    
-    
-    /*func calculateHeightForString(inString:String) -> CGFloat
-    {
-    let messageString = inString
-    let attributes = [UIFont(): UIFont.systemFontOfSize(17.0)]
-    let attrString:NSAttributedString? = NSAttributedString(string: messageString, attributes: attributes)
-    let rect:CGRect = attrString!.boundingRectWithSize(CGSizeMake(300.0,CGFloat.max), options: NSStringDrawingOptions.UsesLineFragmentOrigin, context:nil )//hear u will get nearer height not the exact value
-    let requredSize:CGRect = rect
-    return requredSize.height  //to include button's in your tableview
-    
-    }*/
-    
+  
     
     func showLine(height:CGFloat) {
         let alertController = UIAlertController(title: "Audacity IT Solution", message:
@@ -324,25 +239,14 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                             needScroll = false;
                         }
                         
-                        //tableView.frame.size.height = tableView.frame.size.height - distance
-                        
-                        //  headerView.frame.origin.y =  headerView.frame.origin.y + distance
-                        //distance = distance + 5
                         distance = tableView.frame.origin.y + distance
                         tableView.scrollEnabled = false
                         if(distance > tableViewOriginY) {
                             distance = tableViewOriginY
-                            //tableView.scrollEnabled = true
                             needScroll = false
                         } else {
-                            //   println("Orginal Position no scroll")
-                            tableView.scrollEnabled = false
+                               tableView.scrollEnabled = false
                         }
-                        
-                        // println("Down distance = \(distance)")
-                        
-                        
-                        
                         tableView.frame.origin.y =   distance
                         
                         var alphaRange = distance - parallaxHeaderHeight
@@ -365,9 +269,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                 } else {
                     // Going Up
                     
-                   // let con =  Float(counter)
-                    //var con2 = CGFloat(con)
-                    //headerView.center = CGPoint(x:headerView.center.x ,y:headerView.center.y + con2)
                     let reverseScrollHeight: CGFloat = -(tableViewOriginY - parallaxHeaderHeight)
                     if(headerView.frame.origin.y > reverseScrollHeight) {
                         
@@ -384,7 +285,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         
                         
                         headerView.frame.origin.y =   distance
-                        // parallaxImageView.frame.offset(dx: 0, dy: -distance)
                         parallaxImageView.frame.origin.y = -distance
                         
                         
@@ -449,7 +349,7 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         }
                     }
                     
-                    //  println("Up translation y: \(translation.y)   counter= \(counter)  counterDown=\(counterDown)   origin=\(headerView.frame.origin.y)")
+                    
                 }
             }
             
@@ -479,13 +379,12 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
         if( tableView.contentOffset.y <= 0 ) {
             scrollToTop = true;
             tableView.scrollEnabled = false;
-            // println("Scroll To Top")
+            
         }
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewDidAppear(animated)
         trackEvent(1, actionName: "OverView Controller")
     }
     
@@ -494,29 +393,10 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     }
     
     override func viewDidLayoutSubviews() {
-       // print("TotalScreen height =\(totalScreenHeight)  table orginal height=\(tableView.frame.size.height)")
-     
-        
-        tableOrginalHeight = tableView.frame.size.height
-    
        
-        
-        
+        tableOrginalHeight = tableView.frame.size.height
         tableViewOriginY = tableView.frame.origin.y
         parallaxHeaderHeight =  78
-        
-        //totalScreenHeight = headerView.frame.size.height + tableOrginalHeight
-        
-        /*var differ = tableOrginalHeight - headerView.frame.size.height
-        differ = differ / 2
-        print("Previous header size = \(headerView.frame.size.height) table size =\(tableOrginalHeight)")
-        headerView.frame.size.height = headerView.frame.size.height + differ
-        
-        tableView.frame.size.height = tableView.frame.size.height - differ
-        tableView.frame.origin.y = tableView.frame.origin.y + differ
-        print("After header size = \(headerView.frame.size.height) table size =\(tableView.frame.size.height)")
-        */
-       // headerView.frame = CGRectMake(0 , 0, self.headerView.frame.width, self.headerView.frame.height + differ)
         
     }
     
@@ -533,8 +413,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
             if( yDistance < 0 ) {
                 yDistance = yDistance * (-1)
             }
-            
-            //print("I am from if \(translation.x) translation y = \(translation.y)")
             
             if ( xDistance > yDistance) {
                 return false
@@ -560,16 +438,11 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                     parallaxImageView.image = UIImage(named:jsonObj["overview"]["background_image"].string!)
                     companyName.text = jsonObj["overview"]["company_name"].string!
                     companyMoto.text = jsonObj["overview"]["company_tag"].string!
-                  
-                    
-                    
                     
                     for ( var i:Int = 0; i<jsonObj["overview"]["counter_info"].count; i++ ) {
                         
                         counterName.append(jsonObj["overview"]["counter_info"][i]["text"].string!)
                         counterNumber.append(jsonObj["overview"]["counter_info"][i]["number"].string!)
-                        
-                       
                         
                     }
                     

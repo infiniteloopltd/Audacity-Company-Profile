@@ -19,7 +19,8 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
     var selectedItem:Int = -1
     
     var firstTimeOpen: Bool = true;
-    
+    var deSelectedItem:NSIndexPath! ;
+    var rateThisAppTriggered: Bool = false;
     
     @IBAction func homeIconAction(sender: AnyObject) {
         
@@ -124,25 +125,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         return UIColor(red:red, green:green, blue:blue, alpha:1.0)
     }
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        if(selectedItem == 0 || selectedItem == drawerItem.count+1) {
-            
-            return
-        }
-      
-            let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-            cellToDeSelect.contentView.backgroundColor = uicolorFromHex(0x21252A)
-        
-        
-        
-        let cell: DrawerCell = cellToDeSelect as! DrawerCell
-        
-        cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        cell.itemImageView.tintColor = uicolorFromHex(0x99A4B9)
-        cell.itemLabel.textColor = uicolorFromHex(0x99A4B9)
-        
-        
-    }
+   
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
@@ -159,8 +142,17 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewDidAppear(animated)
+
     }
+    
+    override func viewDidLayoutSubviews() {
+        tableView.frame.origin.y = tableView.frame.origin.y - getStatusBarHeight()
+        tableView.frame.size.height = tableView.frame.size.height + getStatusBarHeight()
+    }
+    
+    
+    
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
@@ -189,9 +181,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         let picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
         picker.setSubject("Contact with Audacity IT Solutions via company profile app")
-        //picker.setMessageBody(emailBodyField.text, isHTML: true)
         picker.setToRecipients(["founders@audacityit.com"])
-        
         presentViewController(picker, animated: true, completion: nil)
         
         trackEvent(2, actionName: "Tapped on mail button")
@@ -203,11 +193,8 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         let picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
         picker.setSubject("Contact with Audacity IT Solutions via company profile app")
-        //picker.setMessageBody(emailBodyField.text, isHTML: true)
         picker.setToRecipients(["founders@audacityit.com"])
-        
         presentViewController(picker, animated: true, completion: nil)
-        
         trackEvent(2, actionName: "Tapped on get started button")
     }
     
@@ -215,8 +202,28 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
     @IBAction func webBtnAction(sender: AnyObject) {
         let url = NSURL(string: "http://www.audacityit.com")!
         UIApplication.sharedApplication().openURL(url)
-        
         trackEvent(2, actionName: "Tapped on web button")
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        if(selectedItem == 0 || selectedItem == drawerItem.count+1 ) {
+            return
+        }
+        let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        cellToDeSelect.contentView.backgroundColor = uicolorFromHex(0x21252A)
+        
+        let cell: DrawerCell = cellToDeSelect as! DrawerCell
+        
+        cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        cell.itemImageView.tintColor = uicolorFromHex(0x99A4B9)
+        cell.itemLabel.textColor = uicolorFromHex(0x99A4B9)
+        
+        deSelectedItem = indexPath
+        
     }
     
     
@@ -226,6 +233,34 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         if(indexPath.row == 0 || indexPath.row == drawerItem.count+1) {
             
             return
+        } else if(indexPath.row == 10) {
+           
+            rateThisAppTriggered = true
+            let url = NSURL(string: "http://www.audacityit.com")!
+            UIApplication.sharedApplication().openURL(url)
+            selectedItem = deSelectedItem.row
+            
+            let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(deSelectedItem)!
+            selectedCell.contentView.backgroundColor = UIColor.blackColor()
+            selectedCell.backgroundColor = UIColor.blackColor()
+            
+            let cell: DrawerCell = selectedCell as! DrawerCell
+            
+            cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            cell.itemImageView.tintColor = uicolorFromHex(0x0089e9)
+            cell.itemLabel.textColor = uicolorFromHex(0x0089e9)
+            
+            
+            return
+        } else if(rateThisAppTriggered) {
+            let rowToSelect:NSIndexPath = NSIndexPath(forRow: selectedItem, inSection: 0);
+            let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(rowToSelect)!
+            cellToDeSelect.contentView.backgroundColor = uicolorFromHex(0x21252A)
+            let cell: DrawerCell = cellToDeSelect as! DrawerCell
+            cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            cell.itemImageView.tintColor = uicolorFromHex(0x99A4B9)
+            cell.itemLabel.textColor = uicolorFromHex(0x99A4B9)
+            
         }
         
         selectedItem = indexPath.row
@@ -235,17 +270,15 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             selectedCell.contentView.backgroundColor = UIColor.blackColor()
             selectedCell.backgroundColor = UIColor.blackColor()
         
-        let cell: DrawerCell = selectedCell as! DrawerCell
+            let cell: DrawerCell = selectedCell as! DrawerCell
         
-        cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        cell.itemImageView.tintColor = uicolorFromHex(0x0089e9)
-         cell.itemLabel.textColor = uicolorFromHex(0x0089e9)
+            cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            cell.itemImageView.tintColor = uicolorFromHex(0x0089e9)
+            cell.itemLabel.textColor = uicolorFromHex(0x0089e9)
         
         
         switch(indexPath.row)
         {
-            
-            
             
         case 1:  // Home
             
@@ -373,11 +406,6 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             
             break
             
-        case 10: // Rate This app
-            let url = NSURL(string: "http://www.audacityit.com")!
-            UIApplication.sharedApplication().openURL(url)
-            
-            break
         default:
             
             print("");
@@ -386,6 +414,11 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         
         
         
+    }
+    
+    func getStatusBarHeight() -> CGFloat {
+        let statusBarSize = UIApplication.sharedApplication().statusBarFrame.size
+        return statusBarSize.height
     }
     
     

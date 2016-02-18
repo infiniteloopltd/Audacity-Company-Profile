@@ -28,9 +28,8 @@ class ShowcaseViewController: UIViewController {
     
     var projectType: [String]! ;
     var projectUrl: [String]! ;
-    var itemIndex: Int = 0 // ***
-    // var imageName: String = ""  // ***
-    
+    var itemIndex: Int = 0
+   
     var imageName: String = "" {
         
         didSet {

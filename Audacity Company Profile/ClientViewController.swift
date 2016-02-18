@@ -16,32 +16,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     
     var clicked :Bool = false;
     
-    /*var clientProjectName = ["Monasa Learning Centre", "Amar Phonebook", "Colours FM", "U-NEXT", "Lock Deals"]
-    
-    var projectType = [["Website"],["Android","iOS"], ["Android"], ["Android", "iOS"], ["Website", "Android"]]
-    
-    var projectUrl = [["http://www.monasalearning.com"],
-        ["play.google.com/store/apps/details?id=com.audacityit.amarphonebook", "https://itunes.apple.com/us/app/amar-phonebook-bangladeshs/id1044979290?mt=8"],
-        ["https://play.google.com/store/apps/details?id=com.audacityit.coloursfm"],
-        ["https://play.google.com/store/apps/details?id=jp.softbank.mb.animehodai", "https://itunes.apple.com/jp/app/anime-fang-ti/id959884819?mt=8"],
-        ["http://www.lockdealsapp.com", "https://play.google.com/store/apps/details?id=com.audacityit.lockdeals"]]
-    
-    var clientName = ["Samad Miraly", "Empire Group", "ADCOMM LTD.", "U-NEXT", "Cody McDowell"]
-    
-    var countryName = ["BANGLADESH", "BANGLADESH", "BANGLADESH", "JAPAN", "AUSTRALIA"]
-    
-    
-    
-    var clientProjectImage = ["img_client_3.jpg", "img_client_4.jpg", "img_client_5.jpg", "img_client_6.jpg", "img_client_7.png"]
-*/
-    //var clientPosition = ["CEO of Lock Deals","Manager at U-NEXT"]
-    
-    
-    //var clientUrl = ["http://www.lockdealsapp.com","http://animehodai.my.softbank.jp/"]
-    
-    
-    // class var observerStatus: Bool = false
-    
     var clientProjectName = [String]()
     var projectType = [[String]]()
     var projectUrl = [[String]]()
@@ -70,13 +44,8 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         super.viewDidLoad()
         loadData()
         // Do any additional setup after loading the view.
-        
-        
-        //self.tableView.backgroundColor = uicolorFromHex(0xDBE0E7)
-        
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        // ClientViewController.observerStatus = true;
-         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
         
     }
@@ -111,8 +80,7 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       // print(clientProjectName.count)
-        return clientProjectName.count
+       return clientProjectName.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -122,18 +90,8 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = NSTextAlignment.Justified
         
-        /*var attributedString = NSAttributedString(string: cellContent[indexPath.row],
-        attributes: [
-        NSParagraphStyleAttributeName: paragraphStyle,
-        NSBaselineOffsetAttributeName: NSNumber(float: 0)
-        ])
-        */
-        
-        // cell.label.text = cellContent[indexPath.row]
         
         cell.layoutMargins = UIEdgeInsetsZero;
-        //cell.preservesSuperviewLayoutMargins = false
-        // cell.testimonialLabel.attributedText = attributedString
         cell.clientName.text = clientName[indexPath.row]
         cell.clientProjectName.text = clientProjectName[indexPath.row]
         cell.clientImage.image = UIImage(named: clientProjectImage[indexPath.row])
@@ -144,25 +102,10 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         cell.projectType = projectType[indexPath.row]
         cell.setButtonText()
         
-        
-        //cell.clientName.attributedText = attributedString
-        // cell.clientName.text = cellContent[indexPath.row]
-        //cell.label.hidden = true
-        
-        
-        
-        
-        
-        
         cell.clientImage.layer.cornerRadius = cell.clientImage.frame.size.width / 2
         cell.clientImage.clipsToBounds  = true
         cell.clientImage.layer.borderWidth = 3
         cell.clientImage.layer.borderColor = UIColor.whiteColor().CGColor// Make image borders rounded
-        //cell.clientImage.layer.cornerRadius = 10
-        //cell.clientImage.clipsToBounds = true
-        //cell.clientImage.layer.borderWidth = 3
-        //cell.clientImage.layer.borderColor = UIColor.whiteColor().CGColor
-        
         
         
         cell.selectionStyle = .None
@@ -171,18 +114,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     }
     
     
-    
-    /* func calculateHeightForString(inString:String) -> CGFloat
-    {
-    let messageString = inString
-    let attributes = [UIFont(): UIFont.systemFontOfSize(17.0)]
-    let attrString:NSAttributedString? = NSAttributedString(string: messageString, attributes: attributes)
-    let rect:CGRect = attrString!.boundingRectWithSize(CGSizeMake(300.0,CGFloat.max), options: NSStringDrawingOptions.UsesLineFragmentOrigin, context:nil )//hear u will get nearer height not the exact value
-    let requredSize:CGRect = rect
-    return requredSize.height  //to include button's in your tableview
-    
-    }
-    */
     
     func showLine(height:CGFloat) {
         let alertController = UIAlertController(title: "Audacity IT Solution", message:
@@ -194,7 +125,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewDidAppear(animated)
         trackEvent(1, actionName: "ClientView Controller")
     }
     
@@ -229,12 +159,8 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         }
         if indexPath == selectedIndexPath {
             
-            
             return ClientItemCell.expandedHeight
-            
-            
-            
-            
+           
             
         } else {
             return ClientItemCell.defaultHeight
@@ -274,24 +200,14 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        //     if(clicked) {
-        //    println("willDisplayCell")
         
-        //ClientViewController.observerStatus = true
         (cell as! ClientItemCell).watchFrameChanges()
-        
-        // }
-        
         
     }
     
     func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        // if(clicked) {
-        //   println("didEndDisplayingCell")
-        (cell as! ClientItemCell).ignoreFrameChanges()
-        // ClientViewController.observerStatus = false
-        //  }
         
+        (cell as! ClientItemCell).ignoreFrameChanges()
         
     }
     
@@ -303,8 +219,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
                 let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
                 let jsonObj = JSON(data: data)
                 if jsonObj != JSON.null {
-                    
-                    
                     
                     for(var i:Int = 0; i<jsonObj["clients"].count; i++) {
                         
@@ -326,7 +240,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
                         
                         
                     }
-                    //print(clientProjectImage.description)
                     
                     
                 } else {

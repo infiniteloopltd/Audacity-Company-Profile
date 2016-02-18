@@ -14,16 +14,6 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
     
     @IBOutlet var tableView: UITableView!
     
-    /*var cellContent = ["Audacity IT Solutions have a very “Can Do” attitude with a very professional and attention to detail quality in every bit of work they do. The quality of product they have provided for me is world class. Team was always available by phone call or skype to discuss anything I needed to and made every effort to attend to these issues as soon as they could.","Audacity IT Solutions Ltd, UNEXT offshore team is quickly adapting to Japanese work standards which is very hard to maintain even for experienced companies. They are now maintaining an app which has 400,000 paid users. I have very high hopes for the talented engineers in Audacity IT Solutions Ltd."]
-    
-    var clientImage = ["img_client_1.jpg", "img_client_2.jpg"]
-    
-    var clientPosition = ["CEO of Lock Deals","Manager at U-NEXT"]
-    var clientName = ["Cody McDowell","Chinmoy Saha"]
-    
-    var clientUrl = ["http://www.lockdealsapp.com","http://animehodai.my.softbank.jp/"]
-    */
-    
     var cellContent = [String]()
     var clientImage = [String]()
     var clientPosition = [String]()
@@ -94,29 +84,14 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
         
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = NSTextAlignment.Justified
-        /*
-        var attributedString = NSAttributedString(string: cellContent[indexPath.row],
-            attributes: [
-                NSParagraphStyleAttributeName: paragraphStyle,
-                NSBaselineOffsetAttributeName: NSNumber(float: 0)
-            ])
-        */
-        
-        
-        // cell.label.text = cellContent[indexPath.row]
         
         cell.layoutMargins = UIEdgeInsetsZero;
-        //cell.preservesSuperviewLayoutMargins = false
-        // cell.testimonialLabel.attributedText = attributedString
+        
         cell.clientName.text = clientName[indexPath.row]
         cell.clientImage.image = UIImage(named: clientImage[indexPath.row])
         cell.clientPosition.text = clientPosition[indexPath.row]
         
         cell.urls = clientUrl[indexPath.row]
-        //cell.clientName.attributedText = attributedString
-        // cell.clientName.text = cellContent[indexPath.row]
-        //cell.label.hidden = true
-        
         
         let attachment = NSTextAttachment()
         attachment.image = UIImage(named: "ic_testimonial_quote_start.png")
@@ -147,15 +122,6 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
         
         attachment2.image! = imageResize(image: attachment2.image!, sizeChange: size, origin:endQuote)
         
-        //  attachment2.image. = CGRectMake(0, 0, 10, 10)
-        // attachment2.image?.size.width = 20 as CGSize
-        
-        //attachment2.image?.size.height = 10 as CGSize
-        
-        
-        
-        
-        
         let attachmentString2 = NSAttributedString(attachment: attachment2)
         
         let myString2 = NSMutableAttributedString(string: cellContent[indexPath.row])
@@ -163,88 +129,19 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
         //------------------------------------
         
         
-        
-        
-        
         myString.appendAttributedString(myString2)
         cell.testimonialLabel.attributedText = myString
-        
-        
-        
-        
         
         
         cell.clientImage.layer.cornerRadius = cell.clientImage.frame.size.width / 2
         cell.clientImage.clipsToBounds  = true
         cell.clientImage.layer.borderWidth = 3
         cell.clientImage.layer.borderColor = UIColor.whiteColor().CGColor// Make image borders rounded
-        //cell.clientImage.layer.cornerRadius = 10
-        //cell.clientImage.clipsToBounds = true
-        //cell.clientImage.layer.borderWidth = 3
-        //cell.clientImage.layer.borderColor = UIColor.whiteColor().CGColor
-        
-        
-        
-        
         
         return cell
     }
     
-    /*override func viewDidAppear(animated: Bool) {
-    self.tableView.reloadData()
-    }
     
-    func onContentSizeChange(notification: NSNotification) {
-    self.tableView.reloadData()
-    }
-    */
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        
-        //  let height:CGFloat = self.calculateHeightForString(cellContent[indexPath.row])
-        //  showLine(height)
-        
-        /* var selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! CustomCellTableViewCell
-        //selectedCell.cont
-        
-        currentSelection = indexPath.row
-        if( selectedCell.container.hidden) {
-        selectedCell.container.hidden = false
-        } else {
-        selectedCell.container.hidden = true
-        }
-        tableView.beginUpdates()
-        
-        
-        tableView.endUpdates()*/
-        
-    }
-    
-    
-    
-    /*    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    
-    var height:CGFloat = self.calculateHeightForString(cellContent[indexPath.row])
-    
-    return ( height * 2) + 50
-    
-    }
-    */
-    
-    
-    
-    /*func calculateHeightForString(inString:String) -> CGFloat
-    {
-    let messageString = inString
-    let attributes = [UIFont(): UIFont.systemFontOfSize(17.0)]
-    let attrString:NSAttributedString? = NSAttributedString(string: messageString, attributes: attributes)
-    let rect:CGRect = attrString!.boundingRectWithSize(CGSizeMake(300.0,CGFloat.max), options: NSStringDrawingOptions.UsesLineFragmentOrigin, context:nil )//hear u will get nearer height not the exact value
-    let requredSize:CGRect = rect
-    return requredSize.height  //to include button's in your tableview
-    
-    }
-    */
     
     func showLine(height:CGFloat) {
         let alertController = UIAlertController(title: "Audacity IT Solution", message:
@@ -256,7 +153,6 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewDidAppear(animated)
         trackEvent(1, actionName: "TestimonialView Controller")
     }
     
@@ -278,7 +174,6 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
         let scale: CGFloat = 0.0 // Use scale factor of main screen
         
         UIGraphicsBeginImageContextWithOptions(sizeChange, !hasAlpha, scale)
-        //image.drawInRect(CGRect(origin: CGPointZero, size: sizeChange))
         image.drawInRect(CGRect(origin: origin, size: sizeChange))
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         return scaledImage
@@ -294,9 +189,7 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
                 if jsonObj != JSON.null {
                     
                     
-                    
                     for(var i:Int = 0; i<jsonObj["testimonials"].count; i++) {
-                        
                         
                         clientName.append(jsonObj["testimonials"][i]["delegate_name"].string!)
                         clientImage.append(jsonObj["testimonials"][i]["delegate_image"].string!)

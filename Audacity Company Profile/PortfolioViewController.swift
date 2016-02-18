@@ -326,7 +326,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewDidAppear(animated)
+        //super.viewDidAppear(animated)
         trackEvent(1, actionName: "PortfolioView Controller")
     }
     
@@ -336,29 +336,12 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
     
     
     
-    func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
-        
-        /*if longPressGestureRecognizer.state == UIGestureRecognizerState.Began {
-            
-            
-            
-            let touchPoint = longPressGestureRecognizer.locationInView(self.tableView)
-            if let indexPath = self.tableView.indexPathForRowAtPoint(touchPoint) {
-                
-                // your code here, get the row for the indexPath or do whatever you want
-                liked[indexPath.row] = true
-                self.tableView.reloadData()
-            }
-        }*/
-        
-    }
+    
     
     
     
     
     func showHideFilter() {
-        
-        //print("Table filter height=\(tableViewFilter.frame.height)  table filter content =\(tableViewFilter.contentSize.height)")
         
         if (!showing) {
             //blackSheet.hidden = false
@@ -369,12 +352,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             
             
             UIView.animateWithDuration(0.5, animations: { () -> Void in
-                /* self.tableView.center = CGPointMake(self.tableView.center.x - (self.tableView.frame.size.width/2), self.tableView.center.y)
-                self.tableView.alpha = 1
-                self.blackSheet.alpha = 1*/
                 self.tableViewFilter.center = CGPointMake(self.tableViewFilter.center.x , self.tableViewFilter.center.y  - (self.tableViewFilter.frame.size.height))
-                
-                //self.tableView.frame.size.height = self.height
                 self.tableViewFilter.alpha = 1
                 self.blackSheet.alpha = 1
                 
@@ -384,18 +362,11 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             
             
         } else {
-            //blackSheet.hidden = true
             showing = false
             UIView.animateWithDuration(0.5, animations: { () -> Void in
-                /*self.tableView.center = CGPointMake(self.tableView.center.x + (self.tableView.frame.size.width/2), self.tableView.center.y)
-                self.tableView.alpha = 0
-                self.blackSheet.alpha = 0*/
-                
                 self.tableViewFilter.center = CGPointMake(self.tableViewFilter.center.x , self.tableViewFilter.center.y  + (self.tableViewFilter.frame.size.height))
-                //self.tableView.frame.size.height = 0
                 self.tableViewFilter.alpha = 0
                 self.blackSheet.alpha = 0
-                
                 
             })
         }
@@ -422,9 +393,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             tableViewFilter.scrollEnabled = false
         }
         
-        //tableView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
-        
-       
         
     }
     
@@ -438,134 +406,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         
     }
     
-    /*func scrollViewDidScroll(scrollView: UIScrollView) {
-        
-        /*println("contentOffsetY = \(self.tableView.contentOffset.y ) and contentSizeHeight=\(self.tableView.contentSize.height)")
-        if( self.tableView.contentOffset.y == (self.tableView.contentSize.height - 214) ) {
-        println("hide fab")
-        }
-        
-        */
-        if(tableView.contentSize.height < tableView.frame.height) {
-            return
-        }
-        
-        
-        print("tableviewheight= \(tableView.frame.height) tableview contentsize=\(tableView.contentSize.height)")
-        
-        if(tableView.contentSize.height < tableView.frame.height) {
-            return
-        }
-        
-        
-        
-        // var height:CGFloat = scrollView.frame.size.height;
-        let height:CGFloat = self.tableView.frame.size.height;
-        
-        let  contentYoffset : CGFloat = self.tableView.contentOffset.y;
-        
-        //var distanceFromBottom : CGFloat = scrollView.contentSize.height - contentYoffset;
-        
-        let distanceFromBottom : CGFloat = self.tableView.contentSize.height - contentYoffset;
-        if(distanceFromBottom < (height + 214 ) )
-        {
-            // println("End of the table")
-            
-            if(isFabShow) {
-                
-                
-                
-                self.fabBtn.layer.transform = CATransform3DMakeScale(1,1,1)
-                UIView.animateWithDuration(1, animations: {
-                    self.fabBtn.layer.transform = CATransform3DMakeScale(0,0,1)
-                })
-                
-                
-                
-                isFabShow = false
-                
-            }
-            
-        } else {
-            //println("Not end")
-            
-            if(!isFabShow) {
-                
-                self.fabBtn.layer.transform = CATransform3DMakeScale(0,0,1)
-                UIView.animateWithDuration(1, animations: {
-                    self.fabBtn.layer.transform = CATransform3DMakeScale(1,1,1)
-                })
-                
-                isFabShow = true
-            }
-            
-        }
-        
-    }*/
     
-    /*func scrollViewDidScroll(scrollView: UIScrollView) {
-        
-        
-        
-        
-        if (lastContentOffset > scrollView.contentOffset.y) {
-            // move up
-            //print("Moving Up")
-            if ( scrollView.contentOffset.y > 0 && fabScale < 1.0 ) {
-                self.fabBtn.layer.transform = CATransform3DMakeScale(1,1,1)
-                let scaleRatio : CGFloat = (scrollView.contentOffset.y % 100) / 100
-                print(scaleRatio)
-                
-                
-                
-                 fabScale = scaleRatio
-                if(scaleRatio >= 0.99)
-                {
-                    fabButtonHide = false;
-                }
-                self.fabBtn.layer.transform = CATransform3DMakeScale(scaleRatio, scaleRatio, 1)
-               
-                
-            }
-            
-            
-            
-        }
-        else if (lastContentOffset < scrollView.contentOffset.y) {
-        // move down
-           // print("Moving down \(fabButtonHide)")
-            if ( scrollView.contentOffset.y > 0 && fabScale > 0.0 ) {
-                self.fabBtn.layer.transform = CATransform3DMakeScale(1,1,1)
-                let scaleRatio : CGFloat = (scrollView.contentOffset.y % 100) / 100
-                print(scaleRatio)
-                let hideRatio = 1 - scaleRatio
-               
-                fabScale = hideRatio
-                if(hideRatio <= 0.01 ) {
-                    
-                    fabButtonHide = true;
-                }
-                
-                
-                self.fabBtn.layer.transform = CATransform3DMakeScale(hideRatio, hideRatio, 1)
-                
-                
-            }
-        }
-    
-    
-    // update the new position acquired
-    lastContentOffset = scrollView.contentOffset.y
-        
-       
-        
-        
-        
-      
-        
-    }
-    
-    */
     
     func uicolorFromHex(rgbValue:UInt32)->UIColor{
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0

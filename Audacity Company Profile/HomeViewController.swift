@@ -15,18 +15,6 @@ import CoreTelephony
 class HomeViewController: BaseViewController , UIPageViewControllerDataSource, GADBannerViewDelegate {
 
     @IBOutlet weak var bannerView: GADBannerView!
-    /*private var contentImages = ["img_home_1.jpg",
-        "img_home_2.jpg",
-        "img_home_3.jpg","img_home_4.jpg","img_home_5.jpg"]*/
-    /*private var contentImages:[String]!
-    private var projectName : [String]!
-    */
-   /* private var projectName = ["Amar Phonebook",
-        "Colours FM",
-        "Monasa Learning Centre","Lock Deal","How I Work"]*/
-    
-    //private var projectType = [["Android","iOS"],["Android"],["Website"],["Website","Android"],["Website","Android","iOS"]]
-    
     private var projectName = [String]()
     private var contentImages = [String]()
     private var projectType = [[String]]()
@@ -34,15 +22,10 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
     
     // Admob
     private var addLoaded :Bool = false
-    
     var appDelegate:AppDelegate!
-    
     private var pageViewController: UIPageViewController?
     @IBOutlet var container: UIView!
-    
-    
     @IBOutlet var actionBar: UIView!
-    
     @IBAction func drawerToggleAction(sender: AnyObject) {
         
         appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
@@ -56,18 +39,14 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
         setupPageControl()
         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         loadBanner();
-        if NSUserDefaults.standardUserDefaults().objectForKey("first_launch") == nil {
-            
-            appLaunchTracking()
-            
-        }
-        /*
         if(Reachability.isConnectedToNetwork()) {
-            print("Connected to internet")
-        } else {
-            print("Not Connected")
+            if NSUserDefaults.standardUserDefaults().objectForKey("first_launch") == nil {
+                
+                appLaunchTracking()
+                
+            }
         }
-        */
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -90,16 +69,10 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
         
         pageViewController = pageController
         addChildViewController(pageViewController!)
-        // self.view.addSubview(pageViewController!.view)
-        //pageViewController!.view.frame.size.width = container.frame.size.width
         
         pageViewController!.view.frame.size.height = pageViewController!.view.frame.size.height - actionBar.frame.size.height
-        //pageViewController!.view.frame.size.height = container.frame.size.height
-      //  container.addSubview(pageViewController!.view)
         pageViewController!.view.frame.origin.y = pageViewController!.view.frame.origin.y + actionBar.frame.size.height
-        
-         self.view.addSubview(pageViewController!.view)
-        //container.hidden = true;
+        self.view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
     }
     
@@ -141,7 +114,6 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
             pageItemController.nameOfProject = projectName[itemIndex]
             pageItemController.projectType = projectType[itemIndex]
             pageItemController.projectUrl = projectUrl[itemIndex]
-            //pageItemController.setButtonText()
             return pageItemController
         }
         
@@ -150,7 +122,6 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewDidAppear(animated)
         trackEvent(1, actionName: "HomeView Controller")
     }
     

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e7C-6M-BVG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e7C-6M-BVG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -47,6 +47,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwA-SW-go5" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.78823529410000004" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="m6c-k7-MES"/>
@@ -182,7 +183,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Audacity IT Solutions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-5I-lbE">
-                                                        <rect key="frame" x="72" y="36" width="163" height="32"/>
+                                                        <rect key="frame" x="57" y="36" width="163" height="32"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="wBc-Cp-Y2O"/>
@@ -195,9 +196,9 @@
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="NUY-5I-lbE" firstAttribute="leading" secondItem="bIK-ZM-uSv" secondAttribute="leading" constant="72" id="a6g-0A-hfj"/>
+                                                    <constraint firstItem="NUY-5I-lbE" firstAttribute="leading" secondItem="bIK-ZM-uSv" secondAttribute="leading" constant="57" id="a6g-0A-hfj"/>
                                                     <constraint firstAttribute="bottom" secondItem="NUY-5I-lbE" secondAttribute="bottom" constant="16" id="eJN-9U-pEk"/>
-                                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="NUY-5I-lbE" secondAttribute="trailing" constant="365" id="pJX-lA-oX1"/>
+                                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="NUY-5I-lbE" secondAttribute="trailing" constant="380" id="pJX-lA-oX1"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -254,7 +255,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ES-Ms-lnR">
-                                <rect key="frame" x="14" y="28" width="32" height="34"/>
+                                <rect key="frame" x="10" y="28" width="32" height="34"/>
                                 <animations/>
                                 <state key="normal" image="ic_navigation.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -282,11 +283,11 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Ue-5aS">
-                                                    <rect key="frame" x="20" y="9" width="17" height="17"/>
+                                                    <rect key="frame" x="20" y="8" width="19" height="19"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="17" id="KSP-2K-DOc"/>
-                                                        <constraint firstAttribute="height" constant="17" id="ntu-c7-tWB"/>
+                                                        <constraint firstAttribute="width" constant="19" id="KSP-2K-DOc"/>
+                                                        <constraint firstAttribute="height" constant="19" id="ntu-c7-tWB"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-tB-NZx">
@@ -324,8 +325,8 @@ TIN : 442670895657</string>
                                                 <constraint firstItem="vCi-tB-NZx" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" id="YZX-A8-UrM"/>
                                                 <constraint firstItem="f5A-qr-EaG" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="-16" id="dSK-9Y-x82"/>
                                                 <constraint firstItem="e63-Ue-5aS" firstAttribute="leading" secondItem="3bQ-sr-YoX" secondAttribute="leadingMargin" constant="12" id="jzU-mO-LTC"/>
-                                                <constraint firstItem="e63-Ue-5aS" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" constant="1" id="p8M-lV-n1W"/>
-                                                <constraint firstItem="vCi-tB-NZx" firstAttribute="leading" secondItem="e63-Ue-5aS" secondAttribute="trailing" constant="13" id="tXU-U9-9pa"/>
+                                                <constraint firstItem="e63-Ue-5aS" firstAttribute="top" secondItem="3bQ-sr-YoX" secondAttribute="topMargin" id="p8M-lV-n1W"/>
+                                                <constraint firstItem="vCi-tB-NZx" firstAttribute="leading" secondItem="e63-Ue-5aS" secondAttribute="trailing" constant="11" id="tXU-U9-9pa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -1514,7 +1515,7 @@ TIN : 442670895657</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methodology" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5k-F8-Bcx">
-                                                                <rect key="frame" x="72" y="36" width="525" height="32"/>
+                                                                <rect key="frame" x="57" y="36" width="525" height="32"/>
                                                                 <animations/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="32" id="eTB-iy-oHg"/>
@@ -1528,8 +1529,8 @@ TIN : 442670895657</string>
                                                         <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="t5k-F8-Bcx" secondAttribute="bottom" constant="16" id="76N-Lx-V9o"/>
-                                                            <constraint firstAttribute="trailing" secondItem="t5k-F8-Bcx" secondAttribute="trailing" constant="3" id="ArP-zV-69f"/>
-                                                            <constraint firstItem="t5k-F8-Bcx" firstAttribute="leading" secondItem="ec8-Yf-Hv9" secondAttribute="leading" constant="72" id="HFH-Bm-g8W"/>
+                                                            <constraint firstAttribute="trailing" secondItem="t5k-F8-Bcx" secondAttribute="trailing" constant="18" id="ArP-zV-69f"/>
+                                                            <constraint firstItem="t5k-F8-Bcx" firstAttribute="leading" secondItem="ec8-Yf-Hv9" secondAttribute="leading" constant="57" id="HFH-Bm-g8W"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -1560,7 +1561,7 @@ TIN : 442670895657</string>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k43-7q-5dl">
-                                        <rect key="frame" x="14" y="28" width="32" height="34"/>
+                                        <rect key="frame" x="10" y="28" width="32" height="34"/>
                                         <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1584,11 +1585,11 @@ TIN : 442670895657</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="ved-O5-WHP">
-                                                            <rect key="frame" x="20" y="9" width="17" height="17"/>
+                                                            <rect key="frame" x="20" y="8" width="19" height="19"/>
                                                             <animations/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="17" id="3Vp-kS-W02"/>
-                                                                <constraint firstAttribute="height" constant="17" id="Bvy-tF-cpv"/>
+                                                                <constraint firstAttribute="width" constant="19" id="3Vp-kS-W02"/>
+                                                                <constraint firstAttribute="height" constant="19" id="Bvy-tF-cpv"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXK-LW-nhu">
@@ -1614,14 +1615,14 @@ TIN : 442670895657</string>
                                                     </subviews>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstItem="ved-O5-WHP" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" constant="1" id="8jQ-Nm-E3j"/>
+                                                        <constraint firstItem="ved-O5-WHP" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" id="8jQ-Nm-E3j"/>
                                                         <constraint firstItem="ved-O5-WHP" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="12" id="9bk-w4-rC1"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="o2h-vx-gfb" secondAttribute="bottom" constant="1" id="N5q-At-QhE"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" id="Noa-4d-VIx"/>
                                                         <constraint firstItem="o2h-vx-gfb" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" constant="29" id="bGP-oj-pVV"/>
                                                         <constraint firstItem="o2h-vx-gfb" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="42" id="fgf-QF-r1g"/>
                                                         <constraint firstItem="iXK-LW-nhu" firstAttribute="trailing" secondItem="qCD-Qw-kOG" secondAttribute="trailingMargin" id="lBM-w1-Htr"/>
-                                                        <constraint firstItem="iXK-LW-nhu" firstAttribute="leading" secondItem="ved-O5-WHP" secondAttribute="trailing" constant="13" id="maS-QW-wgS"/>
+                                                        <constraint firstItem="iXK-LW-nhu" firstAttribute="leading" secondItem="ved-O5-WHP" secondAttribute="trailing" constant="11" id="maS-QW-wgS"/>
                                                         <constraint firstItem="o2h-vx-gfb" firstAttribute="trailing" secondItem="qCD-Qw-kOG" secondAttribute="trailingMargin" id="nWb-Bp-MWG"/>
                                                     </constraints>
                                                 </tableViewCellContentView>

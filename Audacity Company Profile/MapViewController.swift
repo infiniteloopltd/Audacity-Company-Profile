@@ -39,10 +39,6 @@ class MapViewController: BaseViewController,  MKMapViewDelegate {
         map.addAnnotation(annotation)
         
         
-        
-        //var uilpgr = UILongPressGestureRecognizer(target: self, action: "action"))
-        
-        
     }
     
     
@@ -64,7 +60,7 @@ class MapViewController: BaseViewController,  MKMapViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewDidAppear(animated)
+        //super.viewDidAppear(animated)
         trackEvent(1, actionName: "MapView Controller")
     }
     
