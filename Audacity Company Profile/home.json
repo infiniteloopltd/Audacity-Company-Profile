@@ -1,71 +1,70 @@
 {
-  "projects": [
-    
-    {
-      "name": "Colours FM",
-      "image": "img_home_2.jpg",
-      "project_info": [
-        {
-          "platform": "Android",
-          "url": "https://play.google.com/store/apps/details?id=com.audacityit.coloursfm"
-        }
-      ]
-    },
-    {
-      "name": "Monasa Learning Centre",
-      "image": "img_home_3.jpg",
-      "project_info": [
-        {
-          "platform": "Website",
-          "url": "http://www.monasalearning.com"
-        }
-      ]
-    },
-    {
-      "name": "Lock Deal",
-      "image": "img_home_4.jpg",
-      "project_info": [
-        {
-          "platform": "Website",
-          "url": "http://www.lockdealsapp.com"
-        },
-        {
-          "platform": "Android",
-          "url": "https://play.google.com/store/apps/details?id=com.audacityit.lockdeals"
-        }
-      ]
-    },
-    {
-      "name": "How I Work",
-      "image": "img_home_5.jpg",
-      "project_info": [
-        {
-          "platform": "Website",
-          "url": "http://www.howiwork.org"
-        },
-        {
-          "platform": "Android",
-          "url": "https://play.google.com/store/apps/details?id=com.audacity.howiwork"
-        },
-        {
-          "platform": "iOS",
-          "url": "https://itunes.apple.com/us/app/how-i-work/id989635514?mt=8"
-        }
-      ]
-    },
-               {
-               "name": "Amar Phonebook",
-               "image": "img_home_1.jpg",
-               "project_info": [
-                                {
-                                "platform": "Android",
-                                "url": "http://play.google.com/store/apps/details?id=com.audacityit.amarphonebook"
-                                },
-                                {
-                                "platform": "iOS",
-                                "url": "https://itunes.apple.com/us/app/amar-phonebook-bangladeshs/id1044979290?mt=8"
-                                }
-                                ]
-               }
-  ]
+    "projects": [
+                 {
+                 "name": "MOBILE APPS DEVELOPMENT",
+                 "image": "img_home_1.jpg",
+                 "project_info": [
+                                  {
+                                  "platform": "App",
+                                  "url": "http://audacityit.com/"
+                                  },
+                                  {
+                                  "platform": "iOS",
+                                  "url": "https://itunes.apple.com/us/app/amar-phonebook-bangladeshs/id1044979290?mt=8"
+                                  }
+                                  ]
+                 },
+                 {
+                 "name": "UI/UX DESIGN & DEVELOPMENT",
+                 "image": "img_home_2.jpg",
+                 "project_info": [
+                                  {
+                                  "platform": "App",
+                                  "url": "http://audacityit.com/"
+                                  }
+                                  ]
+                 },
+                 {
+                 "name": "WEBSITE DESIGN & DEVELOPMENT",
+                 "image": "img_home_3.jpg",
+                 "project_info": [
+                                  {
+                                  "platform": "Website",
+                                  "url": "http://www.monasalearning.com"
+                                  }
+                                  ]
+                 },
+                 {
+                 "name": "APPS TEMPLATE DEVELOPMENT",
+                 "image": "img_home_4.jpg",
+                 "project_info": [
+                                  {
+                                  "platform": "Website",
+                                  "url": "http://www.lockdealsapp.com"
+                                  },
+                                  {
+                                  "platform": "App",
+                                  "url": "http://audacityit.com/"
+                                  }
+                                  ]
+                 },
+                 {
+                 "name": "PRODUCT DEVELOPMENT",
+                 "image": "img_home_5.jpg",
+                 "project_info": [
+                                  {
+                                  "platform": "Website",
+                                  "url": "http://www.howiwork.org"
+                                  },
+                                  {
+                                  "platform": "App",
+                                  "url": "http://audacityit.com/"
+                                  },
+                                  {
+                                  "platform": "iOS",
+                                  "url": "https://itunes.apple.com/us/app/how-i-work/id989635514?mt=8"
+                                  }
+                                  ]
+                 }
+                 ]
 }

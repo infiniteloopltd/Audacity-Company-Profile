@@ -1,85 +1,82 @@
 {
-  "projects": [
-    {
-      "name": "Amar Phonebook",
-      "image": "img_portfolio_1.jpg",
-      "platforms": [
-        "Android",
-        "iOS",
-        "UI/UX"
-      ]
-    },
-    {
-      "name": "Colours FM",
-      "image": "img_portfolio_2.jpg",
-      "platforms": [
-        "Android",
-        "UI/UX"
-      ]
-    },
-    {
-      "name": "Monasa Learning Centre",
-      "image": "img_portfolio_3.jpg",
-      "platforms": [
-        "Website",
-        "UI/UX"
-      ]
-    },
-    {
-      "name": "Lock Deal",
-      "image": "img_portfolio_4.jpg",
-      "platforms": [
-        "Website",
-        "Android",
-        "UI/UX"
-      ]
-    },
-    {
-      "name": "How I Work",
-      "image": "img_portfolio_5.jpg",
-      "platforms": [
-        "Product",
-        "Website",
-        "Android",
-        "iOS",
-        "UI/UX"
-      ]
-    },
-    {
-      "name": "Finder",
-      "image": "img_portfolio_6.jpg",
-      "platforms": [
-        "Product",
-        "Android",
-        "UI/UX"
-      ]
-    },
-    {
-      "name": "Company Profile",
-      "image": "img_portfolio_7.jpg",
-      "platforms": [
-        "Product",
-        "Website",
-        "Android",
-        "UI/UX"
-      ]
-    },
-    {
-      "name": "U-NEXT",
-      "image": "img_portfolio_8.jpg",
-      "platforms": [
-        "Android",
-        "iOS"
-      ]
-    },
-    {
-      "name": "Deshi Deal",
-      "image": "img_portfolio_9.jpg",
-      "platforms": [
-        "Product",
-        "Android",
-        "UI/UX"
-      ]
-    }
-  ]
+    "projects": [
+                 {
+                 "name": "Amar Phonebook",
+                 "image": "img_portfolio_1.jpg",
+                 "platforms": [
+                               "App",
+                               "UI/UX"
+                               ]
+                 },
+                 {
+                 "name": "Colours FM",
+                 "image": "img_portfolio_2.jpg",
+                 "platforms": [
+                               "App",
+                               "UI/UX"
+                               ]
+                 },
+                 {
+                 "name": "Monasa Learning Centre",
+                 "image": "img_portfolio_3.jpg",
+                 "platforms": [
+                               "Website",
+                               "UI/UX"
+                               ]
+                 },
+                 {
+                 "name": "Lock Deal",
+                 "image": "img_portfolio_4.jpg",
+                 "platforms": [
+                               "Website",
+                               "App",
+                               "UI/UX"
+                               ]
+                 },
+                 {
+                 "name": "How I Work",
+                 "image": "img_portfolio_5.jpg",
+                 "platforms": [
+                               "Product",
+                               "Website",
+                               "App",
+                               "UI/UX"
+                               ]
+                 },
+                 {
+                 "name": "Finder",
+                 "image": "img_portfolio_6.jpg",
+                 "platforms": [
+                               "Product",
+                               "App",
+                               "UI/UX"
+                               ]
+                 },
+                 {
+                 "name": "Company Profile",
+                 "image": "img_portfolio_7.jpg",
+                 "platforms": [
+                               "Product",
+                               "Website",
+                               "App",
+                               "UI/UX"
+                               ]
+                 },
+                 {
+                 "name": "U-NEXT",
+                 "image": "img_portfolio_8.jpg",
+                 "platforms": [
+                               "App"
+                               ]
+                 },
+                 {
+                 "name": "Deshi Deal",
+                 "image": "img_portfolio_9.jpg",
+                 "platforms": [
+                               "Product",
+                               "App",
+                               "UI/UX"
+                               ]
+                 }
+                 ]
 }
