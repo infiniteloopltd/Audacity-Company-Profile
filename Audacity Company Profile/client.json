@@ -19,8 +19,8 @@
                 "image": "img_client_4.jpg",
                 "project_info": [
                                  {
-                                 "platform": "Android",
-                                 "url": "play.google.com/store/apps/details?id=com.audacityit.amarphonebook"
+                                 "platform": "App",
+                                 "url": "http://audacityit.com/"
                                  },
                                  {
                                  "platform": "iOS",
@@ -35,8 +35,8 @@
                 "image": "img_client_5.jpg",
                 "project_info": [
                                  {
-                                 "platform": "Android",
-                                 "url": "https://play.google.com/store/apps/details?id=com.audacityit.coloursfm"
+                                 "platform": "App",
+                                 "url": "http://audacityit.com/"
                                  }
                                  ]
                 },
@@ -47,8 +47,8 @@
                 "image": "img_client_6.jpg",
                 "project_info": [
                                  {
-                                 "platform": "Android",
-                                 "url": "https://play.google.com/store/apps/details?id=jp.softbank.mb.animehodai"
+                                 "platform": "App",
+                                 "url": "http://audacityit.com/"
                                  },
                                  {
                                  "platform": "iOS",
@@ -67,8 +67,8 @@
                                  "url": "http://www.lockdealsapp.com"
                                  },
                                  {
-                                 "platform": "Android",
-                                 "url": "https://play.google.com/store/apps/details?id=com.audacityit.lockdeals"
+                                 "platform": "App",
+                                 "url": "http://audacityit.com/"
                                  }
                                  ]
                 }

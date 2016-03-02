@@ -17,12 +17,8 @@
         "image": "ic_fab_web.png"
       },
       {
-        "title": "iOS",
-        "image": "ic_fab_ios.png"
-      },
-      {
-        "title": "Android",
-        "image": "ic_fab_android.png"
+        "title": "App",
+        "image": "ic_fab_app.png"
       },
       {
         "title": "Product",

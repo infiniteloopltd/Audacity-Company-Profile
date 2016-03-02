@@ -141,21 +141,21 @@ class ShowcaseViewController: UIViewController {
             switch (i) {
             case 0:
                 firstCategory.setTitle(projectType[i], forState: .Normal)
-                firstCategory.hidden = false
+                //firstCategory.hidden = false
                 break
                 
             case 1:
                 secondCategory.setTitle(projectType[i], forState: .Normal)
-                secondCategory.hidden = false
+                //secondCategory.hidden = false
                 break
                 
             case 2:
                 thirdCategory.setTitle(projectType[i], forState: .Normal)
-                thirdCategory.hidden = false
+                //thirdCategory.hidden = false
                 break
             case 3:
                 fourthCategory.setTitle(projectType[i], forState: .Normal)
-                fourthCategory.hidden = false
+                //fourthCategory.hidden = false
                 break
             default:
                 break;

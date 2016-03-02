@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214E15FE1C84795200C37885 /* ic_fab_app.png in Resources */ = {isa = PBXBuildFile; fileRef = 214E15FD1C84795200C37885 /* ic_fab_app.png */; };
 		2162B4B41C6C49DC0064C24F /* ic_member_faisal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B31C6C49DC0064C24F /* ic_member_faisal.jpg */; };
 		2162B4C11C6C534E0064C24F /* ic_member_mamun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B61C6C534E0064C24F /* ic_member_mamun.png */; };
 		2162B4C21C6C534E0064C24F /* ic_member_rifat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2162B4B71C6C534E0064C24F /* ic_member_rifat.jpg */; };
@@ -147,6 +148,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		214E15FD1C84795200C37885 /* ic_fab_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fab_app.png; sourceTree = "<group>"; };
 		2162B4B31C6C49DC0064C24F /* ic_member_faisal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_faisal.jpg; sourceTree = "<group>"; };
 		2162B4B51C6C534E0064C24F /* ic_member_faisal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ic_member_faisal.jpg; sourceTree = "<group>"; };
 		2162B4B61C6C534E0064C24F /* ic_member_mamun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_member_mamun.png; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 				2162B4BC1C6C534E0064C24F /* ic_member_suraiya.jpg */,
 				2162B4BD1C6C534E0064C24F /* ic_member_tinu.jpg */,
 				2162B4BE1C6C534E0064C24F /* ic_member_tuhin.jpg */,
+				214E15FD1C84795200C37885 /* ic_fab_app.png */,
 				2162B4BF1C6C534E0064C24F /* ic_member_tushar.jpg */,
 				C44CF9B81C4CD16800413EF1 /* ic_overview_location.png */,
 				C44CF9B91C4CD16800413EF1 /* ic_social_chat.png */,
@@ -646,6 +649,7 @@
 				C44CFA201C4CD16800413EF1 /* img_portfolio_1.jpg in Resources */,
 				C44CFA291C4CD16800413EF1 /* img_portfolio_6.jpg in Resources */,
 				C4EB6AF61C5F844800747B7F /* map.png in Resources */,
+				214E15FE1C84795200C37885 /* ic_fab_app.png in Resources */,
 				C44CF9A81C4CCEAC00413EF1 /* LaunchScreen.storyboard in Resources */,
 				C44CFA1A1C4CD16800413EF1 /* img_client_2.jpg in Resources */,
 				C44CF9A51C4CCEAC00413EF1 /* Assets.xcassets in Resources */,
