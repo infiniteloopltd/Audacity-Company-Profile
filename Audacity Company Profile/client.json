@@ -41,22 +41,6 @@
                                  ]
                 },
                 {
-                "client_name": "U-NEXT",
-                "delegate_name": "U-NEXT",
-                "country": "Japan",
-                "image": "img_client_6.jpg",
-                "project_info": [
-                                 {
-                                 "platform": "App",
-                                 "url": "http://audacityit.com/"
-                                 },
-                                 {
-                                 "platform": "iOS",
-                                 "url": "https://itunes.apple.com/jp/app/anime-fang-ti/id959884819?mt=8"
-                                 }
-                                 ]
-                },
-                {
                 "client_name": "Lock Deals",
                 "delegate_name": "Cody McDowell",
                 "country": "Australia",
