@@ -209,8 +209,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
-        if(selectedItem == 0 || selectedItem == drawerItem.count+1 ) {
+        if(selectedItem == 0 || selectedItem == drawerItem.count+1 || indexPath.row == 0 ) {
             return
         }
         let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
@@ -230,7 +229,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         
-        if(indexPath.row == 0 || indexPath.row == drawerItem.count+1) {
+        if(indexPath.row == 0 || indexPath.row == drawerItem.count+1 ) {
             
             return
         } else if(indexPath.row == 10) {

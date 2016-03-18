@@ -154,7 +154,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             if(screenWidth > 700) {
               cell = tableView.dequeueReusableCellWithIdentifier("CellIPad", forIndexPath: indexPath)  as! PortfolioItemCell
             } else {
-               cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)  as! PortfolioItemCell  
+               cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)  as! PortfolioItemCell
             }
             
             
