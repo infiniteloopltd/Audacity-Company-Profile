@@ -148,7 +148,6 @@
 		72B7559F2295C90F86CB6CA31DB79B47 /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
 		72FCDC67D6418B85C33C20128788438F /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		776F6B6D05D0741CBE9FCD37FD183E97 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		7B594538EB8CEADD78276B4F290A78C5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.6.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		7C168D5DBDB78691493E24B13EF6B6A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		7EE98BB0DAD20E7309DA39285F4FF92E /* GGLContext+Analytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+Analytics.h"; path = "Headers/GGLAnalytics/Public/GGLContext+Analytics.h"; sourceTree = "<group>"; };
 		8012D54C58849BCF8D74F7C4ED3406E7 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
@@ -199,6 +198,7 @@
 		D958893424A971571CE7266B5D6A5C88 /* Pods-Audacity Company Profile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Audacity Company Profile.debug.xcconfig"; sourceTree = "<group>"; };
 		DBABECD2FBCACC0FFECCC671F8492960 /* libGTM_GTMURLBuilder.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_GTMURLBuilder.a; path = Libraries/libGTM_GTMURLBuilder.a; sourceTree = "<group>"; };
 		DBC387CD2532DD14F17F47D0344A2D7A /* Pods-Audacity Company Profile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Audacity Company Profile-dummy.m"; sourceTree = "<group>"; };
+		DE18CAD75F9787BE1EABE904A627E808 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		E4947A31DBE3F5D7556C5E06EE6A6161 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Headers/Public/GAITrackedViewController.h; sourceTree = "<group>"; };
 		E69E331A3BDDA51A808D2C4E6C95C6AC /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		E6E3E9E6EB466D393939F9C74B5CF0A1 /* libGTM_AddressBook.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_AddressBook.a; path = Libraries/libGTM_AddressBook.a; sourceTree = "<group>"; };
@@ -464,7 +464,7 @@
 		A78C9C5E6349E4DA5B1C082C4B6A0758 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				CAA76805B3D6099A1059A4F7046146A7 /* Frameworks */,
+				AD1D50BC66E21BC181AC78C29FEF89A5 /* Frameworks */,
 			);
 			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
@@ -492,6 +492,14 @@
 				D2D0EA4E5B60B6C77E31D3917BF36A8D /* Frameworks */,
 			);
 			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		AD1D50BC66E21BC181AC78C29FEF89A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE18CAD75F9787BE1EABE904A627E808 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B0B4CAC34D43A55A71F4C9A605D4D347 /* GoogleUtilities */ = {
@@ -557,14 +565,6 @@
 				B31A1E8E377D54F52D8DC67277B9AF55 /* UIWebView+AFNetworking.m */,
 			);
 			name = UIKit;
-			sourceTree = "<group>";
-		};
-		CAA76805B3D6099A1059A4F7046146A7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7B594538EB8CEADD78276B4F290A78C5 /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D2D0EA4E5B60B6C77E31D3917BF36A8D /* Frameworks */ = {

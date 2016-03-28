@@ -172,11 +172,11 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
         print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         
         // bannerView = kGA
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-4586266440196072/5555193142"
         bannerView.rootViewController = self
         
         let request = GADRequest()
-        request.testDevices = ["8160d8b3c0dad27b1416423124b882b6"]
+        // request.testDevices = ["8160d8b3c0dad27b1416423124b882b6"]
         bannerView.loadRequest(request)
     }
     
