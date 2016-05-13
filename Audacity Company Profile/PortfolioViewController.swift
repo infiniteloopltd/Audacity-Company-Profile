@@ -114,6 +114,9 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         let sizeRect:CGRect = UIScreen.mainScreen().applicationFrame
          screenWidth    = sizeRect.size.width
         UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
+        
+       
+        
             }
     
     override func didReceiveMemoryWarning() {
@@ -394,6 +397,13 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         }
         
         
+        showHideFilter()
+        
+        let rowToSelect:NSIndexPath = NSIndexPath(forRow: 0, inSection: 0);  //slecting 0th row with 0th section
+        self.tableViewFilter.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None);
+        self.tableView(self.tableViewFilter, didSelectRowAtIndexPath: rowToSelect);
+        
+        
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -405,17 +415,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         
         
     }
-    
-    
-    
-    func uicolorFromHex(rgbValue:UInt32)->UIColor{
-        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
-        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
-        let blue = CGFloat(rgbValue & 0xFF)/256.0
-        
-        return UIColor(red:red, green:green, blue:blue, alpha:1.0)
-    }
-    
+   
     
     func loadData() {
         

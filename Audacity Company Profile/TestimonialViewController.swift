@@ -37,7 +37,7 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
         self.tableView.reloadData()
-        self.tableView.backgroundColor = uicolorFromHex(0xDBE0E7)
+        self.tableView.backgroundColor = Utils.uicolorFromHex(0xDBE0E7, alpha: 1)
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
          appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -159,14 +159,7 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
-    
-    func uicolorFromHex(rgbValue:UInt32)->UIColor{
-        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
-        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
-        let blue = CGFloat(rgbValue & 0xFF)/256.0
-        
-        return UIColor(red:red, green:green, blue:blue, alpha:1.0)
-    }
+
     
     func imageResize (image image:UIImage, sizeChange:CGSize, origin:CGPoint)-> UIImage{
         

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Audacity Company Profile.xcodeproj">
+      location = "group:/Users/sourav_aits/Desktop/Sourav&apos;s Den/Sourav backup/ios/Audacity Company Profile/Audacity Company Profile/Audacity - Marketing App.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

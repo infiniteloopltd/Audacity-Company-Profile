@@ -10,10 +10,11 @@ import UIKit
 import SwiftyJSON
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UIGestureRecognizerDelegate {
 
     var window: UIWindow?
     var centerContainer: MMDrawerController?
+    var drawerStateDelegate : DrawerStateDelegate!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -33,14 +34,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let leftSideNav = UINavigationController(rootViewController: drawerViewController)
         let centerNav = UINavigationController(rootViewController: centerViewController)
         
+        let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+        tap.delegate = self
         
         
         centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
         
-        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView
+        /*centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView
         centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningDrawerView
         
+        centerContainer!.centerHiddenInteractionMode = MMDrawerOpenCenterInteractionMode.Full*/
+        
+        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
+        
         centerContainer!.centerHiddenInteractionMode = MMDrawerOpenCenterInteractionMode.Full
+        
+        centerContainer?.setGestureCompletionBlock({ (centerContainer, tap) -> Void in
+            if (centerContainer.visibleLeftDrawerWidth == 280) {
+               
+                if(self.drawerStateDelegate != nil) {
+                    self.drawerStateDelegate.drawerOpened()
+                }
+                
+            } else {
+                
+                if(self.drawerStateDelegate != nil) {
+                    self.drawerStateDelegate.drawerClosed()
+                }
+                
+            }
+        })
+        
         
         window!.rootViewController = centerContainer
         window!.makeKeyAndVisible()
@@ -92,7 +117,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return UIColor(red:red, green:green, blue:blue, alpha:1.0)
     }
+    
+    func handleTap(sender: UITapGestureRecognizer? = nil) {
+       
+    }
+
+}
 
 
+protocol DrawerStateDelegate {
+    
+    func drawerOpened()
+    func drawerClosed()
 }
 

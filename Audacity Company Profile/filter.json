@@ -2,7 +2,7 @@
   "filter": {
     "filter_icon": "img_nav_header",
     "menu_color": "#00A8E2",
-    "menu_pressed_color": "#0089e9",
+    "menu_pressed_color": "#0b6e8c",
     "options": [
       {
         "title": "Wearable",

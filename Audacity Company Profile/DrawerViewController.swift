@@ -54,7 +54,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
 
         // Do any additional setup after loading the view.
         
-        self.tableView.backgroundColor = uicolorFromHex(0x21252A)
+        self.tableView.backgroundColor = Utils.uicolorFromHex(0x25282F, alpha: 1)
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         let rowToSelect:NSIndexPath = NSIndexPath(forRow: 1, inSection: 0);  //slecting 0th row with 0th section
@@ -91,25 +91,25 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         
         if(indexPath.row == 0) {
             let itemCell = tableView.dequeueReusableCellWithIdentifier("HeaderCell", forIndexPath: indexPath)  as! DrawerHeaderCell
-            itemCell.backgroundColor = uicolorFromHex(0x21252A)
+            itemCell.backgroundColor = Utils.uicolorFromHex(0x21252A, alpha: 1)
             itemCell.selectionStyle = UITableViewCellSelectionStyle.None
             return itemCell
             
         } else if(indexPath.row == drawerItem.count + 1 ) {
             let  itemCell = tableView.dequeueReusableCellWithIdentifier("FooterCell", forIndexPath: indexPath)  as! DrawerFooterCell
-            itemCell.backgroundColor = uicolorFromHex(0x21252A)
+            itemCell.backgroundColor = Utils.uicolorFromHex(0x21252A, alpha: 1)
             itemCell.selectionStyle = UITableViewCellSelectionStyle.None
             return itemCell
             
         } else {
             
             let  itemCell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath)  as! DrawerCell
-            itemCell.backgroundColor = uicolorFromHex(0x21252A)
+            itemCell.backgroundColor = Utils.uicolorFromHex(0x1f2229, alpha: 1)
             
             itemCell.itemLabel.text = drawerItem[indexPath.row - 1]
             itemCell.itemImageView.image =  UIImage(named: drawerItemImage[indexPath.row - 1])
             itemCell.itemImageView.image = itemCell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            itemCell.itemImageView.tintColor = uicolorFromHex(0x99A4B9)
+            itemCell.itemImageView.tintColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
             
             
             return itemCell
@@ -117,15 +117,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         
     }
     
-    func uicolorFromHex(rgbValue:UInt32)->UIColor{
-        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
-        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
-        let blue = CGFloat(rgbValue & 0xFF)/256.0
-        
-        return UIColor(red:red, green:green, blue:blue, alpha:1.0)
-    }
-    
-   
+  
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
@@ -213,13 +205,13 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             return
         }
         let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        cellToDeSelect.contentView.backgroundColor = uicolorFromHex(0x21252A)
+        cellToDeSelect.contentView.backgroundColor = Utils.uicolorFromHex(0x21252A, alpha: 1)
         
         let cell: DrawerCell = cellToDeSelect as! DrawerCell
         
         cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        cell.itemImageView.tintColor = uicolorFromHex(0x99A4B9)
-        cell.itemLabel.textColor = uicolorFromHex(0x99A4B9)
+        cell.itemImageView.tintColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
+        cell.itemLabel.textColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
         
         deSelectedItem = indexPath
         
@@ -246,19 +238,19 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let cell: DrawerCell = selectedCell as! DrawerCell
             
             cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            cell.itemImageView.tintColor = uicolorFromHex(0x0089e9)
-            cell.itemLabel.textColor = uicolorFromHex(0x0089e9)
+            cell.itemImageView.tintColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
+            cell.itemLabel.textColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
             
             
             return
         } else if(rateThisAppTriggered) {
             let rowToSelect:NSIndexPath = NSIndexPath(forRow: selectedItem, inSection: 0);
             let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(rowToSelect)!
-            cellToDeSelect.contentView.backgroundColor = uicolorFromHex(0x21252A)
+            cellToDeSelect.contentView.backgroundColor = Utils.uicolorFromHex(0x21252A, alpha: 1)
             let cell: DrawerCell = cellToDeSelect as! DrawerCell
             cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            cell.itemImageView.tintColor = uicolorFromHex(0x99A4B9)
-            cell.itemLabel.textColor = uicolorFromHex(0x99A4B9)
+            cell.itemImageView.tintColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
+            cell.itemLabel.textColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
             
         }
         
@@ -272,8 +264,8 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let cell: DrawerCell = selectedCell as! DrawerCell
         
             cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            cell.itemImageView.tintColor = uicolorFromHex(0x0089e9)
-            cell.itemLabel.textColor = uicolorFromHex(0x0089e9)
+            cell.itemImageView.tintColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
+            cell.itemLabel.textColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
         
         
         switch(indexPath.row)
@@ -307,6 +299,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = overNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             break;
@@ -320,6 +313,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = portfolioNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             
@@ -335,6 +329,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = teamNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             break;
@@ -349,6 +344,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = clientNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             break;
@@ -362,6 +358,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = testimonialNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             
@@ -376,6 +373,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = methodologyNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             break
@@ -388,6 +386,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = socialNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             break
@@ -401,6 +400,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController = faqlNavController
+            appDelegate.drawerStateDelegate = nil
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: false, completion: nil)
             
             break

@@ -12,7 +12,7 @@ import GoogleMobileAds
 import AFNetworking
 import CoreTelephony
 
-class HomeViewController: BaseViewController , UIPageViewControllerDataSource, GADBannerViewDelegate {
+class HomeViewController: BaseViewController , UIPageViewControllerDataSource, GADBannerViewDelegate, DrawerStateDelegate {
 
     @IBOutlet weak var bannerView: GADBannerView!
     private var projectName = [String]()
@@ -26,6 +26,11 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
     private var pageViewController: UIPageViewController?
     @IBOutlet var container: UIView!
     @IBOutlet var actionBar: UIView!
+    
+    
+    let SEARCH_TAG : Int = 100
+    var isDimBackShowing : Bool = false
+    
     @IBAction func drawerToggleAction(sender: AnyObject) {
         
         appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
@@ -38,6 +43,7 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
         createPageViewController()
         setupPageControl()
         appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.drawerStateDelegate = self
         loadBanner();
         if(Reachability.isConnectedToNetwork()) {
             if NSUserDefaults.standardUserDefaults().objectForKey("first_launch") == nil {
@@ -228,6 +234,34 @@ class HomeViewController: BaseViewController , UIPageViewControllerDataSource, G
             failure: { (operation: NSURLSessionDataTask?,error: NSError?) in
                 print("Error: " )
         })
+    }
+    
+    func drawerOpened() {
+        if(!isDimBackShowing) {
+        let dimBackground=UIView(frame: CGRectMake(0, 84, self.view.frame.size.width, self.view.frame.size.height - 84))
+        dimBackground.backgroundColor = uicolorFromHex(0x000000, alpha: 0.0)
+        self.view.addSubview(dimBackground)
+        dimBackground.tag = SEARCH_TAG + 1
+        isDimBackShowing = true
+        }
+        
+        
+    }
+    
+    func drawerClosed() {
+        
+        if(isDimBackShowing) {
+        let dimView = self.view.viewWithTag(SEARCH_TAG + 1)
+        dimView?.removeFromSuperview()
+        isDimBackShowing = false
+        }
+    }
+    
+    func uicolorFromHex(rgbValue:UInt32, alpha:CGFloat)->UIColor{
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        return UIColor(red:red, green:green, blue:blue, alpha:alpha)
     }
 
 }

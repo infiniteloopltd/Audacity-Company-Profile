@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Audacity Company Profile.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Audacity - Marketing App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>23D235710FDDECEE2E76709D44976B4C</key>
+		<key>250DC18B8F0997AA1BBEFA0E4FD680AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>47C038C5C760D96C7F0790B1AD01C216</key>
+		<key>874CB8941F9E6348E5296AB5BC71D368</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B9A04D3C9B208813656510FDA8ADAE02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA3FBF59CD467F6F7DDCA918599BB03A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e7C-6M-BVG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e7C-6M-BVG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +23,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL9-qw-fQu">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -33,13 +32,11 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="102-IP-imX">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="TU4-fo-XaR"/>
@@ -47,14 +44,12 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwA-SW-go5" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="550" width="600" height="50"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.78823529410000004" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="m6c-k7-MES"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="L9a-eZ-d8Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="PEi-rP-Lf5"/>
@@ -77,20 +72,17 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz7-dG-KCY">
                             <rect key="frame" x="10" y="36" width="31" height="32"/>
-                            <animations/>
                             <state key="normal" image="ic_navigation.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-Rb-XyY">
                             <rect key="frame" x="57" y="34" width="310" height="36"/>
-                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </objects>
@@ -99,7 +91,7 @@
         <!--Over View Controller-->
         <scene sceneID="aOU-It-yoF">
             <objects>
-                <viewController storyboardIdentifier="OverViewController" id="9Vt-Zl-Tzk" customClass="OverViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverViewController" id="9Vt-Zl-Tzk" customClass="OverViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sYe-k3-IHM"/>
                         <viewControllerLayoutGuide type="bottom" id="gav-8Y-rC7"/>
@@ -113,12 +105,10 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_overview_parallax.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b9Z-1D-mxG">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="306"/>
-                                        <animations/>
                                         <gestureRecognizers/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best mobile apps development company in Bangladesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92u-1J-Ln4">
                                         <rect key="frame" x="16" y="192" width="576" height="21"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="576" id="UQs-Kq-nJE"/>
                                             <constraint firstAttribute="height" constant="21" id="faK-SF-cZ5"/>
@@ -129,7 +119,6 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Audacity IT Solutions Ltd." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gq-d7-pof">
                                         <rect key="frame" x="16" y="163" width="576" height="21"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -139,42 +128,36 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl6-YO-4Ue">
                                                 <rect key="frame" x="523" y="17" width="38" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="In Queue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjZ-3c-weQ">
                                                 <rect key="frame" x="506" y="43" width="73" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="20+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqU-d9-aJb">
                                                 <rect key="frame" x="40" y="17" width="55" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Completed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOK-kZ-ckf">
                                                 <rect key="frame" x="18" y="43" width="86" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAd-MT-Tax">
                                                 <rect key="frame" x="283" y="17" width="33" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Developing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bta-YX-rSc">
                                                 <rect key="frame" x="254" y="43" width="90" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -184,7 +167,6 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Audacity IT Solutions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-5I-lbE">
                                                         <rect key="frame" x="57" y="36" width="163" height="32"/>
-                                                        <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="wBc-Cp-Y2O"/>
                                                         </constraints>
@@ -193,7 +175,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="NUY-5I-lbE" firstAttribute="leading" secondItem="bIK-ZM-uSv" secondAttribute="leading" constant="57" id="a6g-0A-hfj"/>
@@ -202,7 +183,6 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="0.31" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="bIK-ZM-uSv" firstAttribute="top" secondItem="XX6-Tu-aQP" secondAttribute="top" id="1Lv-Dn-ozI"/>
@@ -226,7 +206,6 @@
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_company.png" translatesAutoresizingMaskIntoConstraints="NO" id="0zx-2P-qhY">
                                         <rect key="frame" x="250" y="45" width="100" height="100"/>
-                                        <animations/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="0wl-m5-LVD"/>
@@ -234,7 +213,6 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="0zx-2P-qhY" firstAttribute="top" secondItem="HzW-jR-dgk" secondAttribute="top" constant="45" id="29V-Qb-BBF"/>
@@ -256,7 +234,6 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ES-Ms-lnR">
                                 <rect key="frame" x="10" y="28" width="32" height="34"/>
-                                <animations/>
                                 <state key="normal" image="ic_navigation.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -266,25 +243,22 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zPr-5G-cTS">
                                 <rect key="frame" x="0.0" y="306" width="600" height="296"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.9835175746" blue="0.1610116727" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="90" id="70u-aT-Edi" customClass="OverviewCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="90" id="70u-aT-Edi" customClass="OverviewCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="70u-aT-Edi" id="3bQ-sr-YoX">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5A-qr-EaG" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5A-qr-EaG" customClass="RippleView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="-8" width="600" height="98"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="e63-Ue-5aS">
                                                     <rect key="frame" x="20" y="8" width="19" height="19"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="19" id="KSP-2K-DOc"/>
                                                         <constraint firstAttribute="height" constant="19" id="ntu-c7-tWB"/>
@@ -292,7 +266,6 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-tB-NZx">
                                                     <rect key="frame" x="50" y="8" width="542" height="21"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Bm9-iR-J1v"/>
                                                     </constraints>
@@ -302,7 +275,6 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-eR-Pt2">
                                                     <rect key="frame" x="50" y="37" width="542" height="44"/>
-                                                    <animations/>
                                                     <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
@@ -311,7 +283,6 @@ TIN : 442670895657</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="vCi-tB-NZx" firstAttribute="trailing" secondItem="3bQ-sr-YoX" secondAttribute="trailingMargin" id="45S-Lh-aAH"/>
@@ -329,7 +300,6 @@ TIN : 442670895657</string>
                                                 <constraint firstItem="vCi-tB-NZx" firstAttribute="leading" secondItem="e63-Ue-5aS" secondAttribute="trailing" constant="11" id="tXU-U9-9pa"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <outlet property="itemDetail" destination="njg-eR-Pt2" id="wdO-gf-ygy"/>
                                             <outlet property="itemIcon" destination="e63-Ue-5aS" id="UqB-3M-M44"/>
@@ -344,7 +314,6 @@ TIN : 442670895657</string>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-Mi-BJN">
                                 <rect key="frame" x="528" y="527" width="52" height="52"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.68627450980392157" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="52" id="UVE-L9-Jdd"/>
@@ -366,7 +335,6 @@ TIN : 442670895657</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -414,7 +382,7 @@ TIN : 442670895657</string>
         <!--Portfolio View Controller-->
         <scene sceneID="Ieu-od-b0T">
             <objects>
-                <viewController storyboardIdentifier="PortfolioViewController" id="wEY-6C-4Ut" customClass="PortfolioViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PortfolioViewController" id="wEY-6C-4Ut" customClass="PortfolioViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cxT-eN-Oqf"/>
                         <viewControllerLayoutGuide type="bottom" id="Oba-ut-VOJ"/>
@@ -428,7 +396,6 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-Z7-h8p">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -438,13 +405,11 @@ TIN : 442670895657</string>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Portfolio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxA-hS-EqE">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="iww-MQ-hGP"/>
@@ -452,31 +417,28 @@ TIN : 442670895657</string>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="231" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4MQ-MK-gEN">
                                 <rect key="frame" x="0.0" y="85" width="600" height="615"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="214" id="VWf-GC-WNf" customClass="PortfolioItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="214" id="VWf-GC-WNf" customClass="PortfolioItemCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VWf-GC-WNf" id="1Zo-0G-ZSu">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="214"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Att-ah-Y8E" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Att-ah-Y8E" customClass="CardView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="3" width="574" height="208"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_portfolio_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DDo-Ef-T82">
                                                             <rect key="frame" x="0.0" y="0.0" width="584" height="152"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="152" id="YGa-F3-PyS"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amar Phonebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-bi-AER">
                                                             <rect key="frame" x="8" y="159" width="530" height="21"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Bl2-1T-DQt"/>
                                                             </constraints>
@@ -486,7 +448,6 @@ TIN : 442670895657</string>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android, iOS, UI/UX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeD-ck-dKQ">
                                                             <rect key="frame" x="8" y="176" width="530" height="21"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="J27-ge-Y5r"/>
                                                             </constraints>
@@ -496,7 +457,6 @@ TIN : 442670895657</string>
                                                         </label>
                                                         <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIw-Dn-Q6d">
                                                             <rect key="frame" x="546" y="161" width="30" height="32"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="U1V-WH-Hfh"/>
                                                                 <constraint firstAttribute="height" constant="32" id="n2V-Ik-odc"/>
@@ -506,7 +466,6 @@ TIN : 442670895657</string>
                                                             </state>
                                                         </button>
                                                     </subviews>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="hIw-Dn-Q6d" secondAttribute="trailing" constant="8" id="9rM-RW-7zN"/>
@@ -524,14 +483,12 @@ TIN : 442670895657</string>
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="Att-ah-Y8E" firstAttribute="leading" secondItem="1Zo-0G-ZSu" secondAttribute="leadingMargin" id="28r-A3-qwf"/>
                                                 <constraint firstItem="Att-ah-Y8E" firstAttribute="top" secondItem="1Zo-0G-ZSu" secondAttribute="topMargin" constant="-5" id="aUo-sC-kRN"/>
                                                 <constraint firstItem="Att-ah-Y8E" firstAttribute="trailing" secondItem="1Zo-0G-ZSu" secondAttribute="trailingMargin" id="bhD-jp-ZRX"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="itemImage" destination="DDo-Ef-T82" id="iRE-90-N6i"/>
@@ -540,26 +497,24 @@ TIN : 442670895657</string>
                                             <outlet property="itemType" destination="zeD-ck-dKQ" id="UEL-Ug-QDf"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIPad" rowHeight="350" id="6r2-iL-gh9" customClass="PortfolioItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIPad" rowHeight="350" id="6r2-iL-gh9" customClass="PortfolioItemCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="236" width="600" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6r2-iL-gh9" id="HmY-r8-R46">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzp-DS-k6n" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzp-DS-k6n" customClass="CardView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="6" width="574" height="336"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_portfolio_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fsa-iV-Vcn">
                                                             <rect key="frame" x="0.0" y="0.0" width="574" height="280"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="280" id="frk-X7-GfC"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amar Phonebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0o-TE-cbp">
                                                             <rect key="frame" x="8" y="288" width="520" height="21"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="4cI-L1-FFm"/>
                                                             </constraints>
@@ -569,7 +524,6 @@ TIN : 442670895657</string>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android, iOS, UI/UX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-rG-UIr">
                                                             <rect key="frame" x="8" y="307" width="520" height="21"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="N6j-7d-FyK"/>
                                                             </constraints>
@@ -579,7 +533,6 @@ TIN : 442670895657</string>
                                                         </label>
                                                         <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-Tt-4kq">
                                                             <rect key="frame" x="536" y="288" width="30" height="32"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="32" id="c00-pI-RYc"/>
                                                                 <constraint firstAttribute="width" constant="30" id="gHE-dQ-GHO"/>
@@ -589,7 +542,6 @@ TIN : 442670895657</string>
                                                             </state>
                                                         </button>
                                                     </subviews>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="Gjt-rG-UIr" firstAttribute="top" secondItem="fsa-iV-Vcn" secondAttribute="bottom" constant="27" id="DFg-Lt-UXN"/>
@@ -607,14 +559,12 @@ TIN : 442670895657</string>
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="nzp-DS-k6n" firstAttribute="leading" secondItem="HmY-r8-R46" secondAttribute="leadingMargin" constant="5" id="6oi-7I-QPE"/>
                                                 <constraint firstItem="nzp-DS-k6n" firstAttribute="top" secondItem="HmY-r8-R46" secondAttribute="topMargin" constant="-2" id="BXc-cK-g20"/>
                                                 <constraint firstItem="nzp-DS-k6n" firstAttribute="trailing" secondItem="HmY-r8-R46" secondAttribute="trailingMargin" constant="-5" id="l7l-pa-cys"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="itemImage" destination="fsa-iV-Vcn" id="J0H-zw-og6"/>
@@ -634,7 +584,6 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can start work with us by click here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-nK-t4Z">
                                         <rect key="frame" x="8" y="255" width="584" height="21"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="7Uu-Ep-SxB"/>
                                         </constraints>
@@ -644,7 +593,6 @@ TIN : 442670895657</string>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXG-s4-NGX">
                                         <rect key="frame" x="8" y="226" width="584" height="21"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="gLe-E4-pVY"/>
                                         </constraints>
@@ -654,7 +602,6 @@ TIN : 442670895657</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVR-6v-6GU">
                                         <rect key="frame" x="232" y="287" width="136" height="41"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="1xe-UG-SpZ"/>
@@ -670,7 +617,6 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="FSb-nK-t4Z" firstAttribute="top" secondItem="VXG-s4-NGX" secondAttribute="bottom" constant="8" id="5oe-6q-sc5"/>
@@ -685,13 +631,11 @@ TIN : 442670895657</string>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6Z-Ww-OQg">
                                 <rect key="frame" x="0.0" y="85" width="600" height="615"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzl-Ha-yhQ">
                                 <rect key="frame" x="542" y="640" width="50" height="50"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.69019607843137254" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2nk-cF-H3b"/>
                                     <constraint firstAttribute="width" constant="50" id="c8f-Zv-ZR0"/>
@@ -712,13 +656,12 @@ TIN : 442670895657</string>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-tg-cW6">
                                 <rect key="frame" x="20" y="90" width="572" height="532"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="50" id="sFU-S0-5l0" customClass="FilterItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="50" id="sFU-S0-5l0" customClass="FilterItemCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="572" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sFU-S0-5l0" id="kbg-f2-EzY">
@@ -727,8 +670,7 @@ TIN : 442670895657</string>
                                             <subviews>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-ob-3uK">
                                                     <rect key="frame" x="529" y="5" width="40" height="40"/>
-                                                    <animations/>
-                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.0039215686274509803" green="0.69019607843137254" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="VCl-dK-93U"/>
                                                         <constraint firstAttribute="width" constant="40" id="t1O-3J-rXm"/>
@@ -746,7 +688,6 @@ TIN : 442670895657</string>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSQ-iO-kvS">
                                                     <rect key="frame" x="8" y="19" width="498" height="21"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="0Ql-tG-AgH"/>
@@ -756,7 +697,6 @@ TIN : 442670895657</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -767,7 +707,6 @@ TIN : 442670895657</string>
                                                 <constraint firstItem="eeh-ob-3uK" firstAttribute="leading" secondItem="MSQ-iO-kvS" secondAttribute="trailing" constant="23" id="VV1-wy-3bO"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -782,7 +721,6 @@ TIN : 442670895657</string>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Oba-ut-VOJ" firstAttribute="top" secondItem="4MQ-MK-gEN" secondAttribute="bottom" id="5ud-KU-Kgn"/>
@@ -825,7 +763,7 @@ TIN : 442670895657</string>
         <!--Team View Controller-->
         <scene sceneID="BG6-hF-A75">
             <objects>
-                <viewController storyboardIdentifier="TeamViewController" id="WoD-Fm-Cx4" customClass="TeamViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeamViewController" id="WoD-Fm-Cx4" customClass="TeamViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0uO-K9-Kj4"/>
                         <viewControllerLayoutGuide type="bottom" id="h2U-To-mLB"/>
@@ -839,7 +777,6 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-BH-7Ib">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -849,13 +786,11 @@ TIN : 442670895657</string>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpM-0z-ZtO">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="uTh-hL-fAt"/>
@@ -863,7 +798,6 @@ TIN : 442670895657</string>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DsA-Ts-33A">
                                 <rect key="frame" x="0.0" y="84" width="600" height="516"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W3E-kb-OAg">
                                     <size key="itemSize" width="50" height="50"/>
@@ -872,21 +806,19 @@ TIN : 442670895657</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewItemCell" id="KLR-xZ-J9N" customClass="CollectionViewItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewItemCell" id="KLR-xZ-J9N" customClass="CollectionViewItemCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="35" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tib-yy-94c" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tib-yy-94c" customClass="RippleView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_rifat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-CC-Vbg">
                                                     <rect key="frame" x="26" y="8" width="58" height="58"/>
-                                                    <animations/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="29"/>
@@ -896,23 +828,19 @@ TIN : 442670895657</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faisal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5J-it-lkQ">
                                                     <rect key="frame" x="8" y="64" width="94" height="23"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXd-Vb-QYn">
                                                     <rect key="frame" x="8" y="84" width="94" height="18"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="customSize" width="110" height="110"/>
                                         <connections>
@@ -921,21 +849,19 @@ TIN : 442670895657</string>
                                             <outlet property="itemName" destination="H5J-it-lkQ" id="rOF-Mx-PM7"/>
                                         </connections>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewItemCelliPad" id="nSX-rc-Ryy" customClass="CollectionViewItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewItemCelliPad" id="nSX-rc-Ryy" customClass="CollectionViewItemCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="120" y="0.0" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-bl-Q4R" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-bl-Q4R" customClass="RippleView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_rifat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-Sl-Cey">
                                                     <rect key="frame" x="41" y="8" width="100" height="100"/>
-                                                    <animations/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="50"/>
@@ -945,23 +871,19 @@ TIN : 442670895657</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faisal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asS-aJ-XlF">
                                                     <rect key="frame" x="8" y="117" width="164" height="23"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-xT-1xO">
                                                     <rect key="frame" x="8" y="144" width="164" height="21"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="customSize" width="180" height="180"/>
                                         <connections>
@@ -977,7 +899,6 @@ TIN : 442670895657</string>
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="onP-4a-MO6" firstAttribute="leading" secondItem="fsR-wQ-E1d" secondAttribute="leading" id="7bE-y0-IlV"/>
@@ -1000,7 +921,7 @@ TIN : 442670895657</string>
         <!--Client View Controller-->
         <scene sceneID="03H-8D-Xec">
             <objects>
-                <viewController storyboardIdentifier="ClientViewController" id="sMj-MK-OZg" customClass="ClientViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClientViewController" id="sMj-MK-OZg" customClass="ClientViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sNU-A6-tZE"/>
                         <viewControllerLayoutGuide type="bottom" id="HEX-yc-2RI"/>
@@ -1014,7 +935,6 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kag-Il-9qP">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1024,13 +944,11 @@ TIN : 442670895657</string>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqU-hi-kwO">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="vNa-QD-5Tn"/>
@@ -1038,20 +956,19 @@ TIN : 442670895657</string>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kpR-X9-2PZ">
                                 <rect key="frame" x="0.0" y="83" width="600" height="517"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="143" id="4Ao-3J-bW3" customClass="ClientItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="143" id="4Ao-3J-bW3" customClass="ClientItemCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Ao-3J-bW3" id="MEL-tL-Pxy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-x8-fzJ" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-x8-fzJ" customClass="CardView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="3" width="574" height="137"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-1f-9UY">
@@ -1059,7 +976,6 @@ TIN : 442670895657</string>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_client_7.png" translatesAutoresizingMaskIntoConstraints="NO" id="8pO-fF-IYy">
                                                                     <rect key="frame" x="6" y="5" width="60" height="60"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="60" id="bGC-tM-bsf"/>
                                                                         <constraint firstAttribute="width" constant="60" id="kof-M7-ITI"/>
@@ -1067,7 +983,6 @@ TIN : 442670895657</string>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Monasa Learning Centre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-bn-Pba">
                                                                     <rect key="frame" x="74" y="19" width="158" height="17"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="VYp-tx-XxK"/>
                                                                     </constraints>
@@ -1077,7 +992,6 @@ TIN : 442670895657</string>
                                                                 </label>
                                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usq-cE-VNA">
                                                                     <rect key="frame" x="541" y="10" width="19" height="15"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="19" id="nCe-I0-3NU"/>
                                                                         <constraint firstAttribute="height" constant="15" id="nFV-pZ-Of9"/>
@@ -1088,7 +1002,6 @@ TIN : 442670895657</string>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samad Miraly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGG-Nk-hel">
                                                                     <rect key="frame" x="74" y="36" width="117" height="21"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="9w2-NV-mPA"/>
                                                                     </constraints>
@@ -1098,8 +1011,7 @@ TIN : 442670895657</string>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BANGLADESH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmk-wC-xYP">
                                                                     <rect key="frame" x="469" y="36" width="82" height="21"/>
-                                                                    <animations/>
-                                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <color key="backgroundColor" red="0.73725490196078436" green="0.76078431372549016" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="DRf-6b-dTZ"/>
                                                                     </constraints>
@@ -1108,7 +1020,6 @@ TIN : 442670895657</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <animations/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <accessibility key="accessibilityConfiguration">
                                                                 <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -1134,15 +1045,13 @@ TIN : 442670895657</string>
                                                             <subviews>
                                                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-jn-t5j">
                                                                     <rect key="frame" x="4" y="0.0" width="556" height="1"/>
-                                                                    <animations/>
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="1" id="xcs-Zs-7Ad"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-NO-1JR" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-NO-1JR" customClass="MyCustomButton2" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                                     <rect key="frame" x="8" y="9" width="70" height="26"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="YcN-63-Jqj"/>
                                                                         <constraint firstAttribute="height" constant="26" id="yZj-kh-cR5"/>
@@ -1155,9 +1064,8 @@ TIN : 442670895657</string>
                                                                         <action selector="firstCategoryAction:" destination="4Ao-3J-bW3" eventType="touchUpInside" id="YlB-Z8-gzI"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ra-A9c" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ra-A9c" customClass="MyCustomButton2" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                                     <rect key="frame" x="85" y="9" width="70" height="26"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="WEP-SY-gHD"/>
                                                                         <constraint firstAttribute="height" constant="26" id="mp3-9Y-aHX"/>
@@ -1170,9 +1078,8 @@ TIN : 442670895657</string>
                                                                         <action selector="secondCategoryAction:" destination="4Ao-3J-bW3" eventType="touchUpInside" id="Fv0-02-mJ6"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-EN-aul" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-EN-aul" customClass="MyCustomButton2" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                                     <rect key="frame" x="165" y="9" width="70" height="26"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="26" id="Jpg-xN-hHQ"/>
                                                                         <constraint firstAttribute="width" constant="70" id="V3j-er-Aja"/>
@@ -1185,9 +1092,8 @@ TIN : 442670895657</string>
                                                                         <action selector="thirdCategoryAction:" destination="4Ao-3J-bW3" eventType="touchUpInside" id="B4U-yL-sue"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-k8-jCS" customClass="MyCustomButton2" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-k8-jCS" customClass="MyCustomButton2" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                                     <rect key="frame" x="254" y="9" width="70" height="26"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="gB9-EQ-zf9"/>
                                                                         <constraint firstAttribute="height" constant="26" id="lgZ-TT-Cm8"/>
@@ -1201,7 +1107,6 @@ TIN : 442670895657</string>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
-                                                            <animations/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="bottom" secondItem="ggE-NO-1JR" secondAttribute="bottom" constant="11" id="F0u-bs-Lu5"/>
@@ -1219,7 +1124,6 @@ TIN : 442670895657</string>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="1YJ-KO-fek" firstAttribute="leading" secondItem="RVE-x8-fzJ" secondAttribute="leading" constant="8" id="0aC-Ud-YZm"/>
@@ -1239,7 +1143,6 @@ TIN : 442670895657</string>
                                                     </variation>
                                                 </view>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -1249,7 +1152,6 @@ TIN : 442670895657</string>
                                                 <constraint firstAttribute="bottomMargin" secondItem="RVE-x8-fzJ" secondAttribute="bottom" constant="-6" id="zQR-5G-5aH"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -1273,7 +1175,6 @@ TIN : 442670895657</string>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HEX-yc-2RI" firstAttribute="top" secondItem="kpR-X9-2PZ" secondAttribute="bottom" id="1LP-dV-Ti4"/>
@@ -1296,7 +1197,7 @@ TIN : 442670895657</string>
         <!--Testimonial View Controller-->
         <scene sceneID="2dr-Pm-eqP">
             <objects>
-                <viewController storyboardIdentifier="TestimonialViewController" id="omy-j7-KRB" customClass="TestimonialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestimonialViewController" id="omy-j7-KRB" customClass="TestimonialViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CtR-JS-01E"/>
                         <viewControllerLayoutGuide type="bottom" id="Z9J-Lk-eeD"/>
@@ -1310,7 +1211,6 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycj-TL-MRM">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1320,13 +1220,11 @@ TIN : 442670895657</string>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Testimonial " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpe-mI-TFE">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="Row-n5-wge"/>
@@ -1334,39 +1232,35 @@ TIN : 442670895657</string>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="143" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-Fn-BlI">
                                 <rect key="frame" x="0.0" y="85" width="600" height="515"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="143" id="um7-07-5qI" customClass="TestimonialCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="143" id="um7-07-5qI" customClass="TestimonialCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="um7-07-5qI" id="gU5-HM-KAz">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-JL-wD6" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-JL-wD6" customClass="CardView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="3" width="584" height="137"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-Jd-Dfu" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-Jd-Dfu" customClass="RippleView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="14" width="568" height="70"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_member_mamun.png" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-fG-SUM">
                                                                     <rect key="frame" x="6" y="5" width="60" height="60"/>
-                                                                    <animations/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cody McDowell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fst-7J-599">
                                                                     <rect key="frame" x="74" y="15" width="443" height="21"/>
-                                                                    <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-eA-6Ug">
                                                                     <rect key="frame" x="535" y="13" width="25" height="25"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="25" id="Rsc-nP-tfY"/>
                                                                         <constraint firstAttribute="height" constant="25" id="YMv-Qg-EE5"/>
@@ -1380,13 +1274,11 @@ TIN : 442670895657</string>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CEO of Lock Deals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWq-Uo-V0J">
                                                                     <rect key="frame" x="74" y="36" width="245" height="21"/>
-                                                                    <animations/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <animations/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="Nxl-eA-6Ug" firstAttribute="top" secondItem="bt3-Jd-Dfu" secondAttribute="top" constant="13" id="cqH-4G-E5B"/>
@@ -1394,18 +1286,16 @@ TIN : 442670895657</string>
                                                                 <constraint firstAttribute="trailing" secondItem="Nxl-eA-6Ug" secondAttribute="trailing" constant="8" id="sba-Ps-zUG"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1W-Mm-KmH" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1W-Mm-KmH" customClass="RippleView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="92" width="568" height="39"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLK-n0-FXi">
                                                                     <rect key="frame" x="8" y="8" width="535" height="15"/>
-                                                                    <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <animations/>
                                                             <color key="backgroundColor" red="0.94117647059999998" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="KLK-n0-FXi" secondAttribute="trailing" constant="15" id="Nre-J5-LJk"/>
@@ -1415,7 +1305,6 @@ TIN : 442670895657</string>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="u1W-Mm-KmH" firstAttribute="top" secondItem="bt3-Jd-Dfu" secondAttribute="bottom" constant="8" id="Bm4-aI-E44"/>
@@ -1428,7 +1317,6 @@ TIN : 442670895657</string>
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -1438,7 +1326,6 @@ TIN : 442670895657</string>
                                                 <constraint firstItem="XHa-JL-wD6" firstAttribute="top" secondItem="gU5-HM-KAz" secondAttribute="topMargin" constant="-5" id="ltd-Hh-pR1"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -1456,7 +1343,6 @@ TIN : 442670895657</string>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Sws-DI-j1K" secondAttribute="trailing" id="16p-bf-dQ2"/>
@@ -1479,7 +1365,7 @@ TIN : 442670895657</string>
         <!--Methodology View Controller-->
         <scene sceneID="EG3-4z-Kfr">
             <objects>
-                <viewController storyboardIdentifier="MethodologyViewController" id="npH-fj-sYt" customClass="MethodologyViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MethodologyViewController" id="npH-fj-sYt" customClass="MethodologyViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N9M-p0-C15"/>
                         <viewControllerLayoutGuide type="bottom" id="oyS-w6-V5t"/>
@@ -1496,12 +1382,10 @@ TIN : 442670895657</string>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_nav_header.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-6k-nGb">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="306"/>
-                                                <animations/>
                                                 <gestureRecognizers/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wkQ-vV-BZK">
                                                 <rect key="frame" x="150" y="61" width="300" height="183"/>
-                                                <animations/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="183" id="X8a-Gl-6fZ"/>
@@ -1516,7 +1400,6 @@ TIN : 442670895657</string>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methodology" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5k-F8-Bcx">
                                                                 <rect key="frame" x="57" y="36" width="525" height="32"/>
-                                                                <animations/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="32" id="eTB-iy-oHg"/>
                                                                 </constraints>
@@ -1525,7 +1408,6 @@ TIN : 442670895657</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <animations/>
                                                         <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="t5k-F8-Bcx" secondAttribute="bottom" constant="16" id="76N-Lx-V9o"/>
@@ -1534,7 +1416,6 @@ TIN : 442670895657</string>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="ec8-Yf-Hv9" firstAttribute="top" secondItem="GGF-Ti-KZ4" secondAttribute="top" id="30Q-11-LKA"/>
@@ -1545,7 +1426,6 @@ TIN : 442670895657</string>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="GGF-Ti-KZ4" secondAttribute="bottom" id="1iN-ym-DeR"/>
@@ -1562,7 +1442,6 @@ TIN : 442670895657</string>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k43-7q-5dl">
                                         <rect key="frame" x="10" y="28" width="32" height="34"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1573,11 +1452,10 @@ TIN : 442670895657</string>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h46-8p-Ym2">
                                         <rect key="frame" x="0.0" y="308" width="600" height="294"/>
-                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="sectionIndexBackgroundColor" red="1" green="0.9835175746" blue="0.1610116727" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="90" id="K47-qU-gnd" customClass="MethodologyCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="90" id="K47-qU-gnd" customClass="MethodologyCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="22" width="600" height="90"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K47-qU-gnd" id="qCD-Qw-kOG">
@@ -1586,7 +1464,6 @@ TIN : 442670895657</string>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_overview_infrastructure.png" translatesAutoresizingMaskIntoConstraints="NO" id="ved-O5-WHP">
                                                             <rect key="frame" x="20" y="8" width="19" height="19"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="19" id="3Vp-kS-W02"/>
                                                                 <constraint firstAttribute="height" constant="19" id="Bvy-tF-cpv"/>
@@ -1594,7 +1471,6 @@ TIN : 442670895657</string>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXK-LW-nhu">
                                                             <rect key="frame" x="50" y="8" width="542" height="21"/>
-                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="hyL-lk-VmZ"/>
                                                             </constraints>
@@ -1604,7 +1480,6 @@ TIN : 442670895657</string>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2h-vx-gfb">
                                                             <rect key="frame" x="50" y="37" width="542" height="44"/>
-                                                            <animations/>
                                                             <string key="text">BASIS Membership ID : G682
 Trade License No: 02048475
 TIN : 442670895657</string>
@@ -1613,7 +1488,6 @@ TIN : 442670895657</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstItem="ved-O5-WHP" firstAttribute="top" secondItem="qCD-Qw-kOG" secondAttribute="topMargin" id="8jQ-Nm-E3j"/>
                                                         <constraint firstItem="ved-O5-WHP" firstAttribute="leading" secondItem="qCD-Qw-kOG" secondAttribute="leadingMargin" constant="12" id="9bk-w4-rC1"/>
@@ -1626,7 +1500,6 @@ TIN : 442670895657</string>
                                                         <constraint firstItem="o2h-vx-gfb" firstAttribute="trailing" secondItem="qCD-Qw-kOG" secondAttribute="trailingMargin" id="nWb-Bp-MWG"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <animations/>
                                                 <connections>
                                                     <outlet property="itemDetail" destination="o2h-vx-gfb" id="ZVb-ZN-8F7"/>
                                                     <outlet property="itemIcon" destination="ved-O5-WHP" id="LmO-oq-wx6"/>
@@ -1640,7 +1513,6 @@ TIN : 442670895657</string>
                                         </connections>
                                     </tableView>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -1654,7 +1526,6 @@ TIN : 442670895657</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -1689,7 +1560,7 @@ TIN : 442670895657</string>
         <!--Social View Controller-->
         <scene sceneID="HRh-GQ-2vp">
             <objects>
-                <viewController storyboardIdentifier="SocialViewController" id="IAZ-Rq-DZ9" customClass="SocialViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SocialViewController" id="IAZ-Rq-DZ9" customClass="SocialViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Z0-aM-oiW"/>
                         <viewControllerLayoutGuide type="bottom" id="13E-MI-2Uk"/>
@@ -1703,14 +1574,12 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Social" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-jz-qMy">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u41-3C-nBD">
                                         <rect key="frame" x="8" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1719,7 +1588,6 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="USP-4y-PBk"/>
@@ -1727,7 +1595,6 @@ TIN : 442670895657</string>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_social_chat.png" translatesAutoresizingMaskIntoConstraints="NO" id="HOa-L4-3AS">
                                 <rect key="frame" x="252" y="130" width="97" height="87"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="LgZ-bW-Mh5"/>
                                     <constraint firstAttribute="width" constant="97" id="uV7-Wq-tpd"/>
@@ -1735,7 +1602,6 @@ TIN : 442670895657</string>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with us !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-hD-ZvM">
                                 <rect key="frame" x="211" y="221" width="178" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="3YW-o2-hx0"/>
                                     <constraint firstAttribute="width" constant="178" id="B2M-EG-OH0"/>
@@ -1749,16 +1615,13 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_fb.png" translatesAutoresizingMaskIntoConstraints="NO" id="x4x-z9-33P">
                                         <rect key="frame" x="29" y="15" width="24" height="22"/>
-                                        <animations/>
                                     </imageView>
                                     <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbc-oi-P6a">
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-cW-L2c" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-cW-L2c">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Facebook">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1769,7 +1632,6 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.27058823529999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="4Ez-mX-crM"/>
@@ -1787,16 +1649,13 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_linked_in.png" translatesAutoresizingMaskIntoConstraints="NO" id="bvf-Eh-6aU">
                                         <rect key="frame" x="29" y="15" width="24" height="22"/>
-                                        <animations/>
                                     </imageView>
                                     <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Tz-ns-cqd">
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-b3-YLy" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-b3-YLy">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Linked In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1807,7 +1666,6 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.054901960780000002" green="0.40000000000000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="719-vG-mzz"/>
@@ -1825,16 +1683,13 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="r2A-zA-eMv">
                                         <rect key="frame" x="29" y="15" width="24" height="22"/>
-                                        <animations/>
                                     </imageView>
-                                    <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HK-qr-pKC">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HK-qr-pKC">
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of2-ed-G0h" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of2-ed-G0h">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Twitter">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1845,7 +1700,6 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="8A2-xF-lZR"/>
@@ -1863,16 +1717,13 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_social_youtube.png" translatesAutoresizingMaskIntoConstraints="NO" id="iMA-Ng-SxC">
                                         <rect key="frame" x="29" y="15" width="24" height="22"/>
-                                        <animations/>
                                     </imageView>
-                                    <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACF-s0-L9H">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACF-s0-L9H">
                                         <rect key="frame" x="74" y="10" width="1" height="31"/>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyO-Qx-A4I" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyO-Qx-A4I">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="52"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Youtube">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1883,7 +1734,6 @@ TIN : 442670895657</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.75294117650000003" green="0.070588235289999995" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="Mm6-FS-sMw"/>
@@ -1897,7 +1747,6 @@ TIN : 442670895657</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Pfu-u4-520" firstAttribute="top" secondItem="vua-y7-YTt" secondAttribute="topMargin" id="0fS-yA-Vol"/>
@@ -1925,7 +1774,7 @@ TIN : 442670895657</string>
         <!--View Controller-->
         <scene sceneID="L0p-B9-ayF">
             <objects>
-                <viewController storyboardIdentifier="FAQViewController" id="ikp-dy-KQS" customClass="FAQViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FAQViewController" id="ikp-dy-KQS" customClass="FAQViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P1u-zr-tio"/>
                         <viewControllerLayoutGuide type="bottom" id="XJN-13-TR9"/>
@@ -1939,7 +1788,6 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOq-ED-SeE">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <state key="normal" image="ic_navigation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1949,13 +1797,11 @@ TIN : 442670895657</string>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMx-r7-1Nf">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="UDB-gp-pqC"/>
@@ -1963,34 +1809,31 @@ TIN : 442670895657</string>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="124" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BMC-2z-GWQ">
                                 <rect key="frame" x="0.0" y="84" width="600" height="516"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="124" id="72B-on-18D" customClass="FAQItemCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="124" id="72B-on-18D" customClass="FAQItemCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="72B-on-18D" id="71u-Ed-9Kt">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-8B-vKt" customClass="CardView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="13" y="3" width="574" height="118"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-e8-SwA" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-e8-SwA">
                                                             <rect key="frame" x="8" y="8" width="558" height="46"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's Audacity IT Solutions Ltd?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjY-Pt-JlE">
                                                                     <rect key="frame" x="8" y="15" width="277" height="21"/>
-                                                                    <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-2D-u4L">
                                                                     <rect key="frame" x="542" y="8" width="18" height="18"/>
-                                                                    <animations/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="18" id="JOI-xU-3zw"/>
                                                                         <constraint firstAttribute="height" constant="18" id="MpW-RZ-LdO"/>
@@ -2000,7 +1843,6 @@ TIN : 442670895657</string>
                                                                     </state>
                                                                 </button>
                                                             </subviews>
-                                                            <animations/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TjY-Pt-JlE" secondAttribute="bottom" constant="10" id="Aaf-lh-ZGq"/>
@@ -2011,23 +1853,20 @@ TIN : 442670895657</string>
                                                                 <constraint firstItem="TjY-Pt-JlE" firstAttribute="top" secondItem="oIE-e8-SwA" secondAttribute="top" constant="15" id="tzu-6i-yMW"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo9-2o-Iww" customClass="RippleView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo9-2o-Iww">
                                                             <rect key="frame" x="8" y="62" width="558" height="39"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygC-KH-k32">
                                                                     <rect key="frame" x="0.0" y="0.0" width="3" height="39"/>
-                                                                    <animations/>
-                                                                    <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.92335668100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <color key="backgroundColor" red="0.0078431372549019607" green="0.53333333333333333" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufa-Wm-LRl">
                                                                     <rect key="frame" x="8" y="8" width="304" height="15"/>
-                                                                    <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <animations/>
                                                             <color key="backgroundColor" red="0.94117647059999998" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstItem="Ufa-Wm-LRl" firstAttribute="top" secondItem="oo9-2o-Iww" secondAttribute="top" constant="8" id="6gW-hZ-qeu"/>
@@ -2042,7 +1881,6 @@ TIN : 442670895657</string>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="oo9-2o-Iww" firstAttribute="top" secondItem="oIE-e8-SwA" secondAttribute="bottom" constant="8" symbolic="YES" id="894-Ta-bXQ"/>
@@ -2057,7 +1895,6 @@ TIN : 442670895657</string>
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="hMf-8B-vKt" firstAttribute="top" secondItem="71u-Ed-9Kt" secondAttribute="topMargin" constant="-5" id="7dL-Wz-XHl"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="hMf-8B-vKt" secondAttribute="bottom" constant="-6" id="BZU-WF-0Ob"/>
@@ -2065,7 +1902,6 @@ TIN : 442670895657</string>
                                                 <constraint firstItem="hMf-8B-vKt" firstAttribute="trailing" secondItem="71u-Ed-9Kt" secondAttribute="trailingMargin" id="KYn-SC-KPQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="ansLabel" destination="Ufa-Wm-LRl" id="VBJ-DZ-i6K"/>
@@ -2080,7 +1916,6 @@ TIN : 442670895657</string>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BMC-2z-GWQ" firstAttribute="leading" secondItem="QpQ-d5-wyi" secondAttribute="leadingMargin" constant="-20" id="8hI-lN-3Yl"/>
@@ -2103,7 +1938,7 @@ TIN : 442670895657</string>
         <!--Showcase View Controller-->
         <scene sceneID="7Y6-Sb-dqI">
             <objects>
-                <viewController storyboardIdentifier="ShowcaseViewController" id="jNC-d4-iZE" customClass="ShowcaseViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowcaseViewController" id="jNC-d4-iZE" customClass="ShowcaseViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xtd-3l-94e"/>
                         <viewControllerLayoutGuide type="bottom" id="WLk-0q-q0q"/>
@@ -2114,16 +1949,13 @@ TIN : 442670895657</string>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_home_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-FG-ZJt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                             </imageView>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-Yx-Jtm" customClass="GradientView" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-Yx-Jtm" customClass="GradientView" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik9-6U-3ru" customClass="MyCustomButton" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik9-6U-3ru" customClass="MyCustomButton" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                 <rect key="frame" x="98" y="544" width="70" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="107-Mf-85M"/>
                                     <constraint firstAttribute="height" constant="30" id="rNu-aw-o6Z"/>
@@ -2135,9 +1967,8 @@ TIN : 442670895657</string>
                                     <action selector="secondCategoryAction:" destination="jNC-d4-iZE" eventType="touchUpInside" id="46H-Hw-7uO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xN-10-8to" customClass="MyCustomButton" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xN-10-8to" customClass="MyCustomButton" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                 <rect key="frame" x="258" y="544" width="70" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Kbt-qT-ikB"/>
                                     <constraint firstAttribute="width" constant="70" id="bbg-XE-xht"/>
@@ -2150,9 +1981,8 @@ TIN : 442670895657</string>
                                     <action selector="fourthCategoryAction:" destination="jNC-d4-iZE" eventType="touchUpInside" id="cPS-iV-JNn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-TC-lVN" customClass="MyCustomButton" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-TC-lVN" customClass="MyCustomButton" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                 <rect key="frame" x="20" y="544" width="70" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1bG-qW-opx"/>
                                     <constraint firstAttribute="width" constant="70" id="gHg-am-dxn"/>
@@ -2166,15 +1996,13 @@ TIN : 442670895657</string>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ate-rp-WDC">
                                 <rect key="frame" x="20" y="535" width="560" height="1"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ck6-3b-jnl"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSE-Nc-V7c" customClass="MyCustomButton" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSE-Nc-V7c" customClass="MyCustomButton" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                 <rect key="frame" x="177" y="544" width="70" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="M8x-t9-ofj"/>
                                     <constraint firstAttribute="width" constant="70" id="Wa3-dv-aEZ"/>
@@ -2188,7 +2016,6 @@ TIN : 442670895657</string>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amar Phonebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19c-fg-A8l">
                                 <rect key="frame" x="20" y="492" width="560" height="34"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Y08-lT-ocU"/>
                                 </constraints>
@@ -2197,7 +2024,6 @@ TIN : 442670895657</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PSE-Nc-V7c" firstAttribute="leading" secondItem="ik9-6U-3ru" secondAttribute="trailing" constant="9" id="61p-fj-7yR"/>
@@ -2251,7 +2077,7 @@ TIN : 442670895657</string>
         <!--Drawer View Controller-->
         <scene sceneID="ebj-SK-jFy">
             <objects>
-                <viewController storyboardIdentifier="DrawerViewController" id="e7C-6M-BVG" customClass="DrawerViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DrawerViewController" id="e7C-6M-BVG" customClass="DrawerViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LN2-cN-nK5"/>
                         <viewControllerLayoutGuide type="bottom" id="RiA-h0-h32"/>
@@ -2262,14 +2088,13 @@ TIN : 442670895657</string>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-z1-30f">
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="600"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="kPG-2w-dYF"/>
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16470588235294117" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="200" id="fv7-Mk-HSj" customClass="DrawerHeaderCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="200" id="fv7-Mk-HSj" customClass="DrawerHeaderCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="280" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fv7-Mk-HSj" id="CEl-Ld-PW3">
@@ -2278,25 +2103,20 @@ TIN : 442670895657</string>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_nav_header.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dfS-Uu-12M">
                                                     <rect key="frame" x="0.0" y="-8" width="280" height="200"/>
-                                                    <animations/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-Ft-wlF">
                                                     <rect key="frame" x="69" y="50" width="142" height="83"/>
-                                                    <animations/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mti-Uk-Ss3">
                                                     <rect key="frame" x="69" y="50" width="142" height="83"/>
-                                                    <animations/>
                                                     <connections>
                                                         <action selector="homeIconAction:" destination="e7C-6M-BVG" eventType="touchUpInside" id="6cQ-Iu-RRE"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" rowHeight="50" id="21x-tv-gxs" customClass="DrawerCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" rowHeight="50" id="21x-tv-gxs" customClass="DrawerCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="228" width="280" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="21x-tv-gxs" id="Auf-lS-gn1">
@@ -2305,25 +2125,21 @@ TIN : 442670895657</string>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_inside_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SxQ-gd-rEP">
                                                     <rect key="frame" x="30" y="11" width="25" height="25"/>
-                                                    <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjo-xB-VmR">
                                                     <rect key="frame" x="74" y="0.0" width="206" height="50"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.59999999999999998" green="0.64313725489999995" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <outlet property="itemImageView" destination="SxQ-gd-rEP" id="Pd0-fU-iaV"/>
                                             <outlet property="itemLabel" destination="Yjo-xB-VmR" id="7PD-Qo-z0P"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FooterCell" rowHeight="180" id="dVT-YT-sag" customClass="DrawerFooterCell" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FooterCell" rowHeight="180" id="dVT-YT-sag" customClass="DrawerFooterCell" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="278" width="280" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dVT-YT-sag" id="FLL-kd-OqZ">
@@ -2332,27 +2148,22 @@ TIN : 442670895657</string>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGo-TT-zeH">
                                                     <rect key="frame" x="2" y="0.0" width="280" height="2"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Fj-3b-UkO">
                                                     <rect key="frame" x="0.0" y="90" width="280" height="2"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-d2-SET">
                                                     <rect key="frame" x="93" y="2" width="2" height="88"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGA-EO-IsV">
                                                     <rect key="frame" x="186" y="2" width="2" height="88"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29s-Gr-tXi">
                                                     <rect key="frame" x="93" y="4" width="93" height="88"/>
-                                                    <animations/>
                                                     <inset key="contentEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
                                                     <state key="normal" image="ic_nav_mail.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2363,7 +2174,6 @@ TIN : 442670895657</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4M-rs-Lsz">
                                                     <rect key="frame" x="187" y="3" width="93" height="88"/>
-                                                    <animations/>
                                                     <inset key="contentEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
                                                     <state key="normal" image="ic_nav_web.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2372,9 +2182,8 @@ TIN : 442670895657</string>
                                                         <action selector="webBtnAction:" destination="e7C-6M-BVG" eventType="touchUpInside" id="2IV-r2-7bB"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0G-LH-eZD" customClass="RippleEffect" customModule="Audacity_Company_Profile" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0G-LH-eZD" customClass="RippleEffect" customModule="Audacity___Marketing_App" customModuleProvider="target">
                                                     <rect key="frame" x="63" y="118" width="152" height="38"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" red="0.074509803920000006" green="0.54117647059999996" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Get Started">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2392,7 +2201,6 @@ TIN : 442670895657</string>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gE7-Gc-yIO">
                                                     <rect key="frame" x="0.0" y="2" width="93" height="88"/>
-                                                    <animations/>
                                                     <inset key="contentEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
                                                     <state key="normal" image="ic_nav_call.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2402,9 +2210,7 @@ TIN : 442670895657</string>
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -2413,7 +2219,6 @@ TIN : 442670895657</string>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2Hv-z1-30f" firstAttribute="leading" secondItem="HmM-IA-OVJ" secondAttribute="leadingMargin" constant="-20" id="Qim-HG-FFi"/>
@@ -2432,7 +2237,7 @@ TIN : 442670895657</string>
         <!--Map View Controller-->
         <scene sceneID="gfs-0Q-nbT">
             <objects>
-                <viewController id="y0i-9N-xTg" customClass="MapViewController" customModule="Audacity_Company_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y0i-9N-xTg" customClass="MapViewController" customModule="Audacity___Marketing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2PN-J6-N17"/>
                         <viewControllerLayoutGuide type="bottom" id="5X1-H1-2YR"/>
@@ -2446,7 +2251,6 @@ TIN : 442670895657</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THf-vp-k5V">
                                         <rect key="frame" x="10" y="36" width="31" height="32"/>
-                                        <animations/>
                                         <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                         <state key="normal" image="back_btn.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2458,13 +2262,11 @@ TIN : 442670895657</string>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audacity IT Solutions LTD." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHO-4v-7Uf">
                                         <rect key="frame" x="57" y="34" width="535" height="36"/>
-                                        <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="FwR-Ax-w9X"/>
@@ -2472,10 +2274,8 @@ TIN : 442670895657</string>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zXl-x9-fEF">
                                 <rect key="frame" x="0.0" y="84" width="600" height="516"/>
-                                <animations/>
                             </mapView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qzn-xD-HLV" secondAttribute="trailing" id="7gg-Uq-1mX"/>
