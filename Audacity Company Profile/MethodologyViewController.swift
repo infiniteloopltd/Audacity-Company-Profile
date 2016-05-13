@@ -26,6 +26,8 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
     var demo : Bool = true;
     var tableViewOriginY: CGFloat!
     var parallaxHeaderHeight: CGFloat!
+    
+    
 
     
     @IBOutlet var companyIcon: UIImageView!
@@ -217,7 +219,7 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
                             tableView.scrollEnabled = false
                         }
                         
-                        
+                        print(distance)
                         tableView.frame.origin.y =   distance
                         
                         var alphaRange = distance - parallaxHeaderHeight
@@ -267,7 +269,7 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
                             distance = distance * (-1)
                         }
                         
-                        
+                        /*
                         if( tableView.frame.size.height < tableView.contentSize.height) {
                             var tableHeight = tableView.frame.size.height + distance
                             
@@ -281,6 +283,15 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
                         } else if ( tableView.frame.size.height == tableView.contentSize.height) {
                             needScroll = false;
                         }
+                        
+                        */
+                        let tableHeight = tableView.frame.size.height + distance
+                        tableView.frame.size.height = tableHeight
+                          if ( tableView.frame.size.height >= tableView.contentSize.height) {
+                            needScroll = false;
+                        }
+                        
+                        
                         
                         
                         distance = tableView.frame.origin.y - distance
@@ -306,7 +317,7 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
                         alphaRange = alphaRange / (tableViewOriginY - parallaxHeaderHeight)
                         hiddenContainer.alpha =  alphaRange
                         companyIcon.alpha = (1 - alphaRange)
-                        
+                        print(distance)
                         tableView.frame.origin.y =  distance
                         
                         

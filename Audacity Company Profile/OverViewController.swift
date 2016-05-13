@@ -298,7 +298,7 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         }
                         
                         
-                        if( tableView.frame.size.height < tableView.contentSize.height) {
+                        /*if( tableView.frame.size.height < tableView.contentSize.height) {
                             var tableHeight = tableView.frame.size.height + distance
                             
                            
@@ -311,7 +311,13 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         } else if ( tableView.frame.size.height == tableView.contentSize.height) {
                             needScroll = false;
                         }
+                        */
                         
+                        let tableHeight = tableView.frame.size.height + distance
+                        tableView.frame.size.height = tableHeight
+                        if ( tableView.frame.size.height >= tableView.contentSize.height) {
+                            needScroll = false;
+                        }
                         
                         distance = tableView.frame.origin.y - distance
                         
