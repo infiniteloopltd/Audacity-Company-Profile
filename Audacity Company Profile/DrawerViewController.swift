@@ -23,8 +23,10 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
     var rateThisAppTriggered: Bool = false;
     let RATING_URL : String = "https://itunes.apple.com/us/app/audacity-company-profile/id1085439097?mt=8";
     
-    let COLOR_DRAWER_ITEM : UInt32 = 0x1f2229;
-    let COLOR_DRAWER_ITEM_TINT : UInt32 = 0x99A4B9;
+    let COLOR_DRAWER_ITEM : UInt32 = 0x21252A;
+    let COLOR_DRAWER_ITEM_ICON : UInt32 = 0x99A4B9;
+    let COLOR_DRAWER_ITEM_TINT : UInt32 = 0x0089e9;
+    let COLOR_DRAWER_ITEM_SELECTED : UInt32 = 0x000000;
     
     @IBAction func homeIconAction(sender: AnyObject) {
         
@@ -93,7 +95,7 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             itemCell.itemLabel.text = drawerItem[indexPath.row - 1]
             itemCell.itemImageView.image =  UIImage(named: drawerItemImage[indexPath.row - 1])
             itemCell.itemImageView.image = itemCell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            itemCell.itemImageView.tintColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_TINT, alpha: 1)
+            itemCell.itemImageView.tintColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_ICON, alpha: 1)
             
             return itemCell
         }
@@ -185,13 +187,13 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             return
         }
         let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        cellToDeSelect.contentView.backgroundColor = Utils.uicolorFromHex(0x21252A, alpha: 1)
+        cellToDeSelect.contentView.backgroundColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM, alpha: 1)
         
         let cell: DrawerCell = cellToDeSelect as! DrawerCell
         
         cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        cell.itemImageView.tintColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
-        cell.itemLabel.textColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
+        cell.itemImageView.tintColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_ICON, alpha: 1)
+        cell.itemLabel.textColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_ICON, alpha: 1)
         
         deSelectedItem = indexPath
         
@@ -211,25 +213,25 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
             selectedItem = deSelectedItem.row
             
             let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(deSelectedItem)!
-            selectedCell.contentView.backgroundColor = UIColor.blackColor()
-            selectedCell.backgroundColor = UIColor.blackColor()
+            selectedCell.contentView.backgroundColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_SELECTED, alpha: 1)
+            selectedCell.backgroundColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_SELECTED, alpha: 1)
             
             let cell: DrawerCell = selectedCell as! DrawerCell
             
             cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            cell.itemImageView.tintColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
-            cell.itemLabel.textColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
+            cell.itemImageView.tintColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_TINT, alpha: 1)
+            cell.itemLabel.textColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_TINT, alpha: 1)
         
             return
             
         } else if(rateThisAppTriggered) {
             let rowToSelect:NSIndexPath = NSIndexPath(forRow: selectedItem, inSection: 0);
             let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(rowToSelect)!
-            cellToDeSelect.contentView.backgroundColor = Utils.uicolorFromHex(0x21252A, alpha: 1)
+            cellToDeSelect.contentView.backgroundColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM, alpha: 1)
             let cell: DrawerCell = cellToDeSelect as! DrawerCell
             cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            cell.itemImageView.tintColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
-            cell.itemLabel.textColor = Utils.uicolorFromHex(0x99A4B9, alpha: 1)
+            cell.itemImageView.tintColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_ICON, alpha: 1)
+            cell.itemLabel.textColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_ICON, alpha: 1)
             
         }
         
@@ -242,8 +244,8 @@ class DrawerViewController: BaseViewController, UITableViewDataSource, UITableVi
         let cell: DrawerCell = selectedCell as! DrawerCell
         
         cell.itemImageView.image = cell.itemImageView.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        cell.itemImageView.tintColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
-        cell.itemLabel.textColor = Utils.uicolorFromHex(0x0089e9, alpha: 1)
+        cell.itemImageView.tintColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_TINT, alpha: 1)
+        cell.itemLabel.textColor = Utils.uicolorFromHex(COLOR_DRAWER_ITEM_TINT, alpha: 1)
         
         
         switch(indexPath.row)
