@@ -17,13 +17,11 @@ class ShowcaseViewController: UIViewController {
     
     @IBOutlet var thirdCategory: MyCustomButton!
     
-    
     @IBOutlet var fourthCategory: MyCustomButton!
     
     @IBOutlet var contentImageView: UIImageView!
     
     @IBOutlet var projectName: UILabel!
-    
     
     
     var projectType: [String]! ;
@@ -37,7 +35,6 @@ class ShowcaseViewController: UIViewController {
             if let imageView = contentImageView {
                 imageView.image = UIImage(named: imageName)
             }
-            
         }
     }
     
@@ -49,7 +46,6 @@ class ShowcaseViewController: UIViewController {
             if let label = projectName {
                 label.text = nameOfProject
             }
-            
         }
     }
     
@@ -60,7 +56,6 @@ class ShowcaseViewController: UIViewController {
 
             let url = NSURL(string: projectUrl[0])!
             UIApplication.sharedApplication().openURL(url)
-            
         }
         
     }
@@ -72,9 +67,7 @@ class ShowcaseViewController: UIViewController {
             
             let url = NSURL(string: projectUrl[1])!
             UIApplication.sharedApplication().openURL(url)
-            
         }
-        
     }
     
     
@@ -84,11 +77,8 @@ class ShowcaseViewController: UIViewController {
             
             let url = NSURL(string: projectUrl[2])!
             UIApplication.sharedApplication().openURL(url)
-            
         }
-        
     }
-    
     
     
     @IBAction func fourthCategoryAction(sender: AnyObject) {
@@ -141,22 +131,20 @@ class ShowcaseViewController: UIViewController {
             switch (i) {
             case 0:
                 firstCategory.setTitle(projectType[i], forState: .Normal)
-                //firstCategory.hidden = false
                 break
                 
             case 1:
                 secondCategory.setTitle(projectType[i], forState: .Normal)
-                //secondCategory.hidden = false
                 break
                 
             case 2:
                 thirdCategory.setTitle(projectType[i], forState: .Normal)
-                //thirdCategory.hidden = false
                 break
+                
             case 3:
                 fourthCategory.setTitle(projectType[i], forState: .Normal)
-                //fourthCategory.hidden = false
                 break
+                
             default:
                 break;
             }

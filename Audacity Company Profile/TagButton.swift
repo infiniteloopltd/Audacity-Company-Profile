@@ -16,10 +16,7 @@ class MyCustomButton: UIButton {
         self.layer.cornerRadius = 15.0;
         self.layer.borderColor = UIColor.whiteColor().CGColor
         self.layer.borderWidth = 1.5
-        //self.backgroundColor = UIColor.blueColor()
         self.tintColor = UIColor.whiteColor()
-        
-        
         
     }
 }
@@ -31,8 +28,6 @@ class MyCustomButton2: UIButton {
         self.layer.borderColor = UIColor.grayColor().CGColor
         self.layer.borderWidth = 1.5
         self.tintColor = UIColor.grayColor()
-        
-        
-        
+         
     }
 }

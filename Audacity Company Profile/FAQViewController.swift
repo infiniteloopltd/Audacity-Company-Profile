@@ -67,10 +67,6 @@ class FAQViewController: BaseViewController, UITableViewDelegate {
     
     
     
-    
-    
-    
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return question.count
@@ -87,16 +83,12 @@ class FAQViewController: BaseViewController, UITableViewDelegate {
         cell.questionLabel.text = question[indexPath.row]
         cell.ansLabel.text = ans[indexPath.row]
         
-        
-        
-        
-        
         return cell
     }
     
 
     func showLine(height:CGFloat) {
-        let alertController = UIAlertController(title: "Audacity IT Solution", message:
+        let alertController = UIAlertController(title: Constants.COMPANY_NAME, message:
             "\(height)  ", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
         
@@ -133,15 +125,12 @@ class FAQViewController: BaseViewController, UITableViewDelegate {
                 let jsonObj = JSON(data: data)
                 if jsonObj != JSON.null {
                     
-                    
                     for(var i:Int = 0; i<jsonObj["faq"].count; i++) {
                         
                         question.append(jsonObj["faq"][i]["q"].string!)
                         ans.append(jsonObj["faq"][i]["a"].string!)
                         
                     }
-                    
-                    
                     
                 } else {
                     print("could not get json from file, make sure that file contains valid json.")

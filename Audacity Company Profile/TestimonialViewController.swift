@@ -68,15 +68,11 @@ class TestimonialViewController: BaseViewController, UITableViewDelegate {
     }
     
     
-    
-    
-    
-    
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return cellContent.count
     }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         

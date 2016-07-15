@@ -50,7 +50,7 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        if(screenWidth<700) {
+        if(screenWidth < 700) {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewItemCell", forIndexPath: indexPath) as! CollectionViewItemCell
             
@@ -66,7 +66,6 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
             cell.itemName.text = itemTitle[indexPath.row]
             cell.itemDetail.text = itemDetail[indexPath.row]
             return cell
-
             
         }
         
@@ -87,8 +86,6 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
         if(screenWidth > 700) {
             return CGSizeMake(180, 180)
         }
-        
-        
         return CGSizeMake(110, 110)
     }
     
@@ -124,7 +121,6 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
                         itemImage.append(jsonObj["team"][i]["image"].string!)
                         itemDetail.append(jsonObj["team"][i]["designation"].string!)
                     }
-                    
                     
                     
                 } else {

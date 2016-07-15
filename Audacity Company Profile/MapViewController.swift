@@ -33,8 +33,8 @@ class MapViewController: BaseViewController,  MKMapViewDelegate {
         
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
-        annotation.title = "Audacity IT Solutions Ltd"
-        annotation.subtitle = "Best mobile apps development company in Bangladesh"
+        annotation.title = Constants.COMPANY_NAME
+        annotation.subtitle = Constants.COMPANY_MOTO
         
         map.addAnnotation(annotation)
         

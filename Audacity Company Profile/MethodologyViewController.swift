@@ -269,33 +269,13 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
                             distance = distance * (-1)
                         }
                         
-                        /*
-                        if( tableView.frame.size.height < tableView.contentSize.height) {
-                            var tableHeight = tableView.frame.size.height + distance
-                            
-                            
-                            if(tableHeight > tableView.contentSize.height) {
-                                tableHeight = tableView.contentSize.height
-                                
-                            }
-                            
-                            tableView.frame.size.height = tableHeight
-                        } else if ( tableView.frame.size.height == tableView.contentSize.height) {
-                            needScroll = false;
-                        }
-                        
-                        */
                         let tableHeight = tableView.frame.size.height + distance
                         tableView.frame.size.height = tableHeight
                           if ( tableView.frame.size.height >= tableView.contentSize.height) {
                             needScroll = false;
                         }
                         
-                        
-                        
-                        
                         distance = tableView.frame.origin.y - distance
-                        
                         
                         tableView.scrollEnabled = false
                         if(distance < parallaxHeaderHeight) {
@@ -312,8 +292,6 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
                         
                         var alphaRange = tableViewOriginY - distance
                         
-                        
-                        
                         alphaRange = alphaRange / (tableViewOriginY - parallaxHeaderHeight)
                         hiddenContainer.alpha =  alphaRange
                         companyIcon.alpha = (1 - alphaRange)
@@ -322,7 +300,6 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
                         
                         
                     } else {
-                        //  println("Now in top")
                         if( tableView.frame.size.height != tableView.contentSize.height) {
                             tableView.scrollEnabled = true
                         }
@@ -333,9 +310,6 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
             
             previousTranslation = translation.y
             
-            
-            
-            
         }
     }
     
@@ -344,26 +318,31 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
         
     }
+    
+    
     // called on finger up if the user dragged. velocity is in points/millisecond. targetContentOffset may be changed to adjust where the scroll view comes to rest
     
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
     }
+    
+    
     // called on finger up if the user dragged. decelerate is true if it will continue moving afterwards
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
     }
+    
+    
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if( tableView.contentOffset.y <= 0 ) {
             scrollToTop = true;
             tableView.scrollEnabled = false;
-            // println("Scroll To Top")
+            
         }
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        //super.viewDidAppear(animated)
         trackEvent(1, actionName: "MethodologyView Controller")
     }
     
@@ -387,8 +366,6 @@ class MethodologyViewController: BaseViewController, UITableViewDelegate, UIGest
             if( yDistance < 0 ) {
                 yDistance = yDistance * (-1)
             }
-            
-            //print("I am from if \(translation.x) translation y = \(translation.y)", terminator: "")
             
             if ( xDistance > yDistance) {
                 return false

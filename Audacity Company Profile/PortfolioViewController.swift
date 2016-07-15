@@ -41,8 +41,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         let picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
         picker.setSubject("Contact with Audacity IT Solutions via company profile app")
-        //picker.setMessageBody(emailBodyField.text, isHTML: true)
-        picker.setToRecipients(["founders@audacityit.com"])
+        picker.setToRecipients([Constants.EMAIL])
         
         
         presentViewController(picker, animated: true, completion: nil)
@@ -60,29 +59,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         
     }
     
-    /*var cellContentOrginal = ["All","Wearable","UI/UX","Web","iOS","Android","Product"]
-    var cellImageOrginal = ["ic_fab_all.png","ic_fab_wearable.png","ic_fab_ui_ux.png","ic_fab_web.png",
-        "ic_fab_ios.png","ic_fab_android","ic_fab_product.png"]
-    
-    var portfolioImageOrginal = ["img_portfolio_1.jpg","img_portfolio_2.jpg","img_portfolio_3.jpg","img_portfolio_4.jpg","img_portfolio_5.jpg","img_portfolio_6.jpg",
-        "img_portfolio_7.jpg","img_portfolio_8.jpg","img_portfolio_9.jpg" ]
-    
-    var portfolioNameOrginal = ["Amar Phonebook","Colours FM","Monasa Learning Centre","Lock Deal","How I Work","Finder","Company Profile" ,"U-NEXT", "Deshi Deal"   ]
-    
-    var portfolioTypeOrginal = ["Android, iOS, UI/UX","Android, UI/UX","Website, UI/UX","Website, Android, UI/UX","Product, Website, Android, iOS, UI/UX","Product, Android, UI/UX","Product, Website, Android, UI/UX","Android, iOS","Product, Android, UI/UX"]
-    
-    
-    var cellContent = ["All","Wearable","UI/UX","Web","iOS","Android","Product"]
-    var cellImage = ["ic_fab_all.png","ic_fab_wearable.png","ic_fab_ui_ux.png","ic_fab_web.png",
-        "ic_fab_ios.png","ic_fab_android","ic_fab_product.png"]
-    
-    var portfolioImage = ["img_portfolio_1.jpg","img_portfolio_2.jpg","img_portfolio_3.jpg","img_portfolio_4.jpg","img_portfolio_5.jpg","img_portfolio_6.jpg",
-        "img_portfolio_7.jpg","img_portfolio_8.jpg","img_portfolio_9.jpg" ]
-    
-    var portfolioName = ["Amar Phonebook","Colours FM","Monasa Learning Centre","Lock Deal","How I Work","Finder","Company Profile" ,"U-NEXT", "Deshi Deal"   ]
-    
-    var portfolioType = ["Android, iOS, UI/UX","Android, UI/UX","Website, UI/UX","Website, Android, UI/UX","Product, Website, Android, iOS, UI/UX","Product, Android, UI/UX","Product, Website, Android, UI/UX","Android, iOS","Product, Android, UI/UX"]
-    */
     
     var cellContentOrginal = [String]()
     var cellImageOrginal = [String]()
@@ -117,7 +93,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         
        
         
-            }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -132,11 +108,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
     }
     
     
-    
-    
-    
-    
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if tableView == self.tableView {
@@ -145,9 +116,9 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             return cellContent.count;
         }
         
-        
         //  return portfolioImage.count
     }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -160,63 +131,34 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
                cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)  as! PortfolioItemCell
             }
             
-            
-            
-           
-            
             cell.itemImage.image = UIImage(named: portfolioImage[indexPath.row])
             cell.itemName.text = portfolioName[indexPath.row]
             cell.itemType.text = portfolioType[indexPath.row]
-             cell.itemImage.backgroundColor = filterItemColor
+            cell.itemImage.backgroundColor = filterItemColor
             
-            //  cell.urls = "ic_heart_red.png"
-            
-            /*if(liked[indexPath.row]) {
-                cell.itemLike.setImage(UIImage(named: "ic_heart_red.png"), forState: UIControlState.Normal)
-            } else {
-                cell.itemLike.setImage(UIImage(named: "ic_heart_outline_grey.png"), forState: UIControlState.Normal)
-                
-            }*/
             return cell
+            
         } else {
-            
-            
             
             let  cell2 = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)  as! FilterItemCell
             
-            
-            
-            
-            
-            // cell.label.text = cellContent[indexPath.row]
-            // cell.label.attributedText = attributedString
             cell2.itemName.text = cellContent[indexPath.row]
             cell2.itemImage.setImage(UIImage(named: cellImage[indexPath.row]), forState: UIControlState.Normal)
-            //cell.label.hidden = true
-            //cell2.backgroundColor = uicolorFromHex(0x21252A)
-           
             
             let backgroundView = UIView()
             backgroundView.backgroundColor = UIColor.clearColor()
             cell2.selectedBackgroundView = backgroundView
 
-            
-            
             return cell2
-            
-            
             
         }
         
-        
-        
-        
     }
+    
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
     
     
     
@@ -230,13 +172,9 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         
        let cell = tableView.cellForRowAtIndexPath(indexPath) as! FilterItemCell
         cell.itemImage.backgroundColor = filterItemSelectedColor
-        
         showHideFilter()
-        
         var index:Int = 0
         let selectedType = cellContent[indexPath.row]
-        
-        
         
         if ( selectedType != "All" ) {
             
@@ -244,21 +182,16 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             portfolioName.removeAll(keepCapacity: true)
             portfolioType.removeAll(keepCapacity: true)
             
-            
-            
             let count = portfolioImageOrginal.count
-            
             
             for(var i:Int = 0; i < count ; i++ ) {
                 
                 let temp = portfolioTypeOrginal[i]
                 
                 if temp.rangeOfString(selectedType) != nil{
-                    //println("exists")
                     portfolioName.append(portfolioNameOrginal[i])
                     portfolioImage.append(portfolioImageOrginal[i])
                     portfolioType.append(portfolioTypeOrginal[i])
-                    
                     
                     index++
                     
@@ -268,7 +201,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             }
             
             if (index == 0) {
-                // println("No Project found")
                 getStartedPage.hidden = false
                 self.tableView.hidden = true;
                 
@@ -277,6 +209,7 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
                 getStartedPage.hidden = true
                 self.tableView.hidden = false;
             }
+            
             
         } else {
             
@@ -294,18 +227,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         
         
     }
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        if tableView == tableViewFilter {
-           // let cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-           // cellToDeSelect.contentView.backgroundColor = UIColor.clearColor()
-        }
-    }
-    
-    
-    
-    
-    
-    
     
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -329,7 +250,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        //super.viewDidAppear(animated)
         trackEvent(1, actionName: "PortfolioView Controller")
     }
     
@@ -339,30 +259,18 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
     
     
     
-    
-    
-    
-    
-    
     func showHideFilter() {
         
         if (!showing) {
-            //blackSheet.hidden = false
-            
             
             self.showing = true
-            
-            
             
             UIView.animateWithDuration(0.5, animations: { () -> Void in
                 self.tableViewFilter.center = CGPointMake(self.tableViewFilter.center.x , self.tableViewFilter.center.y  - (self.tableViewFilter.frame.size.height))
                 self.tableViewFilter.alpha = 1
                 self.blackSheet.alpha = 1
                 
-                
-                
             })
-            
             
         } else {
             showing = false
@@ -403,8 +311,8 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
         self.tableViewFilter.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None);
         self.tableView(self.tableViewFilter, didSelectRowAtIndexPath: rowToSelect);
         
-        
     }
+    
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
@@ -412,7 +320,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             cell.layer.transform = CATransform3DMakeScale(1,1,1)
         })
         tableViewFilter.backgroundColor = UIColor.clearColor()
-        
         
     }
    
@@ -425,7 +332,6 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
                 let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
                 let jsonObj = JSON(data: data)
                 if jsonObj != JSON.null {
-                    
                     
                     
                     for(var i:Int = 0; i<jsonObj["projects"].count; i++) {
@@ -495,14 +401,10 @@ class PortfolioViewController: BaseViewController, MFMailComposeViewControllerDe
             print("Invalid filename/path.")
         }
         
-        
-        
-        
     }
     
-    
-    
 }
+
 
 extension UIColor {
     convenience init(hexString: String) {

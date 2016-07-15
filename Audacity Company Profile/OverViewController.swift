@@ -81,12 +81,8 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     var counterNumber = [String]()
     
     
-    
-    
-    
     @IBAction func mapFabBtn(sender: AnyObject) {
-        
-               
+    
     }
     
     override func viewDidLoad() {
@@ -122,11 +118,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     }
     
     
-    
-    
-    
-    
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return cellContent.count
@@ -154,7 +145,7 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
   
     
     func showLine(height:CGFloat) {
-        let alertController = UIAlertController(title: "Audacity IT Solution", message:
+        let alertController = UIAlertController(title: Constants.COMPANY_NAME, message:
             "\(height)  ", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
         
@@ -185,7 +176,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                 counterDown = 0
                 
             } else if(previousTranslation < translation.y){
-                //counter--
                 counterDown++
                 scrollDirection = true
                 scrollFire = true
@@ -262,10 +252,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                     }
                     
                     
-                    
-                    
-                    
-                    
                 } else {
                     // Going Up
                     
@@ -296,22 +282,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         if( distance < 0 ) {
                             distance = distance * (-1)
                         }
-                        
-                        
-                        /*if( tableView.frame.size.height < tableView.contentSize.height) {
-                            var tableHeight = tableView.frame.size.height + distance
-                            
-                           
-                            if(tableHeight > tableView.contentSize.height) {
-                                tableHeight = tableView.contentSize.height
-                             
-                            }
-                            
-                            tableView.frame.size.height = tableHeight
-                        } else if ( tableView.frame.size.height == tableView.contentSize.height) {
-                            needScroll = false;
-                        }
-                        */
                         
                         let tableHeight = tableView.frame.size.height + distance
                         tableView.frame.size.height = tableHeight
@@ -349,7 +319,6 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         
                         
                     } else {
-                        //  println("Now in top")
                         if( tableView.frame.size.height != tableView.contentSize.height) {
                             tableView.scrollEnabled = true
                         }

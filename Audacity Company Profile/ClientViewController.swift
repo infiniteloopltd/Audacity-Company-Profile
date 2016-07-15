@@ -23,13 +23,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     var countryName = [String]()
     var clientProjectImage = [String]()
 
-    
-    
-    
-    
-    
-    
-    
     static var observerStatus:Bool = false;
     var appDelegate:AppDelegate!
     
@@ -74,14 +67,10 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     }
     
     
-    
-    
-    
-    
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return clientProjectName.count
     }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -116,7 +105,7 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
     
     
     func showLine(height:CGFloat) {
-        let alertController = UIAlertController(title: "Audacity IT Solution", message:
+        let alertController = UIAlertController(title: Constants.COMPANY_NAME, message:
             "\(height)  ", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
         
@@ -139,7 +128,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         let scale: CGFloat = 0.0 // Use scale factor of main screen
         
         UIGraphicsBeginImageContextWithOptions(sizeChange, !hasAlpha, scale)
-        //image.drawInRect(CGRect(origin: CGPointZero, size: sizeChange))
         image.drawInRect(CGRect(origin: origin, size: sizeChange))
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         return scaledImage
@@ -160,6 +148,7 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         }
     }
     
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         clicked = true;
@@ -171,7 +160,6 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         } else {
             selectedIndexPath = indexPath
         }
-        
         
         var indexPaths : Array<NSIndexPath> = []
         
@@ -192,17 +180,18 @@ class ClientViewController: BaseViewController, UITableViewDelegate {
         
     }
     
+    
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
         (cell as! ClientItemCell).watchFrameChanges()
-        
     }
+    
     
     func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
         (cell as! ClientItemCell).ignoreFrameChanges()
-        
     }
+    
     
     func loadData() {
         
