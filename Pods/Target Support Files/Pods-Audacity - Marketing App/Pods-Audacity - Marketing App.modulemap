@@ -1,0 +1,6 @@
+framework module Pods_Audacity___Marketing_App {
+  umbrella header "Pods-Audacity - Marketing App-umbrella.h"
+
+  export *
+  module * { export * }
+}
