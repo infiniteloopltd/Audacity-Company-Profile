@@ -13,21 +13,21 @@ class BaseViewController: UIViewController {
     func trackEvent(type : Int , actionName : String) {
         // type = 1 for screen
         // type = 2 for btn action event
-        if(type == 1) {
+        /*if(type == 1) {
             let tracker = GAI.sharedInstance().defaultTracker
-            tracker.set(kGAIScreenName, value: actionName)
+            tracker?.set(kGAIScreenName, value: actionName)
             
             let builder = GAIDictionaryBuilder.createScreenView()
-            tracker.send(builder.build() as [NSObject : AnyObject])
+            tracker?.send(builder?.build() as? [NSObject : AnyObject])
         } else {
             
             let tracker = GAI.sharedInstance().defaultTracker
             
-            let event = GAIDictionaryBuilder.createEventWithCategory("Action", action: actionName, label: nil, value: nil)
+            let event = GAIDictionaryBuilder.createEvent(withCategory: "Action", action: actionName, label: nil, value: nil)
             
-            tracker.send(event.build() as [NSObject : AnyObject])
+            tracker?.send(event?.build() as? [NSObject : AnyObject])
             
-        }
+        }*/
     }
 
 }

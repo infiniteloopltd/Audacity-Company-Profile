@@ -49,16 +49,16 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
      var appDelegate:AppDelegate!
     @IBAction func drawerToggleAction(sender: AnyObject) {
         
-        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
         
     }
     
     
     @IBAction func navigationDrawerIconAction(sender: AnyObject) {
         
-        let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
         
     }
     
@@ -95,12 +95,12 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
         
         self.tableView.reloadData()
         
-        self.tableView.scrollEnabled = false
+        self.tableView.isScrollEnabled = false
         companyIcon.alpha = 1.0
         companyName.alpha = 1.0
         companyMoto.alpha = 1.0
-        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        UITableViewCell.appearance().backgroundColor = UIColor.clearColor()
+        appDelegate = UIApplication.shared.delegate as! AppDelegate
+        UITableViewCell.appearance().backgroundColor = UIColor.clear
         
     }
     
@@ -125,7 +125,7 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let  cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)  as! OverviewCell
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)  as! OverviewCell
         
         cell.itemTitle.text = itemTitle[indexPath.row]
         cell.itemDetail.text = cellContent[indexPath.row]
@@ -134,7 +134,7 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
         return cell
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         self.tableView.reloadData()
     }
     
@@ -146,10 +146,10 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     
     func showLine(height:CGFloat) {
         let alertController = UIAlertController(title: Constants.COMPANY_NAME, message:
-            "\(height)  ", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            "\(height)  ", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     
@@ -157,26 +157,26 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
         
        
-        if recognizer.state == UIGestureRecognizerState.Ended {
+        if recognizer.state == UIGestureRecognizerState.ended {
             stopFlag = !stopFlag
             previousTranslation = 0
         }
         
-        if recognizer.state != UIGestureRecognizerState.Ended {
+        if recognizer.state != UIGestureRecognizerState.ended {
             
             
-            let translation = recognizer.translationInView(self.view)
+            let translation = recognizer.translation(in: self.view)
             scrollFire = false
             if(previousTranslation == 0) {
                 
             } else if(previousTranslation > translation.y) {
-                counter--
+                counter = counter - 1
                 scrollDirection = false
                 scrollFire = true
                 counterDown = 0
                 
             } else if(previousTranslation < translation.y){
-                counterDown++
+                counterDown = counterDown + 1
                 scrollDirection = true
                 scrollFire = true
                 counter = 0
@@ -230,12 +230,12 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         }
                         
                         distance = tableView.frame.origin.y + distance
-                        tableView.scrollEnabled = false
+                        tableView.isScrollEnabled = false
                         if(distance > tableViewOriginY) {
                             distance = tableViewOriginY
                             needScroll = false
                         } else {
-                               tableView.scrollEnabled = false
+                            tableView.isScrollEnabled = false
                         }
                         tableView.frame.origin.y =   distance
                         
@@ -292,15 +292,15 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         distance = tableView.frame.origin.y - distance
                         
                 
-                        tableView.scrollEnabled = false
+                        tableView.isScrollEnabled = false
                         if(distance < parallaxHeaderHeight) {
                             distance = parallaxHeaderHeight
                             
                             if(needScroll) {
-                                tableView.scrollEnabled = true
+                                tableView.isScrollEnabled = true
                             }
                             else {
-                                tableView.scrollEnabled = false
+                                tableView.isScrollEnabled = false
                             }
                             
                         }
@@ -320,7 +320,7 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                         
                     } else {
                         if( tableView.frame.size.height != tableView.contentSize.height) {
-                            tableView.scrollEnabled = true
+                            tableView.isScrollEnabled = true
                         }
                     }
                     
@@ -353,20 +353,23 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if( tableView.contentOffset.y <= 0 ) {
             scrollToTop = true;
-            tableView.scrollEnabled = false;
+            tableView.isScrollEnabled = false;
             
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        trackEvent(1, actionName: "OverView Controller")
+        //trackEvent(type: 1, actionName: "OverView Controller")
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get{
+            return .lightContent
+        }
     }
     
+   
     override func viewDidLayoutSubviews() {
        
         tableOrginalHeight = tableView.frame.size.height
@@ -375,11 +378,11 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
         
     }
     
-    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         
-        if( gestureRecognizer .isKindOfClass(UIPanGestureRecognizer)) {
+        if( gestureRecognizer is UIPanGestureRecognizer) {
             let uiPangesture : UIPanGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
-            let translation : CGPoint =  uiPangesture.translationInView(self.view)
+            let translation : CGPoint =  uiPangesture.translation(in: self.view)
             var xDistance: CGFloat = translation.x
             var yDistance: CGFloat = translation.y
             if( xDistance < 0 ) {
@@ -403,10 +406,10 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
     func loadData() {
         
         
-        if let path = NSBundle.mainBundle().pathForResource("overview", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "overview", ofType: "json") {
             do {
-                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
-                let jsonObj = JSON(data: data)
+                let data = try NSData(contentsOf: NSURL(fileURLWithPath: path) as URL, options: NSData.ReadingOptions.mappedIfSafe)
+                let jsonObj = try JSON(data: data as Data)
                 if jsonObj != JSON.null {
                     
                     companyIcon.image = UIImage(named: jsonObj["overview"]["company_icon"].string!)
@@ -414,18 +417,18 @@ class OverViewController: BaseViewController, UITableViewDelegate, UIGestureReco
                     companyName.text = jsonObj["overview"]["company_name"].string!
                     companyMoto.text = jsonObj["overview"]["company_tag"].string!
                     
-                    for ( var i:Int = 0; i<jsonObj["overview"]["counter_info"].count; i++ ) {
+                   /* for ( var i:Int = 0; i<jsonObj["overview"]["counter_info"].count; i++ ) {
                         
                         counterName.append(jsonObj["overview"]["counter_info"][i]["text"].string!)
                         counterNumber.append(jsonObj["overview"]["counter_info"][i]["number"].string!)
                         
-                    }
+                    }*/
                     
-                    for(var i:Int = 0; i<jsonObj["overview"]["basic_info"].count; i++) {
+                    /*for(var i:Int = 0; i<jsonObj["overview"]["basic_info"].count; i++) {
                         itemTitle.append(jsonObj["overview"]["basic_info"][i]["title"].string!)
                         itemImage.append(jsonObj["overview"]["basic_info"][i]["image"].string!)
                         cellContent.append(jsonObj["overview"]["basic_info"][i]["body"].string!)
-                    }
+                    }*/
                     
                     completedLebel.text = counterName[0]
                     developingLebel.text = counterName[1]

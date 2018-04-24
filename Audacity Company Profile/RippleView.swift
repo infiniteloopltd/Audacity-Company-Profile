@@ -99,12 +99,13 @@ class RippleView: UIView {
         
         layer.shadowRadius = 0
         layer.shadowOffset = CGSize(width: 0, height: 1)
-        layer.shadowColor = UIColor(white: 0.0, alpha: 0.5).CGColor
+        layer.shadowColor = UIColor(white: 0.0, alpha: 0.5).cgColor
         //layer.shadowColor = UIColor(white: 0.0, alpha: 0.0).CGColor;
     }
     
     private func setupRippleView() {
-        let size: CGFloat = CGRectGetWidth(bounds) * CGFloat(ripplePercent)
+        /*
+         let size: CGFloat = CGRect(bounds).width * CGFloat(ripplePercent)
         let x: CGFloat = (CGRectGetWidth(bounds)/2) - (size/2)
         let y: CGFloat = (CGRectGetHeight(bounds)/2) - (size/2)
         
@@ -116,13 +117,14 @@ class RippleView: UIView {
         rippleView.frame = CGRectMake(x, y, size  , size )
         
         rippleView.layer.cornerRadius = corner
+         */
     }
     
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         let touch: UITouch = touches.first!
-        let location = touch.locationInView(self)
+        let location = touch.location(in: self)
         touchCenterLocation = location
         if trackTouchLocation {
             touchCenterLocation = location
@@ -130,16 +132,16 @@ class RippleView: UIView {
             touchCenterLocation = nil
         }
         
-        UIView.animateWithDuration(0.1, delay: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
+        UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
             self.rippleBackgroundView.alpha = 1
             }, completion: nil)
         
-        rippleView.transform = CGAffineTransformMakeScale(0.5, 0.5)
+        rippleView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         
         
-        UIView.animateWithDuration(0.7, delay: 0, options: [UIViewAnimationOptions.CurveEaseOut, UIViewAnimationOptions.AllowUserInteraction],
+        UIView.animate(withDuration: 0.7, delay: 0, options: [UIViewAnimationOptions.curveEaseOut, UIViewAnimationOptions.allowUserInteraction],
             animations: {
-                self.rippleView.transform = CGAffineTransformIdentity
+               // self.rippleView.transform = CGAffineTransform
             }, completion: nil)
         
         if shadowRippleEnable {
@@ -155,19 +157,19 @@ class RippleView: UIView {
             let groupAnim = CAAnimationGroup()
             groupAnim.duration = 0.7
             groupAnim.fillMode = kCAFillModeForwards
-            groupAnim.removedOnCompletion = false
+            groupAnim.isRemovedOnCompletion = false
             groupAnim.animations = [shadowAnim, opacityAnim]
             
-            layer.addAnimation(groupAnim, forKey:"shadow")
+            layer.add(groupAnim, forKey:"shadow")
         }
         
     }
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+    override func touchesCancelled(_ touches: Set<UITouch>?, with event: UIEvent?) {
         animateToNormal()
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         animateToNormal()
         
     }
@@ -184,16 +186,16 @@ class RippleView: UIView {
     }*/
     
     private func animateToNormal() {
-        UIView.animateWithDuration(0.1, delay: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
+        UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
             self.rippleBackgroundView.alpha = 1
             }, completion: {(success: Bool) -> () in
-                UIView.animateWithDuration(self.touchUpAnimationTime, delay: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
+                UIView.animate(withDuration: self.touchUpAnimationTime, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
                     self.rippleBackgroundView.alpha = 0
                     }, completion: nil)
         })
         
         
-        UIView.animateWithDuration(0.7, delay: 0,
+        UIView.animate(withDuration: 0.7, delay: 0,
             options: [.CurveEaseOut, .BeginFromCurrentState, .AllowUserInteraction],
             animations: {
                 self.rippleView.transform = CGAffineTransformIdentity

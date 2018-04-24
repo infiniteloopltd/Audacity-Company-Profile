@@ -20,7 +20,7 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
     var appDelegate:AppDelegate!
     @IBAction func drawerToggleAction(sender: AnyObject) {
         
-        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
         
     }
     override func viewDidLoad() {
@@ -30,9 +30,9 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
         self.automaticallyAdjustsScrollViewInsets = false
         self.collectionView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
         
-        let sizeRect:CGRect = UIScreen.mainScreen().applicationFrame
+        let sizeRect:CGRect = UIScreen.main.applicationFrame
         screenWidth    = sizeRect.size.width
-        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate = UIApplication.shared.delegate as! AppDelegate
         
     }
     
@@ -45,14 +45,14 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
     
     
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemImage.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if(screenWidth < 700) {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewItemCell", forIndexPath: indexPath) as! CollectionViewItemCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewItemCell", for: indexPath) as! CollectionViewItemCell
             
             cell.itemImage.image = UIImage(named: itemImage[indexPath.row])
             cell.itemName.text = itemTitle[indexPath.row]
@@ -60,7 +60,7 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
             return cell
 
         } else {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewItemCelliPad", forIndexPath: indexPath) as! CollectionViewItemCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewItemCelliPad", for: indexPath) as! CollectionViewItemCell
             
             cell.itemImage.image = UIImage(named: itemImage[indexPath.row])
             cell.itemName.text = itemTitle[indexPath.row]
@@ -81,15 +81,15 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
     // MARK: -
     // MARK: - UICollectionViewFlowLayout
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if(screenWidth > 700) {
-            return CGSizeMake(180, 180)
+            return CGSize(width:180, height:180)
         }
-        return CGSizeMake(110, 110)
+        return CGSize(width:110, height:110)
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
         return UIEdgeInsetsMake(0, 10, 0, 10)
         
@@ -97,30 +97,34 @@ class TeamViewController: BaseViewController , UICollectionViewDataSource, UICol
     
     
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        trackEvent(1, actionName: "TeamView Controller")
+        //trackEvent(1, actionName: "TeamView Controller")
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get{
+            return .lightContent
+        }
     }
+    
+
     
     func loadData() {
         
         
-        if let path = NSBundle.mainBundle().pathForResource("team", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "team", ofType: "json") {
             do {
-                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
-                let jsonObj = JSON(data: data)
+                let data = try NSData(contentsOf: NSURL(fileURLWithPath: path) as URL, options: NSData.ReadingOptions.mappedIfSafe)
+                let jsonObj = try JSON(data: data as Data)
                 if jsonObj != JSON.null {
                     
-                    for(var i:Int = 0; i<jsonObj["team"].count; i++) {
+                   /* for(var i:Int = 0; i<jsonObj["team"].count; i++) {
                         
                         itemTitle.append(jsonObj["team"][i]["name"].string!)
                         itemImage.append(jsonObj["team"][i]["image"].string!)
                         itemDetail.append(jsonObj["team"][i]["designation"].string!)
-                    }
+                    }*/
                     
                     
                 } else {

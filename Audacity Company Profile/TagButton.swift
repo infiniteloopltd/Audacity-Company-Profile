@@ -14,9 +14,9 @@ class MyCustomButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = 15.0;
-        self.layer.borderColor = UIColor.whiteColor().CGColor
+        self.layer.borderColor = UIColor.white.cgColor
         self.layer.borderWidth = 1.5
-        self.tintColor = UIColor.whiteColor()
+        self.tintColor = UIColor.white
         
     }
 }
@@ -25,9 +25,9 @@ class MyCustomButton2: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = 15.0;
-        self.layer.borderColor = UIColor.grayColor().CGColor
+        self.layer.borderColor = UIColor.gray as! CGColor
         self.layer.borderWidth = 1.5
-        self.tintColor = UIColor.grayColor()
+        self.tintColor = UIColor.gray
          
     }
 }
